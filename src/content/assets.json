@@ -537,28 +537,31 @@
   {
     "id": "hunefer-photo",
     "path": "media/photos/hunefer.webp",
-    "alt": "《亨尼弗的亡靈書》秤心審判圖（示意）",
-    "credit": "Egypt Explorer 示意圖",
-    "license": "CC0",
-    "kind": "illustration",
+    "alt": "《亨尼弗的亡靈書》秤心審判圖",
+    "credit": "Hunefer",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_judgement_of_the_dead_in_the_presence_of_Osiris.jpg",
+    "kind": "photo",
     "essential": true
   },
   {
     "id": "opet-photo",
     "path": "media/photos/opet.webp",
-    "alt": "奧佩特節的浮雕（示意）",
-    "credit": "Egypt Explorer 示意圖",
-    "license": "CC0",
-    "kind": "illustration",
+    "alt": "奧佩特節的浮雕",
+    "credit": "Charlesdrakew at English Wikipedia",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Luxor_temple_2.JPG",
+    "kind": "photo",
     "essential": true
   },
   {
     "id": "sphinx-avenue-photo",
     "path": "media/photos/sphinx-avenue.webp",
-    "alt": "路克索的人面獅身像大道（示意）",
-    "credit": "Egypt Explorer 示意圖",
-    "license": "CC0",
-    "kind": "illustration",
+    "alt": "路克索的人面獅身像大道",
+    "credit": "Holger Uwe Schmitt",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1300_Sphinxen_s%C3%A4umten_urspr%C3%BCnglich_die_Allee._07.jpg",
+    "kind": "photo",
     "essential": true
   }
 ]
