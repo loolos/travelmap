@@ -248,3 +248,20 @@ test('a place without find items hides the find tab', async ({ page }) => {
   await expect(page.getByRole('tab', { name: /重點/ })).toBeVisible();
   await expect(page.getByRole('tab', { name: /找找看/ })).toHaveCount(0);
 });
+
+test('abu simbel move walks through the relocation to the sun festival', async ({ page }) => {
+  await page.goto('./#/place/abu-simbel/abu-simbel-move');
+  await page.getByRole('slider', { name: '水位' }).fill('100');
+  await page.getByRole('button', { name: /下一步/ }).click();
+  for (let i = 0; i < 4; i++) await page.getByRole('button', { name: /^鋸/ }).click();
+  await page.getByRole('button', { name: /下一步/ }).click();
+  await page.getByRole('slider', { name: '搬運進度' }).fill('100');
+  await page.getByRole('button', { name: /下一步/ }).click();
+  await page.getByRole('button', { name: /混凝土圓頂/ }).click();
+  await page.getByRole('button', { name: /堆上岩石/ }).click();
+  await page.getByRole('button', { name: /下一步/ }).click();
+  await page.getByRole('slider', { name: '日期' }).fill('53');
+  await expect(page.getByRole('img', { name: /2 月 22 日：陽光照進聖殿/ })).toBeVisible();
+  await page.getByRole('button', { name: '看完整解釋' }).click();
+  await expect(page.getByText(/約五十個國家/)).toBeVisible();
+});
