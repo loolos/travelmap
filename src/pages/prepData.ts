@@ -3,6 +3,8 @@ export interface PrepItem {
   id: string;
   title: string;
   detail: string;
+  /** Advisory only: shown without a checkbox. */
+  note?: boolean;
 }
 export interface PrepGroup {
   icon: string;
@@ -40,7 +42,7 @@ export const prepGroups: PrepGroup[] = [
     title: '錢',
     items: [
       { id: 'usd', title: '美元小鈔', detail: '準備一疊 1、5、10 美元的新鈔，付小費和雜支最方便。破舊或有折痕的鈔票常被拒收。' },
-      { id: 'egp', title: '埃及鎊', detail: '到當地用 ATM 或銀行換。換大額埃及鎊時保留銀行水單，當地嚴查黑市換匯。' },
+      { id: 'egp', note: true, title: '埃及鎊', detail: '到當地用 ATM 或銀行換。換大額埃及鎊時保留銀行水單，當地嚴查黑市換匯。' },
       { id: 'card', title: '信用卡開通海外交易', detail: '飯店和大型商店可刷卡，市集、小費、廁所要現金。出發前開通海外交易和消費通知。' },
     ],
   },
@@ -69,7 +71,7 @@ export const prepGroups: PrepGroup[] = [
     items: [
       { id: 'clinic', title: '出發前 4–6 週看旅遊醫學門診', detail: '由醫師評估需要的疫苗（例如 A 型肝炎、傷寒）和藥物。' },
       { id: 'meds', title: '常備藥', detail: '腸胃藥、止瀉藥、暈車暈船藥、個人處方藥（附英文藥名說明）。' },
-      { id: 'water', title: '只喝瓶裝水', detail: '刷牙也用瓶裝水，少吃生菜、冰塊和路邊未煮熟的食物。' },
+      { id: 'water', note: true, title: '只喝瓶裝水', detail: '刷牙也用瓶裝水，少吃生菜、冰塊和路邊未煮熟的食物。' },
       { id: 'dry', title: '對付乾燥和沙塵', detail: '護唇膏、乳液、口罩或圍巾擋沙；戴隱形眼鏡的人帶副眼鏡備用。' },
     ],
   },
@@ -87,18 +89,9 @@ export const prepGroups: PrepGroup[] = [
     icon: '⚠️',
     title: '不要帶、不要做',
     items: [
-      { id: 'drone', title: '不帶空拍機', detail: '外交部提醒：請勿攜帶空拍機入境，也不要做未經許可的攝影。' },
-      { id: 'antiques', title: '不買古物、不撿石頭貝殼', detail: '文物、化石、珊瑚、貝殼、遺跡碎片都不要買或撿；複製品留著有品名和日期的收據。' },
-      { id: 'police', title: '不拍軍警和執法人員', detail: '軍警設施和執法人員不要拍照錄影；海關查驗行李請配合。' },
-    ],
-  },
-  {
-    icon: '📱',
-    title: '這個 App',
-    items: [
-      { id: 'offline', title: '下載離線內容', detail: '到「離線下載」頁下載全部內容，最好在有 Wi-Fi 的地方。' },
-      { id: 'airplane', title: '開飛航模式測一次', detail: '開飛航模式後重開 App，確認地圖、地點和互動都打得開。' },
-      { id: 'homescreen', title: '加到主畫面', detail: 'iPhone 用 Safari 的「分享 → 加入主畫面」，像一般 App 一樣打開。' },
+      { id: 'drone', note: true, title: '不帶空拍機', detail: '外交部提醒：請勿攜帶空拍機入境，也不要做未經許可的攝影。' },
+      { id: 'antiques', note: true, title: '不買古物、不撿石頭貝殼', detail: '文物、化石、珊瑚、貝殼、遺跡碎片都不要買或撿；複製品留著有品名和日期的收據。' },
+      { id: 'police', note: true, title: '不拍軍警和執法人員', detail: '軍警設施和執法人員不要拍照錄影；海關查驗行李請配合。' },
     ],
   },
 ];
