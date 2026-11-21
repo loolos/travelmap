@@ -209,5 +209,19 @@
       "wiki-felucca",
       "wiki-nile"
     ]
+  },
+  {
+    "id": "abu-simbel-move",
+    "placeId": "abu-simbel",
+    "component": "StepTimeline",
+    "title": "神殿搬家",
+    "label": "神殿搬家",
+    "icon": "🎮",
+    "question": "一整座山裡的神殿，怎麼搬家？",
+    "durationMin": 3,
+    "sourceIds": [
+      "wiki-abu-simbel",
+      "unesco-nubia"
+    ]
   }
 ]
