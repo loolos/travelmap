@@ -95,6 +95,9 @@
     ],
     "sourceIds": [
       "wiki-black-desert"
+    ],
+    "activityIds": [
+      "black-desert-rocks"
     ]
   },
   {
@@ -145,6 +148,9 @@
     ],
     "sourceIds": [
       "wiki-crystal-mountain"
+    ],
+    "activityIds": [
+      "crystal-check"
     ]
   },
   {
@@ -247,6 +253,9 @@
     "sourceIds": [
       "wiki-sirius",
       "wiki-khufu"
+    ],
+    "activityIds": [
+      "desert-night-sky"
     ]
   }
 ]

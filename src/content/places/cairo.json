@@ -168,6 +168,9 @@
     "sourceIds": [
       "wiki-muhammad-ali-mosque"
     ],
-    "heroAssetId": "mosque-hero"
+    "heroAssetId": "mosque-hero",
+    "activityIds": [
+      "mosque-dome-lab"
+    ]
   }
 ]

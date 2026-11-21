@@ -160,7 +160,7 @@ export const Source = z.object({
 export const Activity = z.object({
   id: z.string(),
   placeId: z.string(),
-  component: z.enum(['ParameterLab', 'StepTimeline', 'LockSim', 'CartoucheMaker']),
+  component: z.enum(['ParameterLab', 'StepTimeline', 'LockSim', 'CartoucheMaker', 'HotspotDiagram', 'IdentifyQuiz', 'EvidenceReveal', 'SailLab']),
   title: z.string(),
   /** Card label in the place template (2–6 chars). */
   label: z.string(),
