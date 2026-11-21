@@ -81,7 +81,7 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
       checkText(L, s);
 
     let links = 0;
-    for (const f of p.facts)
+    for (const f of [...p.facts, ...p.findItems.map((x) => x.hint ?? '')])
       for (const seg of parseInline(f)) {
         if (seg.type !== 'link') continue;
         links++;

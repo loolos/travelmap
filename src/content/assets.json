@@ -174,5 +174,65 @@
     "license": "CC0",
     "kind": "illustration",
     "essential": true
+  },
+  {
+    "id": "luxor-hero",
+    "path": "media/luxor/luxor.webp",
+    "alt": "路克索與尼羅河",
+    "credit": "Roland Unger",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:LuxorHotelsIbnWalidSt.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "vok-hero",
+    "path": "media/luxor/valley-of-the-kings.webp",
+    "alt": "帝王谷",
+    "credit": "Fotograf/Photographer: Peter J. Bubenik (1995)",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Luxor,_Tal_der_K%C3%B6nige_(1995,_860x605).jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "tut-hero",
+    "path": "media/luxor/tutankhamun.webp",
+    "alt": "圖坦卡門墓",
+    "credit": "EditorfromMars",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Inside_Pharaoh_Tutankhamun%27s_tomb,_18th_dynasty.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "memnon-hero",
+    "path": "media/luxor/memnon.webp",
+    "alt": "曼儂巨像",
+    "credit": "MusikAnimal",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Colossi_of_Memnon_May_2015_2.JPG",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "luxor-temple-hero",
+    "path": "media/luxor/luxor-temple.webp",
+    "alt": "路克索神殿",
+    "credit": "Holger Uwe Schmitt",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1550_bis_1070_v._Chr._ca._wurde_der_Tempel_von_Luxor_erbaut._01.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "karnak-hero",
+    "path": "media/luxor/karnak.webp",
+    "alt": "卡納克神殿",
+    "credit": "René Hourdry",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Temple_de_Louxor_68.jpg",
+    "kind": "photo",
+    "essential": true
   }
 ]

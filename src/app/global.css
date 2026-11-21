@@ -70,3 +70,10 @@ button {
     animation: none !important;
   }
 }
+
+/* Noto Sans Egyptian Hieroglyphs (OFL), subset to the cartouche signs. */
+@font-face {
+  font-family: 'Hiero';
+  src: url('/fonts/hiero-subset.woff2') format('woff2');
+  font-display: block;
+}

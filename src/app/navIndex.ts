@@ -45,7 +45,7 @@ export function buildNavIndex(): NavGroup[] {
         {
           items: activities.map((a) => ({
             id: `activity:${a.id}`,
-            to: a.component === 'CartoucheMaker' ? `/cartouche` : `/place/${a.placeId}/${a.id}`,
+            to: `/place/${a.placeId}/${a.id}`,
             label: a.title,
             terms: [a.label],
             icon: a.icon,

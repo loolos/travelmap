@@ -91,6 +91,42 @@
       "article": "Temple of Edfu",
       "dest": "media/aswan-nile/edfu.webp",
       "alt": "艾德夫神殿塔門"
+    },
+    {
+      "assetId": "luxor-hero",
+      "article": "Luxor",
+      "dest": "media/luxor/luxor.webp",
+      "alt": "路克索與尼羅河"
+    },
+    {
+      "assetId": "vok-hero",
+      "article": "Valley of the Kings",
+      "dest": "media/luxor/valley-of-the-kings.webp",
+      "alt": "帝王谷"
+    },
+    {
+      "assetId": "tut-hero",
+      "article": "KV62",
+      "dest": "media/luxor/tutankhamun.webp",
+      "alt": "圖坦卡門墓"
+    },
+    {
+      "assetId": "memnon-hero",
+      "article": "Colossi of Memnon",
+      "dest": "media/luxor/memnon.webp",
+      "alt": "曼儂巨像"
+    },
+    {
+      "assetId": "luxor-temple-hero",
+      "article": "Luxor Temple",
+      "dest": "media/luxor/luxor-temple.webp",
+      "alt": "路克索神殿"
+    },
+    {
+      "assetId": "karnak-hero",
+      "article": "Karnak",
+      "dest": "media/luxor/karnak.webp",
+      "alt": "卡納克神殿"
     }
   ]
 }

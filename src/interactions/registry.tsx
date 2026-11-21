@@ -1,6 +1,8 @@
 import type { ComponentType } from 'react';
 import { PyramidBuild } from './PyramidBuild';
+import { CartoucheMaker } from './CartoucheMaker';
 import { DamLab } from './DamLab';
+import { KarnakTimeline } from './KarnakTimeline';
 import { LockSim } from './LockSim';
 import { WhiteDesertTimeline } from './WhiteDesertTimeline';
 
@@ -10,4 +12,6 @@ export const activityComponents: Record<string, ComponentType<{ activityId: stri
   'white-desert-story': WhiteDesertTimeline,
   'dam-control': DamLab,
   'esna-lock-sim': LockSim,
+  'karnak-timeline': KarnakTimeline,
+  cartouche: CartoucheMaker,
 };

@@ -3,6 +3,7 @@ import type { FindItem, Place } from '../data/schema';
 import { Link } from 'react-router-dom';
 import { assetById, assetUrl, deityById } from '../data/content';
 import { toggleFound, type Progress } from '../progress/store';
+import { InlineText } from './InlineText';
 import styles from './PlacePanel.module.css';
 
 /** 找找看: checkbox to tick, tap the text for a hint (and a circle on the photo when available). */
@@ -53,7 +54,9 @@ function Hint({ item, place }: { item: FindItem; place: Place }) {
   const asset = assetId ? assetById.get(assetId) : undefined;
   return (
     <div className={styles.hintBox}>
-      <p>{item.hint}</p>
+      <p>
+        <InlineText text={item.hint ?? ''} />
+      </p>
       {item.deityId && (
         <p className={styles.deityNote}>
           勾選後收進 <Link to="/deities">神祇圖鑑</Link>

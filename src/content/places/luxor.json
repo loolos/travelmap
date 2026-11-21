@@ -1,8 +1,312 @@
 [
-  { "id": "luxor", "nameZh": "路克索", "nameEn": "Luxor", "major": true, "aliases": ["樂蜀", "底比斯", "Thebes"], "regionId": "luxor", "kind": "city", "coordinates": { "lat": 25.6872, "lon": 32.6396 }, "onItinerary": true, "status": "draft", "question": "為什麼神殿在東岸、陵墓在西岸？" },
-  { "id": "valley-of-the-kings", "nameZh": "帝王谷", "nameEn": "Valley of the Kings", "regionId": "luxor", "kind": "tomb", "coordinates": { "lat": 25.7402, "lon": 32.6014 }, "onItinerary": true, "status": "draft", "question": "法老為什麼不再蓋金字塔？" },
-  { "id": "tutankhamun-tomb", "nameZh": "圖坦卡門墓", "nameEn": "Tomb of Tutankhamun", "shortName": "圖坦卡門墓", "parentId": "valley-of-the-kings", "regionId": "luxor", "kind": "tomb", "coordinates": { "lat": 25.7403, "lon": 32.6016 }, "onItinerary": true, "status": "draft", "question": "一位年輕法老，為什麼成了最有名的法老？" },
-  { "id": "colossi-of-memnon", "nameZh": "曼儂巨像", "nameEn": "Colossi of Memnon", "aliases": ["門農巨像"], "regionId": "luxor", "kind": "statue", "coordinates": { "lat": 25.7206, "lon": 32.6104 }, "onItinerary": true, "status": "draft", "question": "古羅馬人為什麼說這座雕像會唱歌？" },
-  { "id": "luxor-temple", "nameZh": "路克索神殿", "nameEn": "Luxor Temple", "regionId": "luxor", "kind": "temple", "coordinates": { "lat": 25.6995, "lon": 32.6391 }, "onItinerary": true, "status": "draft", "question": "這座神殿是為了哪一場節慶而建？" },
-  { "id": "karnak", "nameZh": "卡納克神殿", "nameEn": "Karnak Temple", "shortName": "卡納克", "regionId": "luxor", "kind": "temple", "coordinates": { "lat": 25.7188, "lon": 32.6573 }, "onItinerary": true, "status": "draft", "question": "一座神殿為什麼蓋了兩千年？" }
+  {
+    "id": "luxor",
+    "nameZh": "路克索",
+    "nameEn": "Luxor",
+    "major": true,
+    "aliases": [
+      "樂蜀",
+      "底比斯",
+      "Thebes"
+    ],
+    "regionId": "luxor",
+    "kind": "city",
+    "coordinates": {
+      "lat": 25.6872,
+      "lon": 32.6396
+    },
+    "onItinerary": true,
+    "status": "ready",
+    "question": "為什麼神殿在東岸、陵墓在西岸？",
+    "era": "古稱底比斯（Thebes），新王國時期的首都",
+    "intro": "尼羅河把城市分成兩半：東岸是神殿與市區，西岸山谷裡藏著法老的陵墓。",
+    "facts": [
+      "古埃及人把太陽升起的東方和生命相連，日落的西方和死後世界相連，所以陵墓多蓋在西岸。",
+      "東岸有[卡納克神殿](place:karnak)和[路克索神殿](place:luxor-temple)，兩者由一條人面獅身像大道相連。",
+      "西岸有[帝王谷](place:valley-of-the-kings)、王后谷和許多祭殿，古希臘詩人荷馬稱這裡為「百門之城」。"
+    ],
+    "findItems": [
+      {
+        "id": "luxor-cliffs",
+        "text": "西岸那排光禿禿的石灰岩山崖",
+        "hint": "站在東岸往河對面看，綠色田地後面就是陵墓所在的山。"
+      },
+      {
+        "id": "luxor-balloons",
+        "text": "清晨飄在西岸上空的熱氣球",
+        "hint": "日出前後抬頭往西岸看，天氣好時常有一整群。"
+      },
+      {
+        "id": "luxor-ferry",
+        "text": "往返兩岸的渡輪或小汽艇",
+        "hint": "到河邊碼頭看，當地人多半搭渡輪過河。"
+      }
+    ],
+    "noteIds": [
+      "lx-alabaster",
+      "lx-balloon"
+    ],
+    "sourceIds": [
+      "wiki-luxor",
+      "unesco-thebes"
+    ],
+    "heroAssetId": "luxor-hero"
+  },
+  {
+    "id": "valley-of-the-kings",
+    "nameZh": "帝王谷",
+    "nameEn": "Valley of the Kings",
+    "regionId": "luxor",
+    "kind": "tomb",
+    "coordinates": {
+      "lat": 25.7402,
+      "lon": 32.6014
+    },
+    "onItinerary": true,
+    "status": "ready",
+    "question": "法老為什麼不再蓋金字塔？",
+    "era": "新王國時期，約西元前 1500–1070 年",
+    "intro": "西岸山谷裡的王家墓地，新王國的法老放棄金字塔，把陵墓鑿進山裡。",
+    "facts": [
+      "這裡已發現 60 多座墓，依發現順序編號，例如圖坦卡門墓是 KV62。",
+      "金字塔太醒目，容易被盜；把墓口藏在山谷裡，是為了防盜，但大多數墓在古代仍被盜空。",
+      "山谷上方的庫爾恩峰（el-Qurn）形狀像金字塔，也許正是選在這裡的原因之一。"
+    ],
+    "findItems": [
+      {
+        "id": "vok-qurn",
+        "text": "山谷上方像金字塔的尖山",
+        "hint": "走進山谷時抬頭看，最高的那座尖頂山就是庫爾恩峰。"
+      },
+      {
+        "id": "vok-stars",
+        "text": "墓室天花板上藍底黃色的星星",
+        "hint": "進墓後抬頭，很多墓的天花板畫成夜空。"
+      },
+      {
+        "id": "vok-anubis",
+        "text": "壁畫裡黑色胡狼頭的神",
+        "hint": "墓道壁畫上找黑色胡狼頭人身，或趴著的黑色胡狼。",
+        "deityId": "anubis"
+      }
+    ],
+    "noteIds": [
+      "lx-vok-ticket",
+      "lx-heat"
+    ],
+    "sourceIds": [
+      "wiki-vok",
+      "unesco-thebes"
+    ],
+    "heroAssetId": "vok-hero"
+  },
+  {
+    "id": "tutankhamun-tomb",
+    "nameZh": "圖坦卡門墓",
+    "nameEn": "Tomb of Tutankhamun",
+    "shortName": "圖坦卡門墓",
+    "parentId": "valley-of-the-kings",
+    "regionId": "luxor",
+    "kind": "tomb",
+    "coordinates": {
+      "lat": 25.7403,
+      "lon": 32.6016
+    },
+    "onItinerary": true,
+    "status": "ready",
+    "question": "一位年輕法老，為什麼成了最有名的法老？",
+    "era": "圖坦卡門在位約西元前 1332–1323 年",
+    "intro": "帝王谷裡一座不大的墓，1922 年被發現時幾乎完好，讓圖坦卡門成為最有名的法老。",
+    "facts": [
+      "1922 年英國考古學家卡特（Howard Carter）發現這座墓，裡面塞滿了五千多件陪葬品。",
+      "圖坦卡門約 9 歲即位、19 歲左右去世，墓室比其他法老小很多，可能是匆忙改用的。",
+      "他的木乃伊仍留在墓裡，黃金面具等寶物則在[大埃及博物館](place:gem)展出。"
+    ],
+    "findItems": [
+      {
+        "id": "tut-osiris",
+        "text": "擁抱法老、綠色皮膚的木乃伊形神",
+        "hint": "墓室北牆上，圖坦卡門和一位綠色皮膚、包成木乃伊的神相擁。",
+        "deityId": "osiris"
+      },
+      {
+        "id": "tut-isis",
+        "text": "石棺角落張開雙翼的女神",
+        "hint": "看墓室中央石棺的四個角，女神展開翅膀護著石棺。",
+        "deityId": "isis"
+      },
+      {
+        "id": "tut-baboons",
+        "text": "牆上排成格子的 12 隻狒狒",
+        "hint": "墓室西牆畫著 12 隻狒狒，代表夜裡的 12 個小時。",
+        "spot": {
+          "x": 32,
+          "y": 55,
+          "r": 18
+        }
+      }
+    ],
+    "noteIds": [
+      "lx-vok-ticket"
+    ],
+    "sourceIds": [
+      "wiki-kv62"
+    ],
+    "heroAssetId": "tut-hero"
+  },
+  {
+    "id": "colossi-of-memnon",
+    "nameZh": "曼儂巨像",
+    "nameEn": "Colossi of Memnon",
+    "aliases": [
+      "門農巨像"
+    ],
+    "regionId": "luxor",
+    "kind": "statue",
+    "coordinates": {
+      "lat": 25.7206,
+      "lon": 32.6104
+    },
+    "onItinerary": true,
+    "status": "ready",
+    "question": "古羅馬人為什麼說這座雕像會唱歌？",
+    "era": "阿蒙霍特普三世時期，約西元前 1350 年",
+    "intro": "西岸路邊兩尊約 18 公尺高的法老坐像，原本守在一座巨大祭殿的門口。",
+    "facts": [
+      "兩尊都是阿蒙霍特普三世；他身後的祭殿曾是西岸最大，後來被洪水和拆石取材毀去。",
+      "西元前 27 年地震後，北邊那尊在清晨會發出聲響，古希臘羅馬人說是英雄曼儂在向母親問安。",
+      "大約西元 200 年羅馬人修補雕像之後，「歌聲」就再也沒出現。"
+    ],
+    "findItems": [
+      {
+        "id": "memnon-repair",
+        "text": "北邊巨像上半身一層層的修補石塊",
+        "hint": "比較兩尊的上半身：北邊那尊由一塊塊石頭疊成，是後來修補的。",
+        "spot": {
+          "x": 82,
+          "y": 40,
+          "r": 10
+        }
+      },
+      {
+        "id": "memnon-queens",
+        "text": "法老腿邊比較小的女性雕像",
+        "hint": "看巨像小腿兩側，站著的是王后和王太后。"
+      },
+      {
+        "id": "memnon-temple",
+        "text": "巨像身後正在挖掘的神殿遺跡",
+        "hint": "繞到巨像後方，地上散落著柱子和雕像碎塊。"
+      }
+    ],
+    "noteIds": [
+      "lx-memnon"
+    ],
+    "sourceIds": [
+      "wiki-memnon"
+    ],
+    "heroAssetId": "memnon-hero"
+  },
+  {
+    "id": "luxor-temple",
+    "nameZh": "路克索神殿",
+    "nameEn": "Luxor Temple",
+    "regionId": "luxor",
+    "kind": "temple",
+    "coordinates": {
+      "lat": 25.6995,
+      "lon": 32.6391
+    },
+    "onItinerary": true,
+    "status": "ready",
+    "question": "這座神殿是為了哪一場節慶而建？",
+    "era": "主要由阿蒙霍特普三世和拉美西斯二世興建，約西元前 1400–1250 年",
+    "intro": "東岸市中心的神殿，每年奧佩特節，阿蒙神像會從卡納克被抬到這裡。",
+    "facts": [
+      "奧佩特節時，阿蒙神像沿著人面獅身像大道或尼羅河來到這裡，象徵王權年年重生。",
+      "門口原本有兩座方尖碑，其中一座 1836 年被運到巴黎，至今立在協和廣場。",
+      "神殿曾被沙土埋了一半，後人在上面蓋了阿布哈加格清真寺，現在仍在使用。"
+    ],
+    "findItems": [
+      {
+        "id": "lt-obelisk",
+        "text": "塔門前孤零零的一座方尖碑",
+        "hint": "站在入口前，左邊有方尖碑，右邊只剩一個空的底座。",
+        "spot": {
+          "x": 54,
+          "y": 38,
+          "r": 8
+        }
+      },
+      {
+        "id": "lt-mosque",
+        "text": "高高掛在神殿牆上的清真寺門",
+        "hint": "往神殿左側上方看，清真寺的門比地面高出好幾公尺，那是當年沙土的高度。"
+      },
+      {
+        "id": "lt-amun",
+        "text": "頭戴兩根高羽毛的神",
+        "hint": "牆上浮雕找頭頂兩根直立高羽毛的人形神，他就是阿蒙。",
+        "deityId": "amun"
+      }
+    ],
+    "noteIds": [
+      "lx-night"
+    ],
+    "sourceIds": [
+      "wiki-luxor-temple"
+    ],
+    "heroAssetId": "luxor-temple-hero"
+  },
+  {
+    "id": "karnak",
+    "nameZh": "卡納克神殿",
+    "nameEn": "Karnak Temple",
+    "shortName": "卡納克",
+    "regionId": "luxor",
+    "kind": "temple",
+    "coordinates": {
+      "lat": 25.7188,
+      "lon": 32.6573
+    },
+    "onItinerary": true,
+    "status": "ready",
+    "question": "一座神殿為什麼蓋了兩千年？",
+    "era": "從約西元前 1950 年到托勒密時期，陸續擴建約兩千年",
+    "intro": "獻給阿蒙神的巨大神殿群，歷代法老不斷加蓋，是世界上最大的宗教建築群之一。",
+    "facts": [
+      "大柱廳有 134 根石柱，中間 12 根約 21 公尺高，旁邊開著採光的石窗。",
+      "哈特謝普蘇特的方尖碑高約 30 公尺，是埃及至今仍立著的最高古代方尖碑。",
+      "歷代法老多在前方加蓋塔門，所以從入口往裡走，建築越來越古老。"
+    ],
+    "findItems": [
+      {
+        "id": "karnak-capitals",
+        "text": "開花和花苞兩種形狀的柱頭",
+        "hint": "大柱廳中間的高柱柱頭像盛開的紙莎草，兩旁矮柱像閉合的花苞。"
+      },
+      {
+        "id": "karnak-obelisk",
+        "text": "一座高聳的粉紅色花崗岩方尖碑",
+        "hint": "穿過大柱廳往裡走就看得到，上面刻滿王名圈。也試試[王名圈產生器](activity:cartouche)。"
+      },
+      {
+        "id": "karnak-amun",
+        "text": "頭戴兩根高羽毛的眾神之王",
+        "hint": "在牆上和柱子上的浮雕找阿蒙：人形、頭頂兩根直立羽毛。",
+        "deityId": "amun"
+      }
+    ],
+    "noteIds": [
+      "lx-heat"
+    ],
+    "sourceIds": [
+      "wiki-karnak",
+      "unesco-thebes"
+    ],
+    "heroAssetId": "karnak-hero",
+    "activityIds": [
+      "karnak-timeline"
+    ]
+  }
 ]

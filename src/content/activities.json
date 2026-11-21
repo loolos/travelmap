@@ -52,5 +52,32 @@
     "sourceIds": [
       "wiki-esna"
     ]
+  },
+  {
+    "id": "karnak-timeline",
+    "placeId": "karnak",
+    "component": "StepTimeline",
+    "title": "千年的神殿",
+    "label": "千年神殿",
+    "icon": "🎮",
+    "question": "一座神殿為什麼蓋了兩千年？",
+    "durationMin": 2,
+    "sourceIds": [
+      "wiki-karnak"
+    ]
+  },
+  {
+    "id": "cartouche",
+    "placeId": "luxor",
+    "component": "CartoucheMaker",
+    "title": "王名圈產生器",
+    "label": "王名圈",
+    "icon": "✍️",
+    "question": "你的名字，用古埃及的象形符號怎麼寫？",
+    "durationMin": 2,
+    "sourceIds": [
+      "wiki-cartouche",
+      "wiki-uniliteral"
+    ]
   }
 ]

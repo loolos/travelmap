@@ -113,5 +113,50 @@
     "id": "unesco-nubia",
     "title": "UNESCO：Nubian Monuments from Abu Simbel to Philae",
     "url": "https://whc.unesco.org/en/list/88/"
+  },
+  {
+    "id": "wiki-luxor",
+    "title": "Wikipedia：Luxor",
+    "url": "https://en.wikipedia.org/wiki/Luxor"
+  },
+  {
+    "id": "wiki-vok",
+    "title": "Wikipedia：Valley of the Kings",
+    "url": "https://en.wikipedia.org/wiki/Valley_of_the_Kings"
+  },
+  {
+    "id": "wiki-kv62",
+    "title": "Wikipedia：KV62",
+    "url": "https://en.wikipedia.org/wiki/KV62"
+  },
+  {
+    "id": "wiki-memnon",
+    "title": "Wikipedia：Colossi of Memnon",
+    "url": "https://en.wikipedia.org/wiki/Colossi_of_Memnon"
+  },
+  {
+    "id": "wiki-luxor-temple",
+    "title": "Wikipedia：Luxor Temple",
+    "url": "https://en.wikipedia.org/wiki/Luxor_Temple"
+  },
+  {
+    "id": "wiki-karnak",
+    "title": "Wikipedia：Karnak",
+    "url": "https://en.wikipedia.org/wiki/Karnak"
+  },
+  {
+    "id": "wiki-cartouche",
+    "title": "Wikipedia：Cartouche",
+    "url": "https://en.wikipedia.org/wiki/Cartouche"
+  },
+  {
+    "id": "wiki-uniliteral",
+    "title": "Wikipedia：Transliteration of Ancient Egyptian",
+    "url": "https://en.wikipedia.org/wiki/Transliteration_of_Ancient_Egyptian"
+  },
+  {
+    "id": "unesco-thebes",
+    "title": "UNESCO：Ancient Thebes with its Necropolis",
+    "url": "https://whc.unesco.org/en/list/87/"
   }
 ]
