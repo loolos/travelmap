@@ -338,10 +338,11 @@
   {
     "id": "deity-amun",
     "path": "media/deities/amun.webp",
-    "alt": "阿蒙（示意）",
-    "credit": "Egypt Explorer 示意圖",
-    "license": "CC0",
-    "kind": "illustration",
+    "alt": "阿蒙",
+    "credit": "FDRMRZUSA",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amun-Ra-Min.svg",
+    "kind": "photo",
     "essential": true
   },
   {
@@ -437,10 +438,11 @@
   {
     "id": "egypt-hero",
     "path": "media/egypt/egypt.webp",
-    "alt": "埃及衛星影像（示意）",
-    "credit": "Egypt Explorer 示意圖",
-    "license": "CC0",
-    "kind": "illustration",
+    "alt": "埃及衛星影像：尼羅河谷的綠帶穿過沙漠",
+    "credit": "Eric Gaba (Sting - fr:Sting) and NordNordWest",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Egypt_relief_location_map.jpg",
+    "kind": "photo",
     "essential": true
   }
 ]
