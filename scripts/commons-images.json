@@ -1,12 +1,12 @@
 {
-  "_doc": "assetId -> lead image of an English Wikipedia article, or the first Commons photo matching `search` (filetype:bitmap). Run by .github/workflows/fetch-images.yml.",
+  "_doc": "assetId -> lead image of an English Wikipedia article, or (with `match`) the first .jpg used in that article whose file name matches the regex. Run by .github/workflows/fetch-images.yml.",
   "images": [
     {
       "assetId": "gem-hero",
       "article": "Grand Egyptian Museum",
       "dest": "media/giza/gem.webp",
       "alt": "大埃及博物館外觀",
-      "search": "Grand Egyptian Museum building exterior"
+      "match": "(Grand[ _]Egyptian[ _]Museum|GEM).*\\.jpe?g$"
     },
     {
       "assetId": "khufu-hero",
