@@ -79,5 +79,63 @@
       "wiki-cartouche",
       "wiki-uniliteral"
     ]
+  },
+  {
+    "id": "kom-ombo-plan",
+    "placeId": "kom-ombo",
+    "component": "HotspotDiagram",
+    "title": "一座神殿兩位神",
+    "label": "雙神殿",
+    "icon": "🐊",
+    "question": "一座神殿，為什麼有兩個大門？",
+    "durationMin": 2,
+    "sourceIds": [
+      "wiki-kom-ombo",
+      "wiki-sobek",
+      "wiki-haroeris"
+    ]
+  },
+  {
+    "id": "mosque-dome-lab",
+    "placeId": "muhammad-ali-mosque",
+    "component": "HotspotDiagram",
+    "title": "穹頂怎麼撐起來",
+    "label": "看穹頂",
+    "icon": "🕌",
+    "question": "這麼大的穹頂，靠什麼撐住？",
+    "durationMin": 2,
+    "sourceIds": [
+      "wiki-muhammad-ali-mosque",
+      "wiki-pendentive"
+    ]
+  },
+  {
+    "id": "gem-golden-mask",
+    "placeId": "gem",
+    "component": "HotspotDiagram",
+    "title": "黃金面具圖鑑",
+    "label": "黃金面具",
+    "icon": "👑",
+    "question": "黃金面具上，每個部分代表什麼？",
+    "durationMin": 2,
+    "sourceIds": [
+      "wiki-tut-mask",
+      "wiki-gem"
+    ]
+  },
+  {
+    "id": "desert-night-sky",
+    "placeId": "desert-camp",
+    "component": "HotspotDiagram",
+    "title": "古埃及的星空",
+    "label": "看星空",
+    "icon": "✨",
+    "question": "古埃及人抬頭，看到的是哪些星星？",
+    "durationMin": 3,
+    "sourceIds": [
+      "wiki-egyptian-astronomy",
+      "wiki-decan",
+      "wiki-sirius"
+    ]
   }
 ]

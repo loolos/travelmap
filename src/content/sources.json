@@ -203,5 +203,30 @@
     "id": "worldbank-egypt",
     "title": "World Bank：Egypt, Arab Rep. data",
     "url": "https://data.worldbank.org/country/egypt-arab-rep"
+  },
+  {
+    "id": "wiki-haroeris",
+    "title": "Wikipedia：Horus the Elder",
+    "url": "https://en.wikipedia.org/wiki/Horus_the_Elder"
+  },
+  {
+    "id": "wiki-pendentive",
+    "title": "Wikipedia：Pendentive",
+    "url": "https://en.wikipedia.org/wiki/Pendentive"
+  },
+  {
+    "id": "wiki-tut-mask",
+    "title": "Wikipedia：Mask of Tutankhamun",
+    "url": "https://en.wikipedia.org/wiki/Mask_of_Tutankhamun"
+  },
+  {
+    "id": "wiki-egyptian-astronomy",
+    "title": "Wikipedia：Egyptian astronomy",
+    "url": "https://en.wikipedia.org/wiki/Egyptian_astronomy"
+  },
+  {
+    "id": "wiki-decan",
+    "title": "Wikipedia：Decan",
+    "url": "https://en.wikipedia.org/wiki/Decan"
   }
 ]
