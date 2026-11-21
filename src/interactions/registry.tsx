@@ -11,6 +11,8 @@ import { RedSeaLab } from './RedSeaLab';
 import { SphinxEvidence } from './SphinxEvidence';
 import { FeluccaLab } from './FeluccaLab';
 import { NileYearLab } from './NileYearLab';
+import { NubiaLab } from './NubiaLab';
+import { BargainLab } from './BargainLab';
 import { AbuSimbelMove } from './AbuSimbelMove';
 import { TutDig } from './TutDig';
 import { MummyOrder } from './MummyOrder';
@@ -36,6 +38,10 @@ export const activityComponents: Record<string, ComponentType<{ activityId: stri
   'sphinx-evidence': SphinxEvidence,
   'felucca-wind': FeluccaLab,
   'nile-year': NileYearLab,
+  'croc-museum-case': HotspotDiagram,
+  'bahariya-water': HotspotDiagram,
+  'nubia-flood': NubiaLab,
+  'market-bargain': BargainLab,
   'abu-simbel-move': AbuSimbelMove,
   'tut-dig': TutDig,
   'mummy-order': MummyOrder,
