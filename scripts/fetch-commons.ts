@@ -7,7 +7,7 @@ import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import sharp from 'sharp';
 
-interface Entry { assetId: string; article: string; dest: string; alt: string }
+interface Entry { assetId: string; article: string; search?: string; dest: string; alt: string }
 const UA = 'travelmap-build/1.0 (https://github.com/loolos/travelmap)';
 const cfg = JSON.parse(readFileSync('scripts/commons-images.json', 'utf8')) as { images: Entry[] };
 const assetsPath = 'src/content/assets.json';
@@ -25,8 +25,17 @@ const FREE = /^(cc0|cc[ -]by|public domain|pd|cc-by-sa|attribution)/i;
 let failures = 0;
 for (const e of cfg.images) {
   try {
-    const page = await api('en.wikipedia.org', { action: 'query', prop: 'pageimages', piprop: 'name', titles: e.article, redirects: '1' });
-    const file = page.query.pages[0]?.pageimage as string | undefined;
+    let file: string | undefined;
+    if (e.search) {
+      const found = await api('commons.wikimedia.org', {
+        action: 'query', list: 'search', srnamespace: '6', srlimit: '10', srsearch: `${e.search} filetype:bitmap`,
+      });
+      const hit = (found.query.search as { title: string }[]).find((r) => /\.(jpe?g)$/i.test(r.title));
+      file = hit?.title.replace(/^File:/, '');
+    } else {
+      const page = await api('en.wikipedia.org', { action: 'query', prop: 'pageimages', piprop: 'name', titles: e.article, redirects: '1' });
+      file = page.query.pages[0]?.pageimage as string | undefined;
+    }
     if (!file) throw new Error('no lead image');
     const info = await api('commons.wikimedia.org', {
       action: 'query', prop: 'imageinfo', titles: `File:${file}`, iiprop: 'url|extmetadata', iiurlwidth: '1280',
