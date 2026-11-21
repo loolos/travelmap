@@ -101,7 +101,8 @@
     ],
     "builtYear": -1539,
     "activityIds": [
-      "mummy-order"
+      "mummy-order",
+      "weighing-heart"
     ],
     "sourceIds": [
       "wiki-vok",
@@ -227,6 +228,9 @@
       "lx-memnon"
     ],
     "builtYear": -1350,
+    "activityIds": [
+      "memnon-song"
+    ],
     "sourceIds": [
       "wiki-memnon"
     ],
@@ -289,6 +293,9 @@
       "lx-night"
     ],
     "builtYear": -1400,
+    "activityIds": [
+      "opet-festival"
+    ],
     "sourceIds": [
       "wiki-luxor-temple"
     ],

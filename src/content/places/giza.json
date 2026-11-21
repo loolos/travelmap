@@ -117,7 +117,8 @@
     ],
     "builtYear": -2560,
     "activityIds": [
-      "pyramid-build"
+      "pyramid-build",
+      "khufu-interior"
     ],
     "sourceIds": [
       "wiki-khufu",
@@ -178,6 +179,9 @@
       "giza-touts"
     ],
     "builtYear": -2570,
+    "activityIds": [
+      "giza-scale"
+    ],
     "sourceIds": [
       "wiki-khafre",
       "unesco-memphis"

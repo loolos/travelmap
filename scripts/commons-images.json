@@ -305,6 +305,24 @@
       "match": "(interior|inside|dome|ceiling|cupola)",
       "dest": "media/photos/mosque-dome.webp",
       "alt": "穆罕默德·阿里清真寺穹頂內部"
+    },
+    {
+      "assetId": "hunefer-photo",
+      "article": "Papyrus of Hunefer",
+      "dest": "media/photos/hunefer.webp",
+      "alt": "《亨尼弗的亡靈書》秤心審判圖"
+    },
+    {
+      "assetId": "opet-photo",
+      "article": "Opet Festival",
+      "dest": "media/photos/opet.webp",
+      "alt": "路克索神廟大柱廊：兩側牆上刻著奧佩特節遊行"
+    },
+    {
+      "assetId": "sphinx-avenue-photo",
+      "article": "Avenue of Sphinxes",
+      "dest": "media/photos/sphinx-avenue.webp",
+      "alt": "路克索的人面獅身像大道"
     }
   ]
 }

@@ -17,6 +17,8 @@ import { AbuSimbelMove } from './AbuSimbelMove';
 import { TutDig } from './TutDig';
 import { MummyOrder } from './MummyOrder';
 import { HorusSetComic } from './HorusSetComic';
+import { GizaScale } from './GizaScale';
+import { MemnonLab } from './MemnonLab';
 
 /** Activity id -> component. Content JSON only names the id; behaviour lives in code. */
 export const activityComponents: Record<string, ComponentType<{ activityId: string }>> = {
@@ -44,4 +46,9 @@ export const activityComponents: Record<string, ComponentType<{ activityId: stri
   'tut-dig': TutDig,
   'mummy-order': MummyOrder,
   'horus-set-comic': HorusSetComic,
+  'khufu-interior': HotspotDiagram,
+  'weighing-heart': HotspotDiagram,
+  'opet-festival': HotspotDiagram,
+  'giza-scale': GizaScale,
+  'memnon-song': MemnonLab,
 };

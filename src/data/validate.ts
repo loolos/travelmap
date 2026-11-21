@@ -108,8 +108,8 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
     if (p.heroAssetId && !assetIds.has(p.heroAssetId)) errors.push(`${L}: unknown hero asset ${p.heroAssetId}`);
     p.findItems.forEach((f) => f.assetId && !assetIds.has(f.assetId) && errors.push(`${L}: unknown asset ${f.assetId}`));
     p.findItems.forEach((f) => f.deityId && !deityIds.has(f.deityId) && errors.push(`${L}: unknown deity ${f.deityId}`));
-    // Card labels: 重點, (找找看), 手記 + activities  ≤ 4
-    if (2 + Number(p.findItems.length > 0) + p.activityIds.length > 4) errors.push(`${L}: too many card labels`);
+    // Card labels: 重點, (找找看), 手記 + activities  ≤ 5 (two short rows on a phone)
+    if (2 + Number(p.findItems.length > 0) + p.activityIds.length > 5) errors.push(`${L}: too many card labels`);
 
     if (p.status === 'ready') {
       if (p.facts.length !== 3) errors.push(`${L}: needs exactly 3 facts (has ${p.facts.length})`);

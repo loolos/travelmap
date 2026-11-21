@@ -3,6 +3,9 @@ import { goldenMask } from './goldenMask';
 import { komOmbo } from './komOmbo';
 import { mosque } from './mosque';
 import { nightSky } from './nightSky';
+import { khufuInterior } from './khufuInterior';
+import { weighingHeart } from './weighingHeart';
+import { opet } from './opet';
 import { crocMuseum } from './crocMuseum';
 import { bahariyaWater } from './bahariyaWater';
 
@@ -12,6 +15,9 @@ export const hotspotSets: Record<string, HotspotSet> = {
   'mosque-dome-lab': mosque,
   'gem-golden-mask': goldenMask,
   'desert-night-sky': nightSky,
+  'khufu-interior': khufuInterior,
+  'weighing-heart': weighingHeart,
+  'opet-festival': opet,
   'croc-museum-case': crocMuseum,
   'bahariya-water': bahariyaWater,
 };
