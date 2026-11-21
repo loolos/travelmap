@@ -72,3 +72,16 @@ test('find-it checklist lights up the place and persists', async ({ page }) => {
   await page.goto('./#/journal');
   await expect(page.getByRole('link', { name: '孟卡拉金字塔' })).toBeVisible();
 });
+
+test('pyramid-build flagship: adjust, see bottleneck, explanation, reset', async ({ page }) => {
+  await page.goto('./#/place/giza-khufu');
+  await page.getByRole('link', { name: /建造金字塔/ }).click();
+  await expect(page.getByText('最慢的環節')).toBeVisible();
+  const quarry = page.getByRole('slider', { name: '採石人力' });
+  await quarry.focus();
+  for (let i = 0; i < 15; i++) await quarry.press('ArrowRight');
+  await page.getByRole('button', { name: '看解釋' }).click();
+  await expect(page.getByText('遊戲假設')).toBeVisible();
+  await page.getByRole('button', { name: '重來' }).click();
+  await expect(page.getByText('30.7 年')).toBeVisible();
+});

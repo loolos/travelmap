@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import type { Place } from '../data/schema';
-import { activityById, noteById, regionById, sourceById } from '../data/content';
+import { activityById, assetById, noteById, regionById, sourceById } from '../data/content';
 import { foundCount, isLit, markOpened, toggleFound, toggleVisited, useProgress } from '../progress/store';
 import { Hero } from './Img';
 import { InlineText } from './InlineText';
@@ -50,6 +50,7 @@ export function PlacePanel({ place, wide, state, onExpand, onCollapse, onClose }
   const visited = !!progress.visited[place.id];
   const ready = place.status === 'ready';
   const acts = place.activityIds.map((id) => activityById.get(id)!).filter(Boolean);
+  const hero = place.heroAssetId ? assetById.get(place.heroAssetId) : undefined;
   const pick = (t: Tab) => setTab((cur) => (cur === t ? null : t));
 
   return (
@@ -118,6 +119,19 @@ export function PlacePanel({ place, wide, state, onExpand, onCollapse, onClose }
                   <details className={styles.sources}>
                     <summary>來源</summary>
                     <ul>
+                      {hero && (
+                        <li>
+                          圖片：{hero.credit} · {hero.license}
+                          {hero.sourceUrl && (
+                            <>
+                              {' '}
+                              <a href={hero.sourceUrl} target="_blank" rel="noreferrer">
+                                出處
+                              </a>
+                            </>
+                          )}
+                        </li>
+                      )}
                       {place.sourceIds.map((s) => {
                         const src = sourceById.get(s);
                         return (

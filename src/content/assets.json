@@ -11,37 +11,41 @@
   {
     "id": "khufu-hero",
     "path": "media/giza/khufu.webp",
-    "alt": "胡夫金字塔的示意圖",
-    "credit": "Egypt Explorer 示意圖",
-    "license": "CC0",
-    "kind": "illustration",
+    "alt": "胡夫金字塔",
+    "credit": "Douwe C. van der Zee",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg",
+    "kind": "photo",
     "essential": true
   },
   {
     "id": "khafre-hero",
     "path": "media/giza/khafre.webp",
-    "alt": "頂端保留外層石的卡夫拉金字塔示意圖",
-    "credit": "Egypt Explorer 示意圖",
-    "license": "CC0",
-    "kind": "illustration",
+    "alt": "卡夫拉金字塔，頂端仍保留外層石",
+    "credit": "M1chu",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pyramid_of_Khafre_and_Sphinx,_Giza,_Greater_Cairo,_Egypt.jpg",
+    "kind": "photo",
     "essential": true
   },
   {
     "id": "menkaure-hero",
     "path": "media/giza/menkaure.webp",
-    "alt": "下段為紅色花崗岩的孟卡拉金字塔示意圖",
-    "credit": "Egypt Explorer 示意圖",
-    "license": "CC0",
-    "kind": "illustration",
+    "alt": "孟卡拉金字塔",
+    "credit": "Wikimedia Commons",
+    "license": "CC BY-SA 2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cairo,_Gizeh,_Pyramid_of_Menkaure,_Egypt,_Oct_2005.jpg",
+    "kind": "photo",
     "essential": true
   },
   {
     "id": "sphinx-hero",
     "path": "media/giza/sphinx.webp",
-    "alt": "人面獅身像與後方金字塔的示意圖",
-    "credit": "Egypt Explorer 示意圖",
+    "alt": "人面獅身像",
+    "credit": "Hesham Ebaid",
     "license": "CC0",
-    "kind": "illustration",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sphinx_with_the_third_pyramid.jpg",
+    "kind": "photo",
     "essential": true
   }
 ]

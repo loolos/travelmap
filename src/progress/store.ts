@@ -86,6 +86,11 @@ export function toggleFound(place: Place, itemId: string) {
   });
 }
 
+export function markActivityDone(activityId: string) {
+  if (state.activities[activityId]) return;
+  update((p) => ({ ...p, activities: { ...p.activities, [activityId]: Date.now() } }));
+}
+
 export function resetAll() {
   update(() => empty());
 }

@@ -1,8 +1,37 @@
 [
-  { "id": "unesco-memphis", "title": "UNESCO：Memphis and its Necropolis – the Pyramid Fields from Giza to Dahshur", "url": "https://whc.unesco.org/en/list/86/" },
-  { "id": "wiki-gem", "title": "Wikipedia：Grand Egyptian Museum", "url": "https://en.wikipedia.org/wiki/Grand_Egyptian_Museum" },
-  { "id": "wiki-khufu", "title": "Wikipedia：Great Pyramid of Giza", "url": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza" },
-  { "id": "wiki-khafre", "title": "Wikipedia：Pyramid of Khafre", "url": "https://en.wikipedia.org/wiki/Pyramid_of_Khafre" },
-  { "id": "wiki-menkaure", "title": "Wikipedia：Pyramid of Menkaure", "url": "https://en.wikipedia.org/wiki/Pyramid_of_Menkaure" },
-  { "id": "wiki-sphinx", "title": "Wikipedia：Great Sphinx of Giza", "url": "https://en.wikipedia.org/wiki/Great_Sphinx_of_Giza" }
+  {
+    "id": "unesco-memphis",
+    "title": "UNESCO：Memphis and its Necropolis – the Pyramid Fields from Giza to Dahshur",
+    "url": "https://whc.unesco.org/en/list/86/"
+  },
+  {
+    "id": "wiki-gem",
+    "title": "Wikipedia：Grand Egyptian Museum",
+    "url": "https://en.wikipedia.org/wiki/Grand_Egyptian_Museum"
+  },
+  {
+    "id": "wiki-khufu",
+    "title": "Wikipedia：Great Pyramid of Giza",
+    "url": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza"
+  },
+  {
+    "id": "wiki-khafre",
+    "title": "Wikipedia：Pyramid of Khafre",
+    "url": "https://en.wikipedia.org/wiki/Pyramid_of_Khafre"
+  },
+  {
+    "id": "wiki-menkaure",
+    "title": "Wikipedia：Pyramid of Menkaure",
+    "url": "https://en.wikipedia.org/wiki/Pyramid_of_Menkaure"
+  },
+  {
+    "id": "wiki-sphinx",
+    "title": "Wikipedia：Great Sphinx of Giza",
+    "url": "https://en.wikipedia.org/wiki/Great_Sphinx_of_Giza"
+  },
+  {
+    "id": "wiki-merer",
+    "title": "Wikipedia：Diary of Merer",
+    "url": "https://en.wikipedia.org/wiki/Diary_of_Merer"
+  }
 ]

@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "id": "pyramid-build",
+    "placeId": "giza-khufu",
+    "component": "ParameterLab",
+    "title": "建造大金字塔",
+    "label": "建造金字塔",
+    "icon": "🎮",
+    "question": "沒有現代機械，要怎麼組織數百萬塊石材的工程？",
+    "durationMin": 3,
+    "sourceIds": [
+      "wiki-khufu",
+      "wiki-merer"
+    ]
+  }
+]
