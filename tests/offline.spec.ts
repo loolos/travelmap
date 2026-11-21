@@ -66,6 +66,7 @@ test('find-it checklist lights up the place and persists', async ({ page }) => {
   await page.getByRole('tab', { name: /找找看/ }).click();
   for (const box of await page.getByRole('checkbox').all()) await box.check();
   await expect(page.getByText('全部找到了')).toBeVisible();
+  await page.waitForTimeout(300); // let the IndexedDB write land
   await page.reload();
   await page.getByRole('tab', { name: /找找看/ }).click();
   await expect(page.getByText('全部找到了')).toBeVisible();
