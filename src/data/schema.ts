@@ -107,6 +107,16 @@ export const Asset = z.object({
   essential: z.boolean(),
 });
 
+export const Deity = z.object({
+  id: z.string(),
+  nameZh: z.string(),
+  nameEn: z.string(),
+  icon: z.string(),
+  /** How to recognise it on a wall (shown on tap). */
+  look: z.string(),
+  role: z.string(),
+});
+
 export const Source = z.object({
   id: z.string(),
   title: z.string(),
@@ -131,6 +141,7 @@ export type Region = z.infer<typeof Region>;
 export type Note = z.infer<typeof Note>;
 export type Asset = z.infer<typeof Asset>;
 export type Source = z.infer<typeof Source>;
+export type Deity = z.infer<typeof Deity>;
 export type Activity = z.infer<typeof Activity>;
 export type FindItem = z.infer<typeof FindItem>;
 export type PlaceKind = (typeof placeKinds)[number];
@@ -142,4 +153,5 @@ export interface ContentBundle {
   assets: Asset[];
   sources: Source[];
   activities: Activity[];
+  deities: Deity[];
 }

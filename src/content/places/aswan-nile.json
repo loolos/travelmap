@@ -1,10 +1,406 @@
 [
-  { "id": "aswan", "nameZh": "亞斯文", "nameEn": "Aswan", "major": true, "regionId": "aswan-nile", "kind": "city", "coordinates": { "lat": 24.0889, "lon": 32.8998 }, "onItinerary": true, "status": "draft", "question": "亞斯文為什麼和開羅很不一樣？" },
-  { "id": "aswan-high-dam", "nameZh": "亞斯文大水壩", "nameEn": "Aswan High Dam", "shortName": "大水壩", "regionId": "aswan-nile", "kind": "water", "coordinates": { "lat": 23.9708, "lon": 32.8775 }, "onItinerary": true, "status": "draft", "question": "擋住尼羅河的洪水，是好事還是壞事？" },
-  { "id": "felucca", "nameZh": "三角風帆船", "nameEn": "Felucca", "shortName": "風帆船", "regionId": "aswan-nile", "kind": "water", "coordinates": { "lat": 24.096, "lon": 32.886 }, "onItinerary": true, "status": "draft", "question": "不用引擎，船怎麼逆流而上？" },
-  { "id": "abu-simbel", "nameZh": "阿布辛貝神殿", "nameEn": "Abu Simbel", "shortName": "阿布辛貝", "aliases": ["阿布辛拜勒"], "major": true, "regionId": "aswan-nile", "kind": "temple", "coordinates": { "lat": 22.3372, "lon": 31.6258 }, "onItinerary": true, "status": "draft", "question": "一整座山裡的神殿，怎麼搬家？" },
-  { "id": "kom-ombo", "nameZh": "孔翁波神殿", "nameEn": "Temple of Kom Ombo", "shortName": "孔翁波", "aliases": ["康翁波"], "regionId": "aswan-nile", "kind": "temple", "coordinates": { "lat": 24.452, "lon": 32.9283 }, "onItinerary": true, "status": "draft", "question": "為什麼一座神殿有兩個主人？" },
-  { "id": "crocodile-museum", "nameZh": "鱷魚木乃伊博物館", "nameEn": "Crocodile Museum", "shortName": "鱷魚博物館", "regionId": "aswan-nile", "kind": "museum", "coordinates": { "lat": 24.4513, "lon": 32.9277 }, "onItinerary": true, "status": "draft", "question": "古埃及人為什麼要把鱷魚做成木乃伊？" },
-  { "id": "edfu", "nameZh": "艾德夫神殿", "nameEn": "Temple of Edfu", "shortName": "艾德夫", "aliases": ["埃德夫"], "regionId": "aswan-nile", "kind": "temple", "coordinates": { "lat": 24.9779, "lon": 32.8733 }, "onItinerary": true, "status": "draft", "question": "荷魯斯和賽特為什麼要打仗？" },
-  { "id": "esna-lock", "nameZh": "伊斯納水閘", "nameEn": "Esna Lock", "shortName": "伊斯納", "regionId": "aswan-nile", "kind": "water", "coordinates": { "lat": 25.31, "lon": 32.56 }, "onItinerary": true, "status": "draft", "question": "船要怎麼爬上一段「水的樓梯」？" }
+  {
+    "id": "aswan",
+    "nameZh": "亞斯文",
+    "nameEn": "Aswan",
+    "major": true,
+    "regionId": "aswan-nile",
+    "kind": "city",
+    "coordinates": {
+      "lat": 24.0889,
+      "lon": 32.8998
+    },
+    "onItinerary": true,
+    "status": "ready",
+    "question": "亞斯文為什麼和開羅很不一樣？",
+    "era": "古稱賽伊尼（Syene），自古是埃及南方邊界",
+    "intro": "尼羅河第一瀑布附近的城市，河中散布黑色花崗岩島，西岸住著努比亞人。",
+    "heroAssetId": "aswan-hero",
+    "facts": [
+      "這裡的紅色花崗岩被運到全國，做成方尖碑、雕像和[胡夫金字塔](place:giza-khufu)的墓室。",
+      "約西元前 240 年，學者埃拉托斯特尼利用夏至正午這裡的陽光直射，估算出地球的大小。",
+      "努比亞人有自己的語言和彩色房屋；1960 年代建[高壩](place:aswan-high-dam)時，許多村落被迫遷移。"
+    ],
+    "findItems": [
+      {
+        "id": "aswan-houses",
+        "text": "牆面漆成鮮豔顏色的努比亞房屋",
+        "hint": "西岸的努比亞村最容易看到，門口常畫著幾何圖案或動物。"
+      },
+      {
+        "id": "aswan-granite",
+        "text": "河中又黑又圓的花崗岩巨石",
+        "hint": "坐船時看河中央和岸邊，被河水磨得光滑圓潤的就是。"
+      },
+      {
+        "id": "aswan-hibiscus",
+        "text": "市集裡一袋袋深紅色的乾洛神花",
+        "hint": "香料攤上紅得發紫的乾花瓣，泡成的就是洛神花茶（karkadeh）。"
+      }
+    ],
+    "noteIds": [
+      "an-nubian",
+      "an-karkade"
+    ],
+    "sourceIds": [
+      "wiki-aswan",
+      "wiki-eratosthenes"
+    ]
+  },
+  {
+    "id": "aswan-high-dam",
+    "nameZh": "亞斯文大水壩",
+    "nameEn": "Aswan High Dam",
+    "shortName": "大水壩",
+    "regionId": "aswan-nile",
+    "kind": "water",
+    "coordinates": {
+      "lat": 23.9708,
+      "lon": 32.8775
+    },
+    "onItinerary": true,
+    "status": "ready",
+    "question": "擋住尼羅河的洪水，是好事還是壞事？",
+    "era": "1960 年動工，1970 年完工",
+    "intro": "橫跨尼羅河的大型土石壩，後方攔出納瑟湖，從此尼羅河不再每年氾濫。",
+    "heroAssetId": "dam-hero",
+    "facts": [
+      "壩長約 3.8 公里、高約 111 公尺，在蘇聯協助下興建。",
+      "後方的納瑟湖長約 500 公里，南端延伸進蘇丹，是世界最大的人工湖之一。",
+      "高壩帶來穩定的灌溉水和電力，但淤泥被攔在湖裡，下游農田改靠肥料。"
+    ],
+    "findItems": [
+      {
+        "id": "dam-levels",
+        "text": "壩的兩側水位一高一低",
+        "hint": "站在壩頂分別往南、往北看，南邊湖面明顯比北邊河面高。"
+      },
+      {
+        "id": "dam-lake",
+        "text": "一望無際、看不到對岸的納瑟湖",
+        "hint": "往南看，湖面一路延伸到地平線。"
+      },
+      {
+        "id": "dam-lotus",
+        "text": "像一朵蓮花的高塔紀念碑",
+        "hint": "壩的西端有一座像五片花瓣合起來的高塔，紀念埃及和蘇聯的合作。"
+      }
+    ],
+    "noteIds": [
+      "an-dam-photo"
+    ],
+    "sourceIds": [
+      "wiki-aswan-dam",
+      "wiki-lake-nasser"
+    ],
+    "activityIds": [
+      "dam-control"
+    ]
+  },
+  {
+    "id": "felucca",
+    "nameZh": "三角風帆船",
+    "nameEn": "Felucca",
+    "shortName": "風帆船",
+    "regionId": "aswan-nile",
+    "kind": "water",
+    "coordinates": {
+      "lat": 24.096,
+      "lon": 32.886
+    },
+    "onItinerary": true,
+    "status": "ready",
+    "question": "不用引擎，船怎麼逆流而上？",
+    "era": "這種帆船在尼羅河上用了好幾千年",
+    "intro": "尼羅河上的傳統木帆船，只靠一面三角帆和河水推動。",
+    "heroAssetId": "felucca-hero",
+    "facts": [
+      "尼羅河由南向北流，風卻多半從北往南吹：往南靠風，往北順水。",
+      "古埃及文字裡「往南走」畫的是張著帆的船，「往北走」是收起帆的船。",
+      "斜掛的大三角帆讓船可以斜著迎風，用之字形慢慢前進。"
+    ],
+    "findItems": [
+      {
+        "id": "felucca-sail",
+        "text": "斜斜掛在桅杆上的大三角帆",
+        "hint": "帆的上緣綁在一根斜長的桿子上，高的一端翹得比桅杆還高。"
+      },
+      {
+        "id": "felucca-tack",
+        "text": "船夫轉向時，帆換到另一邊",
+        "hint": "逆風時船會之字形前進，每次轉彎帆都會甩到另一側。"
+      },
+      {
+        "id": "felucca-drift",
+        "text": "不升帆也在往北漂的船",
+        "hint": "看沒有張帆的船，它們是靠河水往北（下游）漂。"
+      }
+    ],
+    "noteIds": [
+      "an-felucca-price"
+    ],
+    "sourceIds": [
+      "wiki-felucca"
+    ]
+  },
+  {
+    "id": "abu-simbel",
+    "nameZh": "阿布辛貝神殿",
+    "nameEn": "Abu Simbel",
+    "shortName": "阿布辛貝",
+    "aliases": [
+      "阿布辛拜勒"
+    ],
+    "major": true,
+    "regionId": "aswan-nile",
+    "kind": "temple",
+    "coordinates": {
+      "lat": 22.3372,
+      "lon": 31.6258
+    },
+    "onItinerary": true,
+    "status": "ready",
+    "question": "一整座山裡的神殿，怎麼搬家？",
+    "era": "拉美西斯二世時期，約西元前 13 世紀",
+    "intro": "拉美西斯二世在努比亞山壁鑿出的兩座神殿，1960 年代為了避開納瑟湖整座搬遷。",
+    "heroAssetId": "abu-simbel-hero",
+    "facts": [
+      "大神殿門口有四尊約 20 公尺高的拉美西斯二世坐像；小神殿獻給王后奈菲爾塔利和女神哈托爾。",
+      "1964–1968 年，神殿被切成一千多塊，在比原址高約 65 公尺的地方重新組裝。",
+      "每年約 2 月 22 日和 10 月 22 日，晨光會射進神殿深處，照亮聖殿裡的神像。"
+    ],
+    "findItems": [
+      {
+        "id": "abu-broken",
+        "text": "頭部掉在地上的那尊巨像",
+        "hint": "入口左邊第二尊，上半身在古代地震時就崩落了，至今留在腳邊。"
+      },
+      {
+        "id": "abu-ra",
+        "text": "門口上方鷹頭、頂著太陽的神像",
+        "hint": "抬頭看大門正上方的壁龕，鷹頭神就是太陽神拉－荷拉克提。",
+        "deityId": "ra"
+      },
+      {
+        "id": "abu-hathor",
+        "text": "小神殿裡牛耳女神臉的柱子",
+        "hint": "進到小神殿，柱子頂端刻著牛耳朵的女性臉，就是哈托爾。",
+        "deityId": "hathor"
+      }
+    ],
+    "noteIds": [
+      "an-abu-simbel-trip",
+      "an-temple-photo"
+    ],
+    "sourceIds": [
+      "wiki-abu-simbel",
+      "unesco-nubia"
+    ]
+  },
+  {
+    "id": "kom-ombo",
+    "nameZh": "孔翁波神殿",
+    "nameEn": "Temple of Kom Ombo",
+    "shortName": "孔翁波",
+    "aliases": [
+      "康翁波"
+    ],
+    "regionId": "aswan-nile",
+    "kind": "temple",
+    "coordinates": {
+      "lat": 24.452,
+      "lon": 32.9283
+    },
+    "onItinerary": true,
+    "status": "ready",
+    "question": "為什麼一座神殿有兩個主人？",
+    "era": "托勒密時期，約西元前 2 世紀起建",
+    "intro": "尼羅河畔的對稱雙神殿，南半邊獻給鱷魚神索貝克，北半邊獻給老荷魯斯。",
+    "heroAssetId": "kom-ombo-hero",
+    "facts": [
+      "神殿從中間對半分：兩道入口、兩條中軸、兩座聖殿，各歸一位神。",
+      "牆上有一幅浮雕刻著鉗子、刀和鋸等器具，一般認為是醫療用具。",
+      "附近出土的鱷魚木乃伊，就展示在旁邊的[鱷魚木乃伊博物館](place:crocodile-museum)。"
+    ],
+    "findItems": [
+      {
+        "id": "kom-sobek",
+        "text": "牆上鱷魚頭人身的神",
+        "hint": "在神殿南半邊的牆上找鱷魚頭人身的浮雕，他就是索貝克。",
+        "deityId": "sobek"
+      },
+      {
+        "id": "kom-horus",
+        "text": "戴雙冠、鷹頭人身的神",
+        "hint": "北半邊的主角是老荷魯斯，找鷹頭人身、戴雙冠的浮雕。",
+        "deityId": "horus"
+      },
+      {
+        "id": "kom-tools",
+        "text": "一排像手術工具的浮雕",
+        "hint": "在神殿後方外圍的牆上，找一排鉗子、剪刀似的器具。"
+      }
+    ],
+    "noteIds": [
+      "an-kom-ombo-night",
+      "an-temple-photo"
+    ],
+    "sourceIds": [
+      "wiki-kom-ombo"
+    ]
+  },
+  {
+    "id": "crocodile-museum",
+    "nameZh": "鱷魚木乃伊博物館",
+    "nameEn": "Crocodile Museum",
+    "shortName": "鱷魚博物館",
+    "regionId": "aswan-nile",
+    "kind": "museum",
+    "coordinates": {
+      "lat": 24.4513,
+      "lon": 32.9277
+    },
+    "onItinerary": true,
+    "status": "ready",
+    "question": "古埃及人為什麼要把鱷魚做成木乃伊？",
+    "era": "2012 年開館",
+    "intro": "孔翁波神殿旁的小博物館，展出從附近墓地出土的鱷魚木乃伊與相關文物。",
+    "heroAssetId": "crocodile-hero",
+    "facts": [
+      "古埃及人把鱷魚視為索貝克神的化身，有些神殿會在池子裡養鱷魚。",
+      "鱷魚死後被做成木乃伊下葬，大小從成年鱷魚到剛孵出的小鱷魚都有。",
+      "動物木乃伊在古埃及很常見，貓、朱鷺、狗和公牛也會被做成木乃伊。"
+    ],
+    "findItems": [
+      {
+        "id": "croc-sizes",
+        "text": "大小差很多的鱷魚木乃伊",
+        "hint": "比較展櫃裡最大和最小的鱷魚，看看小的有多小。"
+      },
+      {
+        "id": "croc-coffin",
+        "text": "裝動物木乃伊的陶棺或木棺",
+        "hint": "找形狀像盒子、上面有彩繪或刻紋的棺材。"
+      },
+      {
+        "id": "croc-sobek",
+        "text": "展廳裡鱷魚頭人身的神像",
+        "hint": "展廳裡有鱷魚頭人身的雕像或浮雕，他就是索貝克。",
+        "deityId": "sobek"
+      }
+    ],
+    "noteIds": [
+      "an-temple-photo"
+    ],
+    "sourceIds": [
+      "wiki-kom-ombo",
+      "wiki-sobek"
+    ]
+  },
+  {
+    "id": "edfu",
+    "nameZh": "艾德夫神殿",
+    "nameEn": "Temple of Edfu",
+    "shortName": "艾德夫",
+    "aliases": [
+      "埃德夫"
+    ],
+    "regionId": "aswan-nile",
+    "kind": "temple",
+    "coordinates": {
+      "lat": 24.9779,
+      "lon": 32.8733
+    },
+    "onItinerary": true,
+    "status": "ready",
+    "question": "荷魯斯和賽特為什麼要打仗？",
+    "era": "托勒密時期，西元前 237–57 年",
+    "intro": "獻給鷹神荷魯斯的神殿，因為長期被沙土掩埋，成為埃及保存最完整的神殿之一。",
+    "heroAssetId": "edfu-hero",
+    "facts": [
+      "正門塔門高約 36 公尺，是埃及規模第二大的神殿，僅次於路克索的卡納克。",
+      "神殿曾被沙土和民房掩埋，19 世紀中才由考古學家馬里埃特清理出來。",
+      "牆上刻著荷魯斯為父親歐西里斯復仇、擊敗叔叔賽特的故事。"
+    ],
+    "findItems": [
+      {
+        "id": "edfu-falcon",
+        "text": "門口戴雙冠的花崗岩老鷹",
+        "hint": "塔門入口兩旁和內院各有一隻黑色花崗岩鷹像，那是荷魯斯。",
+        "deityId": "horus"
+      },
+      {
+        "id": "edfu-seth",
+        "text": "被長矛刺中的河馬",
+        "hint": "繞到神殿外圍走廊，找荷魯斯用長矛刺一隻小河馬的浮雕；河馬就是賽特。",
+        "deityId": "seth"
+      },
+      {
+        "id": "edfu-pylon",
+        "text": "塔門上法老抓住敵人頭髮的巨大浮雕",
+        "hint": "站在正門前抬頭看，兩側塔門上刻著一模一樣的大場面。",
+        "spot": {
+          "x": 20,
+          "y": 58,
+          "r": 10
+        }
+      }
+    ],
+    "noteIds": [
+      "an-edfu-carriage",
+      "an-temple-photo"
+    ],
+    "sourceIds": [
+      "wiki-edfu"
+    ]
+  },
+  {
+    "id": "esna-lock",
+    "nameZh": "伊斯納水閘",
+    "nameEn": "Esna Lock",
+    "shortName": "伊斯納",
+    "regionId": "aswan-nile",
+    "kind": "water",
+    "coordinates": {
+      "lat": 25.31,
+      "lon": 32.56
+    },
+    "onItinerary": true,
+    "status": "ready",
+    "question": "船要怎麼爬上一段「水的樓梯」？",
+    "era": "第一道攔河堰 1909 年完工，新堰在 1990 年代建成",
+    "intro": "伊斯納的攔河堰把尼羅河分成高低兩段，往返亞斯文與路克索的船都要從船閘通過。",
+    "heroAssetId": "esna-lock-hero",
+    "facts": [
+      "攔河堰抬高上游水位，方便引水灌溉；船要靠船閘升降，才過得去。",
+      "船閘像一座水的電梯：關上閘門，灌水或放水，讓船跟著水位升降。",
+      "遊輪常在這裡排隊好幾個小時，小販划著小船靠過來向甲板叫賣。"
+    ],
+    "findItems": [
+      {
+        "id": "esna-gate",
+        "text": "在船後方關上的大閘門",
+        "hint": "船開進閘室後，回頭看後方的閘門慢慢合起來。"
+      },
+      {
+        "id": "esna-wall",
+        "text": "閘室牆上水位的變化",
+        "hint": "盯著船邊的水泥牆，看水位線一點一點升高或降低。"
+      },
+      {
+        "id": "esna-vendors",
+        "text": "划小船來叫賣的小販",
+        "hint": "排隊等過閘時，往水面看，小販會把商品裝袋往甲板上拋。"
+      }
+    ],
+    "noteIds": [
+      "an-cruise"
+    ],
+    "sourceIds": [
+      "wiki-esna"
+    ],
+    "activityIds": [
+      "esna-lock-sim"
+    ]
+  }
 ]

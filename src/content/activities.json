@@ -25,5 +25,32 @@
     "sourceIds": [
       "wiki-white-desert"
     ]
+  },
+  {
+    "id": "dam-control",
+    "placeId": "aswan-high-dam",
+    "component": "ParameterLab",
+    "title": "水壩調度",
+    "label": "水壩調度",
+    "icon": "🎮",
+    "question": "擋住尼羅河的洪水，是好事還是壞事？",
+    "durationMin": 2,
+    "sourceIds": [
+      "wiki-aswan-dam",
+      "wiki-lake-nasser"
+    ]
+  },
+  {
+    "id": "esna-lock-sim",
+    "placeId": "esna-lock",
+    "component": "LockSim",
+    "title": "操作船閘",
+    "label": "操作船閘",
+    "icon": "🎮",
+    "question": "船要怎麼爬上一段「水的樓梯」？",
+    "durationMin": 2,
+    "sourceIds": [
+      "wiki-esna"
+    ]
   }
 ]

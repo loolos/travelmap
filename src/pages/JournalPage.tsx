@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { places } from '../data/content';
+import { deities, places } from '../data/content';
 import { isLit, resetAll, useProgress } from '../progress/store';
 import styles from './Pages.module.css';
 
@@ -17,6 +17,7 @@ export function JournalPage() {
         <Stat n={`${lit.length}/${withFind}`} label="已點亮" />
         <Stat n={`${visited.length}`} label="已到訪" />
         <Stat n={`${opened}/${places.length}`} label="已看過" />
+        <Stat n={`${deities.filter((d) => p.deities[d.id]?.length).length}/${deities.length}`} label="神祇" to="/deities" />
       </div>
       <h2 className={styles.h2}>已點亮的地點</h2>
       <PlaceList items={lit} empty="到現場完成「找找看」，地點就會亮起。" />
@@ -50,12 +51,19 @@ export function JournalPage() {
   );
 }
 
-function Stat({ n, label }: { n: string; label: string }) {
-  return (
-    <div className={styles.stat}>
+function Stat({ n, label, to }: { n: string; label: string; to?: string }) {
+  const body = (
+    <>
       <strong>{n}</strong>
       <span>{label}</span>
-    </div>
+    </>
+  );
+  return to ? (
+    <Link to={to} className={styles.stat}>
+      {body}
+    </Link>
+  ) : (
+    <div className={styles.stat}>{body}</div>
   );
 }
 
