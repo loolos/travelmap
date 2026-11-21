@@ -396,3 +396,33 @@
   font-size: 13px;
   color: var(--lapis);
 }
+.aspects {
+  margin: 4px 0 12px;
+}
+.aspectChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.aspectChips button {
+  min-height: 36px;
+  padding: 0 14px;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  background: #fff;
+  font-size: 14px;
+  color: var(--ink);
+}
+.aspectChips button[aria-expanded='true'] {
+  background: var(--panel-2);
+  border-color: var(--gold);
+  font-weight: 600;
+}
+.aspectText {
+  margin: 8px 0 0;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid var(--line);
+  font-size: 15px;
+}

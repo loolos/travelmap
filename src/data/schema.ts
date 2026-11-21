@@ -60,6 +60,8 @@ export const Place = z.object({
   heroAssetId: z.string().optional(),
   /** Facts may contain up to 3 inline links in the form [text](place:id). */
   facts: z.array(z.string()).default([]),
+  /** Non-history facts (geography, nature, today), shown as icon chips and revealed on tap. */
+  aspects: z.array(z.object({ kind: z.enum(['geo', 'nature', 'today']), text: z.string() })).default([]),
   findItems: z.array(FindItem).default([]),
   /** Practical traveler tips (旅人手記 tab). */
   noteIds: z.array(z.string()).default([]),
