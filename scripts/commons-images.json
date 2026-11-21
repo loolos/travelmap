@@ -1,13 +1,6 @@
 {
-  "_doc": "assetId -> lead image of an English Wikipedia article, or (with `match`) the first .jpg used in that article whose file name matches the regex. Run by .github/workflows/fetch-images.yml.",
+  "_doc": "assetId -> lead image of an English Wikipedia article, or (with `match`) the first .jpg used in that article whose file name matches the regex. Run by .github/workflows/fetch-images.yml. gem-hero stays a hand-made illustration until a good exterior photo is picked by file name.",
   "images": [
-    {
-      "assetId": "gem-hero",
-      "article": "Grand Egyptian Museum",
-      "dest": "media/giza/gem.webp",
-      "alt": "大埃及博物館外觀",
-      "match": "(Grand[ _]Egyptian[ _]Museum|GEM).*\\.jpe?g$"
-    },
     {
       "assetId": "khufu-hero",
       "article": "Great Pyramid of Giza",

@@ -2,11 +2,10 @@
   {
     "id": "gem-hero",
     "path": "media/giza/gem.webp",
-    "alt": "大埃及博物館外觀",
-    "credit": "Fotografía oficial de la Presidencia de Colombia",
-    "license": "Public domain",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Egyptian_President_Abdel_Fattah_al-Sisi_with_representatives_of_foreign_countries_at_the_official_opening_of_the_Grand_Egyptian_Museum.jpg",
-    "kind": "photo",
+    "alt": "大埃及博物館外觀與遠方金字塔的示意圖",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
     "essential": true
   },
   {
