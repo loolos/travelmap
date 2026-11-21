@@ -2,10 +2,11 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import type { Place } from '../data/schema';
 import { activityById, assetById, noteById, regionById, sourceById } from '../data/content';
-import { foundCount, isLit, markOpened, toggleFound, toggleVisited, useProgress } from '../progress/store';
+import { foundCount, isLit, markOpened, toggleVisited, useProgress } from '../progress/store';
 import { Hero } from './Img';
 import { InlineText } from './InlineText';
 import { PriceLine } from './Price';
+import { FindList } from './FindList';
 import styles from './PlacePanel.module.css';
 
 type Tab = 'facts' | 'find' | 'notes';
@@ -152,19 +153,7 @@ export function PlacePanel({ place, wide, state, onExpand, onCollapse, onClose }
 
             {tab === 'find' && (
               <section className={styles.detail} role="tabpanel" aria-label="找找看">
-                <ul className={styles.find}>
-                  {place.findItems.map((f) => {
-                    const on = !!progress.found[f.id];
-                    return (
-                      <li key={f.id}>
-                        <label className={on ? styles.foundOn : undefined}>
-                          <input type="checkbox" checked={on} onChange={() => toggleFound(place, f.id)} />
-                          <span>{f.text}</span>
-                        </label>
-                      </li>
-                    );
-                  })}
-                </ul>
+                <FindList place={place} progress={progress} />
                 <p className={styles.hint}>{lit ? '✨ 全部找到了！地圖上這個點已經亮起。' : '三個都找到，地圖上的這個點會亮起。'}</p>
               </section>
             )}

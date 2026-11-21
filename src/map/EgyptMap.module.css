@@ -145,3 +145,82 @@
   background: var(--lapis);
   color: #fff;
 }
+.coast {
+  fill: none;
+  stroke: #e6f2f2;
+  stroke-width: 7;
+  stroke-opacity: 0.7;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+.graticule {
+  fill: none;
+  stroke: #5f8f99;
+  stroke-opacity: 0.25;
+  stroke-width: 0.8;
+  stroke-dasharray: 2 4;
+  vector-effect: non-scaling-stroke;
+}
+.oasis {
+  fill: var(--green);
+  opacity: 0.85;
+}
+.hill {
+  fill: none;
+  stroke: #9c7d52;
+  stroke-opacity: 0.55;
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+.mapLabel {
+  pointer-events: none;
+  text-anchor: middle;
+  font-family: 'Songti TC', 'Noto Serif TC', Georgia, serif;
+  paint-order: stroke;
+  stroke-linejoin: round;
+}
+.mapLabelEn {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+}
+.ml_sea {
+  fill: #3f7480;
+  font-size: 15px;
+  letter-spacing: 0.4em;
+}
+.ml_region {
+  fill: #8a6b3f;
+  font-size: 15px;
+  letter-spacing: 0.5em;
+  opacity: 0.75;
+}
+.ml_country {
+  fill: #8f8574;
+  font-size: 13px;
+  letter-spacing: 0.3em;
+}
+.ml_river,
+.ml_lake {
+  fill: #2a6a7c;
+  font-size: 12px;
+  font-style: italic;
+  letter-spacing: 0.3em;
+  stroke: rgba(240, 230, 205, 0.8);
+  stroke-width: 3px;
+}
+.compass {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  pointer-events: none;
+  filter: drop-shadow(0 1px 1px rgba(255, 255, 255, 0.8));
+}
+.node polygon,
+.node rect,
+.node circle:not(.hit),
+.node path {
+  filter: drop-shadow(0 1px 1.5px rgba(41, 39, 32, 0.35));
+}

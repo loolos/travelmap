@@ -4,10 +4,15 @@
     "nameZh": "大埃及博物館",
     "nameEn": "Grand Egyptian Museum",
     "shortName": "大埃及博物館",
-    "aliases": ["GEM"],
+    "aliases": [
+      "GEM"
+    ],
     "regionId": "giza",
     "kind": "museum",
-    "coordinates": { "lat": 29.9946, "lon": 31.1193 },
+    "coordinates": {
+      "lat": 29.9946,
+      "lon": 31.1193
+    },
     "onItinerary": true,
     "status": "ready",
     "era": "2025 年全面開館",
@@ -20,12 +25,29 @@
       "大廳中央是一尊約 11 公尺高的拉美西斯二世（Ramesses II）巨像，已有三千多年歷史。"
     ],
     "findItems": [
-      { "id": "gem-ramesses", "text": "大廳裡的拉美西斯二世巨像，比比你和腳趾的大小" },
-      { "id": "gem-staircase", "text": "大階梯兩側排列的法老與神祇雕像" },
-      { "id": "gem-cartouche", "text": "在雕像或石碑上找一個框住法老名字的橢圓王名圈" }
+      {
+        "id": "gem-ramesses",
+        "text": "大廳裡的拉美西斯二世巨像，比比你和腳趾的大小",
+        "hint": "在入口大廳中央，站到他腳邊再抬頭看。"
+      },
+      {
+        "id": "gem-staircase",
+        "text": "大階梯兩側排列的法老與神祇雕像",
+        "hint": "大廳後方往上的寬階梯，兩側一路排著雕像。"
+      },
+      {
+        "id": "gem-cartouche",
+        "text": "在雕像或石碑上找一個框住法老名字的橢圓王名圈",
+        "hint": "橢圓框裡就是法老的名字，常刻在雕像背柱或底座上。"
+      }
     ],
-    "noteIds": ["gem-security", "giza-today"],
-    "sourceIds": ["wiki-gem"]
+    "noteIds": [
+      "gem-security",
+      "giza-today"
+    ],
+    "sourceIds": [
+      "wiki-gem"
+    ]
   },
   {
     "id": "giza-khufu",
@@ -33,10 +55,18 @@
     "nameEn": "Great Pyramid of Khufu",
     "shortName": "胡夫",
     "major": true,
-    "aliases": ["大金字塔", "古夫金字塔", "Cheops", "Great Pyramid"],
+    "aliases": [
+      "大金字塔",
+      "古夫金字塔",
+      "Cheops",
+      "Great Pyramid"
+    ],
     "regionId": "giza",
     "kind": "tomb",
-    "coordinates": { "lat": 29.9792, "lon": 31.1342 },
+    "coordinates": {
+      "lat": 29.9792,
+      "lon": 31.1342
+    },
     "onItinerary": true,
     "status": "ready",
     "era": "古王國第四王朝，約前 26 世紀",
@@ -49,23 +79,54 @@
       "外層原本包著光滑的白色石灰岩，中世紀時大多被拆去建造[開羅](place:cairo)。"
     ],
     "findItems": [
-      { "id": "khufu-casing", "text": "基部少數殘存、表面平滑的外層石" },
-      { "id": "khufu-entrance", "text": "北面高處的原始入口，和下方後來挖的盜洞" },
-      { "id": "khufu-block", "text": "站在一塊基石旁邊，比比它有多高" }
+      {
+        "id": "khufu-casing",
+        "text": "基部少數殘存、表面平滑的外層石",
+        "hint": "走近北面基部，找表面平整、斜面切得特別齊的石塊。"
+      },
+      {
+        "id": "khufu-entrance",
+        "text": "北面高處的原始入口，和下方後來挖的盜洞",
+        "hint": "北面離地十幾公尺處有一組人字形大石樑，下方稍低處是遊客進出的盜洞。"
+      },
+      {
+        "id": "khufu-block",
+        "text": "站在一塊基石旁邊，比比它有多高",
+        "hint": "照片左下角有人，比比看人和石塊的大小。",
+        "spot": {
+          "x": 3.5,
+          "y": 91,
+          "r": 4
+        }
+      }
     ],
-    "noteIds": ["giza-camel", "giza-touts"],
-    "activityIds": ["pyramid-build"],
-    "sourceIds": ["wiki-khufu", "unesco-memphis"]
+    "noteIds": [
+      "giza-camel",
+      "giza-touts"
+    ],
+    "activityIds": [
+      "pyramid-build"
+    ],
+    "sourceIds": [
+      "wiki-khufu",
+      "unesco-memphis"
+    ]
   },
   {
     "id": "giza-khafre",
     "nameZh": "卡夫拉金字塔",
     "nameEn": "Pyramid of Khafre",
     "shortName": "卡夫拉",
-    "aliases": ["哈夫拉金字塔", "Chephren"],
+    "aliases": [
+      "哈夫拉金字塔",
+      "Chephren"
+    ],
     "regionId": "giza",
     "kind": "tomb",
-    "coordinates": { "lat": 29.9761, "lon": 31.1308 },
+    "coordinates": {
+      "lat": 29.9761,
+      "lon": 31.1308
+    },
     "onItinerary": true,
     "status": "ready",
     "era": "古王國第四王朝，約前 26 世紀",
@@ -78,22 +139,51 @@
       "一般認為[人面獅身像](place:giza-sphinx)屬於卡夫拉金字塔的建築群。"
     ],
     "findItems": [
-      { "id": "khafre-cap", "text": "頂端顏色較淺、表面較平滑的外層石" },
-      { "id": "khafre-granite", "text": "底部殘存的一圈粉紅色花崗岩" },
-      { "id": "khafre-compare", "text": "從遠處比較三座金字塔頂點的高低" }
+      {
+        "id": "khafre-cap",
+        "text": "頂端顏色較淺、表面較平滑的外層石",
+        "hint": "抬頭看塔頂，顏色較淺、較平滑的那一段。",
+        "spot": {
+          "x": 47,
+          "y": 16,
+          "r": 8
+        }
+      },
+      {
+        "id": "khafre-granite",
+        "text": "底部殘存的一圈粉紅色花崗岩",
+        "hint": "繞到基部，找顏色偏粉紅、質地較硬的石塊。"
+      },
+      {
+        "id": "khafre-compare",
+        "text": "從遠處比較三座金字塔頂點的高低",
+        "hint": "在全景觀景點最容易比較三座塔頂的高低。"
+      }
     ],
-    "noteIds": ["giza-panorama", "giza-touts"],
-    "sourceIds": ["wiki-khafre", "unesco-memphis"]
+    "noteIds": [
+      "giza-panorama",
+      "giza-touts"
+    ],
+    "sourceIds": [
+      "wiki-khafre",
+      "unesco-memphis"
+    ]
   },
   {
     "id": "giza-menkaure",
     "nameZh": "孟卡拉金字塔",
     "nameEn": "Pyramid of Menkaure",
     "shortName": "孟卡拉",
-    "aliases": ["門卡拉金字塔", "Mycerinus"],
+    "aliases": [
+      "門卡拉金字塔",
+      "Mycerinus"
+    ],
     "regionId": "giza",
     "kind": "tomb",
-    "coordinates": { "lat": 29.9725, "lon": 31.1281 },
+    "coordinates": {
+      "lat": 29.9725,
+      "lon": 31.1281
+    },
     "onItinerary": true,
     "status": "ready",
     "era": "古王國第四王朝，約前 26 世紀",
@@ -106,22 +196,50 @@
       "北面有一道很深的切口，是 12 世紀有人試圖拆除它時留下的。"
     ],
     "findItems": [
-      { "id": "menkaure-granite", "text": "下段表面粗糙的紅色花崗岩外層" },
-      { "id": "menkaure-gash", "text": "北面中間一道直直往下的大切口" },
-      { "id": "menkaure-queens", "text": "南邊並排的三座小型王后金字塔" }
+      {
+        "id": "menkaure-granite",
+        "text": "下段表面粗糙的紅色花崗岩外層",
+        "hint": "看塔身最下段，顏色偏紅、表面粗糙的石塊。"
+      },
+      {
+        "id": "menkaure-gash",
+        "text": "北面中間一道直直往下的大切口",
+        "hint": "站在北面正前方，找中間一道從上往下的凹痕。"
+      },
+      {
+        "id": "menkaure-queens",
+        "text": "南邊並排的三座小型王后金字塔",
+        "hint": "就在孟卡拉旁邊，照片右側那三座小金字塔。",
+        "spot": {
+          "x": 78,
+          "y": 64,
+          "r": 18
+        }
+      }
     ],
-    "noteIds": ["giza-panorama"],
-    "sourceIds": ["wiki-menkaure", "unesco-memphis"]
+    "noteIds": [
+      "giza-panorama"
+    ],
+    "sourceIds": [
+      "wiki-menkaure",
+      "unesco-memphis"
+    ]
   },
   {
     "id": "giza-sphinx",
     "nameZh": "人面獅身像",
     "nameEn": "Great Sphinx of Giza",
     "shortName": "人面獅身",
-    "aliases": ["獅身人面像", "Sphinx"],
+    "aliases": [
+      "獅身人面像",
+      "Sphinx"
+    ],
     "regionId": "giza",
     "kind": "statue",
-    "coordinates": { "lat": 29.9753, "lon": 31.1376 },
+    "coordinates": {
+      "lat": 29.9753,
+      "lon": 31.1376
+    },
     "onItinerary": true,
     "status": "ready",
     "era": "古王國第四王朝，約前 26 世紀",
@@ -134,11 +252,39 @@
       "鼻子在拿破崙到埃及之前就已缺損，「被法軍打掉」的說法並不正確。"
     ],
     "findItems": [
-      { "id": "sphinx-layers", "text": "身體上一層一層、軟硬不同的岩層紋理" },
-      { "id": "sphinx-nose", "text": "臉上鼻子缺損的位置" },
-      { "id": "sphinx-stele", "text": "兩隻前爪之間立著的石碑" }
+      {
+        "id": "sphinx-layers",
+        "text": "身體上一層一層、軟硬不同的岩層紋理",
+        "hint": "看身體側面，一條條凹凸的橫紋就是軟硬不同的岩層。",
+        "spot": {
+          "x": 30,
+          "y": 76,
+          "r": 12
+        }
+      },
+      {
+        "id": "sphinx-nose",
+        "text": "臉上鼻子缺損的位置",
+        "hint": "臉部正中，原本鼻子的位置只剩一塊缺口。",
+        "spot": {
+          "x": 23.5,
+          "y": 39.5,
+          "r": 4
+        }
+      },
+      {
+        "id": "sphinx-stele",
+        "text": "兩隻前爪之間立著的石碑",
+        "hint": "兩隻前爪之間，立著一塊有浮雕的大石板。"
+      }
     ],
-    "noteIds": ["giza-touts", "giza-camel"],
-    "sourceIds": ["wiki-sphinx", "unesco-memphis"]
+    "noteIds": [
+      "giza-touts",
+      "giza-camel"
+    ],
+    "sourceIds": [
+      "wiki-sphinx",
+      "unesco-memphis"
+    ]
   }
 ]
