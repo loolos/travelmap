@@ -52,5 +52,71 @@
       "wiki-geography-egypt"
     ],
     "heroAssetId": "egypt-hero"
+  },
+  {
+    "id": "nile",
+    "nameZh": "尼羅河",
+    "nameEn": "Nile",
+    "shortName": "尼羅河",
+    "aliases": [
+      "Nile River",
+      "River Nile",
+      "尼罗河"
+    ],
+    "major": true,
+    "regionId": "egypt",
+    "kind": "water",
+    "coordinates": {
+      "lat": 27.18,
+      "lon": 31.19
+    },
+    "onItinerary": false,
+    "status": "ready",
+    "question": "沒有尼羅河，就沒有埃及？",
+    "era": "古埃及文明沿著它誕生，約前 3100 年上下埃及統一",
+    "intro": "非洲東北的大河，由南往北縱貫埃及。窄窄的河谷和北邊的三角洲，自古就是整個國家的糧倉。",
+    "facts": [
+      "全長約 6,650 公里，常被列為世界最長的河，由南往北流進地中海。",
+      "上游分成白尼羅河與青尼羅河，每年的氾濫和泥沙多半來自青尼羅河。",
+      "往南靠風、往北順水，試試[風與水流](activity:felucca-wind)；氾濫怎麼被擋下，見[水壩調度](activity:dam-control)。"
+    ],
+    "findItems": [
+      {
+        "id": "nile-green-edge",
+        "text": "河岸綠色田地和黃色沙漠的交界線",
+        "hint": "從船上或高處看，綠色田地常常一下子就變成黃沙。"
+      },
+      {
+        "id": "nile-meter",
+        "text": "一座通到河裡的尼羅河水位計",
+        "hint": "孔翁波神殿和亞斯文象島，都有刻著刻度的階梯井。"
+      },
+      {
+        "id": "nile-hapi",
+        "text": "神殿牆上大肚子、捧著供品的氾濫之神",
+        "hint": "常成排畫在神殿牆腳，頭頂長著紙莎草或蓮花。"
+      }
+    ],
+    "noteIds": [
+      "nile-no-swim",
+      "an-felucca-price"
+    ],
+    "readIds": [
+      "nile-sources",
+      "nile-seasons",
+      "nile-nilometer",
+      "nile-hapi-god",
+      "nile-dam-change"
+    ],
+    "activityIds": [
+      "nile-year"
+    ],
+    "sourceIds": [
+      "wiki-nile",
+      "wiki-nilometer",
+      "wiki-hapi",
+      "wiki-flooding-nile"
+    ],
+    "heroAssetId": "nile-hero"
   }
 ]

@@ -98,6 +98,7 @@ export const noteCollections = [
   { id: 'food', title: '美食圖鑑', icon: '🍽️', kind: 'knowledge' },
   { id: 'culture', title: '城市與文化', icon: '🏙️', kind: 'knowledge' },
   { id: 'country', title: '埃及現況', icon: '🇪🇬', kind: 'knowledge' },
+  { id: 'nile', title: '尼羅河', icon: '🌊', kind: 'knowledge' },
 ] as const;
 
 export const isKnowledge = (regionId: string) =>

@@ -255,6 +255,13 @@
       "article": "Geography of Egypt",
       "dest": "media/egypt/egypt.webp",
       "alt": "埃及衛星影像：尼羅河谷的綠帶穿過沙漠"
+    },
+    {
+      "assetId": "nile-hero",
+      "article": "Nile",
+      "match": "(orbit|satellite|from space|ISS|NASA)",
+      "dest": "media/egypt/nile.webp",
+      "alt": "從太空看尼羅河谷與三角洲的綠帶"
     }
   ]
 }

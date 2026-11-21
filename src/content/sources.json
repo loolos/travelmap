@@ -358,5 +358,20 @@
     "id": "wiki-nile",
     "title": "Wikipedia：Nile",
     "url": "https://en.wikipedia.org/wiki/Nile"
+  },
+  {
+    "id": "wiki-nilometer",
+    "title": "Wikipedia：Nilometer",
+    "url": "https://en.wikipedia.org/wiki/Nilometer"
+  },
+  {
+    "id": "wiki-hapi",
+    "title": "Wikipedia：Hapi (Nile god)",
+    "url": "https://en.wikipedia.org/wiki/Hapi_(Nile_god)"
+  },
+  {
+    "id": "wiki-flooding-nile",
+    "title": "Wikipedia：Flooding of the Nile",
+    "url": "https://en.wikipedia.org/wiki/Flooding_of_the_Nile"
   }
 ]

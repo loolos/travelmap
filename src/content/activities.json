@@ -237,5 +237,20 @@
       "wiki-kv62",
       "wiki-tut-mask"
     ]
+  },
+  {
+    "id": "nile-year",
+    "placeId": "nile",
+    "component": "ParameterLab",
+    "title": "尼羅河的一年",
+    "label": "河的一年",
+    "icon": "🌊",
+    "question": "尼羅河一年裡怎麼變？漲多少水才算好年？",
+    "durationMin": 3,
+    "sourceIds": [
+      "wiki-flooding-nile",
+      "wiki-nilometer",
+      "wiki-aswan-dam"
+    ]
   }
 ]

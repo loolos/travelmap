@@ -10,6 +10,7 @@ import { IdentifyQuiz } from './IdentifyQuiz';
 import { RedSeaLab } from './RedSeaLab';
 import { SphinxEvidence } from './SphinxEvidence';
 import { FeluccaLab } from './FeluccaLab';
+import { NileYearLab } from './NileYearLab';
 import { AbuSimbelMove } from './AbuSimbelMove';
 import { TutDig } from './TutDig';
 
@@ -30,6 +31,7 @@ export const activityComponents: Record<string, ComponentType<{ activityId: stri
   'red-sea-lab': RedSeaLab,
   'sphinx-evidence': SphinxEvidence,
   'felucca-wind': FeluccaLab,
+  'nile-year': NileYearLab,
   'abu-simbel-move': AbuSimbelMove,
   'tut-dig': TutDig,
 };
