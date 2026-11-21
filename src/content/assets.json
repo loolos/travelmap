@@ -47,5 +47,50 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sphinx_with_the_third_pyramid.jpg",
     "kind": "photo",
     "essential": true
+  },
+  {
+    "id": "bahariya-hero",
+    "path": "media/western-desert/bahariya.webp",
+    "alt": "巴哈利亞綠洲的椰棗林與泉水示意圖",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "black-desert-hero",
+    "path": "media/western-desert/black-desert.webp",
+    "alt": "黑沙漠小山示意圖",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "crystal-hero",
+    "path": "media/western-desert/crystal-mountain.webp",
+    "alt": "水晶山與岩石拱門示意圖",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "white-desert-hero",
+    "path": "media/western-desert/white-desert.webp",
+    "alt": "白沙漠蘑菇石示意圖",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "camp-hero",
+    "path": "media/western-desert/camp.webp",
+    "alt": "沙漠營地與星空示意圖",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
   }
 ]

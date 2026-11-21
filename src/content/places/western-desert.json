@@ -1,7 +1,237 @@
 [
-  { "id": "bahariya", "nameZh": "巴哈利亞綠洲", "nameEn": "Bahariya Oasis", "shortName": "巴哈利亞", "major": true, "regionId": "western-desert", "kind": "city", "coordinates": { "lat": 28.35, "lon": 28.86 }, "onItinerary": true, "status": "draft", "question": "沙漠中間為什麼會有綠洲？" },
-  { "id": "black-desert", "nameZh": "黑沙漠", "nameEn": "Black Desert", "regionId": "western-desert", "kind": "geology", "coordinates": { "lat": 28.05, "lon": 28.7 }, "onItinerary": true, "status": "draft", "question": "為什麼沙漠裡的小山頂是黑色的？" },
-  { "id": "crystal-mountain", "nameZh": "水晶山", "nameEn": "Crystal Mountain", "regionId": "western-desert", "kind": "geology", "coordinates": { "lat": 27.66, "lon": 28.43 }, "onItinerary": true, "status": "draft", "question": "這座山的「水晶」是怎麼長出來的？" },
-  { "id": "white-desert", "nameZh": "白沙漠", "nameEn": "White Desert", "major": true, "regionId": "western-desert", "kind": "geology", "coordinates": { "lat": 27.32, "lon": 28.12 }, "onItinerary": true, "status": "draft", "question": "沙漠裡的白色石頭，原本在海底？" },
-  { "id": "desert-camp", "nameZh": "沙漠露營（星空）", "nameEn": "Desert Camp", "shortName": "沙漠露營", "regionId": "western-desert", "kind": "ecology", "coordinates": { "lat": 27.24, "lon": 28.2 }, "onItinerary": true, "status": "draft", "question": "古埃及人看到的星空，和我們一樣嗎？" }
+  {
+    "id": "bahariya",
+    "nameZh": "巴哈利亞綠洲",
+    "nameEn": "Bahariya Oasis",
+    "shortName": "巴哈利亞",
+    "major": true,
+    "regionId": "western-desert",
+    "kind": "city",
+    "coordinates": {
+      "lat": 28.35,
+      "lon": 28.86
+    },
+    "onItinerary": true,
+    "status": "ready",
+    "question": "沙漠中間為什麼會有綠洲？",
+    "era": "綠洲聚落；黃金木乃伊屬希臘羅馬時期",
+    "intro": "西部沙漠中的一大片綠洲，主要城鎮是巴維提（Bawiti），以椰棗、溫泉與黃金木乃伊聞名。",
+    "heroAssetId": "bahariya-hero",
+    "facts": [
+      "巴哈利亞是比周圍沙漠低的大窪地，離開羅約 370 公里。",
+      "地下水來自巨大的努比亞砂岩含水層，從泉眼和水井湧出，灌溉椰棗林。",
+      "1996 年一頭驢子踩空，意外發現了希臘羅馬時期的「黃金木乃伊谷」。"
+    ],
+    "findItems": [
+      {
+        "id": "bahariya-spring",
+        "text": "從泉眼或水管湧出的泉水",
+        "hint": "不少泉水是溫泉，出水口附近常冒著熱氣、長著青苔。"
+      },
+      {
+        "id": "bahariya-palms",
+        "text": "結滿果實的一大片椰棗樹林",
+        "hint": "看樹頂一串串垂下的果實，那就是椰棗。"
+      },
+      {
+        "id": "bahariya-canal",
+        "text": "把水引到田裡的小水渠",
+        "hint": "沿著泉水往下游看，土溝或水泥溝把水分到各塊田。"
+      }
+    ],
+    "noteIds": [
+      "wd-dates",
+      "wd-temperature"
+    ],
+    "sourceIds": [
+      "wiki-bahariya"
+    ]
+  },
+  {
+    "id": "black-desert",
+    "nameZh": "黑沙漠",
+    "nameEn": "Black Desert",
+    "regionId": "western-desert",
+    "kind": "geology",
+    "coordinates": {
+      "lat": 28.05,
+      "lon": 28.7
+    },
+    "onItinerary": true,
+    "status": "ready",
+    "question": "為什麼沙漠裡的小山頂是黑色的？",
+    "intro": "巴哈利亞南邊一片橘褐色的小山，山頂覆蓋著黑色碎石，遠看像一座座小火山。",
+    "heroAssetId": "black-desert-hero",
+    "facts": [
+      "小山本身是橘褐色的岩石，山頂和山坡蓋著一層黑色碎石。",
+      "黑色碎石多是含鐵的岩石與火山岩，風化碎裂後散落在表面。",
+      "風把細沙吹走，較重的黑石留在原地，像給小山蓋了一層殼。"
+    ],
+    "findItems": [
+      {
+        "id": "black-hilltop",
+        "text": "山頂被黑石覆蓋的圓錐小山",
+        "hint": "站遠一點看，整片小山頂都像撒了一層黑芝麻。"
+      },
+      {
+        "id": "black-under",
+        "text": "黑石底下露出的淺色沙土",
+        "hint": "蹲下來看碎石之間的縫隙，顏色和表面完全不同。"
+      },
+      {
+        "id": "black-pavement",
+        "text": "一塊塊排得很密的碎石地面",
+        "hint": "細沙被風吹走後，碎石會像鋪磚一樣緊貼在一起。"
+      }
+    ],
+    "noteIds": [
+      "wd-water",
+      "wd-temperature"
+    ],
+    "sourceIds": [
+      "wiki-black-desert"
+    ]
+  },
+  {
+    "id": "crystal-mountain",
+    "nameZh": "水晶山",
+    "nameEn": "Crystal Mountain",
+    "regionId": "western-desert",
+    "kind": "geology",
+    "coordinates": {
+      "lat": 27.66,
+      "lon": 28.43
+    },
+    "onItinerary": true,
+    "status": "ready",
+    "question": "這座山的「水晶」是怎麼長出來的？",
+    "intro": "位於巴哈利亞和法拉夫拉（Farafra）之間的小山脊，岩石裡夾滿閃閃發亮的晶體。",
+    "heroAssetId": "crystal-hero",
+    "facts": [
+      "小山脊的岩石裡夾著大量透明、會反光的晶體，一般說是石英。",
+      "晶體多半是含礦物的熱水沿岩石裂縫流動，慢慢沉澱長出來的。",
+      "山脊上有一個天然的岩石拱門，是很受歡迎的拍照點。"
+    ],
+    "findItems": [
+      {
+        "id": "crystal-shape",
+        "text": "一顆有尖角或平整面的晶體",
+        "hint": "晶體常長成柱狀或塊狀，面是平的、邊是直的。"
+      },
+      {
+        "id": "crystal-light",
+        "text": "對著陽光會透光、閃亮的晶體",
+        "hint": "轉個角度讓陽光照在上面，透明的晶體會亮起來。"
+      },
+      {
+        "id": "crystal-arch",
+        "text": "山脊上的天然岩石拱門",
+        "hint": "沿著山脊走，找一個中間空心、可以穿過視線的石拱。"
+      }
+    ],
+    "noteIds": [
+      "wd-no-collect",
+      "wd-water"
+    ],
+    "sourceIds": [
+      "wiki-crystal-mountain"
+    ]
+  },
+  {
+    "id": "white-desert",
+    "nameZh": "白沙漠",
+    "nameEn": "White Desert",
+    "major": true,
+    "regionId": "western-desert",
+    "kind": "geology",
+    "coordinates": {
+      "lat": 27.32,
+      "lon": 28.12
+    },
+    "onItinerary": true,
+    "status": "ready",
+    "question": "沙漠裡的白色石頭，原本在海底？",
+    "era": "岩石形成於數千萬年前的白堊紀",
+    "intro": "法拉夫拉附近的白色岩石荒原，2002 年劃為國家公園，以被風雕成蘑菇形狀的白堊岩聞名。",
+    "heroAssetId": "white-desert-hero",
+    "facts": [
+      "白色岩石是白堊，由古海洋裡無數微小生物的殼沉積而成。",
+      "風夾帶沙粒磨蝕岩石，底部磨得比較快，形成蘑菇般的造型。",
+      "2002 年劃為國家公園，地上還能看到貝殼等海洋生物化石。"
+    ],
+    "findItems": [
+      {
+        "id": "white-foot",
+        "text": "蘑菇石底下被磨細的「腳」",
+        "hint": "貼近地面的部分被風沙磨得最多，所以上粗下細。"
+      },
+      {
+        "id": "white-layers",
+        "text": "岩石上一條條的水平層理",
+        "hint": "看岩石側面，一層層橫紋就是不同時期沉積下來的。"
+      },
+      {
+        "id": "white-fossil",
+        "text": "一個貝殼或海洋生物的化石",
+        "hint": "低頭看地面和岩石表面，找螺旋或貝殼形狀；只看不帶走。"
+      }
+    ],
+    "noteIds": [
+      "wd-no-collect",
+      "wd-temperature"
+    ],
+    "sourceIds": [
+      "wiki-white-desert"
+    ],
+    "activityIds": [
+      "white-desert-story"
+    ]
+  },
+  {
+    "id": "desert-camp",
+    "nameZh": "沙漠露營（星空）",
+    "nameEn": "Desert Camp",
+    "shortName": "沙漠露營",
+    "regionId": "western-desert",
+    "kind": "ecology",
+    "coordinates": {
+      "lat": 27.24,
+      "lon": 28.2
+    },
+    "onItinerary": true,
+    "status": "ready",
+    "question": "古埃及人看到的星空，和我們一樣嗎？",
+    "intro": "在遠離城市燈光的沙漠過夜，是看星空的好機會，也能想像古埃及人怎麼看天。",
+    "heroAssetId": "camp-hero",
+    "facts": [
+      "古埃及人把天狼星（Sirius）在黎明前重新出現，當作氾濫季與新年的開始。",
+      "大金字塔的四面幾乎正對東南西北，一般認為是觀察天體定出的方向。",
+      "沙漠沒有光害，晴朗無月的夜晚肉眼就能看見銀河。"
+    ],
+    "findItems": [
+      {
+        "id": "camp-milkyway",
+        "text": "橫跨天空的淡白色銀河",
+        "hint": "等眼睛適應黑暗 15 分鐘，關掉手電筒再抬頭看。"
+      },
+      {
+        "id": "camp-sirius",
+        "text": "全天最亮的恆星天狼星",
+        "hint": "先找到獵戶座腰上的三顆星，順著往左下延伸就是它。"
+      },
+      {
+        "id": "camp-north",
+        "text": "指向正北的北極星",
+        "hint": "從北斗七星斗口的兩顆星往外延伸約五倍距離。"
+      }
+    ],
+    "noteIds": [
+      "wd-night",
+      "wd-temperature"
+    ],
+    "sourceIds": [
+      "wiki-sirius",
+      "wiki-khufu"
+    ]
+  }
 ]

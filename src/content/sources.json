@@ -33,5 +33,30 @@
     "id": "wiki-merer",
     "title": "Wikipedia：Diary of Merer",
     "url": "https://en.wikipedia.org/wiki/Diary_of_Merer"
+  },
+  {
+    "id": "wiki-bahariya",
+    "title": "Wikipedia：Bahariya Oasis",
+    "url": "https://en.wikipedia.org/wiki/Bahariya_Oasis"
+  },
+  {
+    "id": "wiki-black-desert",
+    "title": "Wikipedia：Black Desert (Egypt)",
+    "url": "https://en.wikipedia.org/wiki/Black_Desert_(Egypt)"
+  },
+  {
+    "id": "wiki-crystal-mountain",
+    "title": "Wikipedia：Crystal Mountain (Egypt)",
+    "url": "https://en.wikipedia.org/wiki/Crystal_Mountain_(Egypt)"
+  },
+  {
+    "id": "wiki-white-desert",
+    "title": "Wikipedia：White Desert National Park",
+    "url": "https://en.wikipedia.org/wiki/White_Desert_National_Park"
+  },
+  {
+    "id": "wiki-sirius",
+    "title": "Wikipedia：Sirius",
+    "url": "https://en.wikipedia.org/wiki/Sirius"
   }
 ]
