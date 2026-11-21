@@ -79,17 +79,41 @@ test('find-it checklist lights up the place and persists', async ({ page }) => {
   await expect(page.getByRole('link', { name: '孟卡拉金字塔' })).toBeVisible();
 });
 
-test('pyramid-build flagship: adjust, see bottleneck, explanation, reset', async ({ page }) => {
+test('pyramid-build flagship replays the construction step by step', async ({ page }) => {
   await page.goto('./#/place/giza-khufu');
   await page.getByRole('link', { name: /建造金字塔/ }).click();
+  const next = page.getByRole('button', { name: /下一步/ });
+  await expect(next).toBeDisabled();
+  // 1. orient to north
+  await page.getByRole('slider', { name: '地基方向' }).fill('0');
+  await expect(page.getByText('對準了')).toBeVisible();
+  await next.click();
+  // 2. level the base with water
+  for (const t of ['挖水道、灌水', '沿水面畫線', '鑿到線的高度']) await page.getByRole('button', { name: new RegExp(t) }).click();
+  await expect(page.getByText('高低差只有約 2 公分', { exact: false })).toBeVisible();
+  await next.click();
+  // 3. dig the descending passage
+  for (let i = 0; i < 5; i++) await page.getByRole('button', { name: /往下挖/ }).click();
+  await expect(page.getByText('沒完成的地下墓室')).toBeVisible();
+  await next.click();
+  // 4. worker bottleneck
   await expect(page.getByText('最慢的環節')).toBeVisible();
   const quarry = page.getByRole('slider', { name: '採石人力' });
   await quarry.focus();
   for (let i = 0; i < 15; i++) await quarry.press('ArrowRight');
-  await page.getByRole('button', { name: '看解釋' }).click();
-  await expect(page.getByText('遊戲假設')).toBeVisible();
-  await page.getByRole('button', { name: '重來' }).click();
+  await page.getByRole('button', { name: '重設人力' }).click();
   await expect(page.getByText('30.7 年')).toBeVisible();
+  await page.getByRole('button', { name: '我找到瓶頸了' }).click();
+  await next.click();
+  // 5. ramp theories
+  await page.getByRole('button', { name: '繞行坡道' }).click();
+  await expect(page.getByText('哈特努布', { exact: false })).toBeVisible();
+  await next.click();
+  // 6. casing and capstone
+  await page.getByRole('button', { name: /鋪上白色外層石/ }).click();
+  await page.getByRole('button', { name: /放上頂石/ }).click();
+  await page.getByRole('button', { name: '看完整解釋' }).click();
+  await expect(page.getByText('證據等級')).toBeVisible();
 });
 
 test('find-it hint shows text and a circled spot on the photo', async ({ page }) => {
