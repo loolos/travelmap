@@ -1,0 +1,5 @@
+[
+  { "id": "cairo", "nameZh": "開羅", "nameEn": "Cairo", "major": true, "regionId": "cairo", "kind": "city", "coordinates": { "lat": 30.0444, "lon": 31.2357 }, "onItinerary": true, "status": "draft", "question": "金字塔的國家，首都為什麼叫「勝利之城」？" },
+  { "id": "citadel", "nameZh": "薩拉丁城堡", "nameEn": "Citadel of Saladin", "shortName": "城堡", "aliases": ["開羅城堡"], "regionId": "cairo", "kind": "fortress", "coordinates": { "lat": 30.0299, "lon": 31.2611 }, "onItinerary": true, "status": "draft", "question": "薩拉丁為什麼把城堡蓋在山丘上？" },
+  { "id": "muhammad-ali-mosque", "nameZh": "穆罕默德·阿里清真寺", "nameEn": "Mosque of Muhammad Ali", "shortName": "清真寺", "aliases": ["雪花石膏清真寺", "Alabaster Mosque"], "parentId": "citadel", "regionId": "cairo", "kind": "mosque", "coordinates": { "lat": 30.0287, "lon": 31.2599 }, "onItinerary": true, "status": "draft", "question": "這座清真寺為什麼長得像伊斯坦堡的清真寺？" }
+]

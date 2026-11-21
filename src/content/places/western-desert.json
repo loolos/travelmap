@@ -1,0 +1,7 @@
+[
+  { "id": "bahariya", "nameZh": "巴哈利亞綠洲", "nameEn": "Bahariya Oasis", "shortName": "巴哈利亞", "major": true, "regionId": "western-desert", "kind": "city", "coordinates": { "lat": 28.35, "lon": 28.86 }, "onItinerary": true, "status": "draft", "question": "沙漠中間為什麼會有綠洲？" },
+  { "id": "black-desert", "nameZh": "黑沙漠", "nameEn": "Black Desert", "regionId": "western-desert", "kind": "geology", "coordinates": { "lat": 28.05, "lon": 28.7 }, "onItinerary": true, "status": "draft", "question": "為什麼沙漠裡的小山頂是黑色的？" },
+  { "id": "crystal-mountain", "nameZh": "水晶山", "nameEn": "Crystal Mountain", "regionId": "western-desert", "kind": "geology", "coordinates": { "lat": 27.66, "lon": 28.43 }, "onItinerary": true, "status": "draft", "question": "這座山的「水晶」是怎麼長出來的？" },
+  { "id": "white-desert", "nameZh": "白沙漠", "nameEn": "White Desert", "major": true, "regionId": "western-desert", "kind": "geology", "coordinates": { "lat": 27.32, "lon": 28.12 }, "onItinerary": true, "status": "draft", "question": "沙漠裡的白色石頭，原本在海底？" },
+  { "id": "desert-camp", "nameZh": "沙漠露營（星空）", "nameEn": "Desert Camp", "shortName": "沙漠露營", "regionId": "western-desert", "kind": "ecology", "coordinates": { "lat": 27.24, "lon": 28.2 }, "onItinerary": true, "status": "draft", "question": "古埃及人看到的星空，和我們一樣嗎？" }
+]

@@ -1,0 +1,8 @@
+[
+  { "id": "luxor", "nameZh": "路克索", "nameEn": "Luxor", "major": true, "aliases": ["樂蜀", "底比斯", "Thebes"], "regionId": "luxor", "kind": "city", "coordinates": { "lat": 25.6872, "lon": 32.6396 }, "onItinerary": true, "status": "draft", "question": "為什麼神殿在東岸、陵墓在西岸？" },
+  { "id": "valley-of-the-kings", "nameZh": "帝王谷", "nameEn": "Valley of the Kings", "regionId": "luxor", "kind": "tomb", "coordinates": { "lat": 25.7402, "lon": 32.6014 }, "onItinerary": true, "status": "draft", "question": "法老為什麼不再蓋金字塔？" },
+  { "id": "tutankhamun-tomb", "nameZh": "圖坦卡門墓", "nameEn": "Tomb of Tutankhamun", "shortName": "圖坦卡門墓", "parentId": "valley-of-the-kings", "regionId": "luxor", "kind": "tomb", "coordinates": { "lat": 25.7403, "lon": 32.6016 }, "onItinerary": true, "status": "draft", "question": "一位年輕法老，為什麼成了最有名的法老？" },
+  { "id": "colossi-of-memnon", "nameZh": "曼儂巨像", "nameEn": "Colossi of Memnon", "aliases": ["門農巨像"], "regionId": "luxor", "kind": "statue", "coordinates": { "lat": 25.7206, "lon": 32.6104 }, "onItinerary": true, "status": "draft", "question": "古羅馬人為什麼說這座雕像會唱歌？" },
+  { "id": "luxor-temple", "nameZh": "路克索神殿", "nameEn": "Luxor Temple", "regionId": "luxor", "kind": "temple", "coordinates": { "lat": 25.6995, "lon": 32.6391 }, "onItinerary": true, "status": "draft", "question": "這座神殿是為了哪一場節慶而建？" },
+  { "id": "karnak", "nameZh": "卡納克神殿", "nameEn": "Karnak Temple", "shortName": "卡納克", "regionId": "luxor", "kind": "temple", "coordinates": { "lat": 25.7188, "lon": 32.6573 }, "onItinerary": true, "status": "draft", "question": "一座神殿為什麼蓋了兩千年？" }
+]

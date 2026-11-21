@@ -1,0 +1,10 @@
+[
+  { "id": "aswan", "nameZh": "亞斯文", "nameEn": "Aswan", "major": true, "regionId": "aswan-nile", "kind": "city", "coordinates": { "lat": 24.0889, "lon": 32.8998 }, "onItinerary": true, "status": "draft", "question": "亞斯文為什麼和開羅很不一樣？" },
+  { "id": "aswan-high-dam", "nameZh": "亞斯文大水壩", "nameEn": "Aswan High Dam", "shortName": "大水壩", "regionId": "aswan-nile", "kind": "water", "coordinates": { "lat": 23.9708, "lon": 32.8775 }, "onItinerary": true, "status": "draft", "question": "擋住尼羅河的洪水，是好事還是壞事？" },
+  { "id": "felucca", "nameZh": "三角風帆船", "nameEn": "Felucca", "shortName": "風帆船", "regionId": "aswan-nile", "kind": "water", "coordinates": { "lat": 24.096, "lon": 32.886 }, "onItinerary": true, "status": "draft", "question": "不用引擎，船怎麼逆流而上？" },
+  { "id": "abu-simbel", "nameZh": "阿布辛貝神殿", "nameEn": "Abu Simbel", "shortName": "阿布辛貝", "aliases": ["阿布辛拜勒"], "major": true, "regionId": "aswan-nile", "kind": "temple", "coordinates": { "lat": 22.3372, "lon": 31.6258 }, "onItinerary": true, "status": "draft", "question": "一整座山裡的神殿，怎麼搬家？" },
+  { "id": "kom-ombo", "nameZh": "孔翁波神殿", "nameEn": "Temple of Kom Ombo", "shortName": "孔翁波", "aliases": ["康翁波"], "regionId": "aswan-nile", "kind": "temple", "coordinates": { "lat": 24.452, "lon": 32.9283 }, "onItinerary": true, "status": "draft", "question": "為什麼一座神殿有兩個主人？" },
+  { "id": "crocodile-museum", "nameZh": "鱷魚木乃伊博物館", "nameEn": "Crocodile Museum", "shortName": "鱷魚博物館", "regionId": "aswan-nile", "kind": "museum", "coordinates": { "lat": 24.4513, "lon": 32.9277 }, "onItinerary": true, "status": "draft", "question": "古埃及人為什麼要把鱷魚做成木乃伊？" },
+  { "id": "edfu", "nameZh": "艾德夫神殿", "nameEn": "Temple of Edfu", "shortName": "艾德夫", "aliases": ["埃德夫"], "regionId": "aswan-nile", "kind": "temple", "coordinates": { "lat": 24.9779, "lon": 32.8733 }, "onItinerary": true, "status": "draft", "question": "荷魯斯和賽特為什麼要打仗？" },
+  { "id": "esna-lock", "nameZh": "伊斯納水閘", "nameEn": "Esna Lock", "shortName": "伊斯納", "regionId": "aswan-nile", "kind": "water", "coordinates": { "lat": 25.31, "lon": 32.56 }, "onItinerary": true, "status": "draft", "question": "船要怎麼爬上一段「水的樓梯」？" }
+]

@@ -1,0 +1,8 @@
+[
+  { "id": "giza", "nameZh": "吉薩", "nameEn": "Giza", "order": 1 },
+  { "id": "western-desert", "nameZh": "西部沙漠", "nameEn": "Western Desert", "order": 2 },
+  { "id": "aswan-nile", "nameZh": "亞斯文與尼羅河", "nameEn": "Aswan & the Nile", "order": 3 },
+  { "id": "luxor", "nameZh": "路克索", "nameEn": "Luxor", "order": 4 },
+  { "id": "red-sea", "nameZh": "紅海", "nameEn": "Red Sea", "order": 5 },
+  { "id": "cairo", "nameZh": "開羅", "nameEn": "Cairo", "order": 6 }
+]

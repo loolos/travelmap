@@ -1,0 +1,147 @@
+.wrap {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  touch-action: none;
+}
+.svg {
+  display: block;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.svg:active {
+  cursor: grabbing;
+}
+.sea {
+  fill: var(--sea);
+}
+.egypt {
+  fill: var(--land);
+  stroke: #b79f73;
+  stroke-width: 1.2;
+  vector-effect: non-scaling-stroke;
+}
+.neighbour {
+  fill: var(--land-other);
+  stroke: #cdbf9f;
+  stroke-width: 0.8;
+  vector-effect: non-scaling-stroke;
+}
+.delta {
+  fill: var(--green);
+  opacity: 0.75;
+}
+.valley {
+  fill: none;
+  stroke: var(--green);
+  stroke-width: 9;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+  opacity: 0.8;
+}
+.nile {
+  fill: none;
+  stroke: var(--nile);
+  stroke-width: 2.4;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+}
+.lake {
+  fill: var(--nile);
+  opacity: 0.85;
+}
+.seaLabel {
+  fill: #4d7f8b;
+  font-size: 13px;
+  letter-spacing: 0.3em;
+  font-style: italic;
+  pointer-events: none;
+}
+.node,
+.cluster {
+  cursor: pointer;
+  outline: none;
+}
+.node:focus-visible .hit,
+.cluster:focus-visible circle {
+  stroke: var(--lapis);
+  stroke-width: 3;
+}
+.hit {
+  fill: transparent;
+}
+.label {
+  font-size: 12.5px;
+  font-weight: 600;
+  fill: var(--ink);
+  paint-order: stroke;
+  stroke: rgba(255, 250, 238, 0.92);
+  stroke-width: 3.5px;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+.leader {
+  stroke: var(--ink);
+  stroke-opacity: 0.45;
+  stroke-width: 1;
+}
+.anchor {
+  fill: var(--ink);
+  opacity: 0.6;
+}
+.clusterDot {
+  fill: var(--lapis);
+  stroke: #fff;
+  stroke-width: 2;
+}
+.clusterLit {
+  fill: var(--lapis);
+  stroke: #f2c14e;
+  stroke-width: 3;
+}
+.clusterCount {
+  fill: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  text-anchor: middle;
+  pointer-events: none;
+}
+.glow {
+  fill: #f2c14e;
+  opacity: 0.45;
+}
+.selectedRing {
+  fill: none;
+  stroke: var(--lapis);
+  stroke-width: 2.5;
+}
+.itinerary {
+  fill: none;
+  stroke: #f2c14e;
+  stroke-width: 2;
+  stroke-dasharray: 3 2;
+}
+.controls {
+  position: absolute;
+  left: 12px;
+  display: flex;
+  gap: 8px;
+  transition: bottom 0.2s;
+}
+.controls button {
+  min-height: 40px;
+  padding: 0 12px;
+  border-radius: 20px;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--ink);
+  font-size: 14px;
+  box-shadow: var(--shadow);
+}
+.controls button[aria-pressed='true'] {
+  background: var(--lapis);
+  color: #fff;
+}

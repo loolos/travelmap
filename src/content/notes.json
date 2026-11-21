@@ -1,0 +1,7 @@
+[
+  { "id": "giza-camel", "regionId": "giza", "icon": "🐪", "title": "騎駱駝、搭馬車", "body": "上去之前先講好總價、路線、時間，以及是否另收小費；說清楚幣別，最好請對方覆述一次。" },
+  { "id": "giza-touts", "regionId": "giza", "icon": "🙅", "title": "熱情的「幫忙」", "body": "主動遞東西、幫你拍照或幫你戴頭巾的人，事後常會要錢。不需要就微笑、明確說「不用了，謝謝」（La, shukran）。" },
+  { "id": "giza-panorama", "regionId": "giza", "icon": "📸", "title": "三座同框", "body": "想拍三座金字塔同框，可到高原西南側的全景觀景點（Panorama）。這裡也是駱駝與攤販聚集的地方。" },
+  { "id": "gem-security", "regionId": "giza", "icon": "🛂", "title": "博物館安檢", "body": "入口有類似機場的安檢。各展區的攝影規定可能不同，以現場標示為準；閃光燈一般不建議使用。" },
+  { "id": "giza-today", "regionId": "giza", "icon": "🏙️", "title": "今天的吉薩", "body": "吉薩（Giza）今天是大開羅都會區的一部分，金字塔高原旁邊就是熱鬧的住宅區與道路。" }
+]

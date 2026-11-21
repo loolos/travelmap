@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6d9a3"/><stop offset="1" stop-color="#e9b77a"/></linearGradient>
+<linearGradient id="sand" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9b57c"/><stop offset="1" stop-color="#c49a5e"/></linearGradient>
+<linearGradient id="lit" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e8cf9c"/><stop offset="1" stop-color="#d4b07a"/></linearGradient>
+<linearGradient id="shade" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#b08a58"/><stop offset="1" stop-color="#9c7748"/></linearGradient></defs>
+<rect width="1200" height="750" fill="url(#sky)"/>
+<circle cx="980" cy="150" r="60" fill="#fff4d6" opacity=".9"/>
+<rect y="560" width="1200" height="190" fill="url(#sand)"/>
+<polygon points="850.0,560 980,410 1011.2,560" fill="url(#lit)"/><polygon points="1011.2,560 980,410 1110.0,560" fill="url(#shade)"/><polygon points="1025.0,560 1130,440 1155.2,560" fill="url(#lit)"/><polygon points="1155.2,560 1130,440 1235.0,560" fill="url(#shade)"/><polygon points="80,620 700,620 700,430 80,560" fill="#efe4cf"/><polygon points="80,560 700,430 700,445 80,575" fill="#cdbb98"/><g fill="#bfae8b"><polygon points="100,612 130,566.0 160,612" opacity=".55"/><polygon points="170,612 200,552.0 230,612" opacity=".55"/><polygon points="240,612 270,538.0 300,612" opacity=".55"/><polygon points="310,612 340,524.0 370,612" opacity=".55"/><polygon points="380,612 410,510.0 440,612" opacity=".55"/><polygon points="450,612 480,496.0 510,612" opacity=".55"/><polygon points="520,612 550,482.0 580,612" opacity=".55"/><polygon points="590,612 620,468.0 650,612" opacity=".55"/></g><rect x="80" y="600" width="620" height="20" fill="#d8c8a6"/><g fill="#3b2f22"><rect x="300" y="600" width="6" height="18" rx="3"/><rect x="312" y="600" width="6" height="18" rx="3"/><rect x="640" y="600" width="6" height="18" rx="3"/><rect x="655" y="600" width="6" height="18" rx="3"/><rect x="820" y="600" width="6" height="18" rx="3"/></g>
+</svg>

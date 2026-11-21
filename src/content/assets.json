@@ -1,0 +1,47 @@
+[
+  {
+    "id": "gem-hero",
+    "path": "media/giza/gem.webp",
+    "alt": "大埃及博物館外觀與遠方金字塔的示意圖",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "khufu-hero",
+    "path": "media/giza/khufu.webp",
+    "alt": "胡夫金字塔的示意圖",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "khafre-hero",
+    "path": "media/giza/khafre.webp",
+    "alt": "頂端保留外層石的卡夫拉金字塔示意圖",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "menkaure-hero",
+    "path": "media/giza/menkaure.webp",
+    "alt": "下段為紅色花崗岩的孟卡拉金字塔示意圖",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "sphinx-hero",
+    "path": "media/giza/sphinx.webp",
+    "alt": "人面獅身像與後方金字塔的示意圖",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  }
+]
