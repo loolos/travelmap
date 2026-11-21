@@ -7,6 +7,7 @@ import { placeById } from '../data/content';
 import { useMediaQuery } from './useMediaQuery';
 import { NotesPage } from '../pages/NotesPage';
 import { JournalPage } from '../pages/JournalPage';
+import { PrepPage } from '../pages/PrepPage';
 import { DeitiesPage } from '../pages/DeitiesPage';
 import { GlyphsPage } from '../pages/GlyphsPage';
 import { TimelinePage } from '../pages/TimelinePage';
@@ -112,6 +113,14 @@ export function App() {
             element={
               <Sheet title="埃及歷史時間線">
                 <TimelinePage />
+              </Sheet>
+            }
+          />
+          <Route
+            path="/prep"
+            element={
+              <Sheet title="行前準備">
+                <PrepPage />
               </Sheet>
             }
           />
