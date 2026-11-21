@@ -54,6 +54,7 @@
       { "id": "khufu-block", "text": "站在一塊基石旁邊，比比它有多高" }
     ],
     "noteIds": ["giza-camel", "giza-touts"],
+    "activityIds": ["pyramid-build"],
     "sourceIds": ["wiki-khufu", "unesco-memphis"]
   },
   {

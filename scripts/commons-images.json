@@ -1,0 +1,10 @@
+{
+  "_doc": "assetId -> English Wikipedia article whose lead image (from Wikimedia Commons) becomes the hero. Run by .github/workflows/fetch-images.yml.",
+  "images": [
+    { "assetId": "gem-hero", "article": "Grand Egyptian Museum", "dest": "media/giza/gem.webp", "alt": "大埃及博物館" },
+    { "assetId": "khufu-hero", "article": "Great Pyramid of Giza", "dest": "media/giza/khufu.webp", "alt": "胡夫金字塔" },
+    { "assetId": "khafre-hero", "article": "Pyramid of Khafre", "dest": "media/giza/khafre.webp", "alt": "卡夫拉金字塔，頂端仍保留外層石" },
+    { "assetId": "menkaure-hero", "article": "Pyramid of Menkaure", "dest": "media/giza/menkaure.webp", "alt": "孟卡拉金字塔" },
+    { "assetId": "sphinx-hero", "article": "Great Sphinx of Giza", "dest": "media/giza/sphinx.webp", "alt": "人面獅身像" }
+  ]
+}

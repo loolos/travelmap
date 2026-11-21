@@ -1,0 +1,130 @@
+.lab {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.question {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--lapis);
+}
+.how {
+  margin: 0;
+  font-size: 14px;
+  color: var(--muted);
+}
+.visual {
+  width: 100%;
+  max-height: 180px;
+  border-radius: 12px;
+  background: linear-gradient(#f6dfb0, #eed2a0 70%, #d9b57c 70%);
+}
+.sliders {
+  display: grid;
+  gap: 6px;
+}
+.slider {
+  display: grid;
+  grid-template-columns: 3.2em 1fr 5.2em;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+}
+.slider input {
+  width: 100%;
+  accent-color: var(--lapis);
+  height: 28px;
+}
+.slider output {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  font-size: 14px;
+}
+.bottleneck {
+  color: #a33b2f;
+  font-weight: 700;
+}
+.meters {
+  display: grid;
+  gap: 4px;
+}
+.meter {
+  display: grid;
+  grid-template-columns: 3.2em 1fr;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+}
+.meter > div {
+  height: 10px;
+  border-radius: 5px;
+  background: var(--panel-2);
+  overflow: hidden;
+}
+.meter > div > div {
+  height: 100%;
+  background: var(--nile);
+}
+.meter.slow > div > div {
+  background: #a33b2f;
+}
+.result {
+  display: flex;
+  gap: 8px;
+}
+.result > div {
+  flex: 1;
+  padding: 10px;
+  border-radius: 12px;
+  background: var(--panel-2);
+  text-align: center;
+}
+.result strong.bottleneck {
+  color: #a33b2f;
+}
+.result strong {
+  display: block;
+  font-size: 22px;
+  color: var(--lapis);
+  font-variant-numeric: tabular-nums;
+}
+.result span {
+  font-size: 12px;
+  color: var(--muted);
+}
+.explain {
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: #eef4f6;
+  font-size: 15px;
+}
+.explain p {
+  margin: 0 0 8px;
+}
+.tag {
+  display: inline-block;
+  padding: 1px 8px;
+  border-radius: 8px;
+  background: #f2c14e44;
+  font-size: 12px;
+  color: #6b5a3a;
+}
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.actions button {
+  min-height: 44px;
+  padding: 0 16px;
+  border-radius: 22px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+.actions .primary {
+  background: var(--lapis);
+  border-color: var(--lapis);
+  color: #fff;
+  font-weight: 600;
+}

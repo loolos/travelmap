@@ -1,0 +1,31 @@
+name: Fetch Commons images
+
+# Runs when the image list changes on a working branch, and commits the
+# downloaded WebP files + credits back to that branch.
+on:
+  push:
+    branches-ignore: [main]
+    paths: [scripts/commons-images.json, scripts/fetch-commons.ts]
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx tsx scripts/fetch-commons.ts
+      - run: npm run validate
+      - name: Commit images
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/media src/content/assets.json
+          git diff --cached --quiet || git commit -m "Fetch hero images from Wikimedia Commons"
+          git push
