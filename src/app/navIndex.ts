@@ -128,6 +128,7 @@ export function buildNavIndex(): NavGroup[] {
     sections: [
       {
         items: [
+          { id: 'prep', to: '/prep', label: '行前準備', terms: ['prep', 'packing', 'visa', '簽證', '行李', '清單', '準備'], icon: '✅' },
           { id: 'journal', to: '/journal', label: '探索日誌', terms: ['journal', '進度', '到訪'], icon: '📔' },
           { id: 'offline', to: '/offline', label: '離線下載', terms: ['offline', '下載', '設定'], icon: '📥' },
         ],
