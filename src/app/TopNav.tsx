@@ -12,23 +12,35 @@ const pageTitles: Record<string, string> = {
   '/deities': '神祇圖鑑',
 };
 
-function useBreadcrumb(): string[] {
+interface Crumb {
+  label: string;
+  /** Where tapping goes; the last crumb (current page) has none. */
+  to?: string;
+}
+
+/** 地區 › 地點 › 互動; every level but the current one is a link. */
+function useBreadcrumb(): Crumb[] {
   const loc = useLocation();
   const place = useMatch('/place/:id/*');
   const act = useMatch('/place/:id/:activity');
+  const region = useMatch('/map/:regionId');
   if (place) {
     const p = placeById.get(place.params.id!);
     if (p) {
-      const crumbs = [regionById.get(p.regionId)?.nameZh ?? '', p.nameZh];
       const a = act && activityById.get(act.params.activity!);
-      if (a) crumbs.push(a.label);
+      const crumbs: Crumb[] = [
+        { label: regionById.get(p.regionId)?.nameZh ?? '', to: p.kind === 'country' ? '/map' : `/map/${p.regionId}` },
+        { label: p.nameZh, to: a ? `/place/${p.id}` : undefined },
+      ];
+      if (a) crumbs.push({ label: a.label });
       return crumbs;
     }
   }
-  if (loc.pathname.startsWith('/notes')) return ['旅人手記'];
-  if (loc.pathname.startsWith('/knowledge')) return ['知識卡'];
-  if (loc.pathname.startsWith('/timeline')) return ['埃及歷史時間線'];
-  return [pageTitles[loc.pathname] ?? '埃及探索'];
+  if (region) return [{ label: regionById.get(region.params.regionId!)?.nameZh ?? '埃及探索' }];
+  if (loc.pathname.startsWith('/notes')) return [{ label: '旅人手記' }];
+  if (loc.pathname.startsWith('/knowledge')) return [{ label: '知識卡' }];
+  if (loc.pathname.startsWith('/timeline')) return [{ label: '埃及歷史時間線' }];
+  return [{ label: pageTitles[loc.pathname] ?? '埃及探索' }];
 }
 
 export function TopNav() {
@@ -38,6 +50,11 @@ export function TopNav() {
   const [openGroups, setOpenGroups] = useState<Set<string>>(() => new Set());
   const crumbs = useBreadcrumb();
   const navigate = useNavigate();
+  // The whole-map links also reset the zoom, even when already on /map.
+  const toWholeMap = (e: React.MouseEvent) => {
+    e.preventDefault();
+    navigate('/map', { state: { reset: Date.now() } });
+  };
   const loc = useLocation();
   const groups = useMemo(() => buildNavIndex(), []);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -75,14 +92,26 @@ export function TopNav() {
 
   return (
     <header className={styles.bar}>
-      <Link to="/map" className={styles.home} aria-label="回到地圖">
+      <Link to="/map" onClick={toWholeMap} className={styles.home} aria-label="回到埃及全境地圖">
         <img src={`${import.meta.env.BASE_URL}icons/icon.svg`} alt="" width={28} height={28} />
       </Link>
       <nav className={styles.crumbs} aria-label="目前位置">
         {crumbs.map((c, i) => (
-          <span key={i} className={i === crumbs.length - 1 ? styles.current : undefined}>
-            {i > 0 && <span className={styles.sep}>›</span>}
-            {c}
+          <span key={i} className={styles.crumb}>
+            {i > 0 && (
+              <span className={styles.sep} aria-hidden="true">
+                ›
+              </span>
+            )}
+            {c.to ? (
+              <Link to={c.to} onClick={c.to === '/map' ? toWholeMap : undefined} className={styles.crumbLink}>
+                {c.label}
+              </Link>
+            ) : (
+              <span className={styles.current} aria-current="page">
+                {c.label}
+              </span>
+            )}
           </span>
         ))}
       </nav>

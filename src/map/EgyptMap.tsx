@@ -41,6 +41,10 @@ export interface MapInset {
 
 interface Props {
   selectedId?: string;
+  /** Zoom to fit this region's places (breadcrumb → region). */
+  focusRegionId?: string;
+  /** Changes when the user asks for the whole map (logo / 埃及全境). */
+  resetSignal?: number;
   onSelect: (id: string) => void;
   inset: MapInset;
 }
@@ -61,7 +65,7 @@ const readHint = () => {
   }
 };
 
-export function EgyptMap({ selectedId, onSelect, inset }: Props) {
+export function EgyptMap({ selectedId, focusRegionId, resetSignal, onSelect, inset }: Props) {
   const wrapRef = useRef<HTMLDivElement>(null);
   const svgRef = useRef<SVGSVGElement>(null);
   const zoomRef = useRef<ZoomBehavior<SVGSVGElement, unknown> | null>(null);
@@ -179,6 +183,29 @@ export function EgyptMap({ selectedId, onSelect, inset }: Props) {
   const resetView = () => {
     select(svgRef.current!).transition().duration(600).call(zoomRef.current!.transform, zoomIdentity);
   };
+
+  // Breadcrumb region link: frame all of that region's places.
+  useEffect(() => {
+    if (!focusRegionId || !size.w || !zoomRef.current) return;
+    const pts = places.filter((p) => p.regionId === focusRegionId && p.kind !== 'country').map(project);
+    if (!pts.length) return;
+    const xs = pts.map((p) => p[0]);
+    const ys = pts.map((p) => p[1]);
+    const visW = size.w - inset.right;
+    const visH = size.h - inset.bottom;
+    const dx = Math.max(...xs) - Math.min(...xs) || 1;
+    const dy = Math.max(...ys) - Math.min(...ys) || 1;
+    const k = Math.max(1, Math.min(MAX_K / 3, Math.min(visW / dx, visH / dy) * 0.6));
+    const cx = (Math.min(...xs) + Math.max(...xs)) / 2;
+    const cy = (Math.min(...ys) + Math.max(...ys)) / 2;
+    const next = zoomIdentity.translate(visW / 2 - cx * k, visH / 2 - cy * k).scale(k);
+    select(svgRef.current!).transition().duration(600).call(zoomRef.current.transform, next);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [focusRegionId, size.w, size.h]);
+
+  useEffect(() => {
+    if (resetSignal && zoomRef.current) resetView();
+  }, [resetSignal]);
 
   const screen = ordered.map((p) => {
     const [x, y] = t.apply(project(p));
