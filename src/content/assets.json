@@ -454,5 +454,75 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nile_River_and_delta_from_orbit.jpg",
     "kind": "photo",
     "essential": true
+  },
+  {
+    "id": "tut-mask-photo",
+    "path": "media/photos/tut-mask.webp",
+    "alt": "圖坦卡門黃金面具",
+    "credit": "Roland Unger",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:CairoEgMuseumTaaMaskMostlyPhotographed.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "reef-photo",
+    "path": "media/photos/red-sea-anemonefish.webp",
+    "alt": "紅海雙帶小丑魚與海葵",
+    "credit": "Diego Delso",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pez_payaso_(Amphiprion_bicinctus)_en_una_an%C3%A9mona_magn%C3%ADfica_(Heteractis_magnifica),_mar_Rojo,_Egipto,_2023-04-18,_DD_93.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "milkyway-photo",
+    "path": "media/photos/milky-way.webp",
+    "alt": "沙漠天文台上方的銀河（攝於智利）",
+    "credit": "ESO/Y. Beletsky",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ESO-VLT-Laser-phot-33a-07.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "nilometer-photo",
+    "path": "media/photos/nilometer.webp",
+    "alt": "開羅羅達島的尼羅河水位計",
+    "credit": "Baldiri",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cairo_Nilometer_2.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "canopic-photo",
+    "path": "media/photos/canopic-jars.webp",
+    "alt": "古埃及卡諾卜罐",
+    "credit": "Daderot",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Canopic_jars_(casts),_Egypt,_945-712_BC_-_National_Museum_of_Natural_History,_United_States_-_DSC00557.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "cartouche-photo",
+    "path": "media/photos/cartouche.webp",
+    "alt": "塞提一世墓中的王名圈浮雕",
+    "credit": "Osama Shukir Muhammed Amin FRCP(Glasg)",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Birth_and_Throne_cartouches_of_pharaoh_Seti_I,_from_KV17_at_the_Valley_of_the_Kings,_Egypt._Neues_Museum.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "mosque-dome-photo",
+    "path": "media/photos/mosque-dome.webp",
+    "alt": "穆罕默德·阿里清真寺穹頂內部",
+    "credit": "Jorge Láscar from Melbourne, Australia",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Central_dome_surrounded_by_half_domes_-_Mosque_of_Muhammad_Ali_(14799781132).jpg",
+    "kind": "photo",
+    "essential": true
   }
 ]

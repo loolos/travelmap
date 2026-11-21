@@ -11,6 +11,9 @@
     "sourceIds": [
       "wiki-khufu",
       "wiki-merer"
+    ],
+    "photoIds": [
+      "khufu-hero"
     ]
   },
   {
@@ -24,6 +27,9 @@
     "durationMin": 2,
     "sourceIds": [
       "wiki-white-desert"
+    ],
+    "photoIds": [
+      "white-desert-hero"
     ]
   },
   {
@@ -38,6 +44,9 @@
     "sourceIds": [
       "wiki-aswan-dam",
       "wiki-lake-nasser"
+    ],
+    "photoIds": [
+      "dam-hero"
     ]
   },
   {
@@ -64,6 +73,9 @@
     "durationMin": 2,
     "sourceIds": [
       "wiki-karnak"
+    ],
+    "photoIds": [
+      "karnak-hero"
     ]
   },
   {
@@ -78,6 +90,9 @@
     "sourceIds": [
       "wiki-cartouche",
       "wiki-uniliteral"
+    ],
+    "photoIds": [
+      "cartouche-photo"
     ]
   },
   {
@@ -93,6 +108,9 @@
       "wiki-kom-ombo",
       "wiki-sobek",
       "wiki-haroeris"
+    ],
+    "photoIds": [
+      "kom-ombo-hero"
     ]
   },
   {
@@ -107,6 +125,10 @@
     "sourceIds": [
       "wiki-muhammad-ali-mosque",
       "wiki-pendentive"
+    ],
+    "photoIds": [
+      "mosque-dome-photo",
+      "mosque-hero"
     ]
   },
   {
@@ -121,6 +143,9 @@
     "sourceIds": [
       "wiki-tut-mask",
       "wiki-gem"
+    ],
+    "photoIds": [
+      "tut-mask-photo"
     ]
   },
   {
@@ -136,6 +161,9 @@
       "wiki-egyptian-astronomy",
       "wiki-decan",
       "wiki-sirius"
+    ],
+    "photoIds": [
+      "milkyway-photo"
     ]
   },
   {
@@ -149,6 +177,9 @@
     "durationMin": 2,
     "sourceIds": [
       "wiki-black-desert"
+    ],
+    "photoIds": [
+      "black-desert-hero"
     ]
   },
   {
@@ -164,6 +195,9 @@
       "wiki-crystal-mountain",
       "wiki-quartz",
       "wiki-calcite"
+    ],
+    "photoIds": [
+      "crystal-hero"
     ]
   },
   {
@@ -180,6 +214,9 @@
       "wiki-red-sea",
       "wiki-coral-bleaching",
       "wiki-red-sea-anemonefish"
+    ],
+    "photoIds": [
+      "reef-photo"
     ]
   },
   {
@@ -194,6 +231,9 @@
     "sourceIds": [
       "wiki-sphinx",
       "wiki-dream-stele"
+    ],
+    "photoIds": [
+      "sphinx-hero"
     ]
   },
   {
@@ -208,6 +248,9 @@
     "sourceIds": [
       "wiki-felucca",
       "wiki-nile"
+    ],
+    "photoIds": [
+      "felucca-hero"
     ]
   },
   {
@@ -222,6 +265,9 @@
     "sourceIds": [
       "wiki-abu-simbel",
       "unesco-nubia"
+    ],
+    "photoIds": [
+      "abu-simbel-hero"
     ]
   },
   {
@@ -236,6 +282,9 @@
     "sourceIds": [
       "wiki-kv62",
       "wiki-tut-mask"
+    ],
+    "photoIds": [
+      "tut-hero"
     ]
   },
   {
@@ -250,6 +299,9 @@
     "sourceIds": [
       "wiki-mummy",
       "wiki-canopic"
+    ],
+    "photoIds": [
+      "canopic-photo"
     ]
   },
   {
@@ -279,6 +331,10 @@
       "wiki-flooding-nile",
       "wiki-nilometer",
       "wiki-aswan-dam"
+    ],
+    "photoIds": [
+      "nilometer-photo",
+      "nile-hero"
     ]
   }
 ]

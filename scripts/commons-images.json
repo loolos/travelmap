@@ -262,6 +262,49 @@
       "match": "(orbit|satellite|from space|ISS|NASA)",
       "dest": "media/egypt/nile.webp",
       "alt": "從太空看尼羅河谷與三角洲的綠帶"
+    },
+    {
+      "assetId": "tut-mask-photo",
+      "article": "Mask of Tutankhamun",
+      "dest": "media/photos/tut-mask.webp",
+      "alt": "圖坦卡門黃金面具"
+    },
+    {
+      "assetId": "reef-photo",
+      "article": "Amphiprion bicinctus",
+      "dest": "media/photos/red-sea-anemonefish.webp",
+      "alt": "紅海雙帶小丑魚與海葵"
+    },
+    {
+      "assetId": "milkyway-photo",
+      "article": "Milky Way",
+      "dest": "media/photos/milky-way.webp",
+      "alt": "沙漠天文台上方的銀河（攝於智利）"
+    },
+    {
+      "assetId": "nilometer-photo",
+      "article": "Nilometer",
+      "dest": "media/photos/nilometer.webp",
+      "alt": "開羅羅達島的尼羅河水位計"
+    },
+    {
+      "assetId": "canopic-photo",
+      "article": "Canopic jar",
+      "dest": "media/photos/canopic-jars.webp",
+      "alt": "古埃及卡諾卜罐"
+    },
+    {
+      "assetId": "cartouche-photo",
+      "article": "Cartouche",
+      "dest": "media/photos/cartouche.webp",
+      "alt": "塞提一世墓中的王名圈浮雕"
+    },
+    {
+      "assetId": "mosque-dome-photo",
+      "article": "Mosque of Muhammad Ali",
+      "match": "(interior|inside|dome|ceiling|cupola)",
+      "dest": "media/photos/mosque-dome.webp",
+      "alt": "穆罕默德·阿里清真寺穹頂內部"
     }
   ]
 }
