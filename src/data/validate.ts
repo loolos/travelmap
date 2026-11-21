@@ -108,12 +108,12 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
     if (p.heroAssetId && !assetIds.has(p.heroAssetId)) errors.push(`${L}: unknown hero asset ${p.heroAssetId}`);
     p.findItems.forEach((f) => f.assetId && !assetIds.has(f.assetId) && errors.push(`${L}: unknown asset ${f.assetId}`));
     p.findItems.forEach((f) => f.deityId && !deityIds.has(f.deityId) && errors.push(`${L}: unknown deity ${f.deityId}`));
-    // Card labels: 重點, 找找看, 手記 + activities  ≤ 4
-    if (3 + p.activityIds.length > 4) errors.push(`${L}: too many card labels`);
+    // Card labels: 重點, (找找看), 手記 + activities  ≤ 4
+    if (2 + Number(p.findItems.length > 0) + p.activityIds.length > 4) errors.push(`${L}: too many card labels`);
 
     if (p.status === 'ready') {
       if (p.facts.length !== 3) errors.push(`${L}: needs exactly 3 facts (has ${p.facts.length})`);
-      if (p.findItems.length !== 3) errors.push(`${L}: needs exactly 3 find items (has ${p.findItems.length})`);
+      if (p.findItems.length > 3) errors.push(`${L}: at most 3 find items (has ${p.findItems.length})`);
       if (!p.heroAssetId) errors.push(`${L}: missing hero image`);
       if (!p.intro) errors.push(`${L}: missing intro`);
       if (p.noteIds.length < 1) errors.push(`${L}: needs at least 1 traveler note`);

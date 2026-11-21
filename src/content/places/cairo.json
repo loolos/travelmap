@@ -20,23 +20,7 @@
       "大開羅都會區住著兩千多萬人，是非洲和中東最大的城市之一，街頭小吃也多，可以對照[美食圖鑑](note:food-koshari)。",
       "伊斯蘭老城有上百座清真寺和宣禮塔，被稱為「千塔之城」，列為世界遺產。"
     ],
-    "findItems": [
-      {
-        "id": "cairo-minarets",
-        "text": "天際線上細細高高的宣禮塔",
-        "hint": "從高處或車窗往老城方向看，尖頂細塔就是清真寺的宣禮塔。"
-      },
-      {
-        "id": "cairo-call",
-        "text": "一天五次從擴音器傳來的喚拜聲",
-        "hint": "中午或傍晚留意，整座城市的清真寺會先後響起吟唱。"
-      },
-      {
-        "id": "cairo-pyramids",
-        "text": "從市區遠遠看到的金字塔",
-        "hint": "天氣好時從西邊的高樓或[城堡](place:citadel)往西南看。"
-      }
-    ],
+    "findItems": [],
     "noteIds": [
       "cairo-bargain",
       "cairo-traffic"
@@ -83,21 +67,6 @@
       "城堡裡有馬木路克時期的清真寺，也有 19 世紀的[穆罕默德·阿里清真寺](place:muhammad-ali-mosque)。"
     ],
     "findItems": [
-      {
-        "id": "citadel-walls",
-        "text": "厚厚的石造城牆和圓形塔樓",
-        "hint": "走在城堡裡看外圍城牆，塔樓上有供射箭的窄縫。",
-        "spot": {
-          "x": 40,
-          "y": 62,
-          "r": 14
-        }
-      },
-      {
-        "id": "citadel-view",
-        "text": "腳下整片開羅市區",
-        "hint": "到清真寺旁的觀景平台，往西看整座城市。"
-      },
       {
         "id": "citadel-nasir",
         "text": "一座有綠色瓷磚尖頂宣禮塔的老清真寺",
