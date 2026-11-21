@@ -9,6 +9,7 @@ import { NotesPage } from '../pages/NotesPage';
 import { JournalPage } from '../pages/JournalPage';
 import { DeitiesPage } from '../pages/DeitiesPage';
 import { GlyphsPage } from '../pages/GlyphsPage';
+import { TimelinePage } from '../pages/TimelinePage';
 import { OfflinePage } from '../offline/OfflinePage';
 import { ActivityPage } from '../pages/ActivityPage';
 import { Sheet } from './Sheet';
@@ -94,6 +95,14 @@ export function App() {
             element={
               <Sheet title="神祇圖鑑">
                 <DeitiesPage />
+              </Sheet>
+            }
+          />
+          <Route
+            path="/timeline/:eraId?"
+            element={
+              <Sheet title="埃及歷史時間線">
+                <TimelinePage />
               </Sheet>
             }
           />

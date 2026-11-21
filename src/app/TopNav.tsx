@@ -27,6 +27,7 @@ function useBreadcrumb(): string[] {
   }
   if (loc.pathname.startsWith('/notes')) return ['旅人手記'];
   if (loc.pathname.startsWith('/knowledge')) return ['知識卡'];
+  if (loc.pathname.startsWith('/timeline')) return ['埃及歷史時間線'];
   return [pageTitles[loc.pathname] ?? '埃及探索'];
 }
 

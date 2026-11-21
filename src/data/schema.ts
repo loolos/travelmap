@@ -65,6 +65,8 @@ export const Place = z.object({
   noteIds: z.array(z.string()).default([]),
   /** Background knowledge cards, listed under 重點 as 延伸知識. */
   readIds: z.array(z.string()).default([]),
+  /** Year construction began / it opened (negative = BCE). Links the place into the history timeline. */
+  builtYear: z.number().int().optional(),
   activityIds: z.array(z.string()).default([]),
   sourceIds: z.array(z.string()).default([]),
 });
@@ -168,6 +170,43 @@ export const Activity = z.object({
   sourceIds: z.array(z.string()).default([]),
 });
 
+/** Coarse territory zones drawn on the era map (shapes live in src/timeline/zones.ts; all 示意). */
+export const eraZones = [
+  'egypt-nile',
+  'sinai',
+  'lower-nubia',
+  'upper-nubia',
+  'sudan',
+  'levant',
+  'cyrenaica',
+  'cyprus',
+  'hejaz',
+  'yemen',
+  'north-africa',
+  'modern-egypt',
+] as const;
+
+export const Era = z.object({
+  id: z.string(),
+  nameZh: z.string(),
+  nameEn: z.string(),
+  /** Calendar years; negative = BCE. `end` of the last era may be omitted (present). */
+  start: z.number().int(),
+  end: z.number().int().optional(),
+  /** Dynasties / rulers line, e.g. 第 18–20 王朝. */
+  rulers: z.string(),
+  capital: z.string(),
+  /** One or two sentences; shown only after tapping. */
+  summary: z.string(),
+  /** What the shaded map shows, in words (also covers short-lived conquests that are not drawn). */
+  extent: z.string(),
+  zones: z.array(z.enum(eraZones)).min(1),
+  /** true when Egypt was a province ruled from elsewhere. */
+  ruledFrom: z.string().optional(),
+  sourceIds: z.array(z.string()).min(1),
+});
+
+export type Era = z.infer<typeof Era>;
 export type Place = z.infer<typeof Place>;
 export type Region = z.infer<typeof Region>;
 export type Note = z.infer<typeof Note>;
@@ -188,4 +227,5 @@ export interface ContentBundle {
   activities: Activity[];
   deities: Deity[];
   glyphs: Glyph[];
+  eras: Era[];
 }

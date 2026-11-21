@@ -94,6 +94,7 @@
       "lx-vok-ticket",
       "lx-heat"
     ],
+    "builtYear": -1539,
     "sourceIds": [
       "wiki-vok",
       "unesco-thebes"
@@ -149,6 +150,7 @@
     "noteIds": [
       "lx-vok-ticket"
     ],
+    "builtYear": -1323,
     "sourceIds": [
       "wiki-kv62"
     ],
@@ -202,6 +204,7 @@
     "noteIds": [
       "lx-memnon"
     ],
+    "builtYear": -1350,
     "sourceIds": [
       "wiki-memnon"
     ],
@@ -253,6 +256,7 @@
     "noteIds": [
       "lx-night"
     ],
+    "builtYear": -1400,
     "sourceIds": [
       "wiki-luxor-temple"
     ],
@@ -300,6 +304,7 @@
     "noteIds": [
       "lx-heat"
     ],
+    "builtYear": -1950,
     "sourceIds": [
       "wiki-karnak",
       "unesco-thebes"

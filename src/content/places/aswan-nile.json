@@ -89,6 +89,7 @@
     "noteIds": [
       "an-dam-photo"
     ],
+    "builtYear": 1960,
     "sourceIds": [
       "wiki-aswan-dam",
       "wiki-lake-nasser"
@@ -192,6 +193,7 @@
       "an-abu-simbel-trip",
       "an-temple-photo"
     ],
+    "builtYear": -1264,
     "sourceIds": [
       "wiki-abu-simbel",
       "unesco-nubia"
@@ -245,6 +247,7 @@
       "an-kom-ombo-night",
       "an-temple-photo"
     ],
+    "builtYear": -180,
     "sourceIds": [
       "wiki-kom-ombo"
     ]
@@ -292,6 +295,7 @@
     "noteIds": [
       "an-temple-photo"
     ],
+    "builtYear": 2012,
     "sourceIds": [
       "wiki-kom-ombo",
       "wiki-sobek"
@@ -350,6 +354,7 @@
       "an-edfu-carriage",
       "an-temple-photo"
     ],
+    "builtYear": -237,
     "sourceIds": [
       "wiki-edfu"
     ]
@@ -396,6 +401,7 @@
     "noteIds": [
       "an-cruise"
     ],
+    "builtYear": 1909,
     "sourceIds": [
       "wiki-esna"
     ],
