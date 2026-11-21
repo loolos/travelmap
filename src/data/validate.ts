@@ -73,7 +73,7 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
     const defaultScreen = charCount(p.nameZh) + charCount(p.nameEn) + qLen;
     if (defaultScreen > DEFAULT_SCREEN_MAX)
       errors.push(`${L}: default screen has ~${defaultScreen} 字 (max ${DEFAULT_SCREEN_MAX})`);
-    for (const s of [p.nameZh, p.question, p.intro ?? '', p.era ?? '', ...p.facts, ...p.findItems.map((f) => f.text), ...p.aliases])
+    for (const s of [p.nameZh, p.question, p.intro ?? '', p.era ?? '', ...p.facts, ...p.findItems.flatMap((f) => [f.text, f.hint ?? '']), ...p.aliases])
       checkText(L, s);
 
     let links = 0;
@@ -109,6 +109,14 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
       p.findItems.forEach((f) => {
         const n = charCount(f.text);
         if (n < 8 || n > 30) warnings.push(`${L}: find item length ${n} (target 10–30)`);
+        if (!f.hint) errors.push(`${L}: find item ${f.id} needs a hint`);
+        else if (charCount(f.hint) > 40) warnings.push(`${L}: hint for ${f.id} is ${charCount(f.hint)} 字 (max ~40)`);
+        if (f.spot) {
+          const a = f.spot.assetId ?? p.heroAssetId;
+          if (!a || !assetIds.has(a)) errors.push(`${L}: spot for ${f.id} has no image`);
+          else if (assets.find((x) => x.id === a)?.kind === 'illustration' || assets.find((x) => x.id === a)?.kind === 'ai-illustration')
+            warnings.push(`${L}: spot for ${f.id} is drawn on an illustration`);
+        }
       });
     }
   }

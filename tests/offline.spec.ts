@@ -85,3 +85,11 @@ test('pyramid-build flagship: adjust, see bottleneck, explanation, reset', async
   await page.getByRole('button', { name: '重來' }).click();
   await expect(page.getByText('30.7 年')).toBeVisible();
 });
+
+test('find-it hint shows text and a circled spot on the photo', async ({ page }) => {
+  await page.goto('./#/place/giza-sphinx');
+  await page.getByRole('tab', { name: /找找看/ }).click();
+  await page.getByRole('button', { name: /鼻子缺損/ }).click();
+  await expect(page.getByText('原本鼻子的位置')).toBeVisible();
+  await expect(page.getByText('看圈起來的地方')).toBeVisible();
+});

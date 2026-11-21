@@ -18,9 +18,21 @@ export const Coordinates = z.object({
   lon: z.number().min(24.5).max(36),
 });
 
+/** Where to look on an image: centre (x, y) and radius r, in % of the image width/height. */
+export const Spot = z.object({
+  assetId: z.string().optional(),
+  x: z.number().min(0).max(100),
+  y: z.number().min(0).max(100),
+  r: z.number().min(1).max(50),
+});
+
 export const FindItem = z.object({
   id: z.string(),
   text: z.string(),
+  /** Shown on tap: where / how to look. */
+  hint: z.string().optional(),
+  /** Optional circle on a photo (defaults to the place's hero image). */
+  spot: Spot.optional(),
   assetId: z.string().optional(),
   deityId: z.string().optional(),
 });
