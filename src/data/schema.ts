@@ -11,6 +11,7 @@ export const placeKinds = [
   'statue',
   'fortress',
   'mosque',
+  'country',
 ] as const;
 
 export const Coordinates = z.object({
@@ -94,6 +95,7 @@ export const noteCollections = [
   { id: 'history', title: '歷史小卡', icon: '📜', kind: 'knowledge' },
   { id: 'food', title: '美食圖鑑', icon: '🍽️', kind: 'knowledge' },
   { id: 'culture', title: '城市與文化', icon: '🏙️', kind: 'knowledge' },
+  { id: 'country', title: '埃及現況', icon: '🇪🇬', kind: 'knowledge' },
 ] as const;
 
 export const isKnowledge = (regionId: string) =>

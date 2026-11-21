@@ -217,6 +217,13 @@
     "body": "進入前脫鞋，衣著蓋住肩膀和膝蓋；女性可能需要頭巾，現場常有袍子可借。"
   },
   {
+    "id": "hist-ancient",
+    "regionId": "history",
+    "icon": "📜",
+    "title": "法老的三千年",
+    "body": "約西元前 3100 年上下埃及統一。古王國蓋了吉薩金字塔，中王國重新統一國家，新王國建了帝王谷和卡納克的大部分，之後漸漸被外族統治。"
+  },
+  {
     "id": "hist-ptolemy",
     "regionId": "history",
     "icon": "📜",
@@ -396,5 +403,40 @@
     "icon": "💧",
     "title": "水",
     "body": "Mayya（麥呀）。"
+  },
+  {
+    "id": "egypt-population",
+    "regionId": "country",
+    "icon": "👥",
+    "title": "人口",
+    "body": "約 1.1 億人（2023 年），是阿拉伯世界人口最多的國家；人口很年輕，增加得也快。"
+  },
+  {
+    "id": "egypt-geography",
+    "regionId": "country",
+    "icon": "🗺️",
+    "title": "地理",
+    "body": "國土約 100 萬平方公里，九成以上是沙漠。尼羅河由南向北貫穿全國，在開羅以北分成扇形的三角洲，注入地中海。"
+  },
+  {
+    "id": "egypt-economy",
+    "regionId": "country",
+    "icon": "💰",
+    "title": "經濟",
+    "body": "主要收入有蘇伊士運河過路費、觀光、海外工作者寄回的錢和天然氣。近年物價上漲快，埃及鎊也大幅貶值。"
+  },
+  {
+    "id": "egypt-society",
+    "regionId": "country",
+    "icon": "🕌",
+    "title": "語言與宗教",
+    "body": "官方語言是阿拉伯語，日常說埃及方言。多數人信仰伊斯蘭教（遜尼派），基督教的科普特人約占一成左右，各方估計不一。"
+  },
+  {
+    "id": "egypt-government",
+    "regionId": "country",
+    "icon": "🏛️",
+    "title": "國家與首都",
+    "body": "正式國名是埃及阿拉伯共和國，總統制。首都開羅；政府正在東邊沙漠興建新的行政首都，部會已陸續搬遷。"
   }
 ]

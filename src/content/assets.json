@@ -433,5 +433,14 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Umm_Ali.JPG",
     "kind": "photo",
     "essential": true
+  },
+  {
+    "id": "egypt-hero",
+    "path": "media/egypt/egypt.webp",
+    "alt": "埃及衛星影像（示意）",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
   }
 ]

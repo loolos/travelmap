@@ -1,4 +1,5 @@
 [
+  { "id": "egypt", "nameZh": "埃及全境", "nameEn": "Egypt", "order": 0 },
   { "id": "giza", "nameZh": "吉薩", "nameEn": "Giza", "order": 1 },
   { "id": "western-desert", "nameZh": "西部沙漠", "nameEn": "Western Desert", "order": 2 },
   { "id": "aswan-nile", "nameZh": "亞斯文與尼羅河", "nameEn": "Aswan & the Nile", "order": 3 },

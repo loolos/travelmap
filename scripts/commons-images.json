@@ -192,7 +192,8 @@
       "assetId": "deity-amun",
       "article": "Amun",
       "dest": "media/deities/amun.webp",
-      "alt": "阿蒙"
+      "alt": "阿蒙",
+      "match": "^File:Amun.*\\.svg$"
     },
     {
       "assetId": "deity-anubis",
@@ -248,6 +249,12 @@
       "article": "Umm Ali",
       "dest": "media/food/om-ali.webp",
       "alt": "烏姆阿里"
+    },
+    {
+      "assetId": "egypt-hero",
+      "article": "Geography of Egypt",
+      "dest": "media/egypt/egypt.webp",
+      "alt": "埃及衛星影像：尼羅河谷的綠帶穿過沙漠"
     }
   ]
 }

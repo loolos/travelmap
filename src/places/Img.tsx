@@ -15,6 +15,7 @@ const kindEmoji: Record<PlaceKind, string> = {
   ecology: '🌌',
   water: '🌊',
   museum: '🏺',
+  country: '🇪🇬',
 };
 
 /** Hero image with kind badge; falls back to a local placeholder when offline or missing. */
