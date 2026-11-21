@@ -336,5 +336,69 @@
       "nilometer-photo",
       "nile-hero"
     ]
+  },
+  {
+    "id": "croc-museum-case",
+    "placeId": "crocodile-museum",
+    "component": "HotspotDiagram",
+    "title": "鱷魚木乃伊展櫃",
+    "label": "看展櫃",
+    "icon": "🐊",
+    "question": "為什麼要把鱷魚做成木乃伊？",
+    "durationMin": 2,
+    "sourceIds": [
+      "wiki-sobek",
+      "wiki-crocodile-museum",
+      "wiki-animal-mummy"
+    ],
+    "photoIds": []
+  },
+  {
+    "id": "bahariya-water",
+    "placeId": "bahariya",
+    "component": "HotspotDiagram",
+    "title": "綠洲的地下水",
+    "label": "地下水",
+    "icon": "💧",
+    "question": "沙漠中間，水從哪裡來？",
+    "durationMin": 2,
+    "sourceIds": [
+      "wiki-bahariya",
+      "wiki-nubian-aquifer"
+    ],
+    "photoIds": [
+      "bahariya-hero"
+    ]
+  },
+  {
+    "id": "nubia-flood",
+    "placeId": "aswan",
+    "component": "StepTimeline",
+    "title": "被淹沒的努比亞",
+    "label": "努比亞",
+    "icon": "🏘️",
+    "question": "高壩擋住了洪水，也淹掉了誰的家？",
+    "durationMin": 2,
+    "sourceIds": [
+      "wiki-nubians",
+      "wiki-lake-nasser",
+      "wiki-nubia-campaign"
+    ],
+    "photoIds": [
+      "aswan-hero"
+    ]
+  },
+  {
+    "id": "market-bargain",
+    "placeId": "cairo",
+    "component": "StepTimeline",
+    "title": "市集議價",
+    "label": "議價",
+    "icon": "🛍️",
+    "question": "在市集看中一張莎草紙畫，要怎麼談價？",
+    "durationMin": 2,
+    "sourceIds": [
+      "wikivoyage-egypt"
+    ]
   }
 ]

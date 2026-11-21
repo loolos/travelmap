@@ -480,5 +480,138 @@
     "icon": "🏗️",
     "title": "高壩之後",
     "body": "1970 年亞斯文高壩完工，從此不再氾濫，可以一年多穫，還能發電。代價是淤泥被攔在納瑟湖，田地改靠化肥，三角洲海岸也慢慢被海水侵蝕。"
+  },
+  {
+    "id": "sv-papyrus",
+    "regionId": "souvenirs",
+    "icon": "📜",
+    "title": "莎草紙畫",
+    "body": "真莎草紙對著光，看得到縱橫交錯的纖維條紋，弄濕捲起也不易破；香蕉葉仿品纖維平行、容易撕裂。店家示範的那張，不一定是你拿到的那張。",
+    "price": {
+      "lowTwd": 160,
+      "highTwd": 640,
+      "lowUsd": 5,
+      "highUsd": 20,
+      "unit": "A4 大小",
+      "note": "手繪較貴，印刷品較便宜",
+      "asOf": "2026-11",
+      "sourceIds": [
+        "wikivoyage-egypt"
+      ]
+    }
+  },
+  {
+    "id": "sv-alabaster",
+    "regionId": "souvenirs",
+    "icon": "🏺",
+    "title": "雪花石膏",
+    "body": "真品對光透亮、紋路不規則、摸起來冰涼又重；樹脂或石灰岩仿品不透光、花紋太均勻。外行很難百分百確認，買喜歡的價格就好。",
+    "price": {
+      "lowTwd": 320,
+      "highTwd": 1280,
+      "lowUsd": 10,
+      "highUsd": 40,
+      "unit": "小花瓶",
+      "note": "尺寸越大越貴",
+      "asOf": "2026-11",
+      "sourceIds": [
+        "wikivoyage-egypt"
+      ]
+    }
+  },
+  {
+    "id": "sv-cartouche",
+    "regionId": "souvenirs",
+    "icon": "✍️",
+    "title": "王名圈墜子",
+    "body": "可請銀樓把你的名字刻成象形文字，通常隔天取件。先用本站王名圈產生器對拼法；銀飾看有沒有 925 戳記。",
+    "price": {
+      "lowTwd": 800,
+      "highTwd": 2560,
+      "lowUsd": 25,
+      "highUsd": 80,
+      "unit": "銀製墜子",
+      "note": "金製要貴上好幾倍",
+      "asOf": "2026-11",
+      "sourceIds": [
+        "wikivoyage-egypt"
+      ]
+    }
+  },
+  {
+    "id": "sv-scarab",
+    "regionId": "souvenirs",
+    "icon": "🪲",
+    "title": "聖甲蟲",
+    "body": "象徵重生的護身符，市面上多是新做的石頭或陶瓷品。說是「古董」的不要買：真文物禁止私下買賣與出境。",
+    "price": {
+      "lowTwd": 32,
+      "highTwd": 160,
+      "lowUsd": 1,
+      "highUsd": 5,
+      "unit": "小件",
+      "note": "大件或寶石材質較貴",
+      "asOf": "2026-11",
+      "sourceIds": [
+        "wikivoyage-egypt"
+      ]
+    }
+  },
+  {
+    "id": "sv-perfume",
+    "regionId": "souvenirs",
+    "icon": "🧴",
+    "title": "香精油",
+    "body": "香精瓶和香精油是熱門紀念品。店家常說「純精油」，其實多半稀釋過，自己很難驗證，當香氛紀念品買就好。玻璃瓶記得包好。",
+    "price": {
+      "lowTwd": 160,
+      "highTwd": 640,
+      "lowUsd": 5,
+      "highUsd": 20,
+      "unit": "小瓶",
+      "note": "瓶子另計",
+      "asOf": "2026-11",
+      "sourceIds": [
+        "wikivoyage-egypt"
+      ]
+    }
+  },
+  {
+    "id": "sv-karkade",
+    "regionId": "souvenirs",
+    "icon": "🌺",
+    "title": "洛神花與香料",
+    "body": "乾燥洛神花萼選顏色深紅、完整不碎的。帶回國前先確認入境的植物檢疫規定，包裝封好。",
+    "price": {
+      "lowTwd": 32,
+      "highTwd": 128,
+      "lowUsd": 1,
+      "highUsd": 4,
+      "unit": "一包",
+      "note": "市集秤重較便宜",
+      "asOf": "2026-11",
+      "sourceIds": [
+        "wikivoyage-egypt"
+      ]
+    }
+  },
+  {
+    "id": "sv-cotton",
+    "regionId": "souvenirs",
+    "icon": "👕",
+    "title": "埃及棉",
+    "body": "埃及棉以長纖維聞名，但市集標「埃及棉」的不一定是。看標籤、摸手感，正規店家的床單毛巾比較有保障。",
+    "price": {
+      "lowTwd": 160,
+      "highTwd": 640,
+      "lowUsd": 5,
+      "highUsd": 20,
+      "unit": "T 恤或圍巾",
+      "note": "名牌寢具另計",
+      "asOf": "2026-11",
+      "sourceIds": [
+        "wikivoyage-egypt"
+      ]
+    }
   }
 ]
