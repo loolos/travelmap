@@ -11,7 +11,7 @@
 | 版本分期 | 單一 V1，約 25 個節點、35–50 個互動 | 拆成 **V1.0 出發版**（出發前上線）與 **V1.1 回國後** |
 | V1.0 範圍 | 所有 P0 地點各有完整互動 | 所有行程地點套用同一個**輕模板**，另做 **5 個旗艦互動** |
 | 價格 | 以 EGP 為主、USD 估算、本地匯率快照、離線換算器、過期提示 | 只給**台幣（TWD）＋美元（USD）大致參考區間**，標註資料日期；不換算、不做過期邏輯 |
-| 行程模式 | 依 4–12 日逐日切換 | 不分日；「行程地點」一鍵高亮，**隨時可點任何地點** |
+| 行程模式 | 依行程日號逐日切換 | 不綁定日期或日號；「行程地點」一鍵高亮，**隨時可點任何地點** |
 | 夜臥火車、遊輪航段 | 未明確 | 不另做專屬內容 |
 | 圖片 | 全部打包進 repo，禁止熱連結 | **關鍵圖片存 repo**；非必要圖片可連結線上（Wikimedia 等），離線時顯示占位 |
 | 圖片來源 | 逐館核驗館藏授權 | Wikimedia Commons ＋ AI 示意圖（一律標「示意」） |
@@ -127,38 +127,38 @@ V1.0 所有地點使用同一個模板，由內容 JSON 驅動：
 
 ### 4.1 V1.0：行程地點（全部納入離線核心包）
 
-依旅行社「埃及黑白沙漠 11 日」行程。手寫數字 3–13 對應行程第 1–11 天；「日」欄僅供內容編寫參考，**App 內不分日顯示**。旅行社註明行程可能調整。
+依旅行社「埃及黑白沙漠 11 日」行程挑選地點，依地區分組。App 與內容**不綁定任何日期或行程日號**，地點只標記「在行程中」。
 
-| 日 | 地區 | 地點 | 類型 | 旗艦互動 |
-|---|---|---|---|---|
-| 4 | 吉薩 | 大埃及博物館 Grand Egyptian Museum | 博物館 | |
-| 4 | 吉薩 | 胡夫金字塔 Great Pyramid of Khufu | 陵墓 | ★ 建造大金字塔 |
-| 4 | 吉薩 | 卡夫拉金字塔 Pyramid of Khafre | 陵墓 | |
-| 4 | 吉薩 | 孟卡拉金字塔 Pyramid of Menkaure | 陵墓 | |
-| 4 | 吉薩 | 人面獅身像 Great Sphinx of Giza | 雕像 | |
-| 5 | 西部沙漠 | 巴哈利亞綠洲 Bahariya Oasis | 城市／綠洲 | |
-| 5 | 西部沙漠 | 黑沙漠 Black Desert | 地質 | |
-| 5 | 西部沙漠 | 水晶山 Crystal Mountain | 地質 | |
-| 5 | 西部沙漠 | 白沙漠 White Desert | 地質 | ★ 從古海洋到蘑菇石 |
-| 5 | 西部沙漠 | 沙漠露營（星空） Desert Camp | 生態／天文 | |
-| 7 | 亞斯文 | 亞斯文 Aswan | 城市 | |
-| 7 | 亞斯文 | 亞斯文大水壩 Aswan High Dam | 水利 | ★ 水壩調度 |
-| 7 | 亞斯文 | 三角風帆船 Felucca | 河流／交通 | |
-| 8 | 亞斯文周邊 | 阿布辛貝神殿 Abu Simbel（自費） | 神殿 | |
-| 8 | 尼羅河 | 孔翁波神殿 Temple of Kom Ombo | 神殿 | |
-| 8 | 尼羅河 | 鱷魚木乃伊博物館 Crocodile Museum | 博物館 | |
-| 9 | 尼羅河 | 艾德夫神殿 Temple of Edfu | 神殿 | |
-| 9 | 尼羅河 | 伊斯納水閘 Esna Lock | 水利 | ★ 操作船閘 |
-| 10 | 路克索 | 路克索 Luxor | 城市 | |
-| 10 | 路克索 | 帝王谷 Valley of the Kings | 陵墓 | |
-| 10 | 路克索 | 圖坦卡門墓 Tomb of Tutankhamun（帝王谷子節點，門票另計） | 陵墓 | |
-| 10 | 路克索 | 曼儂巨像 Colossi of Memnon | 雕像 | |
-| 10 | 路克索 | 路克索神殿 Luxor Temple | 神殿 | |
-| 10 | 路克索 | 卡納克神殿 Karnak Temple | 神殿 | ★ 千年擴建 |
-| 11 | 紅海 | 虎加達／紅海 Hurghada & Red Sea | 城市／生態 | |
-| 12 | 開羅 | 開羅 Cairo | 城市 | |
-| 12 | 開羅 | 薩拉丁城堡 Citadel of Saladin | 城堡 | |
-| 12 | 開羅 | 穆罕默德·阿里清真寺 Mosque of Muhammad Ali | 清真寺 | |
+| 地區 | 地點 | 類型 | 旗艦互動 |
+|---|---|---|---|
+| 吉薩 | 大埃及博物館 Grand Egyptian Museum | 博物館 | |
+| 吉薩 | 胡夫金字塔 Great Pyramid of Khufu | 陵墓 | ★ 建造大金字塔 |
+| 吉薩 | 卡夫拉金字塔 Pyramid of Khafre | 陵墓 | |
+| 吉薩 | 孟卡拉金字塔 Pyramid of Menkaure | 陵墓 | |
+| 吉薩 | 人面獅身像 Great Sphinx of Giza | 雕像 | |
+| 西部沙漠 | 巴哈利亞綠洲 Bahariya Oasis | 城市／綠洲 | |
+| 西部沙漠 | 黑沙漠 Black Desert | 地質 | |
+| 西部沙漠 | 水晶山 Crystal Mountain | 地質 | |
+| 西部沙漠 | 白沙漠 White Desert | 地質 | ★ 從古海洋到蘑菇石 |
+| 西部沙漠 | 沙漠露營（星空） Desert Camp | 生態／天文 | |
+| 亞斯文 | 亞斯文 Aswan | 城市 | |
+| 亞斯文 | 亞斯文大水壩 Aswan High Dam | 水利 | ★ 水壩調度 |
+| 亞斯文 | 三角風帆船 Felucca | 河流／交通 | |
+| 亞斯文周邊 | 阿布辛貝神殿 Abu Simbel（自費） | 神殿 | |
+| 尼羅河 | 孔翁波神殿 Temple of Kom Ombo | 神殿 | |
+| 尼羅河 | 鱷魚木乃伊博物館 Crocodile Museum | 博物館 | |
+| 尼羅河 | 艾德夫神殿 Temple of Edfu | 神殿 | |
+| 尼羅河 | 伊斯納水閘 Esna Lock | 水利 | ★ 操作船閘 |
+| 路克索 | 路克索 Luxor | 城市 | |
+| 路克索 | 帝王谷 Valley of the Kings | 陵墓 | |
+| 路克索 | 圖坦卡門墓 Tomb of Tutankhamun（帝王谷子節點，門票另計） | 陵墓 | |
+| 路克索 | 曼儂巨像 Colossi of Memnon | 雕像 | |
+| 路克索 | 路克索神殿 Luxor Temple | 神殿 | |
+| 路克索 | 卡納克神殿 Karnak Temple | 神殿 | ★ 千年擴建 |
+| 紅海 | 虎加達／紅海 Hurghada & Red Sea | 城市／生態 | |
+| 開羅 | 開羅 Cairo | 城市 | |
+| 開羅 | 薩拉丁城堡 Citadel of Saladin | 城堡 | |
+| 開羅 | 穆罕默德·阿里清真寺 Mosque of Muhammad Ali | 清真寺 | |
 
 共 28 個節點。行程中的駱駝騎乘、香精店、紙莎草畫店、夜臥火車與遊輪航段不設節點，相關實用資訊放在旅人手記。
 
@@ -360,7 +360,6 @@ travelmap/
   "kind": "tomb",
   "coordinates": { "lat": 29.9792, "lon": 31.1342 },
   "onItinerary": true,
-  "itineraryDay": 4,
   "era": "古王國第四王朝，約前 2560 年",
   "heroAssetId": "khufu-hero",
   "intro": "四千五百年前完成的巨型石造工程，曾是世界最高建築近四千年。",
@@ -374,7 +373,7 @@ travelmap/
 }
 ```
 
-`itineraryDay` 只供內部排序與編寫參考，介面不顯示逐日模式。Asset 欄位見 3.4；Activity 欄位：`id`、`placeId`、`component`、`title`、`question`、`durationMin`、`config`、`explanation`、`sourceIds`、`evidenceLevel`。
+地點資料不含日期或行程日號；`onItinerary` 只用於「行程地點」高亮。Asset 欄位見 3.4；Activity 欄位：`id`、`placeId`、`component`、`title`、`question`、`durationMin`、`config`、`explanation`、`sourceIds`、`evidenceLevel`。
 
 建置前校驗：ID 唯一、引用完整、必要圖片檔存在、座標在埃及範圍、文字長度警告、來源不得為空、繁體中文檢查（偵測常見簡體字）。內容 JSON 不嵌入可執行 JS；互動規則由程式內的註冊表選擇。
 
