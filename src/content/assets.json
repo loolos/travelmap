@@ -448,10 +448,11 @@
   {
     "id": "nile-hero",
     "path": "media/egypt/nile.webp",
-    "alt": "尼羅河綠色河谷穿過沙漠的示意圖",
-    "credit": "Egypt Explorer 示意圖",
-    "license": "CC0",
-    "kind": "illustration",
+    "alt": "從太空看尼羅河谷與三角洲的綠帶",
+    "credit": "Jacques Descloitres, MODIS Rapid Response Team, NASA/sh",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nile_River_and_delta_from_orbit.jpg",
+    "kind": "photo",
     "essential": true
   }
 ]
