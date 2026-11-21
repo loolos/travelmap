@@ -1,0 +1,3 @@
+[
+  { "id": "hurghada", "nameZh": "虎加達／紅海", "nameEn": "Hurghada & Red Sea", "shortName": "虎加達", "aliases": ["赫爾格達", "紅海"], "major": true, "regionId": "red-sea", "kind": "city", "coordinates": { "lat": 27.2579, "lon": 33.8116 }, "onItinerary": true, "status": "draft", "question": "紅海為什麼越來越寬？" }
+]

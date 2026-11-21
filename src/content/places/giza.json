@@ -1,0 +1,143 @@
+[
+  {
+    "id": "gem",
+    "nameZh": "大埃及博物館",
+    "nameEn": "Grand Egyptian Museum",
+    "shortName": "大埃及博物館",
+    "aliases": ["GEM"],
+    "regionId": "giza",
+    "kind": "museum",
+    "coordinates": { "lat": 29.9946, "lon": 31.1193 },
+    "onItinerary": true,
+    "status": "ready",
+    "era": "2025 年全面開館",
+    "intro": "蓋在吉薩金字塔旁的國家博物館，專門展出古埃及文物，圖坦卡門的寶藏在這裡集中展示。",
+    "heroAssetId": "gem-hero",
+    "question": "一座博物館為什麼要蓋在金字塔旁邊？",
+    "facts": [
+      "館址在吉薩高原邊緣，距離[金字塔](place:giza-khufu)約 2 公里，館內可以望見金字塔。",
+      "圖坦卡門（Tutankhamun）墓的出土文物在這裡集中展示，數量超過 5,000 件。",
+      "大廳中央是一尊約 11 公尺高的拉美西斯二世（Ramesses II）巨像，已有三千多年歷史。"
+    ],
+    "findItems": [
+      { "id": "gem-ramesses", "text": "大廳裡的拉美西斯二世巨像，比比你和腳趾的大小" },
+      { "id": "gem-staircase", "text": "大階梯兩側排列的法老與神祇雕像" },
+      { "id": "gem-cartouche", "text": "在雕像或石碑上找一個框住法老名字的橢圓王名圈" }
+    ],
+    "noteIds": ["gem-security", "giza-today"],
+    "sourceIds": ["wiki-gem"]
+  },
+  {
+    "id": "giza-khufu",
+    "nameZh": "胡夫金字塔",
+    "nameEn": "Great Pyramid of Khufu",
+    "shortName": "胡夫",
+    "major": true,
+    "aliases": ["大金字塔", "古夫金字塔", "Cheops", "Great Pyramid"],
+    "regionId": "giza",
+    "kind": "tomb",
+    "coordinates": { "lat": 29.9792, "lon": 31.1342 },
+    "onItinerary": true,
+    "status": "ready",
+    "era": "古王國第四王朝，約前 26 世紀",
+    "intro": "吉薩三座金字塔中最大的一座，為法老胡夫（Khufu）所建，近四千年間是世界最高的人造建築。",
+    "heroAssetId": "khufu-hero",
+    "question": "沒有現代機械，要怎麼組織這麼大的工程？",
+    "facts": [
+      "原高約 146.6 公尺，頂端石塊遺失後，現在約 138.5 公尺。",
+      "估計用了約 230 萬塊石塊，大多數每塊重 2 噸以上。",
+      "外層原本包著光滑的白色石灰岩，中世紀時大多被拆去建造[開羅](place:cairo)。"
+    ],
+    "findItems": [
+      { "id": "khufu-casing", "text": "基部少數殘存、表面平滑的外層石" },
+      { "id": "khufu-entrance", "text": "北面高處的原始入口，和下方後來挖的盜洞" },
+      { "id": "khufu-block", "text": "站在一塊基石旁邊，比比它有多高" }
+    ],
+    "noteIds": ["giza-camel", "giza-touts"],
+    "sourceIds": ["wiki-khufu", "unesco-memphis"]
+  },
+  {
+    "id": "giza-khafre",
+    "nameZh": "卡夫拉金字塔",
+    "nameEn": "Pyramid of Khafre",
+    "shortName": "卡夫拉",
+    "aliases": ["哈夫拉金字塔", "Chephren"],
+    "regionId": "giza",
+    "kind": "tomb",
+    "coordinates": { "lat": 29.9761, "lon": 31.1308 },
+    "onItinerary": true,
+    "status": "ready",
+    "era": "古王國第四王朝，約前 26 世紀",
+    "intro": "胡夫之子卡夫拉（Khafre）的金字塔，是吉薩第二大的金字塔。",
+    "heroAssetId": "khafre-hero",
+    "question": "為什麼它看起來比胡夫金字塔還高？",
+    "facts": [
+      "原高約 143.5 公尺，比胡夫金字塔矮，但地基較高，看起來反而更高。",
+      "頂端還留著一段原始的外層石灰岩，是吉薩唯一還看得到的。",
+      "一般認為[人面獅身像](place:giza-sphinx)屬於卡夫拉金字塔的建築群。"
+    ],
+    "findItems": [
+      { "id": "khafre-cap", "text": "頂端顏色較淺、表面較平滑的外層石" },
+      { "id": "khafre-granite", "text": "底部殘存的一圈粉紅色花崗岩" },
+      { "id": "khafre-compare", "text": "從遠處比較三座金字塔頂點的高低" }
+    ],
+    "noteIds": ["giza-panorama", "giza-touts"],
+    "sourceIds": ["wiki-khafre", "unesco-memphis"]
+  },
+  {
+    "id": "giza-menkaure",
+    "nameZh": "孟卡拉金字塔",
+    "nameEn": "Pyramid of Menkaure",
+    "shortName": "孟卡拉",
+    "aliases": ["門卡拉金字塔", "Mycerinus"],
+    "regionId": "giza",
+    "kind": "tomb",
+    "coordinates": { "lat": 29.9725, "lon": 31.1281 },
+    "onItinerary": true,
+    "status": "ready",
+    "era": "古王國第四王朝，約前 26 世紀",
+    "intro": "吉薩三座主要金字塔中最小的一座，屬於法老孟卡拉（Menkaure）。",
+    "heroAssetId": "menkaure-hero",
+    "question": "最小的金字塔，為什麼用了更貴的石材？",
+    "facts": [
+      "原高約 65 公尺，不到胡夫金字塔的一半。",
+      "下段外層用的是從南方[亞斯文](place:aswan)運來的紅色花崗岩。",
+      "北面有一道很深的切口，是 12 世紀有人試圖拆除它時留下的。"
+    ],
+    "findItems": [
+      { "id": "menkaure-granite", "text": "下段表面粗糙的紅色花崗岩外層" },
+      { "id": "menkaure-gash", "text": "北面中間一道直直往下的大切口" },
+      { "id": "menkaure-queens", "text": "南邊並排的三座小型王后金字塔" }
+    ],
+    "noteIds": ["giza-panorama"],
+    "sourceIds": ["wiki-menkaure", "unesco-memphis"]
+  },
+  {
+    "id": "giza-sphinx",
+    "nameZh": "人面獅身像",
+    "nameEn": "Great Sphinx of Giza",
+    "shortName": "人面獅身",
+    "aliases": ["獅身人面像", "Sphinx"],
+    "regionId": "giza",
+    "kind": "statue",
+    "coordinates": { "lat": 29.9753, "lon": 31.1376 },
+    "onItinerary": true,
+    "status": "ready",
+    "era": "古王國第四王朝，約前 26 世紀",
+    "intro": "直接從岩床雕出的巨大石像，獅子的身體配上人的頭部，守在吉薩高原東側。",
+    "heroAssetId": "sphinx-hero",
+    "question": "人面獅身像原本是什麼顏色、什麼樣子？",
+    "facts": [
+      "直接從石灰岩岩床雕出，長約 73 公尺、高約 20 公尺。",
+      "原本塗有顏色，臉上仍可見少量紅色顏料痕跡。",
+      "鼻子在拿破崙到埃及之前就已缺損，「被法軍打掉」的說法並不正確。"
+    ],
+    "findItems": [
+      { "id": "sphinx-layers", "text": "身體上一層一層、軟硬不同的岩層紋理" },
+      { "id": "sphinx-nose", "text": "臉上鼻子缺損的位置" },
+      { "id": "sphinx-stele", "text": "兩隻前爪之間立著的石碑" }
+    ],
+    "noteIds": ["giza-touts", "giza-camel"],
+    "sourceIds": ["wiki-sphinx", "unesco-memphis"]
+  }
+]
