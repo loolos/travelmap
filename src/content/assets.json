@@ -238,37 +238,41 @@
   {
     "id": "hurghada-hero",
     "path": "media/red-sea/hurghada.webp",
-    "alt": "紅海海岸（示意）",
-    "credit": "Egypt Explorer 示意圖",
-    "license": "CC0",
-    "kind": "illustration",
+    "alt": "紅海海岸",
+    "credit": "Marc Ryckaert",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hurghada_Hotels_R03.jpg",
+    "kind": "photo",
     "essential": true
   },
   {
     "id": "cairo-hero",
     "path": "media/cairo/cairo.webp",
-    "alt": "開羅市景（示意）",
-    "credit": "Egypt Explorer 示意圖",
-    "license": "CC0",
-    "kind": "illustration",
+    "alt": "開羅市景",
+    "credit": "Wael El Sisi",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cairo_From_Tower_(cropped).jpg",
+    "kind": "photo",
     "essential": true
   },
   {
     "id": "citadel-hero",
     "path": "media/cairo/citadel.webp",
-    "alt": "薩拉丁城堡（示意）",
-    "credit": "Egypt Explorer 示意圖",
-    "license": "CC0",
-    "kind": "illustration",
+    "alt": "薩拉丁城堡",
+    "credit": "Ahmed Al.Badawy from Cairo, Egypt",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flickr_-_HuTect_ShOts_-_Citadel_of_Salah_El.Din_and_Masjid_Muhammad_Ali_%D9%82%D9%84%D8%B9%D8%A9_%D8%B5%D9%84%D8%A7%D8%AD_%D8%A7%D9%84%D8%AF%D9%8A%D9%86_%D8%A7%D9%84%D8%A3%D9%8A%D9%88%D8%A8%D9%8A_%D9%88%D9%85%D8%B3%D8%AC%D8%AF_%D9%85%D8%AD%D9%85%D8%AF_%D8%B9%D9%84%D9%8A_-_Cairo_-_Egypt_-_17_04_2010_(4).jpg",
+    "kind": "photo",
     "essential": true
   },
   {
     "id": "mosque-hero",
     "path": "media/cairo/mosque.webp",
-    "alt": "穆罕默德‧阿里清真寺（示意）",
-    "credit": "Egypt Explorer 示意圖",
-    "license": "CC0",
-    "kind": "illustration",
+    "alt": "穆罕默德‧阿里清真寺",
+    "credit": "Ahmed Ragheb 97",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D8%AC%D8%A7%D9%85%D8%B9_%D9%85%D8%AD%D9%85%D8%AF_%D8%B9%D9%84%D9%8A.JPG",
+    "kind": "photo",
     "essential": true
   }
 ]
