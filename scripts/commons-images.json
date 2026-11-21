@@ -193,7 +193,7 @@
       "article": "Amun",
       "dest": "media/deities/amun.webp",
       "alt": "阿蒙",
-      "match": "^File:Amun.*\\.svg$"
+      "match": "^File:Amun\\.svg$"
     },
     {
       "assetId": "deity-anubis",

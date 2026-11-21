@@ -338,11 +338,10 @@
   {
     "id": "deity-amun",
     "path": "media/deities/amun.webp",
-    "alt": "阿蒙",
-    "credit": "FDRMRZUSA",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amun-Ra-Min.svg",
-    "kind": "photo",
+    "alt": "阿蒙（示意）",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
     "essential": true
   },
   {
