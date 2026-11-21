@@ -60,7 +60,10 @@ export const Place = z.object({
   /** Facts may contain up to 3 inline links in the form [text](place:id). */
   facts: z.array(z.string()).default([]),
   findItems: z.array(FindItem).default([]),
+  /** Practical traveler tips (旅人手記 tab). */
   noteIds: z.array(z.string()).default([]),
+  /** Background knowledge cards, listed under 重點 as 延伸知識. */
+  readIds: z.array(z.string()).default([]),
   activityIds: z.array(z.string()).default([]),
   sourceIds: z.array(z.string()).default([]),
 });
@@ -84,12 +87,17 @@ export const Price = z.object({
 });
 
 /** Site-wide note collections (used as Note.regionId besides real regions). */
+/** 'tips' collections belong to 旅人手記 (practical); 'knowledge' ones to 知識 (background reading). */
 export const noteCollections = [
-  { id: 'general', title: '全站共用', icon: '🧳' },
-  { id: 'phrases', title: '實用短語', icon: '💬' },
-  { id: 'food', title: '美食圖鑑', icon: '🍽️' },
-  { id: 'history', title: '歷史小卡', icon: '📜' },
+  { id: 'general', title: '全站共用', icon: '🧳', kind: 'tips' },
+  { id: 'phrases', title: '實用短語', icon: '💬', kind: 'tips' },
+  { id: 'history', title: '歷史小卡', icon: '📜', kind: 'knowledge' },
+  { id: 'food', title: '美食圖鑑', icon: '🍽️', kind: 'knowledge' },
+  { id: 'culture', title: '城市與文化', icon: '🏙️', kind: 'knowledge' },
 ] as const;
+
+export const isKnowledge = (regionId: string) =>
+  noteCollections.some((c) => c.id === regionId && c.kind === 'knowledge');
 
 export const Note = z.object({
   id: z.string(),

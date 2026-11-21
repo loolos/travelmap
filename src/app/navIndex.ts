@@ -54,35 +54,9 @@ export function buildNavIndex(): NavGroup[] {
         },
       ],
     });
-  groups.push({
-    title: '圖鑑',
-    sections: [
-      {
-        items: [
-          {
-            id: 'deities',
-            to: '/deities',
-            label: '神祇圖鑑',
-            terms: ['gods', 'deity', '神', ...deities.flatMap((d) => [d.nameZh, d.nameEn])],
-            icon: '🏺',
-          },
-          ...(notes.some((n) => n.regionId === 'food')
-            ? [
-                {
-                  id: 'book:food',
-                  to: '/notes/food',
-                  label: '美食圖鑑',
-                  terms: ['food', '吃', ...notes.filter((n) => n.regionId === 'food').map((n) => n.title)],
-                  icon: '🍽️',
-                },
-              ]
-            : []),
-        ],
-      },
-    ],
-  });
   const noteRegions = regions.filter((r) => notes.some((n) => n.regionId === r.id));
-  const collections = noteCollections.filter((c) => c.id !== 'food' && notes.some((n) => n.regionId === c.id));
+  const withNotes = (kind: 'tips' | 'knowledge') =>
+    noteCollections.filter((c) => c.kind === kind && notes.some((n) => n.regionId === c.id));
   groups.push({
     title: '旅人手記',
     sections: [
@@ -95,11 +69,34 @@ export function buildNavIndex(): NavGroup[] {
             terms: [r.nameEn, ...notes.filter((n) => n.regionId === r.id).map((n) => n.title)],
             icon: '🧳',
           })),
-          ...collections.map((c) => ({
+          ...withNotes('tips').map((c) => ({
             id: `notes:${c.id}`,
             to: `/notes/${c.id}`,
             label: c.title,
             terms: notes.filter((n) => n.regionId === c.id).map((n) => n.title),
+            icon: c.icon,
+          })),
+        ],
+      },
+    ],
+  });
+  groups.push({
+    title: '知識',
+    sections: [
+      {
+        items: [
+          {
+            id: 'deities',
+            to: '/deities',
+            label: '神祇圖鑑',
+            terms: ['gods', 'deity', '神', ...deities.flatMap((d) => [d.nameZh, d.nameEn])],
+            icon: '🏺',
+          },
+          ...withNotes('knowledge').map((c) => ({
+            id: `knowledge:${c.id}`,
+            to: `/knowledge/${c.id}`,
+            label: c.title,
+            terms: [c.id, ...notes.filter((n) => n.regionId === c.id).map((n) => n.title)],
             icon: c.icon,
           })),
         ],

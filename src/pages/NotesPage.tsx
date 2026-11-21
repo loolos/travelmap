@@ -4,16 +4,21 @@ import { noteCollections } from '../data/schema';
 import { PriceLine } from '../places/Price';
 import styles from './Pages.module.css';
 
-export function NotesPage() {
+/** kind 'tips' = 旅人手記 (regions + practical collections); 'knowledge' = 知識 cards. */
+export function NotesPage({ kind = 'tips' }: { kind?: 'tips' | 'knowledge' }) {
   const { regionId } = useParams();
-  const groups = [...regions.map((r) => ({ id: r.id, title: r.nameZh })), ...noteCollections.map((c) => ({ id: c.id, title: c.title }))]
+  const base = kind === 'tips' ? '/notes' : '/knowledge';
+  const groups = [
+    ...(kind === 'tips' ? regions.map((r) => ({ id: r.id, title: r.nameZh })) : []),
+    ...noteCollections.filter((c) => c.kind === kind).map((c) => ({ id: c.id, title: c.title })),
+  ]
     .map((g) => ({ ...g, notes: notes.filter((n) => n.regionId === g.id) }))
     .filter((g) => g.notes.length && (!regionId || g.id === regionId));
   return (
     <div>
       {regionId && (
         <p>
-          <Link to="/notes">全部手記</Link>
+          <Link to={base}>{kind === 'tips' ? '全部手記' : '全部知識卡'}</Link>
         </p>
       )}
       {groups.map((g) => (

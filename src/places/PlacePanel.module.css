@@ -366,3 +366,11 @@
   font-size: 13px;
   color: var(--muted);
 }
+.reads {
+  margin-top: 12px;
+}
+.reads h2 {
+  margin: 0 0 6px;
+  font-size: 14px;
+  color: var(--muted);
+}

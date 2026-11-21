@@ -116,6 +116,24 @@ export function PlacePanel({ place, wide, state, onExpand, onCollapse, onClose }
                     </li>
                   ))}
                 </ol>
+                {place.readIds.length > 0 && (
+                  <div className={styles.reads}>
+                    <h2>延伸知識</h2>
+                    {place.readIds.map((id) => {
+                      const note = noteById.get(id);
+                      return (
+                        note && (
+                          <details key={id} className={styles.note}>
+                            <summary>
+                              <span aria-hidden="true">{note.icon}</span> {note.title}
+                            </summary>
+                            <p>{note.body}</p>
+                          </details>
+                        )
+                      );
+                    })}
+                  </div>
+                )}
                 {place.sourceIds.length > 0 && (
                   <details className={styles.sources}>
                     <summary>來源</summary>
