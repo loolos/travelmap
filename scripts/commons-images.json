@@ -127,6 +127,30 @@
       "article": "Karnak",
       "dest": "media/luxor/karnak.webp",
       "alt": "卡納克神殿"
+    },
+    {
+      "assetId": "hurghada-hero",
+      "article": "Hurghada",
+      "dest": "media/red-sea/hurghada.webp",
+      "alt": "紅海海岸"
+    },
+    {
+      "assetId": "cairo-hero",
+      "article": "Cairo",
+      "dest": "media/cairo/cairo.webp",
+      "alt": "開羅市景"
+    },
+    {
+      "assetId": "citadel-hero",
+      "article": "Cairo Citadel",
+      "dest": "media/cairo/citadel.webp",
+      "alt": "薩拉丁城堡"
+    },
+    {
+      "assetId": "mosque-hero",
+      "article": "Mosque of Muhammad Ali",
+      "dest": "media/cairo/mosque.webp",
+      "alt": "穆罕默德‧阿里清真寺"
     }
   ]
 }

@@ -8,7 +8,9 @@ describe('nav index', () => {
   it('lists every place, activity and notes region', () => {
     for (const p of places) expect(items.some((i) => i.id === `place:${p.id}`)).toBe(true);
     for (const a of activities) expect(items.some((i) => i.id === `activity:${a.id}`)).toBe(true);
-    for (const n of notes) expect(items.some((i) => i.id === `notes:${n.regionId}`)).toBe(true);
+    for (const n of notes)
+      expect(items.some((i) => i.id === `notes:${n.regionId}` || i.id === `book:${n.regionId}`)).toBe(true);
+    expect(items.some((i) => i.to === '/deities')).toBe(true);
   });
   it('searches Chinese, English and aliases', () => {
     const find = (q: string) => items.filter((i) => matches(i, q)).map((i) => i.id);

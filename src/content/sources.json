@@ -158,5 +158,35 @@
     "id": "unesco-thebes",
     "title": "UNESCO：Ancient Thebes with its Necropolis",
     "url": "https://whc.unesco.org/en/list/87/"
+  },
+  {
+    "id": "wiki-red-sea",
+    "title": "Wikipedia：Red Sea",
+    "url": "https://en.wikipedia.org/wiki/Red_Sea"
+  },
+  {
+    "id": "wiki-hurghada",
+    "title": "Wikipedia：Hurghada",
+    "url": "https://en.wikipedia.org/wiki/Hurghada"
+  },
+  {
+    "id": "wiki-cairo",
+    "title": "Wikipedia：Cairo",
+    "url": "https://en.wikipedia.org/wiki/Cairo"
+  },
+  {
+    "id": "wiki-citadel",
+    "title": "Wikipedia：Cairo Citadel",
+    "url": "https://en.wikipedia.org/wiki/Cairo_Citadel"
+  },
+  {
+    "id": "wiki-muhammad-ali-mosque",
+    "title": "Wikipedia：Mosque of Muhammad Ali",
+    "url": "https://en.wikipedia.org/wiki/Mosque_of_Muhammad_Ali"
+  },
+  {
+    "id": "unesco-historic-cairo",
+    "title": "UNESCO：Historic Cairo",
+    "url": "https://whc.unesco.org/en/list/89/"
   }
 ]

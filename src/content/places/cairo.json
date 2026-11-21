@@ -1,5 +1,158 @@
 [
-  { "id": "cairo", "nameZh": "開羅", "nameEn": "Cairo", "major": true, "regionId": "cairo", "kind": "city", "coordinates": { "lat": 30.0444, "lon": 31.2357 }, "onItinerary": true, "status": "draft", "question": "金字塔的國家，首都為什麼叫「勝利之城」？" },
-  { "id": "citadel", "nameZh": "薩拉丁城堡", "nameEn": "Citadel of Saladin", "shortName": "城堡", "aliases": ["開羅城堡"], "regionId": "cairo", "kind": "fortress", "coordinates": { "lat": 30.0299, "lon": 31.2611 }, "onItinerary": true, "status": "draft", "question": "薩拉丁為什麼把城堡蓋在山丘上？" },
-  { "id": "muhammad-ali-mosque", "nameZh": "穆罕默德·阿里清真寺", "nameEn": "Mosque of Muhammad Ali", "shortName": "清真寺", "aliases": ["雪花石膏清真寺", "Alabaster Mosque"], "parentId": "citadel", "regionId": "cairo", "kind": "mosque", "coordinates": { "lat": 30.0287, "lon": 31.2599 }, "onItinerary": true, "status": "draft", "question": "這座清真寺為什麼長得像伊斯坦堡的清真寺？" }
+  {
+    "id": "cairo",
+    "nameZh": "開羅",
+    "nameEn": "Cairo",
+    "major": true,
+    "regionId": "cairo",
+    "kind": "city",
+    "coordinates": {
+      "lat": 30.0444,
+      "lon": 31.2357
+    },
+    "onItinerary": true,
+    "status": "ready",
+    "question": "金字塔的國家，首都為什麼叫「勝利之城」？",
+    "era": "西元 969 年由法蒂瑪王朝建城",
+    "intro": "尼羅河三角洲頂端的埃及首都，金字塔、伊斯蘭老城和現代高樓擠在同一座城市裡。",
+    "facts": [
+      "開羅的阿拉伯文名字「卡希拉」（al-Qāhira）意思是「勝利者」，969 年建城時取的名。",
+      "大開羅都會區住著兩千多萬人，是非洲和中東最大的城市之一。",
+      "伊斯蘭老城有上百座清真寺和宣禮塔，被稱為「千塔之城」，列為世界遺產。"
+    ],
+    "findItems": [
+      {
+        "id": "cairo-minarets",
+        "text": "天際線上細細高高的宣禮塔",
+        "hint": "從高處或車窗往老城方向看，尖頂細塔就是清真寺的宣禮塔。"
+      },
+      {
+        "id": "cairo-call",
+        "text": "一天五次從擴音器傳來的喚拜聲",
+        "hint": "中午或傍晚留意，整座城市的清真寺會先後響起吟唱。"
+      },
+      {
+        "id": "cairo-pyramids",
+        "text": "從市區遠遠看到的金字塔",
+        "hint": "天氣好時從西邊的高樓或[城堡](place:citadel)往西南看。"
+      }
+    ],
+    "noteIds": [
+      "cairo-bargain",
+      "cairo-traffic",
+      "hist-ptolemy",
+      "hist-rome",
+      "hist-arab",
+      "hist-fatimid",
+      "hist-saladin",
+      "hist-ottoman",
+      "hist-muhammad-ali",
+      "hist-1952"
+    ],
+    "sourceIds": [
+      "wiki-cairo",
+      "unesco-historic-cairo"
+    ],
+    "heroAssetId": "cairo-hero"
+  },
+  {
+    "id": "citadel",
+    "nameZh": "薩拉丁城堡",
+    "nameEn": "Citadel of Saladin",
+    "shortName": "城堡",
+    "aliases": [
+      "開羅城堡"
+    ],
+    "regionId": "cairo",
+    "kind": "fortress",
+    "coordinates": {
+      "lat": 30.0299,
+      "lon": 31.2611
+    },
+    "onItinerary": true,
+    "status": "ready",
+    "question": "薩拉丁為什麼把城堡蓋在山丘上？",
+    "era": "1176 年由薩拉丁開始興建",
+    "intro": "建在穆卡塔姆山腳高地上的城堡，從這裡可以俯瞰整個開羅。",
+    "facts": [
+      "薩拉丁為了抵禦十字軍、也為了控制城市，選在高地上築城。",
+      "此後約七百年，埃及的統治者都住在這裡，直到 19 世紀才搬進新王宮。",
+      "城堡裡有馬木路克時期的清真寺，也有 19 世紀的[穆罕默德·阿里清真寺](place:muhammad-ali-mosque)。"
+    ],
+    "findItems": [
+      {
+        "id": "citadel-walls",
+        "text": "厚厚的石造城牆和圓形塔樓",
+        "hint": "走在城堡裡看外圍城牆，塔樓上有供射箭的窄縫。"
+      },
+      {
+        "id": "citadel-view",
+        "text": "腳下整片開羅市區",
+        "hint": "到清真寺旁的觀景平台，往西看整座城市。"
+      },
+      {
+        "id": "citadel-nasir",
+        "text": "一座有綠色瓷磚尖頂宣禮塔的老清真寺",
+        "hint": "穆罕默德·阿里清真寺對面，那是 14 世紀馬木路克時代蓋的。"
+      }
+    ],
+    "noteIds": [
+      "cairo-shops"
+    ],
+    "sourceIds": [
+      "wiki-citadel"
+    ],
+    "heroAssetId": "citadel-hero"
+  },
+  {
+    "id": "muhammad-ali-mosque",
+    "nameZh": "穆罕默德·阿里清真寺",
+    "nameEn": "Mosque of Muhammad Ali",
+    "shortName": "清真寺",
+    "aliases": [
+      "雪花石膏清真寺",
+      "Alabaster Mosque"
+    ],
+    "parentId": "citadel",
+    "regionId": "cairo",
+    "kind": "mosque",
+    "coordinates": {
+      "lat": 30.0287,
+      "lon": 31.2599
+    },
+    "onItinerary": true,
+    "status": "ready",
+    "question": "這座清真寺為什麼長得像伊斯坦堡的清真寺？",
+    "era": "1830–1848 年興建",
+    "intro": "城堡最高處的大清真寺，巨大的穹頂和兩支細長宣禮塔，成了開羅天際線的標誌。",
+    "facts": [
+      "穆罕默德·阿里原是鄂圖曼帝國派來的軍官，所以清真寺仿照伊斯坦堡的鄂圖曼樣式。",
+      "外牆和庭院貼著雪花石膏，所以又稱「雪花石膏清真寺」。",
+      "庭院的鐘樓是法國國王送的回禮，埃及送出的是[路克索神殿](place:luxor-temple)門口的方尖碑。"
+    ],
+    "findItems": [
+      {
+        "id": "mosque-domes",
+        "text": "中央大穹頂周圍一圈圈的半穹頂",
+        "hint": "站在庭院往上看，大圓頂四周有幾個較小的半圓頂層層撐著。"
+      },
+      {
+        "id": "mosque-clock",
+        "text": "庭院裡法國送的鐘樓",
+        "hint": "在洗禮噴泉後方的走廊上，看一座帶著鐘面的小塔。"
+      },
+      {
+        "id": "mosque-minarets",
+        "text": "兩支像鉛筆一樣細長的宣禮塔",
+        "hint": "從城堡任何地方抬頭看，尖頂細長的就是鄂圖曼式宣禮塔。"
+      }
+    ],
+    "noteIds": [
+      "mosque-dress"
+    ],
+    "sourceIds": [
+      "wiki-muhammad-ali-mosque"
+    ],
+    "heroAssetId": "mosque-hero"
+  }
 ]
