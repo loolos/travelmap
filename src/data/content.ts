@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { Activity, Asset, Deity, Glyph, Note, Place, Region, Source } from './schema';
+import { Activity, Asset, Deity, Era, Glyph, Note, Place, Region, Source } from './schema';
 import regionsRaw from '../content/regions.json';
 import notesRaw from '../content/notes.json';
 import assetsRaw from '../content/assets.json';
@@ -7,6 +7,7 @@ import sourcesRaw from '../content/sources.json';
 import activitiesRaw from '../content/activities.json';
 import deitiesRaw from '../content/deities.json';
 import glyphsRaw from '../content/glyphs.json';
+import erasRaw from '../content/eras.json';
 
 const placeFiles = import.meta.glob<unknown[]>('../content/places/*.json', { eager: true, import: 'default' });
 
@@ -21,6 +22,7 @@ export const sources = z.array(Source).parse(sourcesRaw);
 export const activities = z.array(Activity).parse(activitiesRaw);
 export const deities = z.array(Deity).parse(deitiesRaw);
 export const glyphs = z.array(Glyph).parse(glyphsRaw);
+export const eras = z.array(Era).parse(erasRaw);
 
 const byId = <T extends { id: string }>(xs: T[]) => new Map(xs.map((x) => [x.id, x]));
 export const placeById = byId(places);
@@ -30,6 +32,7 @@ export const assetById = byId(assets);
 export const sourceById = byId(sources);
 export const activityById = byId(activities);
 export const deityById = byId(deities);
+export const eraById = byId(eras);
 
 export const placesByRegion = regions.map((r) => ({
   region: r,

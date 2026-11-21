@@ -205,6 +205,101 @@
     "url": "https://data.worldbank.org/country/egypt-arab-rep"
   },
   {
+    "id": "wiki-predynastic",
+    "title": "Wikipedia：Prehistoric Egypt",
+    "url": "https://en.wikipedia.org/wiki/Prehistoric_Egypt"
+  },
+  {
+    "id": "wiki-early-dynastic",
+    "title": "Wikipedia：Early Dynastic Period (Egypt)",
+    "url": "https://en.wikipedia.org/wiki/Early_Dynastic_Period_(Egypt)"
+  },
+  {
+    "id": "wiki-old-kingdom",
+    "title": "Wikipedia：Old Kingdom of Egypt",
+    "url": "https://en.wikipedia.org/wiki/Old_Kingdom_of_Egypt"
+  },
+  {
+    "id": "wiki-first-intermediate",
+    "title": "Wikipedia：First Intermediate Period",
+    "url": "https://en.wikipedia.org/wiki/First_Intermediate_Period"
+  },
+  {
+    "id": "wiki-middle-kingdom",
+    "title": "Wikipedia：Middle Kingdom of Egypt",
+    "url": "https://en.wikipedia.org/wiki/Middle_Kingdom_of_Egypt"
+  },
+  {
+    "id": "wiki-second-intermediate",
+    "title": "Wikipedia：Second Intermediate Period",
+    "url": "https://en.wikipedia.org/wiki/Second_Intermediate_Period"
+  },
+  {
+    "id": "wiki-new-kingdom",
+    "title": "Wikipedia：New Kingdom of Egypt",
+    "url": "https://en.wikipedia.org/wiki/New_Kingdom_of_Egypt"
+  },
+  {
+    "id": "wiki-third-intermediate",
+    "title": "Wikipedia：Third Intermediate Period of Egypt",
+    "url": "https://en.wikipedia.org/wiki/Third_Intermediate_Period_of_Egypt"
+  },
+  {
+    "id": "wiki-25th-dynasty",
+    "title": "Wikipedia：Twenty-fifth Dynasty of Egypt",
+    "url": "https://en.wikipedia.org/wiki/Twenty-fifth_Dynasty_of_Egypt"
+  },
+  {
+    "id": "wiki-late-period",
+    "title": "Wikipedia：Late Period of ancient Egypt",
+    "url": "https://en.wikipedia.org/wiki/Late_Period_of_ancient_Egypt"
+  },
+  {
+    "id": "wiki-ptolemaic",
+    "title": "Wikipedia：Ptolemaic Kingdom",
+    "url": "https://en.wikipedia.org/wiki/Ptolemaic_Kingdom"
+  },
+  {
+    "id": "wiki-roman-egypt",
+    "title": "Wikipedia：Egypt (Roman province)",
+    "url": "https://en.wikipedia.org/wiki/Egypt_(Roman_province)"
+  },
+  {
+    "id": "wiki-islamic-egypt",
+    "title": "Wikipedia：Egypt in the Middle Ages",
+    "url": "https://en.wikipedia.org/wiki/Egypt_in_the_Middle_Ages"
+  },
+  {
+    "id": "wiki-fatimid",
+    "title": "Wikipedia：Fatimid Caliphate",
+    "url": "https://en.wikipedia.org/wiki/Fatimid_Caliphate"
+  },
+  {
+    "id": "wiki-ayyubid",
+    "title": "Wikipedia：Ayyubid dynasty",
+    "url": "https://en.wikipedia.org/wiki/Ayyubid_dynasty"
+  },
+  {
+    "id": "wiki-mamluk",
+    "title": "Wikipedia：Mamluk Sultanate",
+    "url": "https://en.wikipedia.org/wiki/Mamluk_Sultanate"
+  },
+  {
+    "id": "wiki-ottoman-egypt",
+    "title": "Wikipedia：Ottoman Egypt",
+    "url": "https://en.wikipedia.org/wiki/Ottoman_Egypt"
+  },
+  {
+    "id": "wiki-muhammad-ali-dynasty",
+    "title": "Wikipedia：Muhammad Ali dynasty",
+    "url": "https://en.wikipedia.org/wiki/Muhammad_Ali_dynasty"
+  },
+  {
+    "id": "wiki-republic-history",
+    "title": "Wikipedia：History of the Republic of Egypt",
+    "url": "https://en.wikipedia.org/wiki/History_of_the_Republic_of_Egypt"
+  },
+  {
     "id": "wiki-haroeris",
     "title": "Wikipedia：Horus the Elder",
     "url": "https://en.wikipedia.org/wiki/Horus_the_Elder"

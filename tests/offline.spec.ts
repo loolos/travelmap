@@ -232,3 +232,13 @@ test('an uncollected deity can still be opened with its picture', async ({ page 
   await expect(page.getByText(/尚未收集/)).toBeVisible();
   await expect(page.getByRole('img', { name: '阿努比斯的圖像' })).toBeVisible();
 });
+
+test('a place links to its era on the history timeline', async ({ page }) => {
+  await page.goto('./#/place/abu-simbel');
+  await page.getByRole('tab', { name: /重點/ }).click();
+  await page.getByRole('link', { name: /當時是\s*新王國/ }).click();
+  await expect(page).toHaveURL(/#\/timeline\/new-kingdom$/);
+  await expect(page.getByRole('img', { name: /新王國的疆域示意圖/ })).toBeVisible();
+  await page.getByRole('link', { name: /阿布辛貝神殿/ }).click();
+  await expect(page).toHaveURL(/#\/place\/abu-simbel$/);
+});

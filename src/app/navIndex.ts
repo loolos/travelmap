@@ -1,4 +1,4 @@
-import { activities, deities, glyphs, notes, placesByRegion, regions } from '../data/content';
+import { activities, deities, eras, glyphs, notes, placesByRegion, regions } from '../data/content';
 import { noteCollections } from '../data/schema';
 
 export interface NavItem {
@@ -18,6 +18,15 @@ export interface NavGroup {
 }
 
 /** Everything reachable in the app, generated from content so nothing can be left out. */
+const timelineItem: NavItem = {
+  id: 'timeline',
+  to: '/timeline',
+  label: '埃及歷史時間線',
+  sub: 'History timeline',
+  terms: ['timeline', 'history', '歷史', '王朝', '朝代', ...eras.flatMap((e) => [e.nameZh, e.nameEn])],
+  icon: '📜',
+};
+
 export function buildNavIndex(): NavGroup[] {
   const groups: NavGroup[] = [
     {
@@ -28,14 +37,17 @@ export function buildNavIndex(): NavGroup[] {
       title: '地點',
       sections: placesByRegion.map(({ region, places }) => ({
         title: region.nameZh,
-        items: places.map((p) => ({
-          id: `place:${p.id}`,
-          to: `/place/${p.id}`,
-          label: p.nameZh,
-          sub: p.nameEn,
-          terms: [p.nameEn, ...p.aliases, p.shortName ?? '', region.nameZh, region.nameEn],
-          muted: p.status === 'draft',
-        })),
+        items: places.flatMap((p) => [
+          {
+            id: `place:${p.id}`,
+            to: `/place/${p.id}`,
+            label: p.nameZh,
+            sub: p.nameEn,
+            terms: [p.nameEn, ...p.aliases, p.shortName ?? '', region.nameZh, region.nameEn],
+            muted: p.status === 'draft',
+          },
+          ...(p.kind === 'country' ? [timelineItem] : []),
+        ]),
       })),
     },
   ];
@@ -92,6 +104,7 @@ export function buildNavIndex(): NavGroup[] {
             terms: ['gods', 'deity', '神', ...deities.flatMap((d) => [d.nameZh, d.nameEn])],
             icon: '🏺',
           },
+          { ...timelineItem, id: 'timeline-knowledge' },
           {
             id: 'glyphs',
             to: '/glyphs',

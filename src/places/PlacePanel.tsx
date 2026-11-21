@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import type { Place } from '../data/schema';
-import { activityById, assetById, noteById, regionById, sourceById } from '../data/content';
+import { activityById, assetById, eras, noteById, regionById, sourceById } from '../data/content';
+import { eraForYear } from '../data/eras';
 import { foundCount, isLit, markOpened, toggleVisited, useProgress } from '../progress/store';
 import { Hero } from './Img';
 import { InlineText } from './InlineText';
@@ -52,6 +53,7 @@ export function PlacePanel({ place, wide, state, onExpand, onCollapse, onClose }
   const ready = place.status === 'ready';
   const acts = place.activityIds.map((id) => activityById.get(id)!).filter(Boolean);
   const hero = place.heroAssetId ? assetById.get(place.heroAssetId) : undefined;
+  const builtEra = place.builtYear !== undefined ? eraForYear(eras, place.builtYear) : undefined;
   const pick = (t: Tab) => setTab((cur) => (cur === t ? null : t));
 
   return (
@@ -98,6 +100,11 @@ export function PlacePanel({ place, wide, state, onExpand, onCollapse, onClose }
               <TabBtn active={tab === 'facts'} onClick={() => pick('facts')} icon="🔍" label="重點" />
               <TabBtn active={tab === 'find'} onClick={() => pick('find')} icon="👀" label="找找看" badge={`${n}/${place.findItems.length}`} />
               <TabBtn active={tab === 'notes'} onClick={() => pick('notes')} icon="🧳" label="手記" />
+              {place.kind === 'country' && (
+                <Link to="/timeline" className={styles.tab}>
+                  <span aria-hidden="true">📜</span> 時間線
+                </Link>
+              )}
               {acts.map((a) => (
                 <Link key={a.id} to={`/place/${place.id}/${a.id}`} className={styles.tab}>
                   <span aria-hidden="true">{a.icon}</span> {a.label}
@@ -108,6 +115,12 @@ export function PlacePanel({ place, wide, state, onExpand, onCollapse, onClose }
             {tab === 'facts' && (
               <section className={styles.detail} role="tabpanel" aria-label="重點">
                 {place.era && <p className={styles.era}>{place.era}</p>}
+                {builtEra && (
+                  <Link to={`/timeline/${builtEra.id}`} className={styles.eraLink}>
+                    📜 當時是<strong>{builtEra.nameZh}</strong>
+                    <span>看王朝與疆域 →</span>
+                  </Link>
+                )}
                 {place.intro && <p>{place.intro}</p>}
                 <ol className={styles.facts}>
                   {place.facts.map((f, i) => (

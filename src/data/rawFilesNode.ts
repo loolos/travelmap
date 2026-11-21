@@ -19,6 +19,7 @@ export function readRawContent(): RawContent {
     activities: read('activities.json'),
     deities: read('deities.json'),
     glyphs: read('glyphs.json'),
+    eras: read('eras.json'),
   };
 }
 

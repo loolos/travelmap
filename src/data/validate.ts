@@ -1,5 +1,6 @@
 import { z } from 'zod';
-import { isKnowledge, noteCollections, Activity, Asset, Deity, Glyph, Note, Place, Region, Source, type ContentBundle } from './schema';
+import { isKnowledge, noteCollections, Activity, Asset, Deity, Era, Glyph, Note, Place, Region, Source, type ContentBundle } from './schema';
+import { eraForYear } from './eras';
 import { charCount, parseInline, plainText } from './inline';
 
 export interface RawContent {
@@ -11,6 +12,7 @@ export interface RawContent {
   activities: unknown;
   deities: unknown;
   glyphs: unknown;
+  eras: unknown;
 }
 
 export interface ValidationResult {
@@ -43,6 +45,7 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
   const activities = parse(z.array(Activity), raw.activities, 'activities') ?? [];
   const deities = parse(z.array(Deity), raw.deities, 'deities') ?? [];
   const glyphs = parse(z.array(Glyph), raw.glyphs, 'glyphs') ?? [];
+  const eras = parse(z.array(Era), raw.eras, 'eras') ?? [];
 
   const ids = new Map<string, string>();
   const unique = (id: string, label: string) => {
@@ -57,6 +60,7 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
   activities.forEach((a) => unique(a.id, 'activity'));
   deities.forEach((d) => unique(d.id, 'deity'));
   glyphs.forEach((g) => unique(`glyph:${g.id}`, 'glyph'));
+  eras.forEach((e) => unique(`era:${e.id}`, 'era'));
 
   const placeIds = new Set(places.map((p) => p.id));
   const regionIds = new Set(regions.map((r) => r.id));
@@ -164,6 +168,18 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
     checkText(`glyph ${g.id}`, `${g.nameZh}${g.meaning}${g.where}`);
     if ([...g.glyph].length !== 1 || !/[\u{13000}-\u{1342F}]/u.test(g.glyph)) errors.push(`glyph ${g.id}: must be one Egyptian hieroglyph`);
   }
+  eras.forEach((e, i) => {
+    checkText(`era ${e.id}`, `${e.nameZh}${e.rulers}${e.capital}${e.summary}${e.extent}${e.ruledFrom ?? ''}`);
+    e.sourceIds.forEach((s) => sourceIds.has(s) || errors.push(`era ${e.id}: unknown source ${s}`));
+    const next = eras[i + 1];
+    if (next && e.end !== next.start) errors.push(`era ${e.id}: must end where ${next.id} starts`);
+    if (!next && e.end !== undefined) errors.push(`era ${e.id}: the last era runs to the present (no end)`);
+    if (e.end !== undefined && e.end <= e.start) errors.push(`era ${e.id}: end before start`);
+  });
+  for (const p of places) {
+    if (p.builtYear !== undefined && eras.length && !eraForYear(eras, p.builtYear))
+      errors.push(`place ${p.id}: builtYear ${p.builtYear} is outside the timeline`);
+  }
   // Every hero/essential asset must be referenced at most... (unused assets are only a warning)
   const used = new Set([
     ...places.map((p) => p.heroAssetId),
@@ -176,6 +192,6 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
   return {
     errors,
     warnings,
-    bundle: errors.length ? undefined : { places, regions, notes, assets, sources, activities, deities, glyphs },
+    bundle: errors.length ? undefined : { places, regions, notes, assets, sources, activities, deities, glyphs, eras },
   };
 }

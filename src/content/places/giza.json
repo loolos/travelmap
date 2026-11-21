@@ -44,6 +44,7 @@
     "noteIds": [
       "gem-security"
     ],
+    "builtYear": 2025,
     "sourceIds": [
       "wiki-gem"
     ],
@@ -109,6 +110,7 @@
       "giza-camel",
       "giza-touts"
     ],
+    "builtYear": -2560,
     "activityIds": [
       "pyramid-build"
     ],
@@ -169,6 +171,7 @@
       "giza-panorama",
       "giza-touts"
     ],
+    "builtYear": -2570,
     "sourceIds": [
       "wiki-khafre",
       "unesco-memphis"
@@ -225,6 +228,7 @@
     "noteIds": [
       "giza-panorama"
     ],
+    "builtYear": -2510,
     "sourceIds": [
       "wiki-menkaure",
       "unesco-memphis"
@@ -287,6 +291,7 @@
       "giza-touts",
       "giza-camel"
     ],
+    "builtYear": -2550,
     "sourceIds": [
       "wiki-sphinx",
       "unesco-memphis"
