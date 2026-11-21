@@ -181,5 +181,33 @@
       "wiki-coral-bleaching",
       "wiki-red-sea-anemonefish"
     ]
+  },
+  {
+    "id": "sphinx-evidence",
+    "placeId": "giza-sphinx",
+    "component": "EvidenceReveal",
+    "title": "復原人面獅身",
+    "label": "復原原貌",
+    "icon": "🔎",
+    "question": "人面獅身像原本是什麼顏色、什麼樣子？",
+    "durationMin": 3,
+    "sourceIds": [
+      "wiki-sphinx",
+      "wiki-dream-stele"
+    ]
+  },
+  {
+    "id": "felucca-wind",
+    "placeId": "felucca",
+    "component": "SailLab",
+    "title": "風與水流",
+    "label": "風與水流",
+    "icon": "⛵",
+    "question": "不用引擎，船怎麼逆流而上？",
+    "durationMin": 2,
+    "sourceIds": [
+      "wiki-felucca",
+      "wiki-nile"
+    ]
   }
 ]
