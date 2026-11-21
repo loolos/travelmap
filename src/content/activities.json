@@ -223,5 +223,19 @@
       "wiki-abu-simbel",
       "unesco-nubia"
     ]
+  },
+  {
+    "id": "tut-dig",
+    "placeId": "tutankhamun-tomb",
+    "component": "EvidenceReveal",
+    "title": "找圖坦卡門",
+    "label": "找法老墓",
+    "icon": "🎮",
+    "question": "三千年沒人找到的法老墓，藏在哪裡？",
+    "durationMin": 3,
+    "sourceIds": [
+      "wiki-kv62",
+      "wiki-tut-mask"
+    ]
   }
 ]

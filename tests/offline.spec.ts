@@ -265,3 +265,15 @@ test('abu simbel move walks through the relocation to the sun festival', async (
   await page.getByRole('button', { name: '看完整解釋' }).click();
   await expect(page.getByText(/約五十個國家/)).toBeVisible();
 });
+
+test('tutankhamun dig finds the tomb under the huts and opens it to the mask', async ({ page }) => {
+  await page.goto('./#/place/tutankhamun-tomb/tut-dig');
+  await page.getByRole('button', { name: /小岩坑/ }).click();
+  await expect(page.getByText(/線索！/)).toBeVisible();
+  await page.getByRole('button', { name: /工人小屋遺跡/ }).click();
+  await expect(page.getByText(/找到了！/)).toBeVisible();
+  for (let i = 0; i < 6; i++) await page.getByRole('button', { name: /^打開：/ }).click();
+  await expect(page.getByText(/約 10 公斤重的黃金面具/)).toBeVisible();
+  await page.getByRole('button', { name: '看完整解釋' }).click();
+  await expect(page.getByText(/五千多件文物/)).toBeVisible();
+});
