@@ -277,3 +277,23 @@ test('tutankhamun dig finds the tomb under the huts and opens it to the mask', a
   await page.getByRole('button', { name: '看完整解釋' }).click();
   await expect(page.getByText(/五千多件文物/)).toBeVisible();
 });
+
+test('mummy order accepts the steps only in the right order', async ({ page }) => {
+  await page.goto('./#/place/valley-of-the-kings/mummy-order');
+  await page.getByRole('button', { name: /泡鹼脫水/ }).click();
+  await expect(page.getByRole('status')).toContainText('還太早');
+  for (const step of ['清洗身體', '取出大腦', '取出內臟', '放進卡諾卜罈', '泡鹼脫水', '填充塗油', '包亞麻布', '戴面具入棺'])
+    await page.getByRole('button', { name: new RegExp(step) }).click();
+  await expect(page.getByText('排錯 1 次')).toBeVisible();
+  await page.getByRole('button', { name: '看完整解釋' }).click();
+  await expect(page.getByText(/和代表真理的羽毛比重量/)).toBeVisible();
+});
+
+test('horus and set comic pages through eight panels', async ({ page }) => {
+  await page.goto('./#/place/edfu/horus-set-comic');
+  await expect(page.getByRole('img', { name: '歐西里斯的圖像' })).toBeVisible();
+  for (let i = 0; i < 7; i++) await page.getByRole('button', { name: '下一格 →' }).click();
+  await expect(page.getByText(/人間的荷魯斯/)).toBeVisible();
+  await page.getByRole('button', { name: '到神殿找找看' }).click();
+  await expect(page.getByText(/變成小河馬的賽特/)).toBeVisible();
+});

@@ -237,5 +237,33 @@
       "wiki-kv62",
       "wiki-tut-mask"
     ]
+  },
+  {
+    "id": "mummy-order",
+    "placeId": "valley-of-the-kings",
+    "component": "StepTimeline",
+    "title": "製作木乃伊",
+    "label": "木乃伊",
+    "icon": "🎮",
+    "question": "做一具木乃伊要七十天。先做什麼、後做什麼？",
+    "durationMin": 2,
+    "sourceIds": [
+      "wiki-mummy",
+      "wiki-canopic"
+    ]
+  },
+  {
+    "id": "horus-set-comic",
+    "placeId": "edfu",
+    "component": "StepTimeline",
+    "title": "荷魯斯與賽特",
+    "label": "神話漫畫",
+    "icon": "📖",
+    "question": "為什麼艾德夫神殿到處都是老鷹？",
+    "durationMin": 2,
+    "sourceIds": [
+      "wiki-osiris-myth",
+      "wiki-edfu"
+    ]
   }
 ]
