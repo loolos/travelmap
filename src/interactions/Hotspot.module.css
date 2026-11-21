@@ -1,0 +1,123 @@
+.stage {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.stage svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.spot {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  margin: -17px 0 0 -17px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: var(--lapis);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+  display: grid;
+  place-items: center;
+  padding: 0;
+  cursor: pointer;
+}
+.spot::after {
+  content: '';
+  position: absolute;
+  inset: -6px;
+}
+.spot.seen {
+  background: var(--gold);
+}
+.spot.active {
+  background: #a33b2f;
+  transform: scale(1.12);
+}
+.card {
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: var(--panel-2);
+  font-size: 15px;
+  min-height: 4.5em;
+}
+.card h3 {
+  margin: 0 0 4px;
+  font-size: 16px;
+}
+.card p {
+  margin: 0;
+}
+.card .en {
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--muted);
+  margin-left: 6px;
+}
+.count {
+  font-size: 13px;
+  color: var(--muted);
+}
+.choices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.choices button {
+  min-height: 48px;
+  padding: 6px 10px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: #fff;
+  font-size: 15px;
+}
+.choices button.right {
+  background: #dcebd2;
+  border-color: #6c9a4f;
+  font-weight: 600;
+}
+.choices button.wrong {
+  background: #f6dcd6;
+  border-color: #a33b2f;
+}
+.cards {
+  display: grid;
+  gap: 8px;
+}
+.evidence {
+  text-align: left;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: #fff;
+  font-size: 15px;
+  display: grid;
+  gap: 4px;
+}
+.evidence[aria-expanded='true'] {
+  background: #eef4f6;
+  border-color: var(--nile);
+}
+.evidence b {
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 600;
+}
+.dots {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+.dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--line);
+}
+.dots span.on {
+  background: var(--lapis);
+}
