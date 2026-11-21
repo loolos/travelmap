@@ -136,3 +136,28 @@ test('ticking a deity in a find list collects it in the deity book', async ({ pa
   await page.getByRole('button', { name: /索貝克/ }).click();
   await expect(page.getByRole('link', { name: '孔翁波神殿' })).toBeVisible();
 });
+
+test('karnak timeline grows the temple westward and explains', async ({ page }) => {
+  await page.goto('./#/place/karnak/karnak-timeline');
+  const slider = page.getByRole('slider', { name: '時間軸' });
+  await slider.focus();
+  for (let i = 0; i < 4; i++) await slider.press('ArrowRight');
+  await expect(page.getByText('第一塔門始終沒有完工', { exact: false })).toBeVisible();
+  await page.getByRole('button', { name: '看解釋' }).click();
+  await expect(page.getByText('往回穿越兩千年', { exact: false })).toBeVisible();
+});
+
+test('cartouche maker writes a name with the bundled font and saves a PNG', async ({ page }) => {
+  await page.goto('./#/place/karnak');
+  await page.getByRole('tab', { name: /找找看/ }).click();
+  await page.getByRole('button', { name: /方尖碑/ }).click();
+  await page.getByRole('link', { name: '王名圈產生器' }).click();
+  const input = page.getByRole('textbox', { name: /名字/ });
+  await input.fill('Lily');
+  await expect(page.getByRole('img', { name: /王名圈：獅子、蘆葦、獅子、雙蘆葦/ })).toBeVisible();
+  expect(await page.evaluate(() => document.fonts.check('40px Hiero', '\u{130ED}'))).toBe(true);
+  await page.getByRole('button', { name: '直排' }).click();
+  const download = page.waitForEvent('download');
+  await page.getByRole('button', { name: '存成圖片' }).click();
+  expect((await download).suggestedFilename()).toBe('cartouche-lily.png');
+});

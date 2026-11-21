@@ -174,5 +174,59 @@
     "license": "CC0",
     "kind": "illustration",
     "essential": true
+  },
+  {
+    "id": "luxor-hero",
+    "path": "media/luxor/luxor.webp",
+    "alt": "路克索與尼羅河（示意）",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "vok-hero",
+    "path": "media/luxor/valley-of-the-kings.webp",
+    "alt": "帝王谷（示意）",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "tut-hero",
+    "path": "media/luxor/tutankhamun.webp",
+    "alt": "圖坦卡門墓室（示意）",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "memnon-hero",
+    "path": "media/luxor/memnon.webp",
+    "alt": "曼儂巨像（示意）",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "luxor-temple-hero",
+    "path": "media/luxor/luxor-temple.webp",
+    "alt": "路克索神殿（示意）",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "karnak-hero",
+    "path": "media/luxor/karnak.webp",
+    "alt": "卡納克神殿大柱廳（示意）",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
   }
 ]

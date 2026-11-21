@@ -68,7 +68,7 @@ export default defineConfig({
       },
       injectManifest: {
         // App Shell only. Core media is downloaded on demand from the offline page.
-        globPatterns: ['**/*.{js,css,html,svg,png,webmanifest}'],
+        globPatterns: ['**/*.{js,css,html,svg,png,webmanifest,woff2}'],
         globIgnores: ['media/**'],
       },
       devOptions: { enabled: false },
