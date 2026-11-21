@@ -92,15 +92,6 @@ export const prepGroups: PrepGroup[] = [
       { id: 'police', title: '不拍軍警和執法人員', detail: '軍警設施和執法人員不要拍照錄影；海關查驗行李請配合。' },
     ],
   },
-  {
-    icon: '📱',
-    title: '這個 App',
-    items: [
-      { id: 'offline', title: '下載離線內容', detail: '到「離線下載」頁下載全部內容，最好在有 Wi-Fi 的地方。' },
-      { id: 'airplane', title: '開飛航模式測一次', detail: '開飛航模式後重開 App，確認地圖、地點和互動都打得開。' },
-      { id: 'homescreen', title: '加到主畫面', detail: 'iPhone 用 Safari 的「分享 → 加入主畫面」，像一般 App 一樣打開。' },
-    ],
-  },
 ];
 
 /** December climate normals (1991–2020 where stated) for the route. */

@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { CHECKED_AT, decemberWeather, prepGroups, prepSources } from './prepData';
 import styles from './Pages.module.css';
 
@@ -65,15 +64,7 @@ export function PrepPage() {
                 />
                 <span style={done[it.id] ? { textDecoration: 'line-through', color: 'var(--muted)' } : undefined}>{it.title}</span>
               </summary>
-              <p>
-                {it.detail}
-                {it.id === 'offline' && (
-                  <>
-                    {' '}
-                    <Link to="/offline">前往離線下載 →</Link>
-                  </>
-                )}
-              </p>
+              <p>{it.detail}</p>
             </details>
           ))}
         </section>
