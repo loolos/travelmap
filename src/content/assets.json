@@ -338,10 +338,11 @@
   {
     "id": "deity-amun",
     "path": "media/deities/amun.webp",
-    "alt": "阿蒙（示意）",
-    "credit": "Egypt Explorer 示意圖",
-    "license": "CC0",
-    "kind": "illustration",
+    "alt": "阿蒙",
+    "credit": "Jeff Dahl",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amun.svg",
+    "kind": "photo",
     "essential": true
   },
   {
