@@ -98,7 +98,9 @@ export function PlacePanel({ place, wide, state, onExpand, onCollapse, onClose }
           <>
             <div className={styles.tabs} role="tablist">
               <TabBtn active={tab === 'facts'} onClick={() => pick('facts')} icon="🔍" label="重點" />
-              <TabBtn active={tab === 'find'} onClick={() => pick('find')} icon="👀" label="找找看" badge={`${n}/${place.findItems.length}`} />
+              {place.findItems.length > 0 && (
+                <TabBtn active={tab === 'find'} onClick={() => pick('find')} icon="👀" label="找找看" badge={`${n}/${place.findItems.length}`} />
+              )}
               <TabBtn active={tab === 'notes'} onClick={() => pick('notes')} icon="🧳" label="手記" />
               {place.kind === 'country' && (
                 <Link to="/timeline" className={styles.tab}>
@@ -185,7 +187,7 @@ export function PlacePanel({ place, wide, state, onExpand, onCollapse, onClose }
             {tab === 'find' && (
               <section className={styles.detail} role="tabpanel" aria-label="找找看">
                 <FindList place={place} progress={progress} />
-                <p className={styles.hint}>{lit ? '✨ 全部找到了！地圖上這個點已經亮起。' : '三個都找到，地圖上的這個點會亮起。'}</p>
+                <p className={styles.hint}>{lit ? '✨ 全部找到了！地圖上這個點已經亮起。' : '全部找到，地圖上的這個點會亮起。'}</p>
               </section>
             )}
 

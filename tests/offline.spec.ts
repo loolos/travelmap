@@ -242,3 +242,9 @@ test('a place links to its era on the history timeline', async ({ page }) => {
   await page.getByRole('link', { name: /阿布辛貝神殿/ }).click();
   await expect(page).toHaveURL(/#\/place\/abu-simbel$/);
 });
+
+test('a place without find items hides the find tab', async ({ page }) => {
+  await page.goto('./#/place/felucca');
+  await expect(page.getByRole('tab', { name: /重點/ })).toBeVisible();
+  await expect(page.getByRole('tab', { name: /找找看/ })).toHaveCount(0);
+});
