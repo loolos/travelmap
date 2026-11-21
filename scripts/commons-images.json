@@ -151,6 +151,103 @@
       "article": "Mosque of Muhammad Ali",
       "dest": "media/cairo/mosque.webp",
       "alt": "穆罕默德‧阿里清真寺"
+    },
+    {
+      "assetId": "deity-ra",
+      "article": "Ra",
+      "dest": "media/deities/ra.webp",
+      "alt": "拉"
+    },
+    {
+      "assetId": "deity-horus",
+      "article": "Horus",
+      "dest": "media/deities/horus.webp",
+      "alt": "荷魯斯"
+    },
+    {
+      "assetId": "deity-sobek",
+      "article": "Sobek",
+      "dest": "media/deities/sobek.webp",
+      "alt": "索貝克"
+    },
+    {
+      "assetId": "deity-hathor",
+      "article": "Hathor",
+      "dest": "media/deities/hathor.webp",
+      "alt": "哈托爾"
+    },
+    {
+      "assetId": "deity-khnum",
+      "article": "Khnum",
+      "dest": "media/deities/khnum.webp",
+      "alt": "克努姆"
+    },
+    {
+      "assetId": "deity-seth",
+      "article": "Set (deity)",
+      "dest": "media/deities/seth.webp",
+      "alt": "賽特"
+    },
+    {
+      "assetId": "deity-amun",
+      "article": "Amun",
+      "dest": "media/deities/amun.webp",
+      "alt": "阿蒙"
+    },
+    {
+      "assetId": "deity-anubis",
+      "article": "Anubis",
+      "dest": "media/deities/anubis.webp",
+      "alt": "阿努比斯"
+    },
+    {
+      "assetId": "deity-osiris",
+      "article": "Osiris",
+      "dest": "media/deities/osiris.webp",
+      "alt": "歐西里斯"
+    },
+    {
+      "assetId": "deity-isis",
+      "article": "Isis",
+      "dest": "media/deities/isis.webp",
+      "alt": "伊西斯"
+    },
+    {
+      "assetId": "food-koshari-img",
+      "article": "Koshary",
+      "dest": "media/food/koshari.webp",
+      "alt": "柯夏莉"
+    },
+    {
+      "assetId": "food-ful-img",
+      "article": "Ful medames",
+      "dest": "media/food/ful.webp",
+      "alt": "蠶豆泥"
+    },
+    {
+      "assetId": "food-taameya-img",
+      "article": "Falafel",
+      "dest": "media/food/taameya.webp",
+      "alt": "埃及炸豆餅",
+      "match": "[Tt]a.?(a|e)m(i|e)y|Egypt"
+    },
+    {
+      "assetId": "food-molokhia-img",
+      "article": "Mulukhiyah",
+      "dest": "media/food/molokhia.webp",
+      "alt": "黃麻葉湯"
+    },
+    {
+      "assetId": "food-mahshi-img",
+      "article": "Mahshi",
+      "dest": "media/food/mahshi.webp",
+      "alt": "鑲餡蔬菜"
+    },
+    {
+      "assetId": "food-om-ali-img",
+      "article": "Umm Ali",
+      "dest": "media/food/om-ali.webp",
+      "alt": "烏姆阿里"
     }
   ]
 }

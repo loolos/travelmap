@@ -107,6 +107,8 @@ export const Note = z.object({
   title: z.string(),
   body: z.string(),
   price: Price.optional(),
+  /** Optional photo (e.g. a dish in 美食圖鑑). */
+  assetId: z.string().optional(),
 });
 
 export const Asset = z.object({
@@ -131,6 +133,18 @@ export const Deity = z.object({
   /** How to recognise it on a wall (shown on tap). */
   look: z.string(),
   role: z.string(),
+  /** Picture of the god (statue, relief or drawing). */
+  assetId: z.string().optional(),
+});
+
+export const Glyph = z.object({
+  id: z.string(),
+  /** One Unicode Egyptian hieroglyph (must be in the bundled font subset). */
+  glyph: z.string(),
+  nameZh: z.string(),
+  nameEn: z.string(),
+  meaning: z.string(),
+  where: z.string(),
 });
 
 export const Source = z.object({
@@ -158,6 +172,7 @@ export type Note = z.infer<typeof Note>;
 export type Asset = z.infer<typeof Asset>;
 export type Source = z.infer<typeof Source>;
 export type Deity = z.infer<typeof Deity>;
+export type Glyph = z.infer<typeof Glyph>;
 export type Activity = z.infer<typeof Activity>;
 export type FindItem = z.infer<typeof FindItem>;
 export type PlaceKind = (typeof placeKinds)[number];
@@ -170,4 +185,5 @@ export interface ContentBundle {
   sources: Source[];
   activities: Activity[];
   deities: Deity[];
+  glyphs: Glyph[];
 }

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useLocation, useMatch, useNavigate } from 'react-router-dom';
-import { buildNavIndex, matches } from './navIndex';
+import { buildNavIndex, matches, type NavItem } from './navIndex';
 import { activityById, placeById, regionById } from '../data/content';
 import { UpdateBanner } from '../offline/UpdateBanner';
 import styles from './TopNav.module.css';
@@ -8,6 +8,8 @@ import styles from './TopNav.module.css';
 const pageTitles: Record<string, string> = {
   '/journal': '探索日誌',
   '/offline': '離線下載',
+  '/glyphs': '象形文字小字典',
+  '/deities': '神祇圖鑑',
 };
 
 function useBreadcrumb(): string[] {
@@ -31,6 +33,8 @@ function useBreadcrumb(): string[] {
 export function TopNav() {
   const [open, setOpen] = useState(false);
   const [q, setQ] = useState('');
+  // Menu categories start folded; remembered while the app is open.
+  const [openGroups, setOpenGroups] = useState<Set<string>>(() => new Set());
   const crumbs = useBreadcrumb();
   const navigate = useNavigate();
   const loc = useLocation();
@@ -109,36 +113,102 @@ export function TopNav() {
               aria-label="搜尋"
             />
             <div className={styles.groups}>
-              {filtered.map((g) => (
-                <section key={g.title}>
-                  <h2>{g.title}</h2>
-                  {g.sections.map((s, i) => (
-                    <div key={s.title ?? i}>
-                      {s.title && <h3>{s.title}</h3>}
+              {filtered.map((g) => {
+                const searching = !!q.trim();
+                const count = g.sections.reduce((n, s) => n + s.items.length, 0);
+                // A one-link group (地圖) needs no folding.
+                if (count === 1 && !g.sections[0].title)
+                  return (
+                    <section key={g.title}>
                       <ul>
-                        {s.items.map((it) => (
-                          <li key={it.id}>
-                            <Link to={it.to} className={it.muted ? styles.muted : undefined}>
-                              {it.icon && <span aria-hidden="true">{it.icon} </span>}
-                              {it.label}
-                              {it.sub && (
-                                <span className={`${styles.sub} en`} lang="en">
-                                  {it.sub}
-                                </span>
-                              )}
-                            </Link>
-                          </li>
-                        ))}
+                        <NavLink it={g.sections[0].items[0]} />
                       </ul>
-                    </div>
-                  ))}
-                </section>
-              ))}
+                    </section>
+                  );
+                const isOpen = searching || openGroups.has(g.title);
+                return (
+                  <section key={g.title}>
+                    <button
+                      type="button"
+                      className={styles.fold}
+                      aria-expanded={isOpen}
+                      onClick={() => toggle(setOpenGroups, g.title)}
+                    >
+                      <span>{g.title}</span>
+                      <span className={styles.count}>{count}</span>
+                      <span className={styles.chev} aria-hidden="true">
+                        {isOpen ? '▾' : '▸'}
+                      </span>
+                    </button>
+                    {isOpen &&
+                      g.sections.map((s, i) => {
+                        if (!s.title)
+                          return (
+                            <ul key={i}>
+                              {s.items.map((it) => (
+                                <NavLink key={it.id} it={it} />
+                              ))}
+                            </ul>
+                          );
+                        const key = `${g.title}/${s.title}`;
+                        const subOpen = searching || openGroups.has(key);
+                        return (
+                          <div key={key} className={styles.sub2}>
+                            <button
+                              type="button"
+                              className={styles.fold2}
+                              aria-expanded={subOpen}
+                              onClick={() => toggle(setOpenGroups, key)}
+                            >
+                              <span>{s.title}</span>
+                              <span className={styles.count}>{s.items.length}</span>
+                              <span className={styles.chev} aria-hidden="true">
+                                {subOpen ? '▾' : '▸'}
+                              </span>
+                            </button>
+                            {subOpen && (
+                              <ul>
+                                {s.items.map((it) => (
+                                  <NavLink key={it.id} it={it} />
+                                ))}
+                              </ul>
+                            )}
+                          </div>
+                        );
+                      })}
+                  </section>
+                );
+              })}
               {!filtered.length && <p className={styles.empty}>找不到「{q}」</p>}
             </div>
           </div>
         </>
       )}
     </header>
+  );
+}
+
+function toggle(set: (fn: (s: Set<string>) => Set<string>) => void, key: string) {
+  set((s) => {
+    const n = new Set(s);
+    if (n.has(key)) n.delete(key);
+    else n.add(key);
+    return n;
+  });
+}
+
+function NavLink({ it }: { it: NavItem }) {
+  return (
+    <li>
+      <Link to={it.to} className={it.muted ? styles.muted : undefined}>
+        {it.icon && <span aria-hidden="true">{it.icon} </span>}
+        {it.label}
+        {it.sub && (
+          <span className={`${styles.sub} en`} lang="en">
+            {it.sub}
+          </span>
+        )}
+      </Link>
+    </li>
   );
 }

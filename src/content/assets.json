@@ -274,5 +274,149 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D8%AC%D8%A7%D9%85%D8%B9_%D9%85%D8%AD%D9%85%D8%AF_%D8%B9%D9%84%D9%8A.JPG",
     "kind": "photo",
     "essential": true
+  },
+  {
+    "id": "deity-ra",
+    "path": "media/deities/ra.webp",
+    "alt": "拉（示意）",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "deity-horus",
+    "path": "media/deities/horus.webp",
+    "alt": "荷魯斯（示意）",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "deity-sobek",
+    "path": "media/deities/sobek.webp",
+    "alt": "索貝克（示意）",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "deity-hathor",
+    "path": "media/deities/hathor.webp",
+    "alt": "哈托爾（示意）",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "deity-khnum",
+    "path": "media/deities/khnum.webp",
+    "alt": "克努姆（示意）",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "deity-seth",
+    "path": "media/deities/seth.webp",
+    "alt": "賽特（示意）",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "deity-amun",
+    "path": "media/deities/amun.webp",
+    "alt": "阿蒙（示意）",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "deity-anubis",
+    "path": "media/deities/anubis.webp",
+    "alt": "阿努比斯（示意）",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "deity-osiris",
+    "path": "media/deities/osiris.webp",
+    "alt": "歐西里斯（示意）",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "deity-isis",
+    "path": "media/deities/isis.webp",
+    "alt": "伊西斯（示意）",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "food-koshari-img",
+    "path": "media/food/koshari.webp",
+    "alt": "柯夏莉（示意）",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "food-ful-img",
+    "path": "media/food/ful.webp",
+    "alt": "蠶豆泥（示意）",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "food-taameya-img",
+    "path": "media/food/taameya.webp",
+    "alt": "埃及炸豆餅（示意）",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "food-molokhia-img",
+    "path": "media/food/molokhia.webp",
+    "alt": "黃麻葉湯（示意）",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "food-mahshi-img",
+    "path": "media/food/mahshi.webp",
+    "alt": "鑲餡蔬菜（示意）",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "food-om-ali-img",
+    "path": "media/food/om-ali.webp",
+    "alt": "烏姆阿里（示意）",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
   }
 ]

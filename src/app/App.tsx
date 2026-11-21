@@ -8,6 +8,7 @@ import { useMediaQuery } from './useMediaQuery';
 import { NotesPage } from '../pages/NotesPage';
 import { JournalPage } from '../pages/JournalPage';
 import { DeitiesPage } from '../pages/DeitiesPage';
+import { GlyphsPage } from '../pages/GlyphsPage';
 import { OfflinePage } from '../offline/OfflinePage';
 import { ActivityPage } from '../pages/ActivityPage';
 import { Sheet } from './Sheet';
@@ -77,6 +78,14 @@ export function App() {
             element={
               <Sheet title="知識卡">
                 <NotesPage kind="knowledge" />
+              </Sheet>
+            }
+          />
+          <Route
+            path="/glyphs"
+            element={
+              <Sheet title="象形文字小字典">
+                <GlyphsPage />
               </Sheet>
             }
           />

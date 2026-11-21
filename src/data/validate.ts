@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { isKnowledge, noteCollections, Activity, Asset, Deity, Note, Place, Region, Source, type ContentBundle } from './schema';
+import { isKnowledge, noteCollections, Activity, Asset, Deity, Glyph, Note, Place, Region, Source, type ContentBundle } from './schema';
 import { charCount, parseInline, plainText } from './inline';
 
 export interface RawContent {
@@ -10,6 +10,7 @@ export interface RawContent {
   sources: unknown;
   activities: unknown;
   deities: unknown;
+  glyphs: unknown;
 }
 
 export interface ValidationResult {
@@ -41,6 +42,7 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
   const sources = parse(z.array(Source), raw.sources, 'sources') ?? [];
   const activities = parse(z.array(Activity), raw.activities, 'activities') ?? [];
   const deities = parse(z.array(Deity), raw.deities, 'deities') ?? [];
+  const glyphs = parse(z.array(Glyph), raw.glyphs, 'glyphs') ?? [];
 
   const ids = new Map<string, string>();
   const unique = (id: string, label: string) => {
@@ -54,6 +56,7 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
   sources.forEach((s) => unique(s.id, 'source'));
   activities.forEach((a) => unique(a.id, 'activity'));
   deities.forEach((d) => unique(d.id, 'deity'));
+  glyphs.forEach((g) => unique(`glyph:${g.id}`, 'glyph'));
 
   const placeIds = new Set(places.map((p) => p.id));
   const regionIds = new Set(regions.map((r) => r.id));
@@ -135,6 +138,7 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
     checkText(`note ${n.id}`, n.title + n.body);
     const len = charCount(n.body);
     if (len > 90) warnings.push(`note ${n.id}: body ${len} 字 (target 30–80)`);
+    if (n.assetId && !assetIds.has(n.assetId)) errors.push(`note ${n.id}: unknown asset ${n.assetId}`);
     n.price?.sourceIds.forEach((s) => sourceIds.has(s) || errors.push(`note ${n.id}: unknown source ${s}`));
   }
 
@@ -153,15 +157,25 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
   const findable = new Set(places.flatMap((p) => p.findItems.map((f) => f.deityId)));
   for (const d of deities) {
     checkText(`deity ${d.id}`, `${d.nameZh}${d.look}${d.role}`);
+    if (d.assetId && !assetIds.has(d.assetId)) errors.push(`deity ${d.id}: unknown asset ${d.assetId}`);
     if (!findable.has(d.id)) warnings.push(`deity ${d.id} is not in any find list yet`);
   }
+  for (const g of glyphs) {
+    checkText(`glyph ${g.id}`, `${g.nameZh}${g.meaning}${g.where}`);
+    if ([...g.glyph].length !== 1 || !/[\u{13000}-\u{1342F}]/u.test(g.glyph)) errors.push(`glyph ${g.id}: must be one Egyptian hieroglyph`);
+  }
   // Every hero/essential asset must be referenced at most... (unused assets are only a warning)
-  const used = new Set([...places.map((p) => p.heroAssetId), ...places.flatMap((p) => p.findItems.map((f) => f.assetId))]);
+  const used = new Set([
+    ...places.map((p) => p.heroAssetId),
+    ...places.flatMap((p) => p.findItems.map((f) => f.assetId)),
+    ...deities.map((d) => d.assetId),
+    ...notes.map((n) => n.assetId),
+  ]);
   assets.forEach((a) => used.has(a.id) || warnings.push(`asset ${a.id} is not used`));
 
   return {
     errors,
     warnings,
-    bundle: errors.length ? undefined : { places, regions, notes, assets, sources, activities, deities },
+    bundle: errors.length ? undefined : { places, regions, notes, assets, sources, activities, deities, glyphs },
   };
 }
