@@ -360,6 +360,21 @@
     "url": "https://en.wikipedia.org/wiki/Nile"
   },
   {
+    "id": "wiki-mummy",
+    "title": "Wikipedia：Mummy",
+    "url": "https://en.wikipedia.org/wiki/Mummy"
+  },
+  {
+    "id": "wiki-canopic",
+    "title": "Wikipedia：Canopic jar",
+    "url": "https://en.wikipedia.org/wiki/Canopic_jar"
+  },
+  {
+    "id": "wiki-osiris-myth",
+    "title": "Wikipedia：Osiris myth",
+    "url": "https://en.wikipedia.org/wiki/Osiris_myth"
+  },
+  {
     "id": "wiki-nilometer",
     "title": "Wikipedia：Nilometer",
     "url": "https://en.wikipedia.org/wiki/Nilometer"

@@ -1,0 +1,93 @@
+.panel {
+  margin: 0;
+  padding: 12px;
+  border: 3px solid #2b2418;
+  border-radius: 14px;
+  background: #fffaf0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 330px;
+}
+.cast {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 12px;
+  min-height: 190px;
+  padding: 8px;
+  border-radius: 10px;
+  background: linear-gradient(#f6dfb0, #eed2a0 75%, #d9b57c 75%);
+}
+.who {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.who img {
+  height: 160px;
+  width: auto;
+  max-width: 120px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #000;
+}
+.glyph {
+  font-family: Hiero, sans-serif;
+  font-size: 72px;
+  line-height: 1;
+  color: #1f4e79;
+  align-self: center;
+}
+.say {
+  position: relative;
+  margin: 0;
+  padding: 8px 12px;
+  border: 2px solid #2b2418;
+  border-radius: 16px;
+  background: #fff;
+  font-weight: 700;
+}
+.panel figcaption {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.nav button {
+  min-height: 44px;
+  padding: 0 14px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+.nav button:disabled {
+  opacity: 0.4;
+}
+.dots {
+  display: flex;
+  gap: 4px;
+}
+.dot,
+.dotOn {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--line);
+}
+.dotOn {
+  background: var(--lapis);
+}
+.nav .next {
+  background: var(--lapis);
+  border-color: var(--lapis);
+  color: #fff;
+  font-weight: 600;
+}
