@@ -122,6 +122,11 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
         const n = charCount(f);
         if (n < 12 || n > 45) warnings.push(`${L}: fact length ${n} (target 15–40): ${plainText(f)}`);
       });
+      p.aspects.forEach((a) => {
+        const n = charCount(a.text);
+        if (n < 10 || n > 50) warnings.push(`${L}: ${a.kind} aspect length ${n} (target 15–45)`);
+      });
+      if (new Set(p.aspects.map((a) => a.kind)).size !== p.aspects.length) errors.push(`${L}: one aspect per kind`);
       p.findItems.forEach((f) => {
         const n = charCount(f.text);
         if (n < 8 || n > 30) warnings.push(`${L}: find item length ${n} (target 10–30)`);

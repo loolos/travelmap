@@ -8,6 +8,7 @@ import { Hero } from './Img';
 import { InlineText } from './InlineText';
 import { PriceLine } from './Price';
 import { FindList } from './FindList';
+import { Aspects } from './Aspects';
 import styles from './PlacePanel.module.css';
 
 type Tab = 'facts' | 'find' | 'notes';
@@ -131,6 +132,7 @@ export function PlacePanel({ place, wide, state, onExpand, onCollapse, onClose }
                     </li>
                   ))}
                 </ol>
+                <Aspects key={place.id} items={place.aspects} />
                 {place.readIds.length > 0 && (
                   <div className={styles.reads}>
                     <h2>延伸知識</h2>
