@@ -358,5 +358,15 @@
     "id": "wiki-nile",
     "title": "Wikipedia：Nile",
     "url": "https://en.wikipedia.org/wiki/Nile"
+  },
+  {
+    "id": "wiki-mummy",
+    "title": "Wikipedia：Mummy",
+    "url": "https://en.wikipedia.org/wiki/Mummy"
+  },
+  {
+    "id": "wiki-canopic",
+    "title": "Wikipedia：Canopic jar",
+    "url": "https://en.wikipedia.org/wiki/Canopic_jar"
   }
 ]

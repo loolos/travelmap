@@ -1,0 +1,83 @@
+.track {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+}
+.slot,
+.placed {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 8px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+.slot {
+  border: 1px dashed var(--line);
+  color: var(--muted);
+}
+.placed {
+  background: #eef4f6;
+  border: 1px solid #b8d4de;
+}
+.num {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--panel-2);
+  font-size: 12px;
+  color: var(--ink, #292720);
+}
+.deck {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+  gap: 8px;
+}
+.card {
+  min-height: 76px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fff;
+  font-size: 14px;
+}
+.card:disabled {
+  opacity: 0.25;
+}
+.icon {
+  font-size: 24px;
+}
+.wrong {
+  background: #fbeae7;
+  animation: shake 0.3s;
+}
+.score {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--lapis);
+}
+@keyframes shake {
+  25% {
+    transform: translateX(-4px);
+  }
+  75% {
+    transform: translateX(4px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .wrong {
+    animation: none;
+  }
+}

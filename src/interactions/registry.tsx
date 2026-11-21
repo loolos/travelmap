@@ -12,6 +12,7 @@ import { SphinxEvidence } from './SphinxEvidence';
 import { FeluccaLab } from './FeluccaLab';
 import { AbuSimbelMove } from './AbuSimbelMove';
 import { TutDig } from './TutDig';
+import { MummyOrder } from './MummyOrder';
 
 /** Activity id -> component. Content JSON only names the id; behaviour lives in code. */
 export const activityComponents: Record<string, ComponentType<{ activityId: string }>> = {
@@ -32,4 +33,5 @@ export const activityComponents: Record<string, ComponentType<{ activityId: stri
   'felucca-wind': FeluccaLab,
   'abu-simbel-move': AbuSimbelMove,
   'tut-dig': TutDig,
+  'mummy-order': MummyOrder,
 };

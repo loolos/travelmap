@@ -277,3 +277,14 @@ test('tutankhamun dig finds the tomb under the huts and opens it to the mask', a
   await page.getByRole('button', { name: '看完整解釋' }).click();
   await expect(page.getByText(/五千多件文物/)).toBeVisible();
 });
+
+test('mummy order accepts the steps only in the right order', async ({ page }) => {
+  await page.goto('./#/place/valley-of-the-kings/mummy-order');
+  await page.getByRole('button', { name: /泡鹼脫水/ }).click();
+  await expect(page.getByRole('status')).toContainText('還太早');
+  for (const step of ['清洗身體', '取出大腦', '取出內臟', '放進卡諾卜罈', '泡鹼脫水', '填充塗油', '包亞麻布', '戴面具入棺'])
+    await page.getByRole('button', { name: new RegExp(step) }).click();
+  await expect(page.getByText('排錯 1 次')).toBeVisible();
+  await page.getByRole('button', { name: '看完整解釋' }).click();
+  await expect(page.getByText(/和代表真理的羽毛比重量/)).toBeVisible();
+});
