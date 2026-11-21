@@ -42,11 +42,13 @@
       }
     ],
     "noteIds": [
-      "gem-security",
-      "giza-today"
+      "gem-security"
     ],
     "sourceIds": [
       "wiki-gem"
+    ],
+    "readIds": [
+      "giza-today"
     ]
   },
   {

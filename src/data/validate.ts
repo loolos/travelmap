@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { noteCollections, Activity, Asset, Deity, Note, Place, Region, Source, type ContentBundle } from './schema';
+import { isKnowledge, noteCollections, Activity, Asset, Deity, Note, Place, Region, Source, type ContentBundle } from './schema';
 import { charCount, parseInline, plainText } from './inline';
 
 export interface RawContent {
@@ -92,6 +92,10 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
     if (links > 3) errors.push(`${L}: ${links} inline links (max 3)`);
 
     p.noteIds.forEach((n) => noteIds.has(n) || errors.push(`${L}: unknown note ${n}`));
+    p.readIds.forEach((n) => noteIds.has(n) || errors.push(`${L}: unknown knowledge card ${n}`));
+    const noteRegion = new Map(notes.map((n) => [n.id, n.regionId]));
+    p.noteIds.forEach((n) => isKnowledge(noteRegion.get(n) ?? '') && errors.push(`${L}: ${n} is knowledge, list it in readIds`));
+    p.readIds.forEach((n) => noteRegion.has(n) && !isKnowledge(noteRegion.get(n)!) && errors.push(`${L}: ${n} is a travel tip, list it in noteIds`));
     p.sourceIds.forEach((s) => sourceIds.has(s) || errors.push(`${L}: unknown source ${s}`));
     p.activityIds.forEach((a) => activityIds.has(a) || errors.push(`${L}: unknown activity ${a}`));
     if (p.heroAssetId && !assetIds.has(p.heroAssetId)) errors.push(`${L}: unknown hero asset ${p.heroAssetId}`);

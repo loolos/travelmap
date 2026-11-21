@@ -39,7 +39,14 @@
     ],
     "noteIds": [
       "cairo-bargain",
-      "cairo-traffic",
+      "cairo-traffic"
+    ],
+    "sourceIds": [
+      "wiki-cairo",
+      "unesco-historic-cairo"
+    ],
+    "heroAssetId": "cairo-hero",
+    "readIds": [
       "hist-ptolemy",
       "hist-rome",
       "hist-arab",
@@ -48,12 +55,7 @@
       "hist-ottoman",
       "hist-muhammad-ali",
       "hist-1952"
-    ],
-    "sourceIds": [
-      "wiki-cairo",
-      "unesco-historic-cairo"
-    ],
-    "heroAssetId": "cairo-hero"
+    ]
   },
   {
     "id": "citadel",

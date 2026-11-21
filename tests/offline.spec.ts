@@ -162,12 +162,18 @@ test('cartouche maker writes a name with the bundled font and saves a PNG', asyn
   expect((await download).suggestedFilename()).toBe('cartouche-lily.png');
 });
 
-test('food guide, phrases and history cards are reachable from the menu', async ({ page }) => {
+test('knowledge cards live apart from travel tips', async ({ page }) => {
   await page.goto('./#/map');
   await page.getByRole('button', { name: /目錄/ }).click();
   await page.getByRole('link', { name: /美食圖鑑/ }).click();
   await expect(page.getByText(/柯夏莉/)).toBeVisible();
+  await page.goto('./#/notes');
+  await expect(page.getByText('實用短語')).toBeVisible();
+  await expect(page.getByText('歷史小卡')).toHaveCount(0); // knowledge is kept out of 旅人手記
   await page.goto('./#/place/cairo');
-  await page.getByRole('tab', { name: /手記/ }).click();
+  await page.getByRole('tab', { name: /重點/ }).click();
+  await expect(page.getByText('延伸知識')).toBeVisible();
   await expect(page.getByText('1952 年革命與高壩')).toBeVisible();
+  await page.getByRole('tab', { name: /手記/ }).click();
+  await expect(page.getByText('1952 年革命與高壩')).toHaveCount(0);
 });

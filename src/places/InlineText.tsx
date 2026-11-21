@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { parseInline } from '../data/inline';
-import { activityById } from '../data/content';
+import { activityById, noteById } from '../data/content';
+import { isKnowledge } from '../data/schema';
 
 export function InlineText({ text }: { text: string }) {
   return (
@@ -12,7 +13,7 @@ export function InlineText({ text }: { text: string }) {
             ? `/place/${s.id}`
             : s.kind === 'activity'
               ? `/place/${activityById.get(s.id)?.placeId}/${s.id}`
-              : `/notes`;
+              : noteLink(s.id);
         return (
           <Link key={i} to={to}>
             {s.text}
@@ -21,4 +22,9 @@ export function InlineText({ text }: { text: string }) {
       })}
     </>
   );
+}
+
+function noteLink(id: string): string {
+  const r = noteById.get(id)?.regionId ?? '';
+  return isKnowledge(r) ? `/knowledge/${r}` : `/notes/${r}`;
 }

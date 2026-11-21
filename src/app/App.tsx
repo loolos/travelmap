@@ -73,6 +73,14 @@ export function App() {
             }
           />
           <Route
+            path="/knowledge/:regionId?"
+            element={
+              <Sheet title="知識卡">
+                <NotesPage kind="knowledge" />
+              </Sheet>
+            }
+          />
+          <Route
             path="/deities"
             element={
               <Sheet title="神祇圖鑑">
