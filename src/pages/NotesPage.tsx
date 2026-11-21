@@ -1,11 +1,12 @@
 import { Link, useParams } from 'react-router-dom';
 import { notes, regions } from '../data/content';
+import { noteCollections } from '../data/schema';
 import { PriceLine } from '../places/Price';
 import styles from './Pages.module.css';
 
 export function NotesPage() {
   const { regionId } = useParams();
-  const groups = [...regions.map((r) => ({ id: r.id, title: r.nameZh })), { id: 'general', title: '全站共用' }]
+  const groups = [...regions.map((r) => ({ id: r.id, title: r.nameZh })), ...noteCollections.map((c) => ({ id: c.id, title: c.title }))]
     .map((g) => ({ ...g, notes: notes.filter((n) => n.regionId === g.id) }))
     .filter((g) => g.notes.length && (!regionId || g.id === regionId));
   return (

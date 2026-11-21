@@ -1,4 +1,5 @@
 import { activities, deities, notes, placesByRegion, regions } from '../data/content';
+import { noteCollections } from '../data/schema';
 
 export interface NavItem {
   id: string;
@@ -65,12 +66,23 @@ export function buildNavIndex(): NavGroup[] {
             terms: ['gods', 'deity', '神', ...deities.flatMap((d) => [d.nameZh, d.nameEn])],
             icon: '🏺',
           },
+          ...(notes.some((n) => n.regionId === 'food')
+            ? [
+                {
+                  id: 'book:food',
+                  to: '/notes/food',
+                  label: '美食圖鑑',
+                  terms: ['food', '吃', ...notes.filter((n) => n.regionId === 'food').map((n) => n.title)],
+                  icon: '🍽️',
+                },
+              ]
+            : []),
         ],
       },
     ],
   });
   const noteRegions = regions.filter((r) => notes.some((n) => n.regionId === r.id));
-  const hasGeneral = notes.some((n) => n.regionId === 'general');
+  const collections = noteCollections.filter((c) => c.id !== 'food' && notes.some((n) => n.regionId === c.id));
   groups.push({
     title: '旅人手記',
     sections: [
@@ -83,17 +95,13 @@ export function buildNavIndex(): NavGroup[] {
             terms: [r.nameEn, ...notes.filter((n) => n.regionId === r.id).map((n) => n.title)],
             icon: '🧳',
           })),
-          ...(hasGeneral
-            ? [
-                {
-                  id: 'notes:general',
-                  to: '/notes/general',
-                  label: '全站共用',
-                  terms: notes.filter((n) => n.regionId === 'general').map((n) => n.title),
-                  icon: '🧳',
-                },
-              ]
-            : []),
+          ...collections.map((c) => ({
+            id: `notes:${c.id}`,
+            to: `/notes/${c.id}`,
+            label: c.title,
+            terms: notes.filter((n) => n.regionId === c.id).map((n) => n.title),
+            icon: c.icon,
+          })),
         ],
       },
     ],

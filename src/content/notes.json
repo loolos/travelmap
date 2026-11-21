@@ -173,5 +173,222 @@
     "icon": "📸",
     "title": "曼儂巨像",
     "body": "就在西岸路邊，通常只停 15–20 分鐘，常是西岸行程的第一站。"
+  },
+  {
+    "id": "rs-snorkel",
+    "regionId": "red-sea",
+    "icon": "🤿",
+    "title": "浮潛注意",
+    "body": "不要踩、摸或站在珊瑚上；用不含有害成分的防曬或穿防曬衣。浪大時跟著船員的指示。"
+  },
+  {
+    "id": "rs-souvenir",
+    "regionId": "red-sea",
+    "icon": "🐚",
+    "title": "別買海洋生物",
+    "body": "珊瑚、貝殼、海龜殼製品不要買也不要撿，帶出境可能違法。"
+  },
+  {
+    "id": "cairo-bargain",
+    "regionId": "cairo",
+    "icon": "🛍️",
+    "title": "市集議價",
+    "body": "汗‧哈里里市集（Khan el-Khalili）開價常偏高。先問價、比幾家，不想買就笑著說「La, shukran」。"
+  },
+  {
+    "id": "cairo-traffic",
+    "regionId": "cairo",
+    "icon": "🚗",
+    "title": "開羅交通",
+    "body": "車多、少號誌，過馬路跟著當地人一起走。叫車 App 很常用，上車前確認車牌。"
+  },
+  {
+    "id": "cairo-shops",
+    "regionId": "cairo",
+    "icon": "🧴",
+    "title": "香精與紙莎草店",
+    "body": "行程常順道進店。真紙莎草紙較厚，對光能看到交錯纖維；不想買可以直接說不用。"
+  },
+  {
+    "id": "mosque-dress",
+    "regionId": "cairo",
+    "icon": "🧕",
+    "title": "清真寺衣著",
+    "body": "進入前脫鞋，衣著蓋住肩膀和膝蓋；女性可能需要頭巾，現場常有袍子可借。"
+  },
+  {
+    "id": "hist-ptolemy",
+    "regionId": "history",
+    "icon": "📜",
+    "title": "亞歷山大與托勒密",
+    "body": "西元前 332 年亞歷山大大帝征服埃及，之後由希臘血統的托勒密王朝統治，最後一位是克麗奧佩脫拉七世。"
+  },
+  {
+    "id": "hist-rome",
+    "regionId": "history",
+    "icon": "📜",
+    "title": "羅馬與基督教",
+    "body": "西元前 30 年埃及成為羅馬的行省，是帝國的糧倉。後來基督教傳入，發展出埃及的科普特教會。"
+  },
+  {
+    "id": "hist-arab",
+    "regionId": "history",
+    "icon": "📜",
+    "title": "阿拉伯人到來",
+    "body": "641 年阿拉伯軍隊進入埃及，在今天開羅南邊建立福斯塔特城。阿拉伯語和伊斯蘭教慢慢成為主流。"
+  },
+  {
+    "id": "hist-fatimid",
+    "regionId": "history",
+    "icon": "📜",
+    "title": "法蒂瑪王朝建開羅",
+    "body": "969 年法蒂瑪王朝建立開羅，不久又建了愛資哈爾清真寺，它至今仍是重要的伊斯蘭學府。"
+  },
+  {
+    "id": "hist-saladin",
+    "regionId": "history",
+    "icon": "📜",
+    "title": "薩拉丁與馬木路克",
+    "body": "12 世紀薩拉丁對抗十字軍、修築城堡。之後馬木路克統治兩百多年，在開羅蓋了許多清真寺。"
+  },
+  {
+    "id": "hist-ottoman",
+    "regionId": "history",
+    "icon": "📜",
+    "title": "鄂圖曼與拿破崙",
+    "body": "1517 年埃及併入鄂圖曼帝國。1798 年拿破崙遠征埃及，隨行學者在 1799 年發現羅塞塔石碑。"
+  },
+  {
+    "id": "hist-muhammad-ali",
+    "regionId": "history",
+    "icon": "📜",
+    "title": "穆罕默德‧阿里",
+    "body": "19 世紀初掌權，推動新式軍隊、工廠和學校。1869 年蘇伊士運河通航，1882 年英國占領埃及。"
+  },
+  {
+    "id": "hist-1952",
+    "regionId": "history",
+    "icon": "📜",
+    "title": "1952 年革命與高壩",
+    "body": "1952 年軍官發動革命推翻王室，納瑟後來把蘇伊士運河收歸國有，並興建亞斯文高壩。"
+  },
+  {
+    "id": "gen-cash",
+    "regionId": "general",
+    "icon": "💵",
+    "title": "現金",
+    "body": "當地貨幣是埃及鎊（EGP）。飯店和大商店可刷卡，小費、市集和小店多用現金，身上留些小面額紙鈔。"
+  },
+  {
+    "id": "gen-tips",
+    "regionId": "general",
+    "icon": "🤝",
+    "title": "小費",
+    "body": "小費（baksheesh）很常見：廁所管理員、幫忙拍照或指路的人都可能要。先想好要不要給，再接受服務。"
+  },
+  {
+    "id": "gen-dress",
+    "regionId": "general",
+    "icon": "👕",
+    "title": "衣著",
+    "body": "輕便、透氣、蓋住肩膀和膝蓋的衣服最方便，進清真寺和教堂也合適。沙漠早晚冷，帶件外套。"
+  },
+  {
+    "id": "gen-water",
+    "regionId": "general",
+    "icon": "💧",
+    "title": "飲水與飲食",
+    "body": "喝瓶裝水，檢查瓶蓋是否封好。腸胃敏感的人少吃生菜和冰塊。"
+  },
+  {
+    "id": "gen-photo",
+    "regionId": "general",
+    "icon": "📷",
+    "title": "攝影",
+    "body": "拍人之前先詢問；有人主動要你拍照，可能會收費。無人機未經許可不能帶入埃及。"
+  },
+  {
+    "id": "food-koshari",
+    "regionId": "food",
+    "icon": "🍝",
+    "title": "柯夏莉 Koshari",
+    "body": "米飯、扁豆、通心粉疊在一起，淋上番茄醬汁和炸洋蔥，最平民的國民美食。"
+  },
+  {
+    "id": "food-ful",
+    "regionId": "food",
+    "icon": "🫘",
+    "title": "蠶豆泥 Ful medames",
+    "body": "燉得軟爛的蠶豆加油、檸檬和孜然，配大餅當早餐。"
+  },
+  {
+    "id": "food-taameya",
+    "regionId": "food",
+    "icon": "🧆",
+    "title": "埃及炸豆餅 Ta‘ameya",
+    "body": "和中東其他地方用鷹嘴豆不同，埃及版用蠶豆做，裡面是綠色的。"
+  },
+  {
+    "id": "food-molokhia",
+    "regionId": "food",
+    "icon": "🥣",
+    "title": "黃麻葉湯 Molokhia",
+    "body": "黃麻葉剁碎煮成的濃稠綠湯，常配米飯和雞肉。"
+  },
+  {
+    "id": "food-mahshi",
+    "regionId": "food",
+    "icon": "🫑",
+    "title": "鑲餡蔬菜 Mahshi",
+    "body": "葡萄葉、青椒、櫛瓜塞進香料米飯後燉煮。"
+  },
+  {
+    "id": "food-om-ali",
+    "regionId": "food",
+    "icon": "🍮",
+    "title": "烏姆阿里 Om Ali",
+    "body": "酥皮或麵包泡牛奶，加堅果烤成的熱甜點。"
+  },
+  {
+    "id": "ph-hello",
+    "regionId": "phrases",
+    "icon": "👋",
+    "title": "你好",
+    "body": "As-salāmu ʿalaykum（阿薩拉姆 阿雷庫姆），對方會回 Wa ʿalaykum as-salām。"
+  },
+  {
+    "id": "ph-thanks",
+    "regionId": "phrases",
+    "icon": "🙏",
+    "title": "謝謝",
+    "body": "Shukran（舒克蘭）。"
+  },
+  {
+    "id": "ph-no",
+    "regionId": "phrases",
+    "icon": "✋",
+    "title": "不用了，謝謝",
+    "body": "La, shukran（拉，舒克蘭）。對小販最好用的一句話。"
+  },
+  {
+    "id": "ph-price",
+    "regionId": "phrases",
+    "icon": "💬",
+    "title": "多少錢？",
+    "body": "Bikam?（比幹）。"
+  },
+  {
+    "id": "ph-okay",
+    "regionId": "phrases",
+    "icon": "👌",
+    "title": "好的／走吧",
+    "body": "Tamām（塔滿）是「好、沒問題」；Yalla（呀拉）是「走吧、快點」。"
+  },
+  {
+    "id": "ph-water",
+    "regionId": "phrases",
+    "icon": "💧",
+    "title": "水",
+    "body": "Mayya（麥呀）。"
   }
 ]

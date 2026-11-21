@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { Activity, Asset, Deity, Note, Place, Region, Source, type ContentBundle } from './schema';
+import { noteCollections, Activity, Asset, Deity, Note, Place, Region, Source, type ContentBundle } from './schema';
 import { charCount, parseInline, plainText } from './inline';
 
 export interface RawContent {
@@ -127,7 +127,7 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
   }
 
   for (const n of notes) {
-    if (n.regionId !== 'general' && !regionIds.has(n.regionId)) errors.push(`note ${n.id}: unknown region ${n.regionId}`);
+    if (!noteCollections.some((c) => c.id === n.regionId) && !regionIds.has(n.regionId)) errors.push(`note ${n.id}: unknown region ${n.regionId}`);
     checkText(`note ${n.id}`, n.title + n.body);
     const len = charCount(n.body);
     if (len > 90) warnings.push(`note ${n.id}: body ${len} 字 (target 30–80)`);

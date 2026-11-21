@@ -161,3 +161,13 @@ test('cartouche maker writes a name with the bundled font and saves a PNG', asyn
   await page.getByRole('button', { name: '存成圖片' }).click();
   expect((await download).suggestedFilename()).toBe('cartouche-lily.png');
 });
+
+test('food guide, phrases and history cards are reachable from the menu', async ({ page }) => {
+  await page.goto('./#/map');
+  await page.getByRole('button', { name: /目錄/ }).click();
+  await page.getByRole('link', { name: /美食圖鑑/ }).click();
+  await expect(page.getByText(/柯夏莉/)).toBeVisible();
+  await page.goto('./#/place/cairo');
+  await page.getByRole('tab', { name: /手記/ }).click();
+  await expect(page.getByText('1952 年革命與高壩')).toBeVisible();
+});

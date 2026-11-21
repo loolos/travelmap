@@ -83,9 +83,17 @@ export const Price = z.object({
   sourceIds: z.array(z.string()).min(1),
 });
 
+/** Site-wide note collections (used as Note.regionId besides real regions). */
+export const noteCollections = [
+  { id: 'general', title: '全站共用', icon: '🧳' },
+  { id: 'phrases', title: '實用短語', icon: '💬' },
+  { id: 'food', title: '美食圖鑑', icon: '🍽️' },
+  { id: 'history', title: '歷史小卡', icon: '📜' },
+] as const;
+
 export const Note = z.object({
   id: z.string(),
-  /** Region id, or 'general' for site-wide cards. */
+  /** Region id, or a noteCollections id for site-wide cards. */
   regionId: z.string(),
   icon: z.string().default('🧳'),
   title: z.string(),
