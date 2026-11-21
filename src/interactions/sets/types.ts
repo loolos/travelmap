@@ -19,3 +19,18 @@ export interface HotspotSet {
   /** Shown after every spot has been opened. */
   wrap: ReactNode;
 }
+
+export interface QuizItem {
+  draw: ReactNode;
+  clue: string;
+  options: string[];
+  answer: number;
+  explain: string;
+}
+
+export interface QuizSet {
+  question: string;
+  how: string;
+  items: QuizItem[];
+  wrap: ReactNode;
+}

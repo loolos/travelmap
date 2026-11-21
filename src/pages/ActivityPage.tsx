@@ -10,7 +10,7 @@ export function ActivityPage() {
   const Comp = activityComponents[a.id];
   return (
     <Sheet title={a.title} backTo={`/place/${a.placeId}`}>
-      {Comp ? <Comp activityId={a.id} /> : <p>互動準備中。</p>}
+      {Comp ? <Comp key={a.id} activityId={a.id} /> : <p>互動準備中。</p>}
       {a.sourceIds.length > 0 && (
         <details style={{ marginTop: 16, fontSize: 13, color: 'var(--muted)' }}>
           <summary>來源</summary>
