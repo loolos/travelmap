@@ -336,5 +336,92 @@
       "nilometer-photo",
       "nile-hero"
     ]
+  },
+  {
+    "id": "khufu-interior",
+    "placeId": "giza-khufu",
+    "component": "HotspotDiagram",
+    "title": "金字塔內部剖面",
+    "label": "內部剖面",
+    "icon": "🔍",
+    "question": "金字塔裡面長什麼樣子？",
+    "durationMin": 2,
+    "sourceIds": [
+      "wiki-khufu",
+      "wiki-big-void"
+    ],
+    "photoIds": [
+      "grand-gallery-photo"
+    ]
+  },
+  {
+    "id": "giza-scale",
+    "placeId": "giza-khafre",
+    "component": "ParameterLab",
+    "title": "原貌與比例",
+    "label": "原貌比例",
+    "icon": "🎮",
+    "question": "三座金字塔，到底哪一座最高？",
+    "durationMin": 2,
+    "sourceIds": [
+      "wiki-khufu",
+      "wiki-khafre",
+      "wiki-menkaure"
+    ],
+    "photoIds": [
+      "khafre-hero",
+      "menkaure-hero"
+    ]
+  },
+  {
+    "id": "weighing-heart",
+    "placeId": "valley-of-the-kings",
+    "component": "HotspotDiagram",
+    "title": "亡靈審判",
+    "label": "亡靈審判",
+    "icon": "🔍",
+    "question": "死後要通過什麼考試，才能進入來世？",
+    "durationMin": 2,
+    "sourceIds": [
+      "wiki-hunefer",
+      "wiki-book-of-dead"
+    ],
+    "photoIds": [
+      "hunefer-photo"
+    ]
+  },
+  {
+    "id": "opet-festival",
+    "placeId": "luxor-temple",
+    "component": "HotspotDiagram",
+    "title": "奧佩特節遊行",
+    "label": "神像出遊",
+    "icon": "🔍",
+    "question": "神像怎麼從卡納克出遊到路克索神廟？",
+    "durationMin": 2,
+    "sourceIds": [
+      "wiki-opet",
+      "wiki-sphinx-avenue"
+    ],
+    "photoIds": [
+      "opet-photo",
+      "sphinx-avenue-photo"
+    ]
+  },
+  {
+    "id": "memnon-song",
+    "placeId": "colossi-of-memnon",
+    "component": "ParameterLab",
+    "title": "會唱歌的巨像",
+    "label": "會唱歌嗎",
+    "icon": "🎮",
+    "question": "兩尊巨像原本守著什麼？為什麼會唱歌？",
+    "durationMin": 2,
+    "sourceIds": [
+      "wiki-memnon"
+    ],
+    "photoIds": [
+      "memnon-hero"
+    ]
   }
 ]

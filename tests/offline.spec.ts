@@ -309,3 +309,30 @@ test('breadcrumb levels are links back up', async ({ page }) => {
   await page.getByRole('link', { name: '回到埃及全境地圖' }).click();
   await expect(page).toHaveURL(/#\/map$/);
 });
+
+test('new hotspot diagrams: pyramid interior, weighing of the heart, Opet', async ({ page }) => {
+  await page.goto('./#/place/giza-khufu/khufu-interior');
+  await page.getByRole('button', { name: /大走廊/ }).click();
+  await expect(page.getByText(/高約 8.6 公尺/)).toBeVisible();
+  await page.goto('./#/place/valley-of-the-kings/weighing-heart');
+  await page.getByRole('button', { name: /天平：心臟對羽毛/ }).click();
+  await expect(page.getByText(/真理女神瑪特的羽毛/)).toBeVisible();
+  await page.goto('./#/place/luxor-temple/opet-festival');
+  await page.getByRole('button', { name: /人面獅身像大道/ }).click();
+  await expect(page.getByText(/2021 年整條大道修復開放/)).toBeVisible();
+});
+
+test('giza scale and memnon labs finish after trying every view', async ({ page }) => {
+  await page.goto('./#/place/giza-khafre/giza-scale');
+  await page.getByRole('button', { name: '剛蓋好' }).click();
+  await page.getByRole('button', { name: '實際地勢' }).click();
+  await expect(page.getByText(/從遠處看它反而像是最高的一座/)).toBeVisible();
+  await page.getByRole('button', { name: '看完整解釋' }).click();
+  await expect(page.getByText(/林肯大教堂/)).toBeVisible();
+  await page.goto('./#/place/colossi-of-memnon/memnon-song');
+  await page.getByRole('button', { name: '原貌' }).click();
+  await page.getByRole('button', { name: /清晨/ }).click();
+  await expect(page.getByText(/黎明女神/)).toBeVisible();
+  await page.getByRole('button', { name: '看完整解釋' }).click();
+  await expect(page.getByText(/再也不唱了/)).toBeVisible();
+});

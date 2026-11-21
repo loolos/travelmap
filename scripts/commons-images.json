@@ -311,7 +311,7 @@
       "article": "Great Pyramid of Giza",
       "dest": "media/photos/grand-gallery.webp",
       "alt": "胡夫金字塔的大走廊",
-      "match": "(Grand.?Gallery|gallery)"
+      "match": "(Grand|Gallery|King.?s.?Chamber|interior|inside|corridor)"
     },
     {
       "assetId": "hunefer-photo",
@@ -323,7 +323,7 @@
       "assetId": "opet-photo",
       "article": "Opet Festival",
       "dest": "media/photos/opet.webp",
-      "alt": "奧佩特節的浮雕"
+      "alt": "路克索神廟大柱廊：兩側牆上刻著奧佩特節遊行"
     },
     {
       "assetId": "sphinx-avenue-photo",
