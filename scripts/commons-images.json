@@ -305,6 +305,31 @@
       "match": "(interior|inside|dome|ceiling|cupola)",
       "dest": "media/photos/mosque-dome.webp",
       "alt": "穆罕默德·阿里清真寺穹頂內部"
+    },
+    {
+      "assetId": "grand-gallery-photo",
+      "article": "Great Pyramid of Giza",
+      "dest": "media/photos/grand-gallery.webp",
+      "alt": "胡夫金字塔的大走廊",
+      "match": "(Grand.?Gallery|gallery)"
+    },
+    {
+      "assetId": "hunefer-photo",
+      "article": "Papyrus of Hunefer",
+      "dest": "media/photos/hunefer.webp",
+      "alt": "《亨尼弗的亡靈書》秤心審判圖"
+    },
+    {
+      "assetId": "opet-photo",
+      "article": "Opet Festival",
+      "dest": "media/photos/opet.webp",
+      "alt": "奧佩特節的浮雕"
+    },
+    {
+      "assetId": "sphinx-avenue-photo",
+      "article": "Avenue of Sphinxes",
+      "dest": "media/photos/sphinx-avenue.webp",
+      "alt": "路克索的人面獅身像大道"
     }
   ]
 }
