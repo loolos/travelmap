@@ -1,11 +1,20 @@
 import { useEffect } from 'react';
-import { checkCore, downloadCore, isReady, useOfflineState } from './coreCache';
+import { checkCore, isReady, useOfflineState } from './coreCache';
+import { APP_VERSION, applyUpdate, checkForUpdates, useAppUpdate, type CheckResult } from './appUpdate';
 import styles from '../pages/Pages.module.css';
 
 const mb = (b: number) => (b / 1024 / 1024).toFixed(b < 1024 * 1024 ? 2 : 1);
 
+const resultText: Partial<Record<CheckResult, string>> = {
+  latest: '✓ 已是最新版本，離線內容也都齊全。',
+  content: '✓ 已是最新版本，並補齊了離線內容。',
+  error: '檢查失敗，請確認網路後再按一次。',
+  unsupported: '這個瀏覽器不支援自動更新；離線內容已檢查完畢。',
+};
+
 export function OfflinePage() {
   const s = useOfflineState();
+  const u = useAppUpdate();
   useEffect(() => {
     void checkCore();
   }, []);
@@ -20,6 +29,37 @@ export function OfflinePage() {
 
       {!s.swSupported && <p className={styles.small}>這個瀏覽器不支援離線功能（Service Worker）。</p>}
 
+      <h2 className={styles.h2}>版本與更新</h2>
+      <p className={styles.small}>目前版本：{APP_VERSION}</p>
+      {u.needRefresh ? (
+        <button type="button" className={styles.primary} onClick={applyUpdate}>
+          有新版本，點此更新 ↻
+        </button>
+      ) : (
+        <button
+          type="button"
+          className={styles.primary}
+          disabled={u.result === 'checking' || s.downloading}
+          onClick={() => void checkForUpdates()}
+        >
+          {u.result === 'checking' || s.downloading
+            ? s.downloading
+              ? '下載中…'
+              : '檢查中…'
+            : s.missing.length
+              ? '下載離線內容並檢查更新'
+              : '檢查更新'}
+        </button>
+      )}
+      <p className={styles.small} role="status">
+        {u.needRefresh ? '新版本已下載好，更新後頁面會重新載入。' : (resultText[u.result] ?? '開著 App 時也會自動檢查，有新版本時右上角會出現「有新版本」。')}
+      </p>
+      {s.failed.length > 0 && (
+        <p className={styles.small} role="alert">
+          有 {s.failed.length} 個檔案下載失敗，請確認網路後再按一次。
+        </p>
+      )}
+
       <h2 className={styles.h2}>App 主程式</h2>
       <p>{s.shellReady ? '✓ 已存到這台裝置' : '尚未完成（重新整理一次通常就會完成）'}</p>
 
@@ -30,19 +70,6 @@ export function OfflinePage() {
       <p className={styles.small}>
         {s.doneFiles}／{s.totalFiles} 個檔案 · {mb(s.doneBytes)}／{mb(s.totalBytes)} MB
       </p>
-      <button
-        type="button"
-        className={styles.primary}
-        disabled={s.downloading || (ready && !s.failed.length)}
-        onClick={() => void downloadCore()}
-      >
-        {s.downloading ? '下載中…' : s.missing.length ? '下載全部核心內容' : '已全部下載'}
-      </button>
-      {s.failed.length > 0 && (
-        <p className={styles.small} role="alert">
-          有 {s.failed.length} 個檔案下載失敗，請確認網路後再按一次。
-        </p>
-      )}
       {s.persisted === false && (
         <p className={styles.small}>瀏覽器沒有承諾永久保存；請把 App 加入主畫面，並在出發前實測。</p>
       )}

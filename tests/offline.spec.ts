@@ -17,7 +17,7 @@ test('downloads core, then works fully offline after a reload', async ({ page, c
 
   await page.goto('./#/offline');
   const status = page.getByTestId('offline-status');
-  const download = page.getByRole('button', { name: '下載全部核心內容' });
+  const download = page.getByRole('button', { name: '下載離線內容並檢查更新' });
   if (await download.isVisible().catch(() => false)) await download.click().catch(() => undefined);
   await expect(status).toHaveAttribute('data-ready', 'true', { timeout: 30_000 });
 
@@ -47,7 +47,7 @@ test('removing one cached file makes the offline page report not-ready', async (
   await waitForServiceWorker(page);
   await page.goto('./#/offline');
   const status = page.getByTestId('offline-status');
-  await page.getByRole('button', { name: '下載全部核心內容' }).click().catch(() => undefined);
+  await page.getByRole('button', { name: /下載離線內容|檢查更新/ }).click().catch(() => undefined);
   await expect(status).toHaveAttribute('data-ready', 'true', { timeout: 30_000 });
 
   await page.evaluate(async () => {
@@ -57,8 +57,13 @@ test('removing one cached file makes the offline page report not-ready', async (
   });
   await page.reload();
   await expect(page.getByTestId('offline-status')).toHaveAttribute('data-ready', 'false');
-  await page.getByRole('button', { name: '下載全部核心內容' }).click();
+  await page.getByRole('button', { name: '下載離線內容並檢查更新' }).click();
   await expect(page.getByTestId('offline-status')).toHaveAttribute('data-ready', 'true', { timeout: 30_000 });
+  await expect(page.getByText('補齊了離線內容')).toBeVisible();
+  // Same button again: nothing new, nothing missing.
+  await page.getByRole('button', { name: '檢查更新' }).click();
+  await expect(page.getByText('已是最新版本，離線內容也都齊全')).toBeVisible();
+  await expect(page.getByText(/目前版本：/)).toBeVisible();
 });
 
 test('find-it checklist lights up the place and persists', async ({ page }) => {

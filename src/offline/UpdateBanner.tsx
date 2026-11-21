@@ -1,19 +1,13 @@
-import { useRegisterSW } from 'virtual:pwa-register/react';
-import { checkCore } from './coreCache';
+import { applyUpdate, useAppUpdate } from './appUpdate';
 
-/** Registers the service worker and offers a reload when a new version is waiting. */
+/** Shown in the top bar whenever a new version has been detected (checked automatically). */
 export function UpdateBanner() {
-  const {
-    needRefresh: [needRefresh],
-    updateServiceWorker,
-  } = useRegisterSW({
-    onOfflineReady: () => void checkCore(),
-  });
+  const { needRefresh } = useAppUpdate();
   if (!needRefresh) return null;
   return (
     <button
       type="button"
-      onClick={() => updateServiceWorker(true)}
+      onClick={applyUpdate}
       style={{
         minHeight: 36,
         padding: '0 10px',

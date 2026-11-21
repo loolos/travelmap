@@ -39,8 +39,20 @@ function coreManifest(): Plugin {
   };
 }
 
+/** Shown on the offline page so you can tell which version is running. */
+const stamp = new Intl.DateTimeFormat('zh-TW', {
+  timeZone: 'Asia/Taipei',
+  month: 'numeric',
+  day: 'numeric',
+  hour: '2-digit',
+  minute: '2-digit',
+  hour12: false,
+}).format(new Date());
+const APP_VERSION = `${stamp}${process.env.GITHUB_SHA ? ` · ${process.env.GITHUB_SHA.slice(0, 7)}` : ''}`;
+
 export default defineConfig({
   base: BASE,
+  define: { __APP_VERSION__: JSON.stringify(APP_VERSION) },
   plugins: [
     react(),
     coreManifest(),
