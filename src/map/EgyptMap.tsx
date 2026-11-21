@@ -45,6 +45,22 @@ interface Props {
   inset: MapInset;
 }
 
+/** Rough text width so the label area can be tapped too (CJK ≈ 1em, Latin ≈ 0.55em). */
+const textW = (s: string, em = 12.5) => [...s].reduce((w, ch) => w + (ch.charCodeAt(0) > 0x2e80 ? em : em * 0.58), 0);
+const labelHit = (text: string, x: number, end: boolean) => {
+  const w = textW(text) + 8;
+  return <rect className={styles.hit} x={end ? x - w + 4 : x - 4} y={-12} width={w} height={24} />;
+};
+
+const HINT_KEY = 'map-hint-dismissed';
+const readHint = () => {
+  try {
+    return localStorage.getItem(HINT_KEY) === '1';
+  } catch {
+    return false;
+  }
+};
+
 export function EgyptMap({ selectedId, onSelect, inset }: Props) {
   const wrapRef = useRef<HTMLDivElement>(null);
   const svgRef = useRef<SVGSVGElement>(null);
@@ -52,6 +68,19 @@ export function EgyptMap({ selectedId, onSelect, inset }: Props) {
   const [size, setSize] = useState({ w: 0, h: 0 });
   const [t, setT] = useState<ZoomTransform>(zoomIdentity);
   const [highlight, setHighlight] = useState(false);
+  const [hintGone, setHintGone] = useState(readHint);
+  const hideHint = () => {
+    setHintGone(true);
+    try {
+      localStorage.setItem(HINT_KEY, '1');
+    } catch {
+      /* private mode: hint just comes back next time */
+    }
+  };
+  const select_ = (id: string) => {
+    hideHint();
+    onSelect(id);
+  };
   const progress = useProgress();
 
   useEffect(() => {
@@ -278,6 +307,7 @@ export function EgyptMap({ selectedId, onSelect, inset }: Props) {
                   <text className={styles.clusterCount} dy="0.35em">
                     {c.members.length}
                   </text>
+                  {labelHit(regionNames, c.cx > size.w - 130 ? -18 : 18, c.cx > size.w - 130)}
                   <text
                     className={styles.label}
                     x={c.cx > size.w - 130 ? -18 : 18}
@@ -308,8 +338,8 @@ export function EgyptMap({ selectedId, onSelect, inset }: Props) {
                     aria-label={p.nameZh}
                     aria-pressed={selected}
                     data-place={p.id}
-                    onClick={() => onSelect(p.id)}
-                    onKeyDown={(e) => e.key === 'Enter' && onSelect(p.id)}
+                    onClick={() => select_(p.id)}
+                    onKeyDown={(e) => e.key === 'Enter' && select_(p.id)}
                   >
                     <circle r={22} className={styles.hit} />
                     {highlight && p.onItinerary && <circle r={15} className={styles.itinerary} />}
@@ -320,6 +350,7 @@ export function EgyptMap({ selectedId, onSelect, inset }: Props) {
                       opened={!!progress.opened[p.id]}
                       visited={!!progress.visited[p.id]}
                     />
+                    {showLabel && labelHit(nodeLabel(p), spread && x < c.cx - 1 ? -13 : 13, spread && x < c.cx - 1)}
                     {showLabel && (
                       <text
                         className={styles.label}
@@ -344,6 +375,14 @@ export function EgyptMap({ selectedId, onSelect, inset }: Props) {
         <polygon points="15,14 20,31 15,28 10,31" fill="#292720" />
         <polygon points="15,28 20,31 15,47 10,31" fill="#b88b43" opacity="0.7" />
       </svg>
+      {!hintGone && !selectedId && (
+        <div className={styles.hint} role="note">
+          <span>點任一地點或名稱即可展開</span>
+          <button type="button" onClick={hideHint} aria-label="關閉提示">
+            ✕
+          </button>
+        </div>
+      )}
       <div className={styles.controls} style={{ bottom: inset.bottom + 12 }}>
         <button type="button" onClick={resetView} aria-label="回到全境">
           ⤢ 全境
