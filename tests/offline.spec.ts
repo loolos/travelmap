@@ -288,3 +288,12 @@ test('mummy order accepts the steps only in the right order', async ({ page }) =
   await page.getByRole('button', { name: '看完整解釋' }).click();
   await expect(page.getByText(/和代表真理的羽毛比重量/)).toBeVisible();
 });
+
+test('horus and set comic pages through eight panels', async ({ page }) => {
+  await page.goto('./#/place/edfu/horus-set-comic');
+  await expect(page.getByRole('img', { name: '歐西里斯的圖像' })).toBeVisible();
+  for (let i = 0; i < 7; i++) await page.getByRole('button', { name: '下一格 →' }).click();
+  await expect(page.getByText(/人間的荷魯斯/)).toBeVisible();
+  await page.getByRole('button', { name: '到神殿找找看' }).click();
+  await expect(page.getByText(/變成小河馬的賽特/)).toBeVisible();
+});

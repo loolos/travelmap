@@ -251,5 +251,19 @@
       "wiki-mummy",
       "wiki-canopic"
     ]
+  },
+  {
+    "id": "horus-set-comic",
+    "placeId": "edfu",
+    "component": "StepTimeline",
+    "title": "荷魯斯與賽特",
+    "label": "神話漫畫",
+    "icon": "📖",
+    "question": "為什麼艾德夫神殿到處都是老鷹？",
+    "durationMin": 2,
+    "sourceIds": [
+      "wiki-osiris-myth",
+      "wiki-edfu"
+    ]
   }
 ]
