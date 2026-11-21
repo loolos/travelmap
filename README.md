@@ -2,10 +2,7 @@
 
 Egypt Explorer：離線優先的埃及互動地圖（PWA）。規格見 docs/。
 
-🌐 網站：**https://loolos.github.io/travelmap/**（手機用 Safari 開啟後「加入主畫面」即可離線使用）
-
-🌐 網站：**https://loolos.github.io/travelmap/**（手機用 Safari 開啟後「加入主畫面」即可離線使用）
-
+🌐 網站：https://loolos.github.io/travelmap/
 
 ## 開發
 
