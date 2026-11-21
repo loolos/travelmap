@@ -307,13 +307,6 @@
       "alt": "穆罕默德·阿里清真寺穹頂內部"
     },
     {
-      "assetId": "grand-gallery-photo",
-      "article": "Great Pyramid of Giza",
-      "dest": "media/photos/grand-gallery.webp",
-      "alt": "胡夫金字塔的大走廊",
-      "match": "(Grand|Gallery|King.?s.?Chamber|interior|inside|corridor)"
-    },
-    {
       "assetId": "hunefer-photo",
       "article": "Papyrus of Hunefer",
       "dest": "media/photos/hunefer.webp",

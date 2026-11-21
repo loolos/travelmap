@@ -526,15 +526,6 @@
     "essential": true
   },
   {
-    "id": "grand-gallery-photo",
-    "path": "media/photos/grand-gallery.webp",
-    "alt": "胡夫金字塔的大走廊（示意）",
-    "credit": "Egypt Explorer 示意圖",
-    "license": "CC0",
-    "kind": "illustration",
-    "essential": true
-  },
-  {
     "id": "hunefer-photo",
     "path": "media/photos/hunefer.webp",
     "alt": "《亨尼弗的亡靈書》秤心審判圖",
