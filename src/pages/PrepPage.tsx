@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { CHECKED_AT, prepGroups, prepSources } from './prepData';
+import { CHECKED_AT, decemberWeather, prepGroups, prepSources } from './prepData';
 import styles from './Pages.module.css';
 
 const KEY = 'prep-checked-v1';
@@ -33,6 +33,20 @@ export function PrepPage() {
         已完成 <b>{count}</b>／{total}
       </p>
       <p style={{ margin: 0, fontSize: 13, color: 'var(--muted)' }}>打勾會存在這支手機上。點項目看說明。</p>
+      <section>
+        <h2 className={styles.h2}>
+          <span aria-hidden="true">🌡️</span> 12 月天氣（歷年平均）
+        </h2>
+        {decemberWeather.map((w) => (
+          <details key={w.id} className={styles.card}>
+            <summary>
+              <span style={{ flex: 1 }}>{w.place}</span>
+              <b style={{ whiteSpace: 'nowrap', fontSize: 14 }}>{w.range}</b>
+            </summary>
+            <p>{w.detail}</p>
+          </details>
+        ))}
+      </section>
       {prepGroups.map((g) => (
         <section key={g.title}>
           <h2 className={styles.h2}>

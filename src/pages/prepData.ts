@@ -80,7 +80,7 @@ export const prepGroups: PrepGroup[] = [
       { id: 'headlamp', title: '頭燈＋備用電池', detail: '營地晚上很暗，上廁所也要用；觀星時調成紅光或最暗。' },
       { id: 'sleeping', title: '確認睡袋與寢具', detail: '先問業者有沒有提供睡袋和毯子，怕冷可以帶睡袋內套。' },
       { id: 'wipes', title: '濕紙巾、衛生紙、垃圾袋', detail: '沙漠沒有廁所和洗手台，垃圾要自己帶走。' },
-      { id: 'snorkel', title: '浮潛用品', detail: '泳衣、防曬衣（比防曬乳更護礁）、防水手機袋。面鏡業者有租，近視可自備有度數的。' },
+      { id: 'snorkel', title: '浮潛用品', detail: '泳衣、防曬衣（比防曬乳更護礁）、防水手機袋。12 月海水約 23–25°C，怕冷可以租防寒衣。面鏡業者有租，近視可自備有度數的。' },
     ],
   },
   {
@@ -103,9 +103,28 @@ export const prepGroups: PrepGroup[] = [
   },
 ];
 
+/** December climate normals (1991–2020 where stated) for the route. */
+export interface WeatherRow {
+  id: string;
+  place: string;
+  range: string;
+  detail: string;
+}
+export const decemberWeather: WeatherRow[] = [
+  { id: 'cairo', place: '開羅／吉薩 Cairo & Giza', range: '11–21°C', detail: '白天舒適、早晚涼，要帶外套。12 月平均有約 2 天下小雨，是行程中最可能遇到雨的地方。' },
+  { id: 'desert', place: '黑白沙漠 White Desert', range: '6–22°C', detail: '巴哈利亞 Bahariya 一帶夜裡平均 6–8°C，太陽下山後氣溫掉得很快。附近法拉弗拉 Farafra 12 月紀錄最低 −2.1°C。露營時夜裡有風會更冷，帶羽絨或刷毛外套、毛帽、厚襪。' },
+  { id: 'luxor', place: '路克索 Luxor', range: '9–24°C', detail: '日夜溫差約 15°C。坐熱氣球的清晨最冷，帶外套，中午可以穿短袖。幾乎不下雨。' },
+  { id: 'aswan', place: '亞斯文 Aswan', range: '11–24°C', detail: '埃及最乾的地方之一，12 月平均 0 天下雨。白天日照強，神殿少遮蔭，戴帽子。' },
+  { id: 'redsea', place: '紅海 Hurghada', range: '13–24°C', detail: '海水約 23–25°C，比夏天涼，浮潛久了會冷，可以租 3mm 防寒衣或穿長袖防曬衣。船上風大，上岸後要披件外套。' },
+  { id: 'daylight', place: '日照與天黑', range: '約 17:00 天黑', detail: '白天只有約 10.5 小時，天亮約 6:15–6:35，天黑約 17:00–17:20（越南邊越晚）。12 月埃及用 UTC+2，比台灣慢 6 小時。戶外行程早點出門。' },
+];
+
 export const prepSources = [
   { title: '外交部領事事務局：埃及（簽證及入境須知，2022-06-21 更新）', url: 'https://www.boca.gov.tw/sp-foof-countrycp-01-244-28874-02-1.html' },
   { title: '埃及電子簽證官方網站', url: 'https://visa2egypt.gov.eg/eVisa/' },
   { title: '外交部領事事務局：出國登錄', url: 'https://www.boca.gov.tw/' },
   { title: '衛生福利部疾病管制署：旅遊醫學', url: 'https://www.cdc.gov.tw/' },
+  { title: 'Climates to Travel：埃及 12 月氣候（1991–2020 平均）', url: 'https://www.climatestotravel.com/weatherbymonth/egypt/december' },
+  { title: 'Wikipedia：Farafra 氣候表（12 月紀錄最低溫）', url: 'https://en.wikipedia.org/wiki/Farafra,_Egypt' },
+  { title: 'seatemperature.net：赫爾格達 12 月海水溫度', url: 'https://seatemperature.net/monthly/hurghada-sea-temperature-in-december-7355' },
 ];
