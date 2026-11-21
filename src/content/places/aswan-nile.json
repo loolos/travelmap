@@ -50,6 +50,9 @@
     "sourceIds": [
       "wiki-aswan",
       "wiki-eratosthenes"
+    ],
+    "activityIds": [
+      "nubia-flood"
     ]
   },
   {
@@ -328,6 +331,9 @@
     "sourceIds": [
       "wiki-kom-ombo",
       "wiki-sobek"
+    ],
+    "activityIds": [
+      "croc-museum-case"
     ]
   },
   {
