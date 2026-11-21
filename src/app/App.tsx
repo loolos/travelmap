@@ -20,6 +20,8 @@ export function App() {
   const location = useLocation();
   const placeMatch = useMatch('/place/:id/*');
   const placeId = placeMatch?.params.id;
+  const regionMatch = useMatch('/map/:regionId');
+  const resetSignal = (location.state as { reset?: number } | null)?.reset;
   const place = placeId ? placeById.get(placeId) : undefined;
   const wide = useMediaQuery('(min-width: 900px)');
   const [drawer, setDrawer] = useState<'peek' | 'full'>('peek');
@@ -43,7 +45,13 @@ export function App() {
     <div className={styles.app}>
       <TopNav />
       <main className={styles.main}>
-        <EgyptMap selectedId={place?.id} onSelect={selectFromMap} inset={inset} />
+        <EgyptMap
+          selectedId={place?.id}
+          focusRegionId={regionMatch?.params.regionId}
+          resetSignal={resetSignal}
+          onSelect={selectFromMap}
+          inset={inset}
+        />
         {place && (
           <PlacePanel
             key={place.id}
@@ -64,6 +72,7 @@ export function App() {
         <Routes>
           <Route path="/" element={<Navigate to="/map" replace />} />
           <Route path="/map" element={null} />
+          <Route path="/map/:regionId" element={null} />
           <Route path="/place/:id" element={place ? null : <Navigate to="/map" replace />} />
           <Route path="/place/:id/:activity" element={<ActivityPage />} />
           <Route
