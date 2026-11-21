@@ -279,13 +279,13 @@
       "assetId": "milkyway-photo",
       "article": "Milky Way",
       "dest": "media/photos/milky-way.webp",
-      "alt": "夜空中的銀河"
+      "alt": "沙漠天文台上方的銀河（攝於智利）"
     },
     {
       "assetId": "nilometer-photo",
       "article": "Nilometer",
       "dest": "media/photos/nilometer.webp",
-      "alt": "尼羅河水位計"
+      "alt": "開羅羅達島的尼羅河水位計"
     },
     {
       "assetId": "canopic-photo",
@@ -297,14 +297,7 @@
       "assetId": "cartouche-photo",
       "article": "Cartouche",
       "dest": "media/photos/cartouche.webp",
-      "alt": "神殿牆上的王名圈"
-    },
-    {
-      "assetId": "esna-lock-photo",
-      "article": "Esna",
-      "match": "(lock|barrage|bridge)",
-      "dest": "media/photos/esna-barrage.webp",
-      "alt": "伊斯納的尼羅河攔河堰"
+      "alt": "塞提一世墓中的王名圈浮雕"
     },
     {
       "assetId": "mosque-dome-photo",

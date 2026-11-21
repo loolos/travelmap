@@ -160,6 +160,7 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
   for (const a of activities) {
     if (!placeIds.has(a.placeId)) errors.push(`activity ${a.id}: unknown place ${a.placeId}`);
     a.sourceIds.forEach((s) => sourceIds.has(s) || errors.push(`activity ${a.id}: unknown source ${s}`));
+    a.photoIds.forEach((ph) => assetIds.has(ph) || errors.push(`activity ${a.id}: unknown photo ${ph}`));
     const n = charCount(a.label);
     if (n < 2 || n > 6) errors.push(`activity ${a.id}: label "${a.label}" must be 2–6 字`);
   }
@@ -191,6 +192,7 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
     ...places.flatMap((p) => p.findItems.map((f) => f.assetId)),
     ...deities.map((d) => d.assetId),
     ...notes.map((n) => n.assetId),
+    ...activities.flatMap((a) => a.photoIds),
   ]);
   assets.forEach((a) => used.has(a.id) || warnings.push(`asset ${a.id} is not used`));
 

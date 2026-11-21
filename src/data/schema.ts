@@ -171,6 +171,8 @@ export const Activity = z.object({
   question: z.string(),
   durationMin: z.number(),
   sourceIds: z.array(z.string()).default([]),
+  /** Real photos of what the diagram shows; offered behind a 「實景照片」 toggle. */
+  photoIds: z.array(z.string()).default([]),
 });
 
 /** Coarse territory zones drawn on the era map (shapes live in src/timeline/zones.ts; all 示意). */

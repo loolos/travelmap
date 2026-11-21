@@ -478,7 +478,7 @@
   {
     "id": "milkyway-photo",
     "path": "media/photos/milky-way.webp",
-    "alt": "夜空中的銀河",
+    "alt": "沙漠天文台上方的銀河（攝於智利）",
     "credit": "ESO/Y. Beletsky",
     "license": "CC BY 4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:ESO-VLT-Laser-phot-33a-07.jpg",
@@ -488,7 +488,7 @@
   {
     "id": "nilometer-photo",
     "path": "media/photos/nilometer.webp",
-    "alt": "尼羅河水位計",
+    "alt": "開羅羅達島的尼羅河水位計",
     "credit": "Baldiri",
     "license": "CC BY-SA 3.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cairo_Nilometer_2.jpg",
@@ -508,7 +508,7 @@
   {
     "id": "cartouche-photo",
     "path": "media/photos/cartouche.webp",
-    "alt": "神殿牆上的王名圈",
+    "alt": "塞提一世墓中的王名圈浮雕",
     "credit": "Osama Shukir Muhammed Amin FRCP(Glasg)",
     "license": "CC BY-SA 4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Birth_and_Throne_cartouches_of_pharaoh_Seti_I,_from_KV17_at_the_Valley_of_the_Kings,_Egypt._Neues_Museum.jpg",

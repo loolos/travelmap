@@ -2,6 +2,7 @@ import { Navigate, useParams } from 'react-router-dom';
 import { activityById, sourceById } from '../data/content';
 import { Sheet } from '../app/Sheet';
 import { activityComponents } from '../interactions/registry';
+import { ActivityPhotos } from './ActivityPhotos';
 
 export function ActivityPage() {
   const { id, activity } = useParams();
@@ -10,6 +11,7 @@ export function ActivityPage() {
   const Comp = activityComponents[a.id];
   return (
     <Sheet title={a.title} backTo={`/place/${a.placeId}`}>
+      <ActivityPhotos key={`p-${a.id}`} ids={a.photoIds} />
       {Comp ? <Comp key={a.id} activityId={a.id} /> : <p>互動準備中。</p>}
       {a.sourceIds.length > 0 && (
         <details style={{ marginTop: 16, fontSize: 13, color: 'var(--muted)' }}>
