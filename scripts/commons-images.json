@@ -48,6 +48,49 @@
       "article": "White Desert National Park",
       "dest": "media/western-desert/white-desert.webp",
       "alt": "白沙漠的白堊岩"
+    },
+    {
+      "assetId": "aswan-hero",
+      "article": "Aswan",
+      "dest": "media/aswan-nile/aswan.webp",
+      "alt": "亞斯文與尼羅河"
+    },
+    {
+      "assetId": "dam-hero",
+      "article": "Aswan Dam",
+      "dest": "media/aswan-nile/dam.webp",
+      "alt": "亞斯文高壩"
+    },
+    {
+      "assetId": "felucca-hero",
+      "article": "Felucca",
+      "dest": "media/aswan-nile/felucca.webp",
+      "alt": "尼羅河上的三角風帆船"
+    },
+    {
+      "assetId": "abu-simbel-hero",
+      "article": "Abu Simbel temples",
+      "dest": "media/aswan-nile/abu-simbel.webp",
+      "alt": "阿布辛貝大神殿"
+    },
+    {
+      "assetId": "kom-ombo-hero",
+      "article": "Temple of Kom Ombo",
+      "dest": "media/aswan-nile/kom-ombo.webp",
+      "alt": "孔翁波神殿"
+    },
+    {
+      "assetId": "crocodile-hero",
+      "article": "Sobek",
+      "dest": "media/aswan-nile/crocodile.webp",
+      "alt": "鱷魚木乃伊",
+      "match": "[Cc]rocodile.*[Mm]umm|[Mm]umm.*[Cc]rocodile"
+    },
+    {
+      "assetId": "edfu-hero",
+      "article": "Temple of Edfu",
+      "dest": "media/aswan-nile/edfu.webp",
+      "alt": "艾德夫神殿塔門"
     }
   ]
 }

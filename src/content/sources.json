@@ -58,5 +58,60 @@
     "id": "wiki-sirius",
     "title": "Wikipedia：Sirius",
     "url": "https://en.wikipedia.org/wiki/Sirius"
+  },
+  {
+    "id": "wiki-aswan",
+    "title": "Wikipedia：Aswan",
+    "url": "https://en.wikipedia.org/wiki/Aswan"
+  },
+  {
+    "id": "wiki-eratosthenes",
+    "title": "Wikipedia：Eratosthenes",
+    "url": "https://en.wikipedia.org/wiki/Eratosthenes"
+  },
+  {
+    "id": "wiki-aswan-dam",
+    "title": "Wikipedia：Aswan Dam",
+    "url": "https://en.wikipedia.org/wiki/Aswan_Dam"
+  },
+  {
+    "id": "wiki-lake-nasser",
+    "title": "Wikipedia：Lake Nasser",
+    "url": "https://en.wikipedia.org/wiki/Lake_Nasser"
+  },
+  {
+    "id": "wiki-felucca",
+    "title": "Wikipedia：Felucca",
+    "url": "https://en.wikipedia.org/wiki/Felucca"
+  },
+  {
+    "id": "wiki-abu-simbel",
+    "title": "Wikipedia：Abu Simbel temples",
+    "url": "https://en.wikipedia.org/wiki/Abu_Simbel_temples"
+  },
+  {
+    "id": "wiki-kom-ombo",
+    "title": "Wikipedia：Temple of Kom Ombo",
+    "url": "https://en.wikipedia.org/wiki/Temple_of_Kom_Ombo"
+  },
+  {
+    "id": "wiki-sobek",
+    "title": "Wikipedia：Sobek",
+    "url": "https://en.wikipedia.org/wiki/Sobek"
+  },
+  {
+    "id": "wiki-edfu",
+    "title": "Wikipedia：Temple of Edfu",
+    "url": "https://en.wikipedia.org/wiki/Temple_of_Edfu"
+  },
+  {
+    "id": "wiki-esna",
+    "title": "Wikipedia：Esna",
+    "url": "https://en.wikipedia.org/wiki/Esna"
+  },
+  {
+    "id": "unesco-nubia",
+    "title": "UNESCO：Nubian Monuments from Abu Simbel to Philae",
+    "url": "https://whc.unesco.org/en/list/88/"
   }
 ]

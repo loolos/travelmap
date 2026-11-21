@@ -96,5 +96,77 @@
     "license": "CC0",
     "kind": "illustration",
     "essential": true
+  },
+  {
+    "id": "aswan-hero",
+    "path": "media/aswan-nile/aswan.webp",
+    "alt": "亞斯文與尼羅河（示意）",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "dam-hero",
+    "path": "media/aswan-nile/dam.webp",
+    "alt": "亞斯文高壩（示意）",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "felucca-hero",
+    "path": "media/aswan-nile/felucca.webp",
+    "alt": "尼羅河上的三角風帆船（示意）",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "abu-simbel-hero",
+    "path": "media/aswan-nile/abu-simbel.webp",
+    "alt": "阿布辛貝大神殿（示意）",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "kom-ombo-hero",
+    "path": "media/aswan-nile/kom-ombo.webp",
+    "alt": "孔翁波神殿（示意）",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "crocodile-hero",
+    "path": "media/aswan-nile/crocodile.webp",
+    "alt": "鱷魚木乃伊（示意）",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "edfu-hero",
+    "path": "media/aswan-nile/edfu.webp",
+    "alt": "艾德夫神殿塔門（示意）",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "esna-lock-hero",
+    "path": "media/aswan-nile/esna-lock.webp",
+    "alt": "船閘剖面示意圖",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
   }
 ]

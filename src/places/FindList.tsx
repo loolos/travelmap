@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import type { FindItem, Place } from '../data/schema';
-import { assetById, assetUrl } from '../data/content';
+import { Link } from 'react-router-dom';
+import { assetById, assetUrl, deityById } from '../data/content';
 import { toggleFound, type Progress } from '../progress/store';
 import styles from './PlacePanel.module.css';
 
@@ -28,6 +29,11 @@ export function FindList({ place, progress }: { place: Place; progress: Progress
                 onClick={() => setOpen(isOpen ? null : f.id)}
               >
                 <span>{f.text}</span>
+                {f.deityId && (
+                  <span className={on ? styles.deityOn : styles.deityOff} title="可收集的神祇" aria-label="可收集的神祇">
+                    {deityById.get(f.deityId)?.icon}
+                  </span>
+                )}
                 {f.hint && <span className={styles.hintIcon} aria-hidden="true">{isOpen ? '▴' : '💡'}</span>}
               </button>
             </div>
@@ -48,6 +54,11 @@ function Hint({ item, place }: { item: FindItem; place: Place }) {
   return (
     <div className={styles.hintBox}>
       <p>{item.hint}</p>
+      {item.deityId && (
+        <p className={styles.deityNote}>
+          勾選後收進 <Link to="/deities">神祇圖鑑</Link>
+        </p>
+      )}
       {spot && src && (
         <figure className={styles.spotFig}>
           <img

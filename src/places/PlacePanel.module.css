@@ -353,3 +353,16 @@
     transform: scale(1.15);
   }
 }
+.deityOn,
+.deityOff {
+  font-size: 18px;
+  margin-left: 4px;
+}
+.deityOff {
+  filter: grayscale(1);
+  opacity: 0.5;
+}
+.deityNote {
+  font-size: 13px;
+  color: var(--muted);
+}

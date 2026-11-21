@@ -104,3 +104,35 @@ test('white-desert timeline steps to the end and explains', async ({ page }) => 
   await page.getByRole('button', { name: '看解釋' }).click();
   await expect(page.getByText('差異侵蝕')).toBeVisible();
 });
+
+test('dam flagship: too much water runs dry, a middle release copes, no dam floods and dries', async ({ page }) => {
+  await page.goto('./#/place/aswan-high-dam/dam-control');
+  await expect(page.getByText('下游缺水')).toBeVisible();
+  const slider = page.getByRole('slider', { name: '每月放水量' });
+  await slider.focus();
+  for (let i = 0; i < 5; i++) await slider.press('ArrowLeft');
+  await expect(page.getByText('平穩度過')).toBeVisible();
+  await page.getByRole('button', { name: '沒有高壩' }).click();
+  await expect(page.getByText('又淹又乾')).toBeVisible();
+  await page.getByRole('button', { name: '看解釋' }).click();
+  await expect(page.getByText('遊戲假設')).toBeVisible();
+});
+
+test('lock sim explains a wrong move and lets the boat through', async ({ page }) => {
+  await page.goto('./#/place/esna-lock/esna-lock-sim');
+  await page.getByRole('button', { name: '開上游閘門' }).click();
+  await expect(page.getByRole('status')).toContainText('水壓');
+  for (const a of ['閘室灌水', '開上游閘門', '船前進', '關上游閘門', '閘室放水', '開下游閘門', '船前進'])
+    await page.getByRole('button', { name: a, exact: true }).click();
+  await expect(page.getByRole('status')).toContainText('通過了');
+});
+
+test('ticking a deity in a find list collects it in the deity book', async ({ page }) => {
+  await page.goto('./#/place/kom-ombo');
+  await page.getByRole('tab', { name: /找找看/ }).click();
+  await page.getByRole('checkbox', { name: /鱷魚頭人身/ }).check();
+  await page.goto('./#/deities');
+  await expect(page.getByText(/已收集\s*1\s*\/\s*10/)).toBeVisible();
+  await page.getByRole('button', { name: /索貝克/ }).click();
+  await expect(page.getByRole('link', { name: '孔翁波神殿' })).toBeVisible();
+});

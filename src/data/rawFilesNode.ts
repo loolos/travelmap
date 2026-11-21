@@ -17,6 +17,7 @@ export function readRawContent(): RawContent {
     assets: read('assets.json'),
     sources: read('sources.json'),
     activities: read('activities.json'),
+    deities: read('deities.json'),
   };
 }
 

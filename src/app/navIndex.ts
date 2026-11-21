@@ -1,4 +1,4 @@
-import { activities, notes, placesByRegion, regions } from '../data/content';
+import { activities, deities, notes, placesByRegion, regions } from '../data/content';
 
 export interface NavItem {
   id: string;
@@ -53,6 +53,22 @@ export function buildNavIndex(): NavGroup[] {
         },
       ],
     });
+  groups.push({
+    title: '圖鑑',
+    sections: [
+      {
+        items: [
+          {
+            id: 'deities',
+            to: '/deities',
+            label: '神祇圖鑑',
+            terms: ['gods', 'deity', '神', ...deities.flatMap((d) => [d.nameZh, d.nameEn])],
+            icon: '🏺',
+          },
+        ],
+      },
+    ],
+  });
   const noteRegions = regions.filter((r) => notes.some((n) => n.regionId === r.id));
   const hasGeneral = notes.some((n) => n.regionId === 'general');
   groups.push({

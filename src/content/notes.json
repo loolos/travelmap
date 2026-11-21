@@ -68,5 +68,68 @@
     "icon": "🌴",
     "title": "綠洲椰棗",
     "body": "巴哈利亞的椰棗（Dates）很有名，可以買來當伴手禮或沙漠裡的點心。"
+  },
+  {
+    "id": "an-nubian",
+    "regionId": "aswan-nile",
+    "icon": "🏘️",
+    "title": "努比亞村禮儀",
+    "body": "拍攝居民或屋內前先詢問；有些人家會請你喝茶或看小鱷魚，離開時給點小費是禮貌。"
+  },
+  {
+    "id": "an-karkade",
+    "regionId": "aswan-nile",
+    "icon": "🌺",
+    "title": "洛神花茶與香料",
+    "body": "洛神花茶（karkadeh）冷熱都喝得到。市集買香料可以先試聞、問清楚是秤重還是一包的價格。"
+  },
+  {
+    "id": "an-dam-photo",
+    "regionId": "aswan-nile",
+    "icon": "📷",
+    "title": "高壩參觀",
+    "body": "高壩屬於管制區，部分設施不宜拍攝，請依現場人員指示。壩頂風大、少遮蔽，記得防曬。"
+  },
+  {
+    "id": "an-felucca-price",
+    "regionId": "aswan-nile",
+    "icon": "⛵",
+    "title": "風帆船議價",
+    "body": "上船前先講好總價、時間長度與停靠點，以及價格是整船還是每人。沒風時船速會很慢。"
+  },
+  {
+    "id": "an-abu-simbel-trip",
+    "regionId": "aswan-nile",
+    "icon": "🌅",
+    "title": "阿布辛貝行程",
+    "body": "從亞斯文走陸路單程約 3 小時以上，通常天沒亮就出發；也有班機。帶水、外套和早餐。"
+  },
+  {
+    "id": "an-temple-photo",
+    "regionId": "aswan-nile",
+    "icon": "📸",
+    "title": "神殿攝影",
+    "body": "多數神殿可用手機拍照，但不能用閃光燈；個別墓室或展區另有規定，以現場公告為準。"
+  },
+  {
+    "id": "an-kom-ombo-night",
+    "regionId": "aswan-nile",
+    "icon": "🌙",
+    "title": "孔翁波夜訪",
+    "body": "遊輪常在傍晚停靠，神殿打上燈光很好看，但浮雕細節較難看清，可以帶小手電筒。"
+  },
+  {
+    "id": "an-edfu-carriage",
+    "regionId": "aswan-nile",
+    "icon": "🐎",
+    "title": "艾德夫馬車",
+    "body": "碼頭到神殿常搭馬車。上車前講好來回總價和等候時間，小費另計。"
+  },
+  {
+    "id": "an-cruise",
+    "regionId": "aswan-nile",
+    "icon": "🚢",
+    "title": "遊輪小費與過閘",
+    "body": "遊輪小費多半在最後統一給；過閘時小販拋上來的東西，不想買就丟回去或交給船員處理。"
   }
 ]

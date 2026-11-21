@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { Activity, Asset, Note, Place, Region, Source, type ContentBundle } from './schema';
+import { Activity, Asset, Deity, Note, Place, Region, Source, type ContentBundle } from './schema';
 import { charCount, parseInline, plainText } from './inline';
 
 export interface RawContent {
@@ -9,6 +9,7 @@ export interface RawContent {
   assets: unknown;
   sources: unknown;
   activities: unknown;
+  deities: unknown;
 }
 
 export interface ValidationResult {
@@ -39,6 +40,7 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
   const assets = parse(z.array(Asset), raw.assets, 'assets') ?? [];
   const sources = parse(z.array(Source), raw.sources, 'sources') ?? [];
   const activities = parse(z.array(Activity), raw.activities, 'activities') ?? [];
+  const deities = parse(z.array(Deity), raw.deities, 'deities') ?? [];
 
   const ids = new Map<string, string>();
   const unique = (id: string, label: string) => {
@@ -51,6 +53,7 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
   assets.forEach((a) => unique(a.id, 'asset'));
   sources.forEach((s) => unique(s.id, 'source'));
   activities.forEach((a) => unique(a.id, 'activity'));
+  deities.forEach((d) => unique(d.id, 'deity'));
 
   const placeIds = new Set(places.map((p) => p.id));
   const regionIds = new Set(regions.map((r) => r.id));
@@ -58,6 +61,7 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
   const assetIds = new Set(assets.map((a) => a.id));
   const sourceIds = new Set(sources.map((s) => s.id));
   const activityIds = new Set(activities.map((a) => a.id));
+  const deityIds = new Set(deities.map((d) => d.id));
 
   const checkText = (label: string, text: string) => {
     const bad = [...text].filter((c) => SIMPLIFIED.includes(c));
@@ -92,6 +96,7 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
     p.activityIds.forEach((a) => activityIds.has(a) || errors.push(`${L}: unknown activity ${a}`));
     if (p.heroAssetId && !assetIds.has(p.heroAssetId)) errors.push(`${L}: unknown hero asset ${p.heroAssetId}`);
     p.findItems.forEach((f) => f.assetId && !assetIds.has(f.assetId) && errors.push(`${L}: unknown asset ${f.assetId}`));
+    p.findItems.forEach((f) => f.deityId && !deityIds.has(f.deityId) && errors.push(`${L}: unknown deity ${f.deityId}`));
     // Card labels: 重點, 找找看, 手記 + activities  ≤ 4
     if (3 + p.activityIds.length > 4) errors.push(`${L}: too many card labels`);
 
@@ -141,6 +146,11 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
     const n = charCount(a.label);
     if (n < 2 || n > 6) errors.push(`activity ${a.id}: label "${a.label}" must be 2–6 字`);
   }
+  const findable = new Set(places.flatMap((p) => p.findItems.map((f) => f.deityId)));
+  for (const d of deities) {
+    checkText(`deity ${d.id}`, `${d.nameZh}${d.look}${d.role}`);
+    if (!findable.has(d.id)) warnings.push(`deity ${d.id} is not in any find list yet`);
+  }
   // Every hero/essential asset must be referenced at most... (unused assets are only a warning)
   const used = new Set([...places.map((p) => p.heroAssetId), ...places.flatMap((p) => p.findItems.map((f) => f.assetId))]);
   assets.forEach((a) => used.has(a.id) || warnings.push(`asset ${a.id} is not used`));
@@ -148,6 +158,6 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
   return {
     errors,
     warnings,
-    bundle: errors.length ? undefined : { places, regions, notes, assets, sources, activities },
+    bundle: errors.length ? undefined : { places, regions, notes, assets, sources, activities, deities },
   };
 }

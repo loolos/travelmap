@@ -128,3 +128,62 @@
   color: #fff;
   font-weight: 600;
 }
+.chart {
+  width: 100%;
+  border-radius: 12px;
+  background: #f7f3ea;
+}
+.toggle {
+  display: flex;
+  gap: 0;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  overflow: hidden;
+  align-self: flex-start;
+}
+.toggle button {
+  min-height: 40px;
+  padding: 0 16px;
+  border: 0;
+  background: #fff;
+}
+.toggle button[aria-pressed='true'] {
+  background: var(--lapis);
+  color: #fff;
+  font-weight: 600;
+}
+.anim {
+  transition:
+    transform 0.8s ease,
+    opacity 0.4s;
+}
+.status {
+  margin: 0;
+  min-height: 2.6em;
+  font-size: 15px;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.buttons button {
+  min-height: 44px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: #fff;
+  font-size: 15px;
+}
+.buttons button:disabled {
+  opacity: 0.5;
+}
+.buttons .wide {
+  grid-column: span 2;
+  background: #eef4f6;
+  font-weight: 600;
+}
+@media (prefers-reduced-motion: reduce) {
+  .anim {
+    transition: none;
+  }
+}
