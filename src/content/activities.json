@@ -137,5 +137,49 @@
       "wiki-decan",
       "wiki-sirius"
     ]
+  },
+  {
+    "id": "black-desert-rocks",
+    "placeId": "black-desert",
+    "component": "IdentifyQuiz",
+    "title": "黑石頭從哪來",
+    "label": "認石頭",
+    "icon": "🪨",
+    "question": "黑沙漠的黑石頭，是從哪裡來的？",
+    "durationMin": 2,
+    "sourceIds": [
+      "wiki-black-desert"
+    ]
+  },
+  {
+    "id": "crystal-check",
+    "placeId": "crystal-mountain",
+    "component": "IdentifyQuiz",
+    "title": "晶體怎麼長出來",
+    "label": "認晶體",
+    "icon": "💎",
+    "question": "水晶山的晶體，是怎麼長出來的？",
+    "durationMin": 2,
+    "sourceIds": [
+      "wiki-crystal-mountain",
+      "wiki-quartz",
+      "wiki-calcite"
+    ]
+  },
+  {
+    "id": "red-sea-lab",
+    "placeId": "hurghada",
+    "component": "IdentifyQuiz",
+    "title": "紅海與珊瑚礁",
+    "label": "紅海珊瑚",
+    "icon": "🐠",
+    "question": "紅海為什麼又深又窄，還有這麼多珊瑚？",
+    "durationMin": 3,
+    "sourceIds": [
+      "wiki-red-sea-rift",
+      "wiki-red-sea",
+      "wiki-coral-bleaching",
+      "wiki-red-sea-anemonefish"
+    ]
   }
 ]

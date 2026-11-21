@@ -50,6 +50,9 @@
       "wiki-red-sea",
       "wiki-hurghada"
     ],
-    "heroAssetId": "hurghada-hero"
+    "heroAssetId": "hurghada-hero",
+    "activityIds": [
+      "red-sea-lab"
+    ]
   }
 ]

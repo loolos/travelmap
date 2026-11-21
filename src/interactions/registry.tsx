@@ -6,6 +6,8 @@ import { KarnakTimeline } from './KarnakTimeline';
 import { LockSim } from './LockSim';
 import { WhiteDesertTimeline } from './WhiteDesertTimeline';
 import { HotspotDiagram } from './HotspotDiagram';
+import { IdentifyQuiz } from './IdentifyQuiz';
+import { RedSeaLab } from './RedSeaLab';
 
 /** Activity id -> component. Content JSON only names the id; behaviour lives in code. */
 export const activityComponents: Record<string, ComponentType<{ activityId: string }>> = {
@@ -19,4 +21,7 @@ export const activityComponents: Record<string, ComponentType<{ activityId: stri
   'mosque-dome-lab': HotspotDiagram,
   'gem-golden-mask': HotspotDiagram,
   'desert-night-sky': HotspotDiagram,
+  'black-desert-rocks': IdentifyQuiz,
+  'crystal-check': IdentifyQuiz,
+  'red-sea-lab': RedSeaLab,
 };
