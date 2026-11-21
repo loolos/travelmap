@@ -1,7 +1,72 @@
 [
-  { "id": "giza-camel", "regionId": "giza", "icon": "🐪", "title": "騎駱駝、搭馬車", "body": "上去之前先講好總價、路線、時間，以及是否另收小費；說清楚幣別，最好請對方覆述一次。" },
-  { "id": "giza-touts", "regionId": "giza", "icon": "🙅", "title": "熱情的「幫忙」", "body": "主動遞東西、幫你拍照或幫你戴頭巾的人，事後常會要錢。不需要就微笑、明確說「不用了，謝謝」（La, shukran）。" },
-  { "id": "giza-panorama", "regionId": "giza", "icon": "📸", "title": "三座同框", "body": "想拍三座金字塔同框，可到高原西南側的全景觀景點（Panorama）。這裡也是駱駝與攤販聚集的地方。" },
-  { "id": "gem-security", "regionId": "giza", "icon": "🛂", "title": "博物館安檢", "body": "入口有類似機場的安檢。各展區的攝影規定可能不同，以現場標示為準；閃光燈一般不建議使用。" },
-  { "id": "giza-today", "regionId": "giza", "icon": "🏙️", "title": "今天的吉薩", "body": "吉薩（Giza）今天是大開羅都會區的一部分，金字塔高原旁邊就是熱鬧的住宅區與道路。" }
+  {
+    "id": "giza-camel",
+    "regionId": "giza",
+    "icon": "🐪",
+    "title": "騎駱駝、搭馬車",
+    "body": "上去之前先講好總價、路線、時間，以及是否另收小費；說清楚幣別，最好請對方覆述一次。"
+  },
+  {
+    "id": "giza-touts",
+    "regionId": "giza",
+    "icon": "🙅",
+    "title": "熱情的「幫忙」",
+    "body": "主動遞東西、幫你拍照或幫你戴頭巾的人，事後常會要錢。不需要就微笑、明確說「不用了，謝謝」（La, shukran）。"
+  },
+  {
+    "id": "giza-panorama",
+    "regionId": "giza",
+    "icon": "📸",
+    "title": "三座同框",
+    "body": "想拍三座金字塔同框，可到高原西南側的全景觀景點（Panorama）。這裡也是駱駝與攤販聚集的地方。"
+  },
+  {
+    "id": "gem-security",
+    "regionId": "giza",
+    "icon": "🛂",
+    "title": "博物館安檢",
+    "body": "入口有類似機場的安檢。各展區的攝影規定可能不同，以現場標示為準；閃光燈一般不建議使用。"
+  },
+  {
+    "id": "giza-today",
+    "regionId": "giza",
+    "icon": "🏙️",
+    "title": "今天的吉薩",
+    "body": "吉薩（Giza）今天是大開羅都會區的一部分，金字塔高原旁邊就是熱鬧的住宅區與道路。"
+  },
+  {
+    "id": "wd-temperature",
+    "regionId": "western-desert",
+    "icon": "🌡️",
+    "title": "日夜溫差大",
+    "body": "沙漠白天曬、晚上冷，冬季夜裡可能接近 0°C。準備保暖外套、帽子，洋蔥式穿法最方便。"
+  },
+  {
+    "id": "wd-water",
+    "regionId": "western-desert",
+    "icon": "💧",
+    "title": "飲水與防曬",
+    "body": "沙漠乾燥，口不渴也要固定喝水。帽子、太陽眼鏡、防曬乳都要帶，嘴唇容易乾裂。"
+  },
+  {
+    "id": "wd-no-collect",
+    "regionId": "western-desert",
+    "icon": "🚫",
+    "title": "只看不帶走",
+    "body": "白沙漠是國家公園，晶體、化石和岩石都不要敲、不要撿，也不要在岩石上刻字。"
+  },
+  {
+    "id": "wd-night",
+    "regionId": "western-desert",
+    "icon": "🏕️",
+    "title": "沙漠過夜",
+    "body": "營地多半沒有手機訊號。晚上可能有沙漠狐（Fennec fox）來找食物，不要餵食。"
+  },
+  {
+    "id": "wd-dates",
+    "regionId": "western-desert",
+    "icon": "🌴",
+    "title": "綠洲椰棗",
+    "body": "巴哈利亞的椰棗（Dates）很有名，可以買來當伴手禮或沙漠裡的點心。"
+  }
 ]

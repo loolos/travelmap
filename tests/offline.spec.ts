@@ -66,6 +66,7 @@ test('find-it checklist lights up the place and persists', async ({ page }) => {
   await page.getByRole('tab', { name: /找找看/ }).click();
   for (const box of await page.getByRole('checkbox').all()) await box.check();
   await expect(page.getByText('全部找到了')).toBeVisible();
+  await page.waitForTimeout(300); // let the IndexedDB write land
   await page.reload();
   await page.getByRole('tab', { name: /找找看/ }).click();
   await expect(page.getByText('全部找到了')).toBeVisible();
@@ -92,4 +93,14 @@ test('find-it hint shows text and a circled spot on the photo', async ({ page })
   await page.getByRole('button', { name: /鼻子缺損/ }).click();
   await expect(page.getByText('原本鼻子的位置')).toBeVisible();
   await expect(page.getByText('看圈起來的地方')).toBeVisible();
+});
+
+test('white-desert timeline steps to the end and explains', async ({ page }) => {
+  await page.goto('./#/place/white-desert/white-desert-story');
+  const slider = page.getByRole('slider', { name: '時間軸' });
+  await slider.focus();
+  for (let i = 0; i < 4; i++) await slider.press('ArrowRight');
+  await page.getByRole('button', { name: '頂層較軟' }).click();
+  await page.getByRole('button', { name: '看解釋' }).click();
+  await expect(page.getByText('差異侵蝕')).toBeVisible();
 });

@@ -12,5 +12,18 @@
       "wiki-khufu",
       "wiki-merer"
     ]
+  },
+  {
+    "id": "white-desert-story",
+    "placeId": "white-desert",
+    "component": "StepTimeline",
+    "title": "從古海洋到蘑菇石",
+    "label": "蘑菇石",
+    "icon": "🎮",
+    "question": "沙漠裡的白色石頭，原本在海底？",
+    "durationMin": 2,
+    "sourceIds": [
+      "wiki-white-desert"
+    ]
   }
 ]

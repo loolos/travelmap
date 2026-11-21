@@ -24,6 +24,30 @@
       "article": "Great Sphinx of Giza",
       "dest": "media/giza/sphinx.webp",
       "alt": "人面獅身像"
+    },
+    {
+      "assetId": "bahariya-hero",
+      "article": "Bahariya Oasis",
+      "dest": "media/western-desert/bahariya.webp",
+      "alt": "巴哈利亞綠洲"
+    },
+    {
+      "assetId": "black-desert-hero",
+      "article": "Black Desert (Egypt)",
+      "dest": "media/western-desert/black-desert.webp",
+      "alt": "黑沙漠，山頂覆蓋黑色碎石"
+    },
+    {
+      "assetId": "crystal-hero",
+      "article": "Crystal Mountain (Egypt)",
+      "dest": "media/western-desert/crystal-mountain.webp",
+      "alt": "水晶山"
+    },
+    {
+      "assetId": "white-desert-hero",
+      "article": "White Desert National Park",
+      "dest": "media/western-desert/white-desert.webp",
+      "alt": "白沙漠的白堊岩"
     }
   ]
 }

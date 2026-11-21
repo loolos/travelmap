@@ -22,22 +22,43 @@ let state: Progress = empty();
 const listeners = new Set<() => void>();
 const emit = () => listeners.forEach((l) => l());
 
+let dirty = false;
 export const loaded: Promise<void> =
   typeof indexedDB === 'undefined'
     ? Promise.resolve()
     : get<Progress>(KEY, db())
         .then((v) => {
-          if (v) {
-            state = { ...empty(), ...v };
-            emit();
-          }
+          if (!v) return;
+          // Merge: anything changed before loading finished wins over the stored copy.
+          const stored = { ...empty(), ...v };
+          state = dirty
+            ? {
+                opened: { ...stored.opened, ...state.opened },
+                visited: { ...stored.visited, ...state.visited },
+                found: { ...stored.found, ...state.found },
+                deities: { ...stored.deities, ...state.deities },
+                activities: { ...stored.activities, ...state.activities },
+              }
+            : stored;
+          emit();
         })
         .catch(() => undefined);
 
+let writing = Promise.resolve();
+function persist() {
+  if (typeof indexedDB === 'undefined') return;
+  // Never write before the stored copy has been read, or it would be overwritten.
+  writing = writing
+    .then(() => loaded)
+    .then(() => set(KEY, state, db()))
+    .catch(() => undefined);
+}
+
 function update(fn: (p: Progress) => Progress) {
+  dirty = true;
   state = fn(state);
   emit();
-  if (typeof indexedDB !== 'undefined') set(KEY, state, db()).catch(() => undefined);
+  persist();
 }
 
 export function useProgress(): Progress {

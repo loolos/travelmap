@@ -47,5 +47,54 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sphinx_with_the_third_pyramid.jpg",
     "kind": "photo",
     "essential": true
+  },
+  {
+    "id": "bahariya-hero",
+    "path": "media/western-desert/bahariya.webp",
+    "alt": "巴哈利亞綠洲",
+    "credit": "Nomo michael hoefner / http://www.zwo5.de",
+    "license": "CC BY-SA 2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bahariya-oasis.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "black-desert-hero",
+    "path": "media/western-desert/black-desert.webp",
+    "alt": "黑沙漠，山頂覆蓋黑色碎石",
+    "credit": "\"A photograph is a secret about a secret...\"",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black_Desert.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "crystal-hero",
+    "path": "media/western-desert/crystal-mountain.webp",
+    "alt": "水晶山",
+    "credit": "(WT/de) micl/michael hoefner, http://www.zwo5.de",
+    "license": "CC BY-SA 1.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crystal-rock-hole.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "white-desert-hero",
+    "path": "media/western-desert/white-desert.webp",
+    "alt": "白沙漠的白堊岩",
+    "credit": "L-BBE",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Al_Farafrah,_New_Valley_Governorate,_Egypt_-_panoramio_(21).jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "camp-hero",
+    "path": "media/western-desert/camp.webp",
+    "alt": "沙漠營地與星空示意圖",
+    "credit": "Egypt Explorer 示意圖",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
   }
 ]
