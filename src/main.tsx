@@ -1,4 +1,5 @@
 import { scheduleBackgroundDownload } from './offline/coreCache';
+import { startAppUpdates } from './offline/appUpdate';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { HashRouter } from 'react-router-dom';
@@ -13,4 +14,5 @@ createRoot(document.getElementById('root')!).render(
   </StrictMode>,
 );
 
+startAppUpdates();
 scheduleBackgroundDownload();
