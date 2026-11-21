@@ -19,14 +19,42 @@
 .crumbs {
   flex: 1;
   min-width: 0;
+  display: flex;
+  align-items: center;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
   font-size: 15px;
+}
+.crumb {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  flex-shrink: 1;
+}
+.crumb:last-child {
+  flex-shrink: 0;
+  max-width: 60%;
+}
+.crumbLink {
+  display: inline-block;
+  line-height: 44px;
+  padding: 0 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #fff;
   opacity: 0.8;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.35);
+  text-underline-offset: 3px;
+}
+.crumbLink:active {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
 }
 .current {
-  opacity: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-weight: 700;
 }
 .crumbs .current {

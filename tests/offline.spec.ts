@@ -297,3 +297,15 @@ test('horus and set comic pages through eight panels', async ({ page }) => {
   await page.getByRole('button', { name: '到神殿找找看' }).click();
   await expect(page.getByText(/變成小河馬的賽特/)).toBeVisible();
 });
+
+test('breadcrumb levels are links back up', async ({ page }) => {
+  await page.goto('./#/place/giza-sphinx/sphinx-evidence');
+  const crumbs = page.getByRole('navigation', { name: '目前位置' });
+  await crumbs.getByRole('link', { name: '人面獅身像' }).click();
+  await expect(page).toHaveURL(/#\/place\/giza-sphinx$/);
+  await crumbs.getByRole('link', { name: '吉薩' }).click();
+  await expect(page).toHaveURL(/#\/map\/giza$/);
+  await expect(crumbs.getByText('吉薩')).toBeVisible();
+  await page.getByRole('link', { name: '回到埃及全境地圖' }).click();
+  await expect(page).toHaveURL(/#\/map$/);
+});
