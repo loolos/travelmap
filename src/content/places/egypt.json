@@ -1,0 +1,72 @@
+[
+  {
+    "id": "egypt",
+    "nameZh": "埃及",
+    "nameEn": "Egypt",
+    "shortName": "埃及全境",
+    "aliases": [
+      "Arab Republic of Egypt",
+      "埃及阿拉伯共和國"
+    ],
+    "major": true,
+    "regionId": "egypt",
+    "kind": "country",
+    "coordinates": {
+      "lat": 26.2,
+      "lon": 30.4
+    },
+    "onItinerary": false,
+    "status": "ready",
+    "question": "埃及這麼大，為什麼幾乎所有人都住在尼羅河邊？",
+    "era": "約西元前 3100 年上下埃及統一；1952 年成為共和國",
+    "intro": "非洲東北角的國家，面積約 100 萬平方公里，大部分是沙漠，人口集中在尼羅河谷和三角洲。",
+    "facts": [
+      "尼羅河谷和三角洲只占國土的一小部分，卻住著超過九成的人口。",
+      "埃及人口約 1.1 億，是阿拉伯世界人口最多的國家，首都是[開羅](place:cairo)。",
+      "主要外匯來自蘇伊士運河、觀光、海外僑匯和天然氣。"
+    ],
+    "findItems": [
+      {
+        "id": "egypt-green",
+        "text": "窗外綠色田地突然變成黃色沙漠的那條線",
+        "hint": "坐車或搭機沿尼羅河走時往兩側看，灌溉到哪裡，綠色就到哪裡。"
+      },
+      {
+        "id": "egypt-flag",
+        "text": "國旗中間的金色老鷹",
+        "hint": "紅白黑三色旗的中央，那隻鷹叫「薩拉丁之鷹」。"
+      },
+      {
+        "id": "egypt-money",
+        "text": "鈔票或硬幣上的古蹟",
+        "hint": "拿一張埃及鎊翻到背面，常印著神殿、雕像或清真寺。"
+      }
+    ],
+    "noteIds": [
+      "gen-cash",
+      "gen-dress"
+    ],
+    "readIds": [
+      "egypt-population",
+      "egypt-geography",
+      "egypt-economy",
+      "egypt-society",
+      "egypt-government",
+      "hist-ancient",
+      "hist-ptolemy",
+      "hist-rome",
+      "hist-arab",
+      "hist-fatimid",
+      "hist-saladin",
+      "hist-ottoman",
+      "hist-muhammad-ali",
+      "hist-1952"
+    ],
+    "sourceIds": [
+      "wiki-egypt",
+      "worldbank-egypt",
+      "wiki-geography-egypt"
+    ],
+    "heroAssetId": "egypt-hero"
+  }
+]

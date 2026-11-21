@@ -38,6 +38,7 @@ test('downloads core, then works fully offline after a reload', async ({ page, c
 
   // Menu still works offline and jumps to another place.
   await page.getByRole('button', { name: /目錄/ }).click();
+  await page.getByRole('searchbox', { name: '搜尋' }).fill('人面');
   await page.getByRole('link', { name: /人面獅身像/ }).click();
   await expect(page.getByRole('heading', { name: '人面獅身像' })).toBeVisible();
 });
@@ -194,6 +195,8 @@ test('cartouche maker writes a name with the bundled font and saves a PNG', asyn
 test('knowledge cards live apart from travel tips', async ({ page }) => {
   await page.goto('./#/map');
   await page.getByRole('button', { name: /目錄/ }).click();
+  await expect(page.getByRole('link', { name: /美食圖鑑/ })).toHaveCount(0); // folded
+  await page.getByRole('button', { name: /^知識/ }).click();
   await page.getByRole('link', { name: /美食圖鑑/ }).click();
   await expect(page.getByText(/柯夏莉/)).toBeVisible();
   await page.goto('./#/notes');
@@ -205,4 +208,27 @@ test('knowledge cards live apart from travel tips', async ({ page }) => {
   await expect(page.getByText('1952 年革命與高壩')).toBeVisible();
   await page.getByRole('tab', { name: /手記/ }).click();
   await expect(page.getByText('1952 年革命與高壩')).toHaveCount(0);
+});
+
+test('menu folds by region and the glyph dictionary records sightings', async ({ page }) => {
+  await page.goto('./#/map');
+  await page.getByRole('button', { name: /目錄/ }).click();
+  await page.getByRole('button', { name: /^地點/ }).click();
+  await expect(page.getByRole('link', { name: /卡納克/ })).toHaveCount(0);
+  await page.getByRole('dialog').getByRole('button', { name: /^路克索/ }).click();
+  await expect(page.getByRole('link', { name: /卡納克/ })).toBeVisible();
+  await page.getByRole('button', { name: /^知識/ }).click();
+  await page.getByRole('link', { name: /象形文字小字典/ }).click();
+  await page.getByRole('button', { name: /安卡/ }).click();
+  await expect(page.getByText(/^生命。/)).toBeVisible();
+  await page.getByRole('checkbox', { name: '我在牆上看到了' }).check();
+  await expect(page.getByText(/打勾：\s*1\s*\/\s*13/)).toBeVisible();
+  expect(await page.evaluate(() => document.fonts.check('40px Hiero', '\u{132F9}'))).toBe(true);
+});
+
+test('an uncollected deity can still be opened with its picture', async ({ page }) => {
+  await page.goto('./#/deities');
+  await page.getByRole('button', { name: /阿努比斯/ }).click();
+  await expect(page.getByText(/尚未收集/)).toBeVisible();
+  await expect(page.getByRole('img', { name: '阿努比斯的圖像' })).toBeVisible();
 });

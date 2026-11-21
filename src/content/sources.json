@@ -188,5 +188,20 @@
     "id": "unesco-historic-cairo",
     "title": "UNESCO：Historic Cairo",
     "url": "https://whc.unesco.org/en/list/89/"
+  },
+  {
+    "id": "wiki-egypt",
+    "title": "Wikipedia：Egypt",
+    "url": "https://en.wikipedia.org/wiki/Egypt"
+  },
+  {
+    "id": "wiki-geography-egypt",
+    "title": "Wikipedia：Geography of Egypt",
+    "url": "https://en.wikipedia.org/wiki/Geography_of_Egypt"
+  },
+  {
+    "id": "worldbank-egypt",
+    "title": "World Bank：Egypt, Arab Rep. data",
+    "url": "https://data.worldbank.org/country/egypt-arab-rep"
   }
 ]

@@ -1,11 +1,12 @@
 import { z } from 'zod';
-import { Activity, Asset, Deity, Note, Place, Region, Source } from './schema';
+import { Activity, Asset, Deity, Glyph, Note, Place, Region, Source } from './schema';
 import regionsRaw from '../content/regions.json';
 import notesRaw from '../content/notes.json';
 import assetsRaw from '../content/assets.json';
 import sourcesRaw from '../content/sources.json';
 import activitiesRaw from '../content/activities.json';
 import deitiesRaw from '../content/deities.json';
+import glyphsRaw from '../content/glyphs.json';
 
 const placeFiles = import.meta.glob<unknown[]>('../content/places/*.json', { eager: true, import: 'default' });
 
@@ -19,6 +20,7 @@ export const assets = z.array(Asset).parse(assetsRaw);
 export const sources = z.array(Source).parse(sourcesRaw);
 export const activities = z.array(Activity).parse(activitiesRaw);
 export const deities = z.array(Deity).parse(deitiesRaw);
+export const glyphs = z.array(Glyph).parse(glyphsRaw);
 
 const byId = <T extends { id: string }>(xs: T[]) => new Map(xs.map((x) => [x.id, x]));
 export const placeById = byId(places);

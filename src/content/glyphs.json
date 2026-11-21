@@ -1,0 +1,15 @@
+[
+  { "id": "ankh", "glyph": "𓋹", "nameZh": "安卡", "nameEn": "Ankh", "meaning": "生命。上面是圈、下面是十字，像一條繫好的帶子。", "where": "幾乎每座神殿都有：神祇手裡拿著它，常把它遞到法老的鼻子前，賜給他生命。" },
+  { "id": "wedjat", "glyph": "𓂀", "nameZh": "荷魯斯之眼", "nameEn": "Eye of Horus (Wedjat)", "meaning": "完整、健康、保護。傳說荷魯斯和賽特打鬥時失去眼睛，後來被治好。", "where": "護身符、棺木側面；眼睛下面有一條像淚痕的捲線。" },
+  { "id": "scarab", "glyph": "𓆣", "nameZh": "聖甲蟲", "nameEn": "Scarab (Kheper)", "meaning": "「變成、出現」。推著糞球的甲蟲，像推著太陽每天升起。", "where": "護身符、帝王谷墓室的天花板；卡納克聖湖旁還有一隻巨大的石雕聖甲蟲。" },
+  { "id": "djed", "glyph": "𓊽", "nameZh": "傑德柱", "nameEn": "Djed pillar", "meaning": "穩定、長久。上面有四道橫槓的柱子，被說成是歐西里斯的脊椎。", "where": "常和安卡、瓦斯權杖排成一列，刻在神殿牆腳和棺木上。" },
+  { "id": "was", "glyph": "𓌀", "nameZh": "瓦斯權杖", "nameEn": "Was scepter", "meaning": "權力、統治。頂端是動物頭、底部分叉的長杖。", "where": "神祇站著時手裡拿的長杖；看浮雕裡神的另一隻手。" },
+  { "id": "shen", "glyph": "𓍶", "nameZh": "申環", "nameEn": "Shen ring", "meaning": "永恆、保護。一條繩子繞成圓圈、在底下打結。", "where": "鷹或禿鷲的爪子常抓著它，飛在法老頭頂。" },
+  { "id": "cartouche", "glyph": "𓍷", "nameZh": "王名圈", "nameEn": "Cartouche", "meaning": "把申環拉長，圈住法老的名字，保護這個名字永遠存在。", "where": "方尖碑、塔門、雕像背後都有；找到一個，就知道是哪位法老。" },
+  { "id": "ra", "glyph": "𓇳", "nameZh": "太陽", "nameEn": "Sun (Ra)", "meaning": "太陽、日子；也是太陽神拉名字的一部分。中間有一個點的圓。", "where": "到處都是；常出現在法老名字裡，例如拉美西斯（Ramesses）。" },
+  { "id": "nefer", "glyph": "𓄤", "nameZh": "內費爾", "nameEn": "Nefer", "meaning": "美好、完美。形狀是心臟連著氣管。", "where": "王后奈菲爾塔利（Nefertari）的名字裡就有，阿布辛貝小神殿可以找找。" },
+  { "id": "hotep", "glyph": "𓊵", "nameZh": "霍特普", "nameEn": "Hotep", "meaning": "供品、滿足、平安。一條麵包放在草蓆上。", "where": "供桌浮雕；「阿蒙霍特普」（Amenhotep）的意思就是「阿蒙滿意了」。" },
+  { "id": "lotus", "glyph": "𓆸", "nameZh": "蓮花", "nameEn": "Lotus", "meaning": "上埃及的象徵，也代表重生：睡蓮早上開花、晚上合起來。", "where": "柱頭、壁畫裡人們手上聞著的花；和代表下埃及的紙莎草常一起出現。" },
+  { "id": "uraeus", "glyph": "𓆗", "nameZh": "聖蛇", "nameEn": "Uraeus", "meaning": "豎起身體的眼鏡蛇，會噴火保護國王。", "where": "法老額頭正中央；神殿門楣上常排成一整排。" },
+  { "id": "falcon", "glyph": "𓅃", "nameZh": "荷魯斯鷹", "nameEn": "Horus falcon", "meaning": "荷魯斯神，也代表法老的王權。", "where": "艾德夫神殿門口的黑色花崗岩鷹像；法老名字前面常有一隻鷹。" }
+]

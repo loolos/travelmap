@@ -10,9 +10,11 @@ export interface Progress {
   /** deityId -> place ids where it was spotted */
   deities: Record<string, string[]>;
   activities: Record<string, number>;
+  /** glyphId -> when it was first spotted on a wall */
+  glyphs: Record<string, number>;
 }
 
-const empty = (): Progress => ({ opened: {}, visited: {}, found: {}, deities: {}, activities: {} });
+const empty = (): Progress => ({ opened: {}, visited: {}, found: {}, deities: {}, activities: {}, glyphs: {} });
 const KEY = 'progress-v1';
 
 let idb: ReturnType<typeof createStore> | null = null;
@@ -38,6 +40,7 @@ export const loaded: Promise<void> =
                 found: { ...stored.found, ...state.found },
                 deities: { ...stored.deities, ...state.deities },
                 activities: { ...stored.activities, ...state.activities },
+                glyphs: { ...stored.glyphs, ...state.glyphs },
               }
             : stored;
           emit();
@@ -104,6 +107,15 @@ export function toggleFound(place: Place, itemId: string) {
       }
     }
     return { ...p, found, deities };
+  });
+}
+
+export function toggleGlyph(glyphId: string) {
+  update((p) => {
+    const glyphs = { ...p.glyphs };
+    if (glyphs[glyphId]) delete glyphs[glyphId];
+    else glyphs[glyphId] = Date.now();
+    return { ...p, glyphs };
   });
 }
 

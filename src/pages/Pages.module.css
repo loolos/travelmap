@@ -96,3 +96,11 @@
   background: #dcefe3;
   color: #1f5c40;
 }
+.notePic {
+  display: block;
+  width: 100%;
+  max-height: 240px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 8px;
+}

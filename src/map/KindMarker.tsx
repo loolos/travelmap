@@ -1,7 +1,7 @@
 import type { PlaceKind } from '../data/schema';
 import styles from './EgyptMap.module.css';
 
-type Shape = 'triangle' | 'square' | 'circle' | 'diamond' | 'drop' | 'ring';
+type Shape = 'triangle' | 'square' | 'circle' | 'diamond' | 'drop' | 'ring' | 'star';
 
 /** Shape + colour both encode the kind, so meaning never relies on colour alone. */
 export const kindStyle: Record<PlaceKind, { shape: Shape; color: string; label: string }> = {
@@ -15,6 +15,7 @@ export const kindStyle: Record<PlaceKind, { shape: Shape; color: string; label: 
   ecology: { shape: 'diamond', color: '#4F7A5A', label: '生態' },
   water: { shape: 'drop', color: '#327D91', label: '水利' },
   museum: { shape: 'circle', color: '#244C79', label: '博物館' },
+  country: { shape: 'star', color: '#C8102E', label: '國家' },
 };
 
 interface Props {
@@ -48,6 +49,18 @@ export function KindMarker({ kind, lit, selected, opened, visited }: Props) {
       break;
     case 'drop':
       el = <path d="M0,-10 C5,-3 7,1 7,3 A7,7 0 0 1 -7,3 C-7,1 -5,-3 0,-10Z" {...common} />;
+      break;
+    case 'star':
+      el = (
+        <polygon
+          points={Array.from({ length: 10 }, (_, i) => {
+            const r = i % 2 ? 5 : 12;
+            const a = (Math.PI / 5) * i - Math.PI / 2;
+            return `${(r * Math.cos(a)).toFixed(1)},${(r * Math.sin(a)).toFixed(1)}`;
+          }).join(' ')}
+          {...common}
+        />
+      );
       break;
     case 'ring':
       el = (

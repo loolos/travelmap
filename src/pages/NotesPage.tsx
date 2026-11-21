@@ -1,5 +1,5 @@
 import { Link, useParams } from 'react-router-dom';
-import { notes, regions } from '../data/content';
+import { assetUrl, notes, regions } from '../data/content';
 import { noteCollections } from '../data/schema';
 import { PriceLine } from '../places/Price';
 import styles from './Pages.module.css';
@@ -29,6 +29,7 @@ export function NotesPage({ kind = 'tips' }: { kind?: 'tips' | 'knowledge' }) {
               <summary>
                 <span aria-hidden="true">{n.icon}</span> {n.title}
               </summary>
+              {n.assetId && <img className={styles.notePic} src={assetUrl(n.assetId)} alt={n.title} loading="lazy" />}
               <p>{n.body}</p>
               {n.price && <PriceLine price={n.price} />}
             </details>

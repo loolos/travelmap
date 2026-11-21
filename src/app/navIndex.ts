@@ -1,4 +1,4 @@
-import { activities, deities, notes, placesByRegion, regions } from '../data/content';
+import { activities, deities, glyphs, notes, placesByRegion, regions } from '../data/content';
 import { noteCollections } from '../data/schema';
 
 export interface NavItem {
@@ -91,6 +91,13 @@ export function buildNavIndex(): NavGroup[] {
             label: '神祇圖鑑',
             terms: ['gods', 'deity', '神', ...deities.flatMap((d) => [d.nameZh, d.nameEn])],
             icon: '🏺',
+          },
+          {
+            id: 'glyphs',
+            to: '/glyphs',
+            label: '象形文字小字典',
+            terms: ['hieroglyph', '符號', '文字', ...glyphs.flatMap((g) => [g.nameZh, g.nameEn])],
+            icon: '☥',
           },
           ...withNotes('knowledge').map((c) => ({
             id: `knowledge:${c.id}`,

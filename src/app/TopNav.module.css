@@ -131,3 +131,45 @@
   color: var(--muted);
   padding: 12px;
 }
+.fold,
+.fold2 {
+  width: 100%;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--panel-2);
+  font-size: 15px;
+  font-weight: 700;
+  text-align: left;
+  color: inherit;
+}
+.fold2 {
+  min-height: 40px;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 18px;
+}
+.fold > span:first-child,
+.fold2 > span:first-child {
+  flex: 1;
+}
+.count {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--muted);
+}
+.chev {
+  width: 1em;
+  text-align: center;
+}
+.sub2 ul {
+  padding-left: 12px;
+}
+.groups section {
+  margin-bottom: 6px;
+}
