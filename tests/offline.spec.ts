@@ -218,6 +218,7 @@ test('food guide groups dishes by category and opens details on tap', async ({ p
   await expect(page.getByText('سمك مشوي')).toBeVisible();
   await expect(page.getByRole('link', { name: /虎加達/ })).toBeVisible();
   await page.goto('./#/place/cairo');
+  await page.getByRole('tab', { name: /重點/ }).click();
   await page.getByRole('link', { name: '美食圖鑑' }).click();
   await expect(page.getByText(/拌勻再吃/)).toBeVisible();
 });
