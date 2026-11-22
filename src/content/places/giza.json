@@ -54,7 +54,8 @@
       "wiki-gem"
     ],
     "readIds": [
-      "giza-today"
+      "giza-today",
+      "sahara-glass"
     ],
     "activityIds": [
       "gem-golden-mask"
@@ -151,6 +152,9 @@
         "text": "1954 年在金字塔南側的坑裡，發現一艘拆成 1,224 片的雪松木船，組裝後長約 43 公尺，現在移到大埃及博物館展示。",
         "assetId": "hl-khufu-ship"
       }
+    ],
+    "readIds": [
+      "sahara-kemet"
     ]
   },
   {
@@ -343,6 +347,9 @@
     ],
     "activityIds": [
       "sphinx-evidence"
+    ],
+    "readIds": [
+      "sahara-wind"
     ]
   }
 ]

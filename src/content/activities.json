@@ -487,5 +487,23 @@
     "photoIds": [
       "memnon-hero"
     ]
+  },
+  {
+    "id": "sahara-time",
+    "placeId": "sahara",
+    "component": "ParameterLab",
+    "title": "撒哈拉時光機",
+    "label": "時光機",
+    "icon": "⏳",
+    "question": "撒哈拉怎麼從草原變成沙漠？",
+    "durationMin": 2,
+    "sourceIds": [
+      "wiki-african-humid-period",
+      "wiki-cave-of-swimmers",
+      "wiki-sahara"
+    ],
+    "photoIds": [
+      "swimmers-photo"
+    ]
   }
 ]

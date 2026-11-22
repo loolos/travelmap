@@ -1204,5 +1204,50 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kapadokya%27dan_Nazar_Boncu%C4%9Fu.jpg",
     "kind": "photo",
     "essential": true
+  },
+  {
+    "id": "sahara-hero",
+    "path": "media/egypt/sahara.webp",
+    "alt": "撒哈拉的大沙海沙丘",
+    "credit": "示意（待換實景照片）",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "swimmers-photo",
+    "path": "media/photos/cave-of-swimmers.webp",
+    "alt": "吉勒夫高原泳者洞穴的岩畫",
+    "credit": "示意（待換實景照片）",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "yardang-photo",
+    "path": "media/photos/yardang.webp",
+    "alt": "風蝕出的雅丹地形",
+    "credit": "示意（待換實景照片）",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "desert-glass-photo",
+    "path": "media/photos/desert-glass.webp",
+    "alt": "利比亞沙漠玻璃",
+    "credit": "示意（待換實景照片）",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "whales-photo",
+    "path": "media/photos/wadi-al-hitan.webp",
+    "alt": "鯨魚谷的古鯨化石",
+    "credit": "示意（待換實景照片）",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
   }
 ]
