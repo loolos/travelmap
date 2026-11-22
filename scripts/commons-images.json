@@ -423,6 +423,13 @@
       "width": 720
     },
     {
+      "assetId": "floodplain-photo",
+      "search": "Nile valley green fields desert edge Egypt",
+      "dest": "media/photos/floodplain.webp",
+      "alt": "尼羅河岸的綠色農田緊貼著黃色沙漠",
+      "width": 720
+    },
+    {
       "assetId": "dream-stele-photo",
       "article": "Dream Stele",
       "dest": "media/photos/dream-stele.webp",

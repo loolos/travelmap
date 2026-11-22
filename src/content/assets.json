@@ -686,6 +686,16 @@
     "essential": true
   },
   {
+    "id": "floodplain-photo",
+    "path": "media/photos/floodplain.webp",
+    "alt": "尼羅河岸的綠色農田緊貼著黃色沙漠",
+    "credit": "placeholder",
+    "license": "placeholder",
+    "sourceUrl": "https://commons.wikimedia.org/",
+    "kind": "photo",
+    "essential": true
+  },
+  {
     "id": "dream-stele-photo",
     "path": "media/photos/dream-stele.webp",
     "alt": "獅身人面像前的夢境石碑",
