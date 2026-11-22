@@ -851,16 +851,15 @@
     },
     {
       "assetId": "redsea-hero",
-      "article": "Red Sea",
       "dest": "media/egypt/red-sea.webp",
       "alt": "從太空看紅海與西奈半島",
-      "match": "^File:(?!.*\\.svg).*(space|ISS|STS|satellite|MODIS|NASA|orbit|Sinai)"
+      "search": "Red Sea Sinai Peninsula from space"
     },
     {
       "assetId": "punt-photo",
       "article": "Land of Punt",
       "dest": "media/photos/punt.webp",
-      "alt": "哈特謝普蘇特神殿的蓬特遠航浮雕",
+      "alt": "哈特謝普蘇特神殿前，據說從蓬特帶回的乳香樹殘株",
       "width": 900,
       "match": "^File:(?!.*\\.svg).*(Punt|Hatshepsut|Deir)"
     }
