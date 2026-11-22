@@ -326,48 +326,6 @@
     "body": "拍人之前先詢問；有人主動要你拍照，可能會收費。無人機未經許可不能帶入埃及。"
   },
   {
-    "id": "ph-hello",
-    "regionId": "phrases",
-    "icon": "👋",
-    "title": "你好",
-    "body": "As-salāmu ʿalaykum（阿薩拉姆 阿雷庫姆），對方會回 Wa ʿalaykum as-salām。"
-  },
-  {
-    "id": "ph-thanks",
-    "regionId": "phrases",
-    "icon": "🙏",
-    "title": "謝謝",
-    "body": "Shukran（舒克蘭）。"
-  },
-  {
-    "id": "ph-no",
-    "regionId": "phrases",
-    "icon": "✋",
-    "title": "不用了，謝謝",
-    "body": "La, shukran（拉，舒克蘭）。對小販最好用的一句話。"
-  },
-  {
-    "id": "ph-price",
-    "regionId": "phrases",
-    "icon": "💬",
-    "title": "多少錢？",
-    "body": "Bikam?（比幹）。"
-  },
-  {
-    "id": "ph-okay",
-    "regionId": "phrases",
-    "icon": "👌",
-    "title": "好的／走吧",
-    "body": "Tamām（塔滿）是「好、沒問題」；Yalla（呀拉）是「走吧、快點」。"
-  },
-  {
-    "id": "ph-water",
-    "regionId": "phrases",
-    "icon": "💧",
-    "title": "水",
-    "body": "Mayya（麥呀）。"
-  },
-  {
     "id": "egypt-population",
     "regionId": "country",
     "icon": "👥",

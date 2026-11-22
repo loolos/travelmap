@@ -200,7 +200,7 @@ test('knowledge cards live apart from travel tips', async ({ page }) => {
   await page.getByRole('link', { name: /美食圖鑑/ }).click();
   await expect(page.getByRole('button', { name: /柯夏莉/ })).toBeVisible();
   await page.goto('./#/notes');
-  await expect(page.getByText('實用短語')).toBeVisible();
+  await expect(page.getByText('全站共用')).toBeVisible();
   await expect(page.getByText('歷史小卡')).toHaveCount(0); // knowledge is kept out of 旅人手記
   await page.goto('./#/place/cairo');
   await page.getByRole('tab', { name: /重點/ }).click();
@@ -348,4 +348,17 @@ test('giza scale and memnon labs finish after trying every view', async ({ page 
   await expect(page.getByText(/黎明女神/)).toBeVisible();
   await page.getByRole('button', { name: '看完整解釋' }).click();
   await expect(page.getByText(/再也不唱了/)).toBeVisible();
+});
+
+test('survival Arabic: old phrase link redirects, show-to-them card opens', async ({ page }) => {
+  await page.goto('./#/notes/phrases');
+  await expect(page).toHaveURL(/#\/arabic/);
+  await page.getByRole('tab', { name: /購物殺價/ }).click();
+  await page.getByRole('button', { name: /多少錢/ }).click();
+  await page.getByRole('button', { name: /給對方看/ }).click();
+  await expect(page.getByRole('dialog')).toContainText('بكام');
+  await page.getByRole('dialog').click();
+  await page.getByRole('tab', { name: /數字/ }).click();
+  await page.getByLabel(/輸入數字/).fill('250');
+  await expect(page.getByText('٢٥٠')).toBeVisible();
 });

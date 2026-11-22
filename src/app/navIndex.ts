@@ -1,6 +1,7 @@
 import { activities, artifacts, deities, eras, foods, glyphs, notes, placesByRegion, regions } from '../data/content';
 import { dayRoles } from '../pages/dayData';
 import { foodCategories, noteCollections } from '../data/schema';
+import { allPhrases, phraseGroups } from '../pages/arabicData';
 
 export interface NavItem {
   id: string;
@@ -89,6 +90,14 @@ export function buildNavIndex(): NavGroup[] {
             terms: notes.filter((n) => n.regionId === c.id).map((n) => n.title),
             icon: c.icon,
           })),
+          {
+            id: 'arabic',
+            to: '/arabic',
+            label: '生存阿拉伯語',
+            sub: 'Egyptian Arabic',
+            terms: ['arabic', 'phrase', '阿拉伯語', '短語', '會話', '數字', '多少錢', ...phraseGroups.map((g) => g.title), ...allPhrases.flatMap((p) => [p.zh, p.latin])],
+            icon: '💬',
+          },
         ],
       },
     ],

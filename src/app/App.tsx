@@ -12,6 +12,7 @@ import { DeitiesPage } from '../pages/DeitiesPage';
 import { GlyphsPage } from '../pages/GlyphsPage';
 import { CollectionPage } from '../pages/CollectionPage';
 import { FoodPage } from '../pages/FoodPage';
+import { ArabicPage } from '../pages/ArabicPage';
 import { DayPage } from '../pages/DayPage';
 import { TimelinePage } from '../pages/TimelinePage';
 import { OfflinePage } from '../offline/OfflinePage';
@@ -86,6 +87,15 @@ export function App() {
               <Suspense fallback={null}>
                 <ActivityPage />
               </Suspense>
+            }
+          />
+          <Route path="/notes/phrases" element={<Navigate to="/arabic" replace />} />
+          <Route
+            path="/arabic/:phraseId?"
+            element={
+              <Sheet title="生存阿拉伯語">
+                <ArabicPage />
+              </Sheet>
             }
           />
           <Route
