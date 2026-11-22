@@ -108,7 +108,6 @@ export const Price = z.object({
 /** 'tips' collections belong to 旅人手記 (practical); 'knowledge' ones to 知識 (background reading). */
 export const noteCollections = [
   { id: 'general', title: '全站共用', icon: '🧳', kind: 'tips' },
-  { id: 'phrases', title: '實用短語', icon: '💬', kind: 'tips' },
   { id: 'souvenirs', title: '紀念品圖鑑', icon: '🎁', kind: 'tips' },
   { id: 'history', title: '歷史小卡', icon: '📜', kind: 'knowledge' },
   { id: 'culture', title: '城市與文化', icon: '🏙️', kind: 'knowledge' },
