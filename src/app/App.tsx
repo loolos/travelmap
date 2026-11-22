@@ -12,6 +12,7 @@ import { DeitiesPage } from '../pages/DeitiesPage';
 import { GlyphsPage } from '../pages/GlyphsPage';
 import { CollectionPage } from '../pages/CollectionPage';
 import { FoodPage } from '../pages/FoodPage';
+import { DayPage } from '../pages/DayPage';
 import { TimelinePage } from '../pages/TimelinePage';
 import { OfflinePage } from '../offline/OfflinePage';
 import { Sheet } from './Sheet';
@@ -138,6 +139,14 @@ export function App() {
           <Route
             path="/knowledge/food"
             element={<Navigate to="/food" replace />}
+          />
+          <Route
+            path="/day/:roleId?"
+            element={
+              <Sheet title="古埃及人的一天">
+                <DayPage />
+              </Sheet>
+            }
           />
           <Route
             path="/timeline/:eraId?"
