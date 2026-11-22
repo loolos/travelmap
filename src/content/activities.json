@@ -338,6 +338,26 @@
     ]
   },
   {
+    "id": "nile-floodplain",
+    "placeId": "nile",
+    "component": "ParameterLab",
+    "title": "沖積平原",
+    "label": "沖積平原",
+    "icon": "🗺️",
+    "question": "水漲多少、淹到哪，這一年就吃得飽？",
+    "durationMin": 3,
+    "sourceIds": [
+      "wiki-flooding-nile",
+      "wiki-nile-delta",
+      "wiki-agri-egypt",
+      "wiki-basin-irrigation"
+    ],
+    "photoIds": [
+      "floodplain-photo",
+      "nile-hero"
+    ]
+  },
+  {
     "id": "croc-museum-case",
     "placeId": "crocodile-museum",
     "component": "HotspotDiagram",

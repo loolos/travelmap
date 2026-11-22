@@ -130,7 +130,8 @@
       "sahara-green"
     ],
     "activityIds": [
-      "nile-year"
+      "nile-year",
+      "nile-floodplain"
     ],
     "sourceIds": [
       "wiki-nile",
