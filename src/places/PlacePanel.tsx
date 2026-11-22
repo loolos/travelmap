@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import type { Place } from '../data/schema';
-import { activityById, assetById, eras, noteById, regionById, sourceById } from '../data/content';
+import { activityById, assetById, eras, noteById, sourceById } from '../data/content';
 import { eraForYear } from '../data/eras';
 import { foundCount, isLit, markOpened, toggleVisited, useProgress } from '../progress/store';
 import { Hero } from './Img';
@@ -63,7 +63,7 @@ export function PlacePanel({ place, wide, state, onExpand, onCollapse, onClose }
         <button type="button" onClick={onClose} className={styles.back}>
           ← 地圖
         </button>
-        <span className={styles.region}>{regionById.get(place.regionId)?.nameZh}</span>
+        <span className={styles.region} aria-hidden="true" />
         <button
           type="button"
           className={visited ? styles.visitedOn : styles.visited}

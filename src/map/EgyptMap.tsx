@@ -292,7 +292,7 @@ export function EgyptMap({ selectedId, focusRegionId, resetSignal, onSelect, ins
             return <path key={i} d={`M${x - 7},${y + 4} L${x},${y - 5} L${x + 7},${y + 4}`} className={styles.hill} />;
           })}
           {mapLabels
-            .filter((l) => !l.maxK || t.k <= l.maxK)
+            .filter((l) => (!l.maxK || t.k <= l.maxK) && (!l.minK || t.k >= l.minK))
             .map((l) => {
               const [x, y] = t.apply(projection(l.at)!);
               return (

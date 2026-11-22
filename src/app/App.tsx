@@ -1,5 +1,5 @@
 import { Navigate, Route, Routes, useLocation, useMatch, useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+import { lazy, Suspense, useState } from 'react';
 import { EgyptMap } from '../map/EgyptMap';
 import { TopNav } from './TopNav';
 import { PlacePanel } from '../places/PlacePanel';
@@ -12,9 +12,11 @@ import { DeitiesPage } from '../pages/DeitiesPage';
 import { GlyphsPage } from '../pages/GlyphsPage';
 import { TimelinePage } from '../pages/TimelinePage';
 import { OfflinePage } from '../offline/OfflinePage';
-import { ActivityPage } from '../pages/ActivityPage';
 import { Sheet } from './Sheet';
 import styles from './App.module.css';
+
+// Interactions are the bulk of the JS; load them only when one is opened (the service worker precaches the chunk for offline).
+const ActivityPage = lazy(() => import('../pages/ActivityPage').then((m) => ({ default: m.ActivityPage })));
 
 export function App() {
   const navigate = useNavigate();
@@ -75,7 +77,14 @@ export function App() {
           <Route path="/map" element={null} />
           <Route path="/map/:regionId" element={null} />
           <Route path="/place/:id" element={place ? null : <Navigate to="/map" replace />} />
-          <Route path="/place/:id/:activity" element={<ActivityPage />} />
+          <Route
+            path="/place/:id/:activity"
+            element={
+              <Suspense fallback={null}>
+                <ActivityPage />
+              </Suspense>
+            }
+          />
           <Route
             path="/notes/:regionId?"
             element={

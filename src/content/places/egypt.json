@@ -12,8 +12,8 @@
     "regionId": "egypt",
     "kind": "country",
     "coordinates": {
-      "lat": 26.2,
-      "lon": 30.4
+      "lat": 26.3,
+      "lon": 29.6
     },
     "onItinerary": false,
     "status": "ready",
