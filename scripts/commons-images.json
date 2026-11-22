@@ -424,10 +424,10 @@
     },
     {
       "assetId": "floodplain-photo",
-      "search": "Nile valley fields",
       "dest": "media/photos/floodplain.webp",
-      "alt": "尼羅河岸的綠色農田緊貼著黃色沙漠",
-      "width": 720
+      "alt": "路克索西岸：綠色農田一路延伸到沙漠邊緣",
+      "width": 720,
+      "file": "Égypte, Zone cultivée entre le Nil et la zone désertique de la Vallée des Rois (49992696386).jpg"
     },
     {
       "assetId": "dream-stele-photo",
