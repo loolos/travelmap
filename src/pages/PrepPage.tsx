@@ -75,19 +75,17 @@ export function PrepPage() {
                     ℹ️
                   </span>
                 ) : (
-                  <input
-                    type="checkbox"
-                    checked={!!done[it.id]}
-                    onChange={() => toggle(it.id)}
+                  <label
+                    className={styles.prepTick}
                     onClick={(e) => e.stopPropagation()}
-                    aria-label={`完成：${it.title}`}
-                    style={{
-                      width: 22,
-                      height: 22,
-                      accentColor: "var(--lapis)",
-                      flex: "none",
-                    }}
-                  />
+                  >
+                    <input
+                      type="checkbox"
+                      checked={!!done[it.id]}
+                      onChange={() => toggle(it.id)}
+                      aria-label={`完成：${it.title}`}
+                    />
+                  </label>
                 )}
                 <span
                   style={

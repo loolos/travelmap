@@ -9,17 +9,18 @@ export interface MapLabel {
   rotate?: number;
   /** Hide when zoomed in past this scale. */
   maxK?: number;
+  /** Hide until zoomed in to this scale (keeps the crowded overview readable on phones). */
+  minK?: number;
 }
 
 export const mapLabels: MapLabel[] = [
   { text: '地中海', en: 'Mediterranean Sea', at: [28.6, 31.85], kind: 'sea' },
   { text: '紅海', en: 'Red Sea', at: [34.65, 26.3], kind: 'sea', rotate: 60 },
   { text: '西部沙漠', en: 'Western Desert', at: [27.1, 24.2], kind: 'region', maxK: 5 },
-  { text: '東部沙漠', en: 'Eastern Desert', at: [31.95, 28.55], kind: 'region', maxK: 5 },
+  { text: '東部沙漠', en: 'Eastern Desert', at: [32.6, 27.6], kind: 'region', minK: 1.6, maxK: 5 },
   { text: '西奈半島', en: 'Sinai', at: [33.9, 29.35], kind: 'region', maxK: 5 },
   { text: '利比亞', at: [25.2, 29.4], kind: 'country', maxK: 4 },
   { text: '蘇丹', at: [29.2, 21.97], kind: 'country', maxK: 4 },
-  { text: '尼羅河', en: 'Nile', at: [30.7, 27.55], kind: 'river', rotate: -60, maxK: 8 },
   { text: '納瑟湖', at: [31.75, 22.85], kind: 'lake', maxK: 8 },
 ];
 
