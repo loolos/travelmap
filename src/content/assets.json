@@ -786,16 +786,6 @@
     "essential": true
   },
   {
-    "id": "hl-white-chapel",
-    "path": "media/highlights/white-chapel.webp",
-    "alt": "辛努塞爾特一世的白色小禮拜堂",
-    "credit": "Markh at English Wikipedia",
-    "license": "CC BY-SA 3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:White_Chapel.jpg",
-    "kind": "photo",
-    "essential": true
-  },
-  {
     "id": "hl-avenue",
     "path": "media/highlights/avenue.webp",
     "alt": "人面獅身像大道",
@@ -896,9 +886,9 @@
     "essential": true
   },
   {
-    "id": "hl-karnak-rams",
-    "path": "media/highlights/karnak-rams.webp",
-    "alt": "卡納克入口前的公羊頭獅身像",
+    "id": "hl-karnak-pylon",
+    "path": "media/highlights/karnak-pylon.webp",
+    "alt": "卡納克神殿第一塔門",
     "credit": "No machine-readable author provided. Neithsabes assumed (based on copyright claims).",
     "license": "Public domain",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parvis_Karnak.jpg",
@@ -932,16 +922,6 @@
     "credit": "Than217 at English Wikipedia",
     "license": "Public domain",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nefertari_Temple_Abu_Simbel_May_30_2007.jpg",
-    "kind": "photo",
-    "essential": true
-  },
-  {
-    "id": "hl-as-head",
-    "path": "media/highlights/as-head.webp",
-    "alt": "阿布辛貝大神殿崩落的巨像頭部",
-    "credit": "User:Than217",
-    "license": "Public domain",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Collapsed_Colossus.jpg",
     "kind": "photo",
     "essential": true
   },

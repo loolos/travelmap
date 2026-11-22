@@ -199,6 +199,7 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
   const used = new Set([
     ...places.map((p) => p.heroAssetId),
     ...places.flatMap((p) => p.findItems.map((f) => f.assetId)),
+    ...places.flatMap((p) => p.highlights.map((h) => h.assetId)),
     ...deities.map((d) => d.assetId),
     ...notes.map((n) => n.assetId),
     ...activities.flatMap((a) => a.photoIds),

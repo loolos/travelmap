@@ -1,5 +1,5 @@
 {
-  "_doc": "assetId -> lead image of an English Wikipedia article, or (with `match`) the first .jpg used in that article whose file name matches the regex. Run by .github/workflows/fetch-images.yml. gem-hero stays a hand-made illustration until a good exterior photo is picked by file name.",
+  "_doc": "assetId -> lead image of an English Wikipedia article, or (with `match`) the first .jpg used in that article whose file name matches the regex. Or pin an exact Commons file with `file`. Run by .github/workflows/fetch-images.yml. gem-hero stays a hand-made illustration until a good exterior photo is picked by file name.",
   "images": [
     {
       "assetId": "khufu-hero",
@@ -516,13 +516,6 @@
       "width": 720
     },
     {
-      "assetId": "hl-white-chapel",
-      "article": "White Chapel",
-      "dest": "media/highlights/white-chapel.webp",
-      "alt": "辛努塞爾特一世的白色小禮拜堂",
-      "width": 720
-    },
-    {
       "assetId": "hl-avenue",
       "article": "Avenue of Sphinxes",
       "dest": "media/highlights/avenue.webp",
@@ -580,16 +573,7 @@
       "width": 720
     },
     {
-      "assetId": "hl-karnak-pylon",
-      "article": "(file)",
-      "file": "Karnak first pylon.jpg",
-      "dest": "media/highlights/karnak-pylon.webp",
-      "alt": "卡納克第一塔門",
-      "width": 720
-    },
-    {
       "assetId": "hl-karnak-obelisk",
-      "article": "(file)",
       "file": "Obeslisk karnak.jpg",
       "dest": "media/highlights/karnak-obelisk.webp",
       "alt": "卡納克的方尖碑",
@@ -597,23 +581,20 @@
     },
     {
       "assetId": "hl-karnak-lake",
-      "article": "(file)",
       "file": "Lago sagrado de Karnak, Egipto. Marzo de 2008.jpg",
       "dest": "media/highlights/karnak-lake.webp",
       "alt": "卡納克聖湖",
       "width": 720
     },
     {
-      "assetId": "hl-karnak-rams",
-      "article": "(file)",
+      "assetId": "hl-karnak-pylon",
       "file": "Parvis Karnak.jpg",
-      "dest": "media/highlights/karnak-rams.webp",
-      "alt": "卡納克入口前的公羊頭獅身像",
+      "dest": "media/highlights/karnak-pylon.webp",
+      "alt": "卡納克神殿第一塔門",
       "width": 720
     },
     {
       "assetId": "hl-lt-pylon",
-      "article": "(file)",
       "file": "Pylons and obelisk Luxor temple.JPG",
       "dest": "media/highlights/lt-pylon.webp",
       "alt": "路克索神殿塔門、方尖碑與拉美西斯二世巨像",
@@ -621,7 +602,6 @@
     },
     {
       "assetId": "hl-lt-colossus",
-      "article": "(file)",
       "file": "تمثال رمسيس الثانى - معبد الاقصر.jpg",
       "dest": "media/highlights/lt-colossus.webp",
       "alt": "路克索神殿的拉美西斯二世像",
@@ -629,39 +609,20 @@
     },
     {
       "assetId": "hl-as-nefertari",
-      "article": "(file)",
       "file": "Nefertari Temple Abu Simbel May 30 2007.jpg",
       "dest": "media/highlights/as-nefertari.webp",
       "alt": "阿布辛貝小神殿正面",
       "width": 720
     },
     {
-      "assetId": "hl-as-head",
-      "article": "(file)",
-      "file": "Collapsed Colossus.jpg",
-      "dest": "media/highlights/as-head.webp",
-      "alt": "阿布辛貝大神殿崩落的巨像頭部",
-      "width": 720
-    },
-    {
       "assetId": "hl-as-sanctuary",
-      "article": "(file)",
       "file": "Abu Simbel temple, four statues of divinities in sanctuary.jpg",
       "dest": "media/highlights/as-sanctuary.webp",
       "alt": "阿布辛貝聖殿裡的四尊神像",
       "width": 720
     },
     {
-      "assetId": "hl-khufu-chamber",
-      "article": "(file)",
-      "file": "Chambre-roi-grande-pyramide.jpg",
-      "dest": "media/highlights/khufu-chamber.webp",
-      "alt": "胡夫金字塔國王墓室",
-      "width": 720
-    },
-    {
       "assetId": "hl-khufu-entrance",
-      "article": "(file)",
       "file": "Cheops-Pyramid@Eingaenge.JPG",
       "dest": "media/highlights/khufu-entrance.webp",
       "alt": "胡夫金字塔的原始入口與盜洞",
