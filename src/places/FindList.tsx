@@ -81,6 +81,12 @@ function Hint({ item, place }: { item: FindItem; place: Place }) {
           <figcaption>看圈起來的地方</figcaption>
         </figure>
       )}
+      {!spot && item.assetId && (
+        <figure className={styles.spotFig}>
+          <img src={assetUrl(item.assetId)} alt={assetById.get(item.assetId)?.alt ?? ''} loading="lazy" style={{ maxHeight: 280, objectFit: 'contain' }} />
+          <figcaption>實物照片</figcaption>
+        </figure>
+      )}
     </div>
   );
 }

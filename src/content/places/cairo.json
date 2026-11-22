@@ -151,7 +151,8 @@
       {
         "id": "mosque-clock",
         "text": "庭院裡法國送的鐘樓",
-        "hint": "在洗禮噴泉後方的走廊上，看一座帶著鐘面的小塔。"
+        "hint": "在洗禮噴泉後方的走廊上，看一座帶著鐘面的小塔。",
+        "assetId": "mosque-clock-photo"
       },
       {
         "id": "mosque-minarets",

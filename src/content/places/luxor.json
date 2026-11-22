@@ -336,7 +336,8 @@
       {
         "id": "karnak-capitals",
         "text": "開花和花苞兩種形狀的柱頭",
-        "hint": "大柱廳中間的高柱柱頭像盛開的紙莎草，兩旁矮柱像閉合的花苞。"
+        "hint": "大柱廳中間的高柱柱頭像盛開的紙莎草，兩旁矮柱像閉合的花苞。",
+        "assetId": "karnak-columns-photo"
       },
       {
         "id": "karnak-obelisk",

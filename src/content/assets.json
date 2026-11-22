@@ -554,5 +554,185 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:1300_Sphinxen_s%C3%A4umten_urspr%C3%BCnglich_die_Allee._07.jpg",
     "kind": "photo",
     "essential": true
+  },
+  {
+    "id": "sv-scarab-photo",
+    "path": "media/photos/sv-scarab.webp",
+    "alt": "古埃及聖甲蟲護身符",
+    "credit": "Wikimedia Commons",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Scarab_of_Sithathoryunet_with_the_Name_of_Amenemhat_III_MET_16.1.22_bot.jpeg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "sv-karkade-photo",
+    "path": "media/photos/sv-karkade.webp",
+    "alt": "洛神花茶",
+    "credit": "Emna Mizouni",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hibiscus_tea.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "sv-cotton-photo",
+    "path": "media/photos/sv-cotton.webp",
+    "alt": "埃及棉",
+    "credit": "Brian Gratwicke",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gossypium_barbadense.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "dates-photo",
+    "path": "media/photos/dates.webp",
+    "alt": "椰棗樹與果實",
+    "credit": "Nepenthes",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dates005.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "narmer-photo",
+    "path": "media/photos/narmer.webp",
+    "alt": "納爾邁調色板",
+    "credit": "anonymous",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Narmer_Palette.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "ptolemy-photo",
+    "path": "media/photos/ptolemy.webp",
+    "alt": "托勒密一世頭像",
+    "credit": "Marie-Lan Nguyen",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ptolemy_I_Soter_Louvre_Ma849_A.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "fayum-photo",
+    "path": "media/photos/fayum.webp",
+    "alt": "羅馬時期的法尤姆木乃伊肖像",
+    "credit": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fayum-34.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "amr-mosque-photo",
+    "path": "media/photos/amr-mosque.webp",
+    "alt": "開羅的阿慕爾清真寺",
+    "credit": "Yasseralghol",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D8%AC%D8%A7%D9%85%D8%B9_%D8%B9%D9%85%D8%B1%D9%88_%D8%A8%D9%86_%D8%A7%D9%84%D8%B9%D8%A7%D8%B5.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "azhar-photo",
+    "path": "media/photos/azhar.webp",
+    "alt": "愛資哈爾清真寺",
+    "credit": "Wildoo78",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mosqu%C3%A9e_Al-Azhar.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "pyramids-battle-photo",
+    "path": "media/photos/pyramids-battle.webp",
+    "alt": "金字塔之戰（畫作）",
+    "credit": "François-Louis-Joseph Watteau",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Francois-Louis-Joseph_Watteau_001.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "muhammad-ali-photo",
+    "path": "media/photos/muhammad-ali.webp",
+    "alt": "穆罕默德‧阿里畫像",
+    "credit": "Auguste Couder",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ModernEgypt,_Muhammad_Ali_by_Auguste_Couder,_BAP_17996.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "hapi-photo",
+    "path": "media/photos/hapi.webp",
+    "alt": "尼羅河氾濫之神哈皮",
+    "credit": "Jeff Dahl",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hapy_tying.svg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "blue-nile-falls-photo",
+    "path": "media/photos/blue-nile-falls.webp",
+    "alt": "衣索比亞的青尼羅河瀑布",
+    "credit": "CT Snow from Hsinchu, Taiwan",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blue_Nile_Falls-03,_by_CT_Snow.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "dream-stele-photo",
+    "path": "media/photos/dream-stele.webp",
+    "alt": "獅身人面像前的夢境石碑",
+    "credit": "Chanel Wheeler",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Great_Sphinx_with_Stelae.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "clownfish-photo",
+    "path": "media/photos/clownfish.webp",
+    "alt": "紅海小丑魚",
+    "credit": "Diego Delso",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pez_payaso_(Amphiprion_bicinctus)_en_una_an%C3%A9mona_magn%C3%ADfica_(Heteractis_magnifica),_mar_Rojo,_Egipto,_2023-04-18,_DD_93.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "karnak-columns-photo",
+    "path": "media/photos/karnak-columns.webp",
+    "alt": "卡納克神殿多柱廳的柱子",
+    "credit": "Rijksmuseum",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hall_of_columns,_Karnac,_RP-F-F25403-AG.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "edfu-falcon-photo",
+    "path": "media/photos/edfu-falcon.webp",
+    "alt": "艾德夫神殿的荷魯斯鷹像",
+    "credit": "Codex",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Edfou-Horus_006.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "mosque-clock-photo",
+    "path": "media/photos/mosque-clock.webp",
+    "alt": "穆罕默德‧阿里清真寺的鐘樓",
+    "credit": "Silar",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:02010_05924_Clock_Tower_in_Great_Mosque_of_Muhammad_Ali_Pasha_at_Cairo_Citadel.jpg",
+    "kind": "photo",
+    "essential": true
   }
 ]
