@@ -483,6 +483,30 @@
       "dest": "media/photos/mosque-clock.webp",
       "alt": "穆罕默德‧阿里清真寺的鐘樓",
       "width": 720
+    },
+    {
+      "assetId": "alexandria-hero",
+      "article": "Bibliotheca Alexandrina",
+      "dest": "media/more/alexandria.webp",
+      "alt": "亞歷山大的新亞歷山大圖書館"
+    },
+    {
+      "assetId": "suez-hero",
+      "article": "Suez Canal",
+      "dest": "media/more/suez.webp",
+      "alt": "蘇伊士運河"
+    },
+    {
+      "assetId": "sinai-hero",
+      "article": "Saint Catherine's Monastery",
+      "dest": "media/more/sinai.webp",
+      "alt": "西奈山腳下的聖凱瑟琳修道院"
+    },
+    {
+      "assetId": "siwa-hero",
+      "article": "Siwa Oasis",
+      "dest": "media/more/siwa.webp",
+      "alt": "錫瓦綠洲"
     }
   ]
 }
