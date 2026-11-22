@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { assetUrl, deities, placeById, places } from '../data/content';
 import { useProgress } from '../progress/store';
 import pages from './Pages.module.css';
@@ -10,7 +10,8 @@ const wherePlaces = (deityId: string) => places.filter((p) => p.findItems.some((
 
 export function DeitiesPage() {
   const progress = useProgress();
-  const [open, setOpen] = useState<string | null>(null);
+  const [params] = useSearchParams();
+  const [open, setOpen] = useState<string | null>(params.get('id'));
   const got = deities.filter((d) => progress.deities[d.id]?.length).length;
   const sel = deities.find((d) => d.id === open);
 

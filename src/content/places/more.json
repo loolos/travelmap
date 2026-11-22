@@ -45,6 +45,16 @@
     ],
     "builtYear": -331,
     "activityIds": [],
+    "links": [
+      {
+        "kind": "food",
+        "id": "kebda"
+      },
+      {
+        "kind": "food",
+        "id": "sayadeya"
+      }
+    ],
     "sourceIds": [
       "wiki-alexandria"
     ]
@@ -205,6 +215,12 @@
       "sahara-oasis"
     ],
     "activityIds": [],
+    "links": [
+      {
+        "kind": "food",
+        "id": "dates"
+      }
+    ],
     "sourceIds": [
       "wiki-siwa"
     ]

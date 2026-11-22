@@ -22,11 +22,11 @@ export function resolveDayLink(l: DayLink): { to: string; label: string } | unde
     }
     case 'deity': {
       const d = deities.find((x) => x.id === l.id);
-      return d && { to: '/deities', label: `🏺 ${d.nameZh}` };
+      return d && { to: `/deities?id=${d.id}`, label: `🏺 ${d.nameZh}` };
     }
     case 'glyph': {
       const g = glyphs.find((x) => x.id === l.id);
-      return g && { to: '/glyphs', label: `☥ ${g.nameZh}` };
+      return g && { to: `/glyphs?id=${g.id}`, label: `☥ ${g.nameZh}` };
     }
     case 'role': {
       const r = dayRoleById.get(l.id);

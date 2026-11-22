@@ -10,6 +10,7 @@ import { PriceLine } from './Price';
 import { FindList } from './FindList';
 import { Aspects } from './Aspects';
 import { Highlights } from './Highlights';
+import { resolveDayLink } from '../pages/dayLinks';
 import styles from './PlacePanel.module.css';
 
 type Tab = 'facts' | 'find' | 'notes';
@@ -159,6 +160,23 @@ export function PlacePanel({ place, wide, state, onExpand, onCollapse, onClose }
                 </ol>
                 <Highlights key={`hl-${place.id}`} items={place.highlights} />
                 <Aspects key={place.id} items={place.aspects} />
+                {place.links.length > 0 && (
+                  <div className={styles.related}>
+                    <h2>相關</h2>
+                    <p>
+                      {place.links.map((l) => {
+                        const r = resolveDayLink(l);
+                        return (
+                          r && (
+                            <Link key={`${l.kind}:${l.id}`} to={r.to} className={styles.relChip}>
+                              {r.label}
+                            </Link>
+                          )
+                        );
+                      })}
+                    </p>
+                  </div>
+                )}
                 {place.readIds.length > 0 && (
                   <div className={styles.reads}>
                     <h2>延伸知識</h2>
