@@ -229,5 +229,80 @@
       "wiki-great-sand-sea"
     ],
     "heroAssetId": "sahara-hero"
+  },
+  {
+    "id": "redsea",
+    "nameZh": "紅海",
+    "nameEn": "Red Sea",
+    "shortName": "紅海",
+    "aliases": [
+      "Red Sea",
+      "Erythraean Sea",
+      "紅海"
+    ],
+    "major": true,
+    "regionId": "egypt",
+    "kind": "water",
+    "coordinates": {
+      "lat": 26.5,
+      "lon": 34.45
+    },
+    "onItinerary": false,
+    "status": "ready",
+    "question": "紅海明明是藍色的，為什麼叫紅海？",
+    "era": "約 3 千萬～2 千萬年前開始裂開",
+    "intro": "夾在非洲和阿拉伯半島之間的狹長海洋。北端分成蘇伊士灣和亞喀巴灣，南端經曼德海峽通往印度洋。",
+    "facts": [
+      "長約 2,250 公里、最寬約 355 公里，最深處超過 3,000 公尺。",
+      "幾乎沒有河流注入、蒸發又強，是世界上最鹹、最溫暖的海之一。",
+      "它是兩塊板塊拉開的裂谷，見[虎加達](place:hurghada)的[紅海珊瑚](activity:red-sea-lab)；北端經[蘇伊士運河](place:suez-canal)通地中海。"
+    ],
+    "aspects": [
+      {
+        "kind": "geo",
+        "text": "西奈半島兩側的蘇伊士灣和亞喀巴灣，讓紅海北端像一個分岔的 Y 字。"
+      },
+      {
+        "kind": "nature",
+        "text": "一成以上的魚是紅海特有種，還住著儒艮、海豚和多種鯊魚。"
+      },
+      {
+        "kind": "today",
+        "text": "全球約一成的海運走蘇伊士運河和紅海；2023 年底起船隻在南端遭襲擊，不少改繞非洲。"
+      }
+    ],
+    "findItems": [
+      {
+        "id": "redsea-mountains",
+        "text": "海岸背後光禿禿的紅褐色山脈",
+        "hint": "紅海山脈就在虎加達西邊，傍晚被夕陽照得特別紅。"
+      }
+    ],
+    "noteIds": [
+      "rs-snorkel",
+      "rs-souvenir"
+    ],
+    "readIds": [
+      "redsea-name",
+      "redsea-rift",
+      "redsea-salty",
+      "redsea-reef",
+      "redsea-jarf",
+      "redsea-punt",
+      "redsea-canal",
+      "redsea-berenice",
+      "cu-ababda",
+      "cu-redsea-resort"
+    ],
+    "activityIds": [
+      "redsea-routes"
+    ],
+    "sourceIds": [
+      "wiki-red-sea",
+      "wiki-red-sea-rift",
+      "wiki-punt",
+      "wiki-wadi-al-jarf"
+    ],
+    "heroAssetId": "redsea-hero"
   }
 ]

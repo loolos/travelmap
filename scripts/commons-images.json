@@ -1009,6 +1009,20 @@
       "dest": "media/photos/wadi-al-hitan.webp",
       "alt": "鯨魚谷的古鯨化石",
       "width": 900
+    },
+    {
+      "assetId": "redsea-hero",
+      "dest": "media/egypt/red-sea.webp",
+      "alt": "從太空看紅海與西奈半島",
+      "search": "Red Sea Sinai Peninsula from space"
+    },
+    {
+      "assetId": "punt-photo",
+      "article": "Land of Punt",
+      "dest": "media/photos/punt.webp",
+      "alt": "哈特謝普蘇特神殿前，據說從蓬特帶回的乳香樹殘株",
+      "width": 900,
+      "match": "^File:(?!.*\\.svg).*(Punt|Hatshepsut|Deir)"
     }
   ]
 }

@@ -525,5 +525,25 @@
     "photoIds": [
       "swimmers-photo"
     ]
+  },
+  {
+    "id": "redsea-routes",
+    "placeId": "redsea",
+    "component": "HotspotDiagram",
+    "title": "紅海古航線",
+    "label": "古航線",
+    "icon": "⛵",
+    "question": "五千年來，誰在紅海上跑船？",
+    "durationMin": 2,
+    "sourceIds": [
+      "wiki-wadi-al-jarf",
+      "wiki-punt",
+      "wiki-canal-pharaohs",
+      "wiki-myos-hormos",
+      "wiki-berenice"
+    ],
+    "photoIds": [
+      "punt-photo"
+    ]
   }
 ]

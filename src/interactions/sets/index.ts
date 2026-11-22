@@ -8,6 +8,7 @@ import { weighingHeart } from './weighingHeart';
 import { opet } from './opet';
 import { crocMuseum } from './crocMuseum';
 import { bahariyaWater } from './bahariyaWater';
+import { redSeaRoutes } from './redSeaRoutes';
 
 /** Activity id -> hotspot diagram. */
 export const hotspotSets: Record<string, HotspotSet> = {
@@ -20,4 +21,5 @@ export const hotspotSets: Record<string, HotspotSet> = {
   'opet-festival': opet,
   'croc-museum-case': crocMuseum,
   'bahariya-water': bahariyaWater,
+  'redsea-routes': redSeaRoutes,
 };

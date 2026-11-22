@@ -15,7 +15,6 @@ export interface MapLabel {
 
 export const mapLabels: MapLabel[] = [
   { text: '地中海', en: 'Mediterranean Sea', at: [28.6, 31.85], kind: 'sea' },
-  { text: '紅海', en: 'Red Sea', at: [34.65, 26.3], kind: 'sea', rotate: 60 },
   { text: '西部沙漠', en: 'Western Desert', at: [27.1, 24.2], kind: 'region', maxK: 5 },
   { text: '東部沙漠', en: 'Eastern Desert', at: [32.6, 27.6], kind: 'region', minK: 1.6, maxK: 5 },
   { text: '西奈半島', en: 'Sinai', at: [33.9, 29.35], kind: 'region', maxK: 5 },

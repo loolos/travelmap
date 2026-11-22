@@ -115,6 +115,7 @@ export const noteCollections = [
   { id: 'country', title: '埃及現況', icon: '🇪🇬', kind: 'knowledge' },
   { id: 'nile', title: '尼羅河', icon: '🌊', kind: 'knowledge' },
   { id: 'sahara', title: '撒哈拉沙漠', icon: '🏜️', kind: 'knowledge' },
+  { id: 'redsea', title: '紅海', icon: '🪸', kind: 'knowledge' },
   { id: 'customs', title: '風土人情', icon: '🫖', kind: 'knowledge' },
 ] as const;
 

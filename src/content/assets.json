@@ -1484,5 +1484,25 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:T%C3%BCrk_Kahvesi_-_Bakir_Cezve.jpg",
     "kind": "photo",
     "essential": true
+  },
+  {
+    "id": "redsea-hero",
+    "path": "media/egypt/red-sea.webp",
+    "alt": "從太空看紅海與西奈半島",
+    "credit": "Expedition 35 Crew Image courtesy of the NASA Johnson Space Center, Image Science &amp; Analysis Laboratory Derivative work including grading, noise reduction, lens distortion and vignetting correction and dust spot removal: Julian Herzog",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ISS035-E-007148_Nile_-_Sinai_-_Dead_Sea_-_Wide_Angle_View.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "punt-photo",
+    "path": "media/photos/punt.webp",
+    "alt": "哈特謝普蘇特神殿前，據說從蓬特帶回的乳香樹殘株",
+    "credit": "Edal Anton Lefterov",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hatshepsut-tree.jpg",
+    "kind": "photo",
+    "essential": true
   }
 ]
