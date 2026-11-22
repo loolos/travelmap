@@ -326,54 +326,6 @@
     "body": "拍人之前先詢問；有人主動要你拍照，可能會收費。無人機未經許可不能帶入埃及。"
   },
   {
-    "id": "food-koshari",
-    "regionId": "food",
-    "icon": "🍝",
-    "title": "柯夏莉 Koshari",
-    "body": "米飯、扁豆、通心粉疊在一起，淋上番茄醬汁和炸洋蔥，最平民的國民美食。",
-    "assetId": "food-koshari-img"
-  },
-  {
-    "id": "food-ful",
-    "regionId": "food",
-    "icon": "🫘",
-    "title": "蠶豆泥 Ful medames",
-    "body": "燉得軟爛的蠶豆加油、檸檬和孜然，配大餅當早餐。",
-    "assetId": "food-ful-img"
-  },
-  {
-    "id": "food-taameya",
-    "regionId": "food",
-    "icon": "🧆",
-    "title": "埃及炸豆餅 Ta‘ameya",
-    "body": "和中東其他地方用鷹嘴豆不同，埃及版用蠶豆做，裡面是綠色的。",
-    "assetId": "food-taameya-img"
-  },
-  {
-    "id": "food-molokhia",
-    "regionId": "food",
-    "icon": "🥣",
-    "title": "黃麻葉湯 Molokhia",
-    "body": "黃麻葉剁碎煮成的濃稠綠湯，常配米飯和雞肉。",
-    "assetId": "food-molokhia-img"
-  },
-  {
-    "id": "food-mahshi",
-    "regionId": "food",
-    "icon": "🫑",
-    "title": "鑲餡蔬菜 Mahshi",
-    "body": "葡萄葉、青椒、櫛瓜塞進香料米飯後燉煮。",
-    "assetId": "food-mahshi-img"
-  },
-  {
-    "id": "food-om-ali",
-    "regionId": "food",
-    "icon": "🍮",
-    "title": "烏姆阿里 Om Ali",
-    "body": "酥皮或麵包泡牛奶，加堅果烤成的熱甜點。",
-    "assetId": "food-om-ali-img"
-  },
-  {
     "id": "ph-hello",
     "regionId": "phrases",
     "icon": "👋",

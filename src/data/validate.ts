@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { isKnowledge, noteCollections, Activity, Artifact, Asset, Deity, Era, Glyph, Note, Place, Region, Source, type ContentBundle } from './schema';
+import { isKnowledge, noteCollections, Activity, Artifact, Asset, Food, Deity, Era, Glyph, Note, Place, Region, Source, type ContentBundle } from './schema';
 import { eraForYear } from './eras';
 import { charCount, parseInline, plainText } from './inline';
 
@@ -14,6 +14,7 @@ export interface RawContent {
   glyphs: unknown;
   eras: unknown;
   artifacts: unknown;
+  foods: unknown;
 }
 
 export interface ValidationResult {
@@ -48,6 +49,7 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
   const glyphs = parse(z.array(Glyph), raw.glyphs, 'glyphs') ?? [];
   const eras = parse(z.array(Era), raw.eras, 'eras') ?? [];
   const artifacts = parse(z.array(Artifact), raw.artifacts, 'artifacts') ?? [];
+  const foods = parse(z.array(Food), raw.foods, 'foods') ?? [];
 
   const ids = new Map<string, string>();
   const unique = (id: string, label: string) => {
@@ -65,6 +67,7 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
   glyphs.forEach((g) => unique(`glyph:${g.id}`, 'glyph'));
   eras.forEach((e) => unique(`era:${e.id}`, 'era'));
   artifacts.forEach((a) => unique(`artifact:${a.id}`, 'artifact'));
+  foods.forEach((f) => unique(`food:${f.id}`, 'food'));
 
   const placeIds = new Set(places.map((p) => p.id));
   const regionIds = new Set(regions.map((r) => r.id));
@@ -72,6 +75,7 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
   const assetIds = new Set(assets.map((a) => a.id));
   const sourceIds = new Set(sources.map((s) => s.id));
   const activityIds = new Set(activities.map((a) => a.id));
+  const foodIds = new Set(foods.map((f) => f.id));
   const deityIds = new Set(deities.map((d) => d.id));
 
   const checkText = (label: string, text: string) => {
@@ -97,7 +101,13 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
         if (seg.type !== 'link') continue;
         links++;
         const ok =
-          seg.kind === 'place' ? placeIds.has(seg.id) : seg.kind === 'note' ? noteIds.has(seg.id) : activityIds.has(seg.id);
+          seg.kind === 'place'
+            ? placeIds.has(seg.id)
+            : seg.kind === 'note'
+              ? noteIds.has(seg.id)
+              : seg.kind === 'food'
+                ? foodIds.has(seg.id)
+                : activityIds.has(seg.id);
         if (!ok) errors.push(`${L}: inline link to unknown ${seg.kind} ${seg.id}`);
       }
     if (links > 3) errors.push(`${L}: ${links} inline links (max 3)`);
@@ -207,6 +217,16 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
     if (charCount(a.story) > 100) warnings.push(`${L}: story ${charCount(a.story)} 字 (max ~100)`);
     if (a.year !== undefined && eras.length && !eraForYear(eras, a.year)) errors.push(`${L}: year ${a.year} is outside the timeline`);
   }
+  for (const f of foods) {
+    const L = `food ${f.id}`;
+    checkText(L, `${f.nameZh}${f.look}${f.story}${f.tip ?? ''}`);
+    f.placeIds.forEach((id) => placeIds.has(id) || errors.push(`${L}: unknown place ${id}`));
+    if (f.assetId && !assetIds.has(f.assetId)) errors.push(`${L}: unknown asset ${f.assetId}`);
+    f.sourceIds.forEach((s) => sourceIds.has(s) || errors.push(`${L}: unknown source ${s}`));
+    if (charCount(f.nameZh) > 7) warnings.push(`${L}: name ${charCount(f.nameZh)} 字 (tile max ~7)`);
+    if (charCount(f.look) > 25) warnings.push(`${L}: look ${charCount(f.look)} 字 (max ~25)`);
+    if (charCount(f.story) > 100) warnings.push(`${L}: story ${charCount(f.story)} 字 (max ~100)`);
+  }
   for (const p of places) {
     if (p.builtYear !== undefined && eras.length && !eraForYear(eras, p.builtYear))
       errors.push(`place ${p.id}: builtYear ${p.builtYear} is outside the timeline`);
@@ -220,12 +240,13 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
     ...notes.map((n) => n.assetId),
     ...activities.flatMap((a) => a.photoIds),
     ...artifacts.map((a) => a.assetId),
+    ...foods.map((f) => f.assetId),
   ]);
   assets.forEach((a) => used.has(a.id) || warnings.push(`asset ${a.id} is not used`));
 
   return {
     errors,
     warnings,
-    bundle: errors.length ? undefined : { places, regions, notes, assets, sources, activities, deities, glyphs, eras, artifacts },
+    bundle: errors.length ? undefined : { places, regions, notes, assets, sources, activities, deities, glyphs, eras, artifacts, foods },
   };
 }

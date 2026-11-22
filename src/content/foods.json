@@ -1,0 +1,606 @@
+[
+  {
+    "id": "aish-baladi",
+    "category": "staple",
+    "nameZh": "埃及大餅",
+    "nameEn": "Aish baladi",
+    "nameAr": "عيش بلدي",
+    "icon": "🫓",
+    "look": "全麥口袋餅，烤得鼓起、中間是空的",
+    "story": "埃及方言裡「aish」就是「生命」。政府補貼的大餅一個只要幾分錢，清早麵包店前常大排長龍，幾乎每一餐都少不了它。",
+    "tip": "撕一小塊當湯匙，夾菜、沾醬都靠它。",
+    "veg": true,
+    "budget": 1,
+    "placeIds": [],
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "aish-shamsi",
+    "category": "staple",
+    "nameZh": "太陽麵包",
+    "nameEn": "Aish shamsi",
+    "nameAr": "عيش شمسي",
+    "icon": "🌞",
+    "look": "上埃及的發酵麵包，靠太陽發麵",
+    "story": "路克索、亞斯文一帶的農家把麵糰排在陽光下讓它膨脹再烤，比開羅的大餅厚實，帶一點酸香。",
+    "veg": true,
+    "budget": 1,
+    "placeIds": [
+      "luxor",
+      "aswan"
+    ],
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "koshari",
+    "category": "staple",
+    "nameZh": "柯夏莉",
+    "nameEn": "Koshari",
+    "nameAr": "كشري",
+    "icon": "🍝",
+    "look": "米飯、扁豆、通心粉，淋番茄醬和炸洋蔥",
+    "story": "19 世紀末出現的平民料理，混合了印度的 khichdi、義大利麵和本地番茄醬，如今是埃及的國民美食，專賣店從早開到深夜。",
+    "tip": "桌上的蒜醋汁（da‘a）和辣油自己加，拌勻再吃。",
+    "veg": true,
+    "budget": 1,
+    "placeIds": [
+      "cairo"
+    ],
+    "assetId": "food-koshari-img",
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "feteer",
+    "category": "staple",
+    "nameZh": "千層派餅",
+    "nameEn": "Feteer meshaltet",
+    "nameAr": "فطير مشلتت",
+    "icon": "🥧",
+    "look": "麵皮層層抹酥油烤成的大圓餅",
+    "story": "麵皮拉得極薄，刷上酥油（samna）一層層摺起來烤，外酥內軟。有原味的，也有包起司、肉末的鹹口味。",
+    "tip": "原味的常配蜂蜜、黑糖蜜或白起司。",
+    "veg": true,
+    "budget": 2,
+    "placeIds": [],
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "macarona-bechamel",
+    "category": "staple",
+    "nameZh": "白醬焗麵",
+    "nameEn": "Macarona béchamel",
+    "nameAr": "مكرونة بشاميل",
+    "icon": "🧀",
+    "look": "通心粉夾絞肉，蓋白醬烤成一大盤",
+    "story": "受義大利和希臘料理影響的家常菜，家庭聚會、節日常做一大盤，切成方塊上桌。",
+    "veg": false,
+    "budget": 2,
+    "placeIds": [],
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "roz-shareya",
+    "category": "staple",
+    "nameZh": "細麵米飯",
+    "nameEn": "Roz bel shareya",
+    "nameAr": "رز بالشعرية",
+    "icon": "🍚",
+    "look": "米飯拌入炒得金黃的碎細麵",
+    "story": "埃及餐桌最常見的白飯：碎細麵和米先用奶油炒香再煮，幾乎所有燉菜、肉類都配這一碗。",
+    "veg": true,
+    "budget": 1,
+    "placeIds": [],
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "ful",
+    "category": "veg",
+    "nameZh": "蠶豆泥",
+    "nameEn": "Ful medames",
+    "nameAr": "فول مدمس",
+    "icon": "🫘",
+    "look": "燉爛的蠶豆加油、檸檬和孜然",
+    "story": "可能有幾千年歷史的埃及早餐。傳統做法是把蠶豆放在大銅壺裡小火悶一整夜，清晨推著推車在街角賣。",
+    "tip": "夾進大餅當三明治，或配番茄、洋蔥、水煮蛋。",
+    "veg": true,
+    "budget": 1,
+    "placeIds": [],
+    "assetId": "food-ful-img",
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "taameya",
+    "category": "veg",
+    "nameZh": "埃及炸豆餅",
+    "nameEn": "Ta‘ameya",
+    "nameAr": "طعمية",
+    "icon": "🧆",
+    "look": "用蠶豆做的炸豆餅，切開是綠色的",
+    "story": "中東其他地方的法拉費多用鷹嘴豆，埃及則用去皮蠶豆，加大量香菜、蒔蘿，所以裡面是綠的。據說最早是科普特基督徒在齋戒期代替肉吃的。",
+    "tip": "和蠶豆泥一起夾大餅，就是最典型的埃及早餐。",
+    "veg": true,
+    "budget": 1,
+    "placeIds": [],
+    "assetId": "food-taameya-img",
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "bessara",
+    "category": "veg",
+    "nameZh": "綠蠶豆泥",
+    "nameEn": "Bessara",
+    "nameAr": "بصارة",
+    "icon": "🥣",
+    "look": "蠶豆和香草煮成的綠色濃泥",
+    "story": "比蠶豆泥更樸素的農家菜，乾蠶豆和黃麻葉、蒔蘿、香菜一起煮爛，上桌時鋪滿炸得酥脆的洋蔥。",
+    "tip": "用大餅沾著吃，冷熱都可以。",
+    "veg": true,
+    "budget": 1,
+    "placeIds": [],
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "molokhia",
+    "category": "veg",
+    "nameZh": "黃麻葉湯",
+    "nameEn": "Molokhia",
+    "nameAr": "ملوخية",
+    "icon": "🥬",
+    "look": "黃麻葉剁碎煮成的濃稠綠湯",
+    "story": "口感滑黏，有點像秋葵。關鍵是最後把炸香的大蒜和芫荽籽倒進湯裡，「嗞」的一聲，埃及人說這時要倒抽一口氣才會好吃。",
+    "tip": "淋在白飯上，或用大餅沾；常配雞肉或兔肉，湯底多半是肉湯。",
+    "veg": false,
+    "budget": 1,
+    "placeIds": [],
+    "assetId": "food-molokhia-img",
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "mahshi",
+    "category": "veg",
+    "nameZh": "鑲餡蔬菜",
+    "nameEn": "Mahshi",
+    "nameAr": "محشي",
+    "icon": "🫑",
+    "look": "蔬菜塞進香料米飯後燉煮",
+    "story": "葡萄葉、高麗菜葉捲成小捲，青椒、櫛瓜、茄子挖空填米，再加番茄和香草燉煮。包一大鍋要花整個下午，是家常菜的代表。",
+    "veg": true,
+    "budget": 2,
+    "placeIds": [],
+    "assetId": "food-mahshi-img",
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "baba-ghanoug",
+    "category": "veg",
+    "nameZh": "烤茄子泥",
+    "nameEn": "Baba ghanoug",
+    "nameAr": "بابا غنوج",
+    "icon": "🍆",
+    "look": "炭烤茄子拌芝麻醬的煙燻沾醬",
+    "story": "整顆茄子直接烤到外皮焦黑，取出果肉搗成泥，拌芝麻醬（tahina）、大蒜和檸檬，帶淡淡的煙燻味，常和其他小盤一起當前菜。",
+    "veg": true,
+    "budget": 1,
+    "placeIds": [],
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "torshi",
+    "category": "veg",
+    "nameZh": "埃及醃菜",
+    "nameEn": "Torshi",
+    "nameAr": "طرشي",
+    "icon": "🥕",
+    "look": "胡蘿蔔、蕪菁、檸檬醃成的酸菜",
+    "story": "小吃店桌上常擺一大罐，粉紅色的是加了甜菜根一起醃的蕪菁。酸鹹爽脆，專門用來解炸物和豆類的膩。",
+    "veg": true,
+    "budget": 1,
+    "placeIds": [],
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "kofta",
+    "category": "meat",
+    "nameZh": "烤肉串",
+    "nameEn": "Kofta & kebab",
+    "nameAr": "كفتة وكباب",
+    "icon": "🍢",
+    "look": "炭火烤的香料絞肉串和羊肉塊",
+    "story": "kofta 是把香料絞肉捏在鐵叉上烤，kebab 則是整塊羊肉。烤肉店按重量計價，附大餅、沙拉和芝麻醬。",
+    "tip": "四分之一公斤（rob‘ kilo）大約一人份。",
+    "veg": false,
+    "budget": 2,
+    "placeIds": [],
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "hawawshi",
+    "category": "meat",
+    "nameZh": "埃及肉餅",
+    "nameEn": "Hawawshi",
+    "nameAr": "حواوشي",
+    "icon": "🥙",
+    "look": "大餅塞香料絞肉，烤到外皮酥脆",
+    "story": "據說是 1970 年代開羅一位叫 Hawash 的肉販發明的：絞肉拌洋蔥、辣椒塞進大餅再烤，外脆內多汁，是很受歡迎的街頭小吃。",
+    "veg": false,
+    "budget": 1,
+    "placeIds": [
+      "cairo"
+    ],
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "hamam-mahshi",
+    "category": "meat",
+    "nameZh": "鑲鴿子",
+    "nameEn": "Hamam mahshi",
+    "nameAr": "حمام محشي",
+    "icon": "🕊️",
+    "look": "整隻乳鴿塞米飯或碎麥再烤",
+    "story": "埃及鄉間到處是泥土蓋的鴿樓，養鴿既為了肉，也為了鳥糞肥料。乳鴿塞進香料米或綠麥粒（freekeh）先煮再烤，是請客的菜。",
+    "tip": "骨頭很細，直接用手剝著吃。",
+    "veg": false,
+    "budget": 3,
+    "placeIds": [],
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "fatta",
+    "category": "meat",
+    "nameZh": "法塔",
+    "nameEn": "Fatta",
+    "nameAr": "فتة",
+    "icon": "🍲",
+    "look": "脆麵包、米飯和蒜醋醬上鋪燉肉",
+    "story": "宰牲節（Eid al-Adha）的節日大菜：烤脆的大餅墊底，鋪米飯，淋上蒜味醋醬和番茄醬，最上面放燉得軟爛的羊肉或牛肉。",
+    "veg": false,
+    "budget": 2,
+    "placeIds": [],
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "shawarma",
+    "category": "meat",
+    "nameZh": "沙威瑪",
+    "nameEn": "Shawarma",
+    "nameAr": "شاورما",
+    "icon": "🌯",
+    "look": "直立烤肉削成薄片，包進麵包",
+    "story": "雞肉或牛肉一層層疊在直立烤架上慢慢轉烤，削下薄片包進長麵包或薄餅，配芝麻醬和醃菜，是到處都有的快餐。",
+    "veg": false,
+    "budget": 1,
+    "placeIds": [],
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "kebda",
+    "category": "meat",
+    "nameZh": "亞歷山大炒肝",
+    "nameEn": "Kebda eskandarani",
+    "nameAr": "كبدة إسكندراني",
+    "icon": "🌶️",
+    "look": "辣炒牛肝丁夾小麵包",
+    "story": "亞歷山大港的招牌街頭小吃：牛肝切小丁，和辣椒、大蒜、孜然大火快炒，夾進小長麵包裡，一口一個。",
+    "veg": false,
+    "budget": 1,
+    "placeIds": [
+      "alexandria"
+    ],
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "samak-mashwi",
+    "category": "seafood",
+    "nameZh": "紅海烤魚",
+    "nameEn": "Grilled Red Sea fish",
+    "nameAr": "سمك مشوي",
+    "icon": "🐟",
+    "look": "自己挑魚、秤重、現烤",
+    "story": "紅海沿岸的海鮮餐廳多半讓你到冰櫃前挑魚（石斑、鯛魚、鸚哥魚等），按重量計價，再選烤、炸或撒鹽香料烤（singari）。",
+    "tip": "先問清楚每公斤多少錢，米飯和沙拉常另外算。",
+    "veg": false,
+    "budget": 3,
+    "placeIds": [
+      "hurghada"
+    ],
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "sayadeya",
+    "category": "seafood",
+    "nameZh": "漁夫飯",
+    "nameEn": "Sayadeya",
+    "nameAr": "صيادية",
+    "icon": "🍛",
+    "look": "焦糖洋蔥煮成褐色的魚肉飯",
+    "story": "名字就是「漁夫的」。洋蔥炒到深褐色，再和米一起用魚高湯煮，米飯因此變成咖啡色，上面放炸魚或烤魚，是港口城市的家常菜。",
+    "veg": false,
+    "budget": 2,
+    "placeIds": [
+      "alexandria",
+      "hurghada"
+    ],
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "bolti",
+    "category": "seafood",
+    "nameZh": "尼羅河吳郭魚",
+    "nameEn": "Bolti",
+    "nameAr": "بلطي",
+    "icon": "🐠",
+    "look": "炸得酥脆的尼羅河吳郭魚",
+    "story": "吳郭魚原產於尼羅河，古埃及墓室壁畫上就畫著牠。亞斯文一帶常整條裹粉油炸或炭烤，附大餅和芝麻醬，納瑟湖也盛產。",
+    "veg": false,
+    "budget": 2,
+    "placeIds": [
+      "aswan"
+    ],
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "feseekh",
+    "category": "seafood",
+    "nameZh": "發酵鹹魚",
+    "nameEn": "Feseekh",
+    "nameAr": "فسيخ",
+    "icon": "🐡",
+    "look": "發酵鹹鯔魚，春天節日的重口味",
+    "story": "春天的「聞風節」（Sham el-Nessim，源自法老時代的春節）全家出遊必吃。鯔魚曬過後用鹽醃漬發酵好幾週，味道非常濃，每年都有人因處理不當而中毒。",
+    "tip": "想嚐鮮只在信譽好的老店吃，或改點煙燻鯡魚（renga）。",
+    "veg": false,
+    "budget": 2,
+    "placeIds": [],
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "om-ali",
+    "category": "sweet",
+    "nameZh": "烏姆阿里",
+    "nameEn": "Om Ali",
+    "nameAr": "أم علي",
+    "icon": "🍮",
+    "look": "酥皮泡牛奶，加堅果烤成的熱甜點",
+    "story": "傳說是馬穆魯克時代一位蘇丹的妻子「阿里的母親」為慶祝勝利做的。酥皮或麵包撕碎，加牛奶、奶油、堅果和葡萄乾，烤到表面金黃，趁熱吃。",
+    "veg": true,
+    "budget": 2,
+    "placeIds": [],
+    "assetId": "food-om-ali-img",
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "konafa",
+    "category": "sweet",
+    "nameZh": "庫納法",
+    "nameEn": "Konafa",
+    "nameAr": "كنافة",
+    "icon": "🍯",
+    "look": "細麵絲烤得金黃，再淋糖漿",
+    "story": "像細米粉的麵絲拌奶油烤到酥脆，中間夾奶醬、堅果或起司，最後淋上糖漿。齋戒月（Ramadan）的夜晚最多人吃。",
+    "veg": true,
+    "budget": 2,
+    "placeIds": [],
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "basbousa",
+    "category": "sweet",
+    "nameZh": "粗麥蛋糕",
+    "nameEn": "Basbousa",
+    "nameAr": "بسبوسة",
+    "icon": "🍰",
+    "look": "粗麥粉蛋糕吸飽了糖漿",
+    "story": "用粗粒小麥粉（semolina）加優格、椰子烤成，切成菱形，每塊頂著一顆杏仁，再淋糖漿，甜度很高。",
+    "veg": true,
+    "budget": 1,
+    "placeIds": [],
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "roz-bel-laban",
+    "category": "sweet",
+    "nameZh": "米布丁",
+    "nameEn": "Roz bel laban",
+    "nameAr": "رز بلبن",
+    "icon": "🥛",
+    "look": "牛奶慢熬的米布丁",
+    "story": "米和牛奶、糖慢慢熬成的布丁，撒上肉桂或堅果，冰的熱的都好吃。甜點店、小吃店都有，比其他甜點清爽。",
+    "veg": true,
+    "budget": 1,
+    "placeIds": [],
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "zalabya",
+    "category": "sweet",
+    "nameZh": "炸蜜球",
+    "nameEn": "Zalabya",
+    "nameAr": "زلابية / لقمة القاضي",
+    "icon": "🍩",
+    "look": "小麵球炸酥再淋糖漿",
+    "story": "又叫「法官的一口」（lo‘met el-adi）。麵糊炸成小圓球，外酥內空，淋糖漿或蜂蜜、撒肉桂，街頭現炸現賣。",
+    "veg": true,
+    "budget": 1,
+    "placeIds": [],
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "dates",
+    "category": "sweet",
+    "nameZh": "椰棗",
+    "nameEn": "Dates (balah)",
+    "nameAr": "بلح",
+    "icon": "🌴",
+    "look": "綠洲出產的各種椰棗",
+    "story": "錫瓦和巴哈利亞綠洲到處是椰棗林，秋天收成後在市場論斤賣。軟的、半乾的、硬的口味都不同，也有塞杏仁或熬成椰棗醬的。",
+    "tip": "回程想帶伴手禮，綠洲產的椰棗又便宜又好。",
+    "veg": true,
+    "budget": 1,
+    "placeIds": [
+      "bahariya",
+      "siwa"
+    ],
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "shai",
+    "category": "drink",
+    "nameZh": "埃及紅茶",
+    "nameEn": "Shai",
+    "nameAr": "شاي",
+    "icon": "🫖",
+    "look": "又濃又甜的紅茶",
+    "story": "埃及人一天要喝好幾杯，街角的咖啡館（ahwa）都在賣。上埃及的「sa‘idi」茶煮得特別濃，北部也有人加牛奶或薄荷葉。",
+    "tip": "少糖說「sukkar khafif」，不要糖說「min gheir sukkar」。",
+    "veg": true,
+    "budget": 1,
+    "placeIds": [],
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "karkadeh",
+    "category": "drink",
+    "nameZh": "洛神花茶",
+    "nameEn": "Karkadeh",
+    "nameAr": "كركديه",
+    "icon": "🌺",
+    "look": "深紅色的洛神花茶，冷熱都喝",
+    "story": "亞斯文和努比亞一帶種很多洛神花，市集論斤賣乾花。熱的暖身、冰的消暑，酸酸甜甜，也常當迎賓飲料。",
+    "tip": "乾燥洛神花是輕巧的伴手禮。",
+    "veg": true,
+    "budget": 1,
+    "placeIds": [
+      "aswan"
+    ],
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "asab",
+    "category": "drink",
+    "nameZh": "甘蔗汁",
+    "nameEn": "Asab",
+    "nameAr": "عصير قصب",
+    "icon": "🎋",
+    "look": "現榨的冰涼甘蔗汁",
+    "story": "上埃及大量種植甘蔗，城裡的果汁攤用大機器現榨，綠色的泡沫、清甜冰涼，一大杯很便宜。",
+    "veg": true,
+    "budget": 1,
+    "placeIds": [
+      "luxor"
+    ],
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "sahlab",
+    "category": "drink",
+    "nameZh": "沙勒布熱奶",
+    "nameEn": "Sahlab",
+    "nameAr": "سحلب",
+    "icon": "🍵",
+    "look": "冬天喝的熱濃奶，撒堅果和肉桂",
+    "story": "傳統用蘭花塊莖磨的粉讓牛奶變濃稠，現在多改用玉米澱粉。沙漠和開羅的冬夜偏冷，正適合來一杯。",
+    "veg": true,
+    "budget": 1,
+    "placeIds": [],
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "ahwa",
+    "category": "drink",
+    "nameZh": "埃及咖啡",
+    "nameEn": "Ahwa",
+    "nameAr": "قهوة",
+    "icon": "☕",
+    "look": "小杯濃咖啡，渣沉在杯底",
+    "story": "用小銅壺把細磨的咖啡粉和水一起煮，不過濾，喝到底會留下一層咖啡渣，別一口喝乾。",
+    "tip": "點的時候說甜度：sada 無糖、mazbut 適中、ziyada 多糖。",
+    "veg": true,
+    "budget": 1,
+    "placeIds": [],
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  },
+  {
+    "id": "tamr-hindi",
+    "category": "drink",
+    "nameZh": "羅望子汁",
+    "nameEn": "Tamr hindi",
+    "nameAr": "تمر هندي",
+    "icon": "🧃",
+    "look": "酸甜解渴的羅望子冷飲",
+    "story": "齋戒月開齋時常喝的傳統飲料，酸甜解渴。街上偶爾能看到背著大銅壺、敲著鐵盤叫賣的小販。",
+    "veg": true,
+    "budget": 1,
+    "placeIds": [],
+    "sourceIds": [
+      "wiki-egyptian-cuisine"
+    ]
+  }
+]
