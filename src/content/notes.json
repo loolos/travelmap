@@ -676,7 +676,8 @@
     "icon": "🏮",
     "title": "齋月",
     "body": "伊斯蘭曆第九個月，穆斯林白天不吃不喝，日落時全家一起開齋（iftar）。街上掛滿彩色燈籠 fanous，夜裡比白天還熱鬧。日期每年約提前 11 天。",
-    "area": "全國"
+    "area": "全國",
+    "assetId": "cu-fanous-img"
   },
   {
     "id": "cu-copts",
@@ -684,7 +685,8 @@
     "icon": "✝️",
     "title": "科普特基督徒",
     "body": "埃及本土的古老教會，信徒約占一成。很多人在右手腕內側刺一個小十字架。他們在 1 月 7 日過聖誕節，開羅老城裡教堂和清真寺常就在同一條街上。",
-    "area": "全國"
+    "area": "全國",
+    "assetId": "cu-coptic-img"
   },
   {
     "id": "cu-greeting",
@@ -724,7 +726,8 @@
     "icon": "☕",
     "title": "土耳其咖啡",
     "body": "咖啡粉和水放進小長柄壺一起煮，連渣倒進小杯，喝到底要留一點渣。點的時候要說甜度：sada 無糖、mazbut 適中、ziyada 很甜。",
-    "area": "全國"
+    "area": "全國",
+    "assetId": "cu-coffee-img"
   },
   {
     "id": "cu-ahwa",
@@ -732,7 +735,8 @@
     "icon": "🎲",
     "title": "街角咖啡館 ahwa",
     "body": "傳統咖啡館像男人的客廳：塑膠椅擺上人行道，喝茶、抽水煙（shisha）、玩雙陸棋（tawla），有球賽時整條街一起看。",
-    "area": "全國"
+    "area": "全國",
+    "assetId": "cu-ahwa-img"
   },
   {
     "id": "cu-family",
@@ -780,7 +784,8 @@
     "icon": "🌼",
     "title": "聞風節",
     "body": "Sham el-Nessim 是春天的全民節日，源自古埃及的春季慶典，基督徒和穆斯林一起過。全家出門野餐，傳統吃鹹魚 fesikh、洋蔥和彩繪雞蛋。",
-    "area": "全國"
+    "area": "全國",
+    "assetId": "cu-sham-img"
   },
   {
     "id": "cu-evil-eye",
@@ -812,7 +817,8 @@
     "icon": "🪦",
     "title": "死人城",
     "body": "開羅東邊綿延數公里的大墓園「死人城」，有馬木路克時代的華麗陵墓，也有許多家庭住在墓室旁，在墓地間開店、上學，是活人和亡者共用的城區。",
-    "area": "開羅"
+    "area": "開羅",
+    "assetId": "cu-cairo-dead-img"
   },
   {
     "id": "cu-tannoura",
@@ -836,7 +842,8 @@
     "icon": "🥢",
     "title": "棍術舞 Tahtib",
     "body": "兩名男子拿著長棍，隨著鼓聲和嗩吶一攻一守、繞圈比劃。這源自古代的棍術，古墓壁畫上就有，2016 年列入聯合國非物質文化遺產。",
-    "area": "上埃及（路克索）"
+    "area": "上埃及（路克索）",
+    "assetId": "cu-tahtib-img"
   },
   {
     "id": "cu-sugarcane",
@@ -852,7 +859,8 @@
     "icon": "🏠",
     "title": "彩繪圓頂屋",
     "body": "亞斯文一帶的努比亞村落，房子漆成藍、黃、粉紅，牆上畫著花紋、動物和幾何圖案，屋頂常是泥磚圓頂，院子寬敞涼爽。",
-    "area": "努比亞（亞斯文）"
+    "area": "努比亞（亞斯文）",
+    "assetId": "cu-nubian-img"
   },
   {
     "id": "cu-nubian-language",
@@ -916,7 +924,8 @@
     "icon": "🫗",
     "title": "阿巴布達人的薑咖啡",
     "body": "東部沙漠的游牧民族阿巴布達人（Ababda），用陶壺 jabana 在炭火上煮加了薑的咖啡，倒進小杯招待客人，通常要喝上好幾輪。",
-    "area": "紅海與東部沙漠"
+    "area": "紅海與東部沙漠",
+    "assetId": "cu-ababda-img"
   },
   {
     "id": "cu-sinai-bedouin",

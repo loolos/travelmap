@@ -788,11 +788,11 @@
   {
     "id": "art-shrines",
     "path": "media/gem/shrines.webp",
-    "alt": "圖坦卡門的鍍金神龕",
+    "alt": "四層神龕與石棺套疊示意圖",
     "credit": "Hotepibre at Italian Wikipedia",
     "license": "CC BY-SA 2.5",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shrinesandsarcophagos.png",
-    "kind": "photo",
+    "kind": "illustration",
     "essential": true
   },
   {
@@ -816,9 +816,9 @@
     "essential": true
   },
   {
-    "id": "art-lotus-head",
-    "path": "media/gem/lotus-head.webp",
-    "alt": "從蓮花冒出的圖坦卡門頭像",
+    "id": "art-lotus-cup",
+    "path": "media/gem/lotus-chalice.webp",
+    "alt": "蓮花形的方解石許願杯",
     "credit": "Chatsam",
     "license": "CC BY-SA 3.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tutankhamun_Treasure_in_Paris_coupe_au_lotus-cropped.jpg",
@@ -842,16 +842,6 @@
     "credit": "B. Simpson Cairocamels",
     "license": "CC BY 3.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lanterns_from_below.JPG",
-    "kind": "photo",
-    "essential": true
-  },
-  {
-    "id": "cu-umm-kulthum-img",
-    "path": "media/customs/umm-kulthum.webp",
-    "alt": "烏姆·庫勒蘇姆",
-    "credit": "Production company",
-    "license": "Public domain",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Umm_Kulthum_as_Fatimah.jpg",
     "kind": "photo",
     "essential": true
   },
@@ -888,7 +878,7 @@
   {
     "id": "cu-sham-img",
     "path": "media/customs/sham-el-nessim.webp",
-    "alt": "聞風節",
+    "alt": "彩繪雞蛋",
     "credit": "Ikonact",
     "license": "CC BY-SA 3.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bg-easter-eggs.jpg",
@@ -918,7 +908,7 @@
   {
     "id": "cu-ababda-img",
     "path": "media/customs/ababda.webp",
-    "alt": "阿巴布達人",
+    "alt": "東部沙漠的游牧民族與駱駝",
     "credit": "Nikswieweg at German Wikipedia (Original text: Klaus Polak, Pseudonym Nikswieweg)",
     "license": "CC BY-SA 3.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bedscha.jpg",
