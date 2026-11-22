@@ -1404,5 +1404,85 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salep_drink.jpg",
     "kind": "photo",
     "essential": true
+  },
+  {
+    "id": "food-kofta-img",
+    "path": "media/food/kofta.webp",
+    "alt": "烤肉串",
+    "credit": "Mona Abo-Abda",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grilled_Kofta.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "food-shawarma-img",
+    "path": "media/food/shawarma.webp",
+    "alt": "沙威瑪",
+    "credit": "Vis M",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shawarma_2.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "food-samak-mashwi-img",
+    "path": "media/food/samak-mashwi.webp",
+    "alt": "紅海烤魚",
+    "credit": "Mohamed kamal 1984",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grilled_Fish_2.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "food-bolti-img",
+    "path": "media/food/bolti.webp",
+    "alt": "尼羅河吳郭魚",
+    "credit": "Ganesh Dhamodkar",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fried_Tilapia_Fish.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "food-zalabya-img",
+    "path": "media/food/zalabya.webp",
+    "alt": "炸蜜球",
+    "credit": "elif ayse",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sam%27dan_lokma_tatlisi.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "food-shai-img",
+    "path": "media/food/shai.webp",
+    "alt": "埃及紅茶",
+    "credit": "Dina Said",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Egyptian_food_Koshary.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "food-ahwa-img",
+    "path": "media/food/ahwa.webp",
+    "alt": "埃及咖啡",
+    "credit": "Eaeeae",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:T%C3%BCrk_Kahvesi_-_Bakir_Cezve.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "food-tamr-hindi-img",
+    "path": "media/food/tamr-hindi.webp",
+    "alt": "羅望子汁",
+    "credit": "Gunawan Kartapranata",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Es_Asem_Jawa_(Javanese_Tamarind_Juice).jpg",
+    "kind": "photo",
+    "essential": true
   }
 ]
