@@ -633,5 +633,33 @@
       ]
     },
     "assetId": "sv-cotton-photo"
+  },
+  {
+    "id": "more-alexandria",
+    "regionId": "more",
+    "icon": "🚆",
+    "title": "從開羅一日遊",
+    "body": "從開羅搭火車約 2.5–3 小時，一日遊可行。冬天海邊風大，帶件外套。"
+  },
+  {
+    "id": "more-suez",
+    "regionId": "more",
+    "icon": "🚢",
+    "title": "哪裡看大船",
+    "body": "伊斯梅利亞和塞得港的運河邊可以看到貨輪經過；從開羅開車約 2 小時。"
+  },
+  {
+    "id": "more-sinai",
+    "regionId": "more",
+    "icon": "🌄",
+    "title": "夜登看日出",
+    "body": "遊客多在半夜出發，摸黑走約 2–3 小時登頂看日出。山頂很冷，要帶保暖衣物和頭燈。"
+  },
+  {
+    "id": "more-siwa",
+    "regionId": "more",
+    "icon": "🚌",
+    "title": "路途遙遠",
+    "body": "走公路離開羅約 750 公里，車程 8–10 小時，多半經過地中海岸的馬特魯港。"
   }
 ]

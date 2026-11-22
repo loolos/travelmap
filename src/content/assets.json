@@ -734,5 +734,45 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:02010_05924_Clock_Tower_in_Great_Mosque_of_Muhammad_Ali_Pasha_at_Cairo_Citadel.jpg",
     "kind": "photo",
     "essential": true
+  },
+  {
+    "id": "suez-hero",
+    "path": "media/more/suez.webp",
+    "alt": "蘇伊士運河",
+    "credit": "NASA",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iss016e019375.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "sinai-hero",
+    "path": "media/more/sinai.webp",
+    "alt": "西奈山腳下的聖凱瑟琳修道院",
+    "credit": "Berthold Werner",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Katharinenkloster_Sinai_BW_2.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "siwa-hero",
+    "path": "media/more/siwa.webp",
+    "alt": "錫瓦綠洲",
+    "credit": "Adelbayoumi",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D9%8A%D9%88%D9%85_%D8%AC%D8%AF%D9%8A%D8%AF.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "alexandria-hero",
+    "path": "media/more/alexandria.webp",
+    "alt": "亞歷山大港邊的奎貝灣城堡",
+    "credit": "Hmkree",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D9%82%D9%84%D8%B9%D8%A9_%D9%82%D8%A7%D9%8A%D8%AA%D8%A8%D8%A7%D9%8A_%D9%85%D9%86_%D8%A7%D9%84%D8%AC%D9%88.jpg",
+    "kind": "photo",
+    "essential": true
   }
 ]

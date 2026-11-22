@@ -443,5 +443,25 @@
     "id": "wiki-sphinx-avenue",
     "title": "Wikipedia：Avenue of Sphinxes",
     "url": "https://en.wikipedia.org/wiki/Avenue_of_Sphinxes"
+  },
+  {
+    "id": "wiki-alexandria",
+    "title": "Wikipedia：Alexandria",
+    "url": "https://en.wikipedia.org/wiki/Alexandria"
+  },
+  {
+    "id": "wiki-suez-canal",
+    "title": "Wikipedia：Suez Canal",
+    "url": "https://en.wikipedia.org/wiki/Suez_Canal"
+  },
+  {
+    "id": "unesco-saint-catherine",
+    "title": "UNESCO：Saint Catherine Area",
+    "url": "https://whc.unesco.org/en/list/954/"
+  },
+  {
+    "id": "wiki-siwa",
+    "title": "Wikipedia：Siwa Oasis",
+    "url": "https://en.wikipedia.org/wiki/Siwa_Oasis"
   }
 ]
