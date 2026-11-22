@@ -42,6 +42,7 @@ export const activityComponents: Record<string, ComponentType<{ activityId: stri
   'sahara-time': SaharaTimeLab,
   'croc-museum-case': HotspotDiagram,
   'bahariya-water': HotspotDiagram,
+  'redsea-routes': HotspotDiagram,
   'nubia-flood': NubiaLab,
   'market-bargain': BargainLab,
   'abu-simbel-move': AbuSimbelMove,

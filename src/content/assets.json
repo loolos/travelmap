@@ -1254,5 +1254,23 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_whales_fossils_at_Wadi_El-Hitan,_Egypt_2017.jpg",
     "kind": "photo",
     "essential": true
+  },
+  {
+    "id": "redsea-hero",
+    "path": "media/egypt/red-sea.webp",
+    "alt": "從太空看紅海與西奈半島",
+    "credit": "示意（待換實景照片）",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
+  },
+  {
+    "id": "punt-photo",
+    "path": "media/photos/punt.webp",
+    "alt": "哈特謝普蘇特神殿的蓬特遠航浮雕",
+    "credit": "示意（待換實景照片）",
+    "license": "CC0",
+    "kind": "illustration",
+    "essential": true
   }
 ]

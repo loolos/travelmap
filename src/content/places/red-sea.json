@@ -5,8 +5,7 @@
     "nameEn": "Hurghada & Red Sea",
     "shortName": "虎加達",
     "aliases": [
-      "赫爾格達",
-      "紅海"
+      "赫爾格達"
     ],
     "major": true,
     "regionId": "red-sea",
@@ -64,7 +63,9 @@
     ],
     "readIds": [
       "cu-redsea-resort",
-      "cu-ababda"
+      "cu-ababda",
+      "redsea-rift",
+      "redsea-reef"
     ]
   }
 ]

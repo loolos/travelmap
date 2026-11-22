@@ -93,7 +93,8 @@
       "more-suez"
     ],
     "readIds": [
-      "hist-1952"
+      "hist-1952",
+      "redsea-canal"
     ],
     "builtYear": 1859,
     "activityIds": [],
@@ -146,7 +147,8 @@
     ],
     "readIds": [
       "cu-sinai-bedouin",
-      "hist-rome"
+      "hist-rome",
+      "redsea-rift"
     ],
     "builtYear": 548,
     "activityIds": [],

@@ -848,6 +848,19 @@
       "dest": "media/photos/wadi-al-hitan.webp",
       "alt": "鯨魚谷的古鯨化石",
       "width": 900
+    },
+    {
+      "assetId": "redsea-hero",
+      "article": "Red Sea",
+      "dest": "media/egypt/red-sea.webp",
+      "alt": "從太空看紅海與西奈半島"
+    },
+    {
+      "assetId": "punt-photo",
+      "article": "Land of Punt",
+      "dest": "media/photos/punt.webp",
+      "alt": "哈特謝普蘇特神殿的蓬特遠航浮雕",
+      "width": 900
     }
   ]
 }
