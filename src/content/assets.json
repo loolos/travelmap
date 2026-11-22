@@ -716,16 +716,6 @@
     "essential": true
   },
   {
-    "id": "lotus-monument-photo",
-    "path": "media/photos/lotus-monument.webp",
-    "alt": "高壩旁的蓮花紀念碑",
-    "credit": "Photo: Przemyslaw \"Blueshade\" Idzkiewicz",
-    "license": "CC BY-SA 1.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:High_Dam_Burg_Memorial_Wall,_Aswan,_Egypt,_Oct_2004.jpg",
-    "kind": "photo",
-    "essential": true
-  },
-  {
     "id": "edfu-falcon-photo",
     "path": "media/photos/edfu-falcon.webp",
     "alt": "艾德夫神殿的荷魯斯鷹像",

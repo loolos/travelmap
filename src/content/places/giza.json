@@ -300,7 +300,8 @@
       {
         "id": "sphinx-stele",
         "text": "兩隻前爪之間立著的石碑",
-        "hint": "兩隻前爪之間，立著一塊有浮雕的大石板。"
+        "hint": "兩隻前爪之間，立著一塊有浮雕的大石板。",
+        "assetId": "dream-stele-photo"
       }
     ],
     "noteIds": [

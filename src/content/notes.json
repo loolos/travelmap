@@ -67,7 +67,8 @@
     "regionId": "western-desert",
     "icon": "🌴",
     "title": "綠洲椰棗",
-    "body": "巴哈利亞的椰棗（Dates）很有名，可以買來當伴手禮或沙漠裡的點心。"
+    "body": "巴哈利亞的椰棗（Dates）很有名，可以買來當伴手禮或沙漠裡的點心。",
+    "assetId": "dates-photo"
   },
   {
     "id": "an-nubian",
@@ -81,7 +82,8 @@
     "regionId": "aswan-nile",
     "icon": "🌺",
     "title": "洛神花茶與香料",
-    "body": "洛神花茶（karkadeh）冷熱都喝得到。市集買香料可以先試聞、問清楚是秤重還是一包的價格。"
+    "body": "洛神花茶（karkadeh）冷熱都喝得到。市集買香料可以先試聞、問清楚是秤重還是一包的價格。",
+    "assetId": "sv-karkade-photo"
   },
   {
     "id": "an-dam-photo",
@@ -221,63 +223,72 @@
     "regionId": "history",
     "icon": "📜",
     "title": "法老的三千年",
-    "body": "約西元前 3100 年上下埃及統一。古王國蓋了吉薩金字塔，中王國重新統一國家，新王國建了帝王谷和卡納克的大部分，之後漸漸被外族統治。"
+    "body": "約西元前 3100 年上下埃及統一。古王國蓋了吉薩金字塔，中王國重新統一國家，新王國建了帝王谷和卡納克的大部分，之後漸漸被外族統治。",
+    "assetId": "narmer-photo"
   },
   {
     "id": "hist-ptolemy",
     "regionId": "history",
     "icon": "📜",
     "title": "亞歷山大與托勒密",
-    "body": "西元前 332 年亞歷山大大帝征服埃及，之後由希臘血統的托勒密王朝統治，最後一位是克麗奧佩脫拉七世。"
+    "body": "西元前 332 年亞歷山大大帝征服埃及，之後由希臘血統的托勒密王朝統治，最後一位是克麗奧佩脫拉七世。",
+    "assetId": "ptolemy-photo"
   },
   {
     "id": "hist-rome",
     "regionId": "history",
     "icon": "📜",
     "title": "羅馬與基督教",
-    "body": "西元前 30 年埃及成為羅馬的行省，是帝國的糧倉。後來基督教傳入，發展出埃及的科普特教會。"
+    "body": "西元前 30 年埃及成為羅馬的行省，是帝國的糧倉。後來基督教傳入，發展出埃及的科普特教會。",
+    "assetId": "fayum-photo"
   },
   {
     "id": "hist-arab",
     "regionId": "history",
     "icon": "📜",
     "title": "阿拉伯人到來",
-    "body": "641 年阿拉伯軍隊進入埃及，在今天開羅南邊建立福斯塔特城。阿拉伯語和伊斯蘭教慢慢成為主流。"
+    "body": "641 年阿拉伯軍隊進入埃及，在今天開羅南邊建立福斯塔特城。阿拉伯語和伊斯蘭教慢慢成為主流。",
+    "assetId": "amr-mosque-photo"
   },
   {
     "id": "hist-fatimid",
     "regionId": "history",
     "icon": "📜",
     "title": "法蒂瑪王朝建開羅",
-    "body": "969 年法蒂瑪王朝建立開羅，不久又建了愛資哈爾清真寺，它至今仍是重要的伊斯蘭學府。"
+    "body": "969 年法蒂瑪王朝建立開羅，不久又建了愛資哈爾清真寺，它至今仍是重要的伊斯蘭學府。",
+    "assetId": "azhar-photo"
   },
   {
     "id": "hist-saladin",
     "regionId": "history",
     "icon": "📜",
     "title": "薩拉丁與馬木路克",
-    "body": "12 世紀薩拉丁對抗十字軍、修築城堡。之後馬木路克統治兩百多年，在開羅蓋了許多清真寺。"
+    "body": "12 世紀薩拉丁對抗十字軍、修築城堡。之後馬木路克統治兩百多年，在開羅蓋了許多清真寺。",
+    "assetId": "citadel-hero"
   },
   {
     "id": "hist-ottoman",
     "regionId": "history",
     "icon": "📜",
     "title": "鄂圖曼與拿破崙",
-    "body": "1517 年埃及併入鄂圖曼帝國。1798 年拿破崙遠征埃及，隨行學者在 1799 年發現羅塞塔石碑。"
+    "body": "1517 年埃及併入鄂圖曼帝國。1798 年拿破崙遠征埃及，隨行學者在 1799 年發現羅塞塔石碑。",
+    "assetId": "pyramids-battle-photo"
   },
   {
     "id": "hist-muhammad-ali",
     "regionId": "history",
     "icon": "📜",
     "title": "穆罕默德‧阿里",
-    "body": "19 世紀初掌權，推動新式軍隊、工廠和學校。1869 年蘇伊士運河通航，1882 年英國占領埃及。"
+    "body": "19 世紀初掌權，推動新式軍隊、工廠和學校。1869 年蘇伊士運河通航，1882 年英國占領埃及。",
+    "assetId": "muhammad-ali-photo"
   },
   {
     "id": "hist-1952",
     "regionId": "history",
     "icon": "📜",
     "title": "1952 年革命與高壩",
-    "body": "1952 年軍官發動革命推翻王室，納瑟後來把蘇伊士運河收歸國有，並興建亞斯文高壩。"
+    "body": "1952 年軍官發動革命推翻王室，納瑟後來把蘇伊士運河收歸國有，並興建亞斯文高壩。",
+    "assetId": "dam-hero"
   },
   {
     "id": "gen-cash",
@@ -451,7 +462,8 @@
     "regionId": "nile",
     "icon": "🗺️",
     "title": "兩個源頭",
-    "body": "白尼羅河從維多利亞湖一帶流出，水量穩定；青尼羅河來自衣索比亞高原，夏季暴雨帶來大量的水和泥沙。兩條河在蘇丹首都喀土穆匯合。"
+    "body": "白尼羅河從維多利亞湖一帶流出，水量穩定；青尼羅河來自衣索比亞高原，夏季暴雨帶來大量的水和泥沙。兩條河在蘇丹首都喀土穆匯合。",
+    "assetId": "blue-nile-falls-photo"
   },
   {
     "id": "nile-seasons",
@@ -465,21 +477,24 @@
     "regionId": "nile",
     "icon": "📏",
     "title": "水位計",
-    "body": "通到河裡的階梯井或刻度柱，用「肘」量水位。亞斯文象島、孔翁波和開羅的羅達島都有。官員依水位預估收成、決定稅額。"
+    "body": "通到河裡的階梯井或刻度柱，用「肘」量水位。亞斯文象島、孔翁波和開羅的羅達島都有。官員依水位預估收成、決定稅額。",
+    "assetId": "nilometer-photo"
   },
   {
     "id": "nile-hapi-god",
     "regionId": "nile",
     "icon": "🌊",
     "title": "氾濫之神哈皮",
-    "body": "哈皮（Hapi）畫成挺著大肚子的人，頭上長著紙莎草或蓮花，象徵豐饒。古埃及人相信氾濫的水從亞斯文一帶的洞穴湧出。"
+    "body": "哈皮（Hapi）畫成挺著大肚子的人，頭上長著紙莎草或蓮花，象徵豐饒。古埃及人相信氾濫的水從亞斯文一帶的洞穴湧出。",
+    "assetId": "hapi-photo"
   },
   {
     "id": "nile-dam-change",
     "regionId": "nile",
     "icon": "🏗️",
     "title": "高壩之後",
-    "body": "1970 年亞斯文高壩完工，從此不再氾濫，可以一年多穫，還能發電。代價是淤泥被攔在納瑟湖，田地改靠化肥，三角洲海岸也慢慢被海水侵蝕。"
+    "body": "1970 年亞斯文高壩完工，從此不再氾濫，可以一年多穫，還能發電。代價是淤泥被攔在納瑟湖，田地改靠化肥，三角洲海岸也慢慢被海水侵蝕。",
+    "assetId": "dam-hero"
   },
   {
     "id": "sv-papyrus",
@@ -498,7 +513,8 @@
       "sourceIds": [
         "wikivoyage-egypt"
       ]
-    }
+    },
+    "assetId": "hunefer-photo"
   },
   {
     "id": "sv-alabaster",
@@ -536,7 +552,8 @@
       "sourceIds": [
         "wikivoyage-egypt"
       ]
-    }
+    },
+    "assetId": "cartouche-photo"
   },
   {
     "id": "sv-scarab",
@@ -555,7 +572,8 @@
       "sourceIds": [
         "wikivoyage-egypt"
       ]
-    }
+    },
+    "assetId": "sv-scarab-photo"
   },
   {
     "id": "sv-perfume",
@@ -593,7 +611,8 @@
       "sourceIds": [
         "wikivoyage-egypt"
       ]
-    }
+    },
+    "assetId": "sv-karkade-photo"
   },
   {
     "id": "sv-cotton",
@@ -612,6 +631,7 @@
       "sourceIds": [
         "wikivoyage-egypt"
       ]
-    }
+    },
+    "assetId": "sv-cotton-photo"
   }
 ]

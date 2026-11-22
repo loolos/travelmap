@@ -453,14 +453,6 @@
       "width": 720
     },
     {
-      "assetId": "lotus-monument-photo",
-      "article": "Aswan High Dam",
-      "match": "monument|lotus|friendship|memorial",
-      "dest": "media/photos/lotus-monument.webp",
-      "alt": "高壩旁的蓮花紀念碑",
-      "width": 720
-    },
-    {
       "assetId": "lt-obelisk-photo",
       "article": "Luxor Temple",
       "match": "obelisk",

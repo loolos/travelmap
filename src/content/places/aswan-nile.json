@@ -372,7 +372,8 @@
         "id": "edfu-falcon",
         "text": "門口戴雙冠的花崗岩老鷹",
         "hint": "塔門入口兩旁和內院各有一隻黑色花崗岩鷹像，那是荷魯斯。",
-        "deityId": "horus"
+        "deityId": "horus",
+        "assetId": "edfu-falcon-photo"
       },
       {
         "id": "edfu-seth",
