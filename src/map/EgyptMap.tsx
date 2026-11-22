@@ -359,7 +359,7 @@ export function EgyptMap({ selectedId, focusRegionId, resetSignal, onSelect, ins
                   {spread && <circle cx={m.x} cy={m.y} r={2.5} className={styles.anchor} />}
                   <g
                     transform={`translate(${x},${y})`}
-                    className={styles.node}
+                    className={p.regionId === 'more' ? `${styles.node} ${styles.offTrip}` : styles.node}
                     role="button"
                     tabIndex={0}
                     aria-label={p.nameZh}

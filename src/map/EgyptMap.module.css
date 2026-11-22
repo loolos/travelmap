@@ -65,6 +65,10 @@
   cursor: pointer;
   outline: none;
 }
+/* Places off the itinerary (其他城市): shown lighter. */
+.offTrip {
+  opacity: 0.7;
+}
 .node:focus-visible .hit,
 .cluster:focus-visible circle {
   stroke: var(--lapis);

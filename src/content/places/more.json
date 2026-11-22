@@ -1,0 +1,206 @@
+[
+  {
+    "id": "alexandria",
+    "nameZh": "亞歷山大",
+    "nameEn": "Alexandria",
+    "aliases": [
+      "亞歷山卓",
+      "Iskandariya"
+    ],
+    "regionId": "more",
+    "kind": "city",
+    "coordinates": {
+      "lat": 31.2001,
+      "lon": 29.9187
+    },
+    "onItinerary": false,
+    "status": "ready",
+    "shortName": "亞歷山大",
+    "major": false,
+    "question": "埃及第二大城，為什麼像一座地中海城市？",
+    "era": "西元前 331 年亞歷山大大帝建城；托勒密王朝首都",
+    "intro": "地中海岸的港口城市，亞歷山大大帝建城，托勒密王朝把它變成古代世界的學術中心，今天是埃及第二大城。",
+    "heroAssetId": "alexandria-hero",
+    "facts": [
+      "古代的亞歷山大燈塔是世界七大奇觀之一，原址上現在是奎貝灣城堡。",
+      "古代的亞歷山大圖書館收藏大量書卷，2002 年在附近建了新館。",
+      "埃及豔后克麗奧佩脫拉七世在這裡統治，也在這裡去世。"
+    ],
+    "aspects": [
+      {
+        "kind": "geo",
+        "text": "位在尼羅河三角洲西北端的地中海岸，冬天比開羅涼，也比較常下雨。"
+      },
+      {
+        "kind": "today",
+        "text": "人口五百多萬，是埃及第二大城和最重要的港口。"
+      }
+    ],
+    "findItems": [],
+    "noteIds": [
+      "more-alexandria"
+    ],
+    "readIds": [
+      "hist-ptolemy"
+    ],
+    "builtYear": -331,
+    "activityIds": [],
+    "sourceIds": [
+      "wiki-alexandria"
+    ]
+  },
+  {
+    "id": "suez-canal",
+    "nameZh": "蘇伊士運河",
+    "nameEn": "Suez Canal",
+    "aliases": [
+      "Ismailia",
+      "伊斯梅利亞",
+      "塞得港",
+      "Port Said"
+    ],
+    "regionId": "more",
+    "kind": "water",
+    "coordinates": {
+      "lat": 30.59,
+      "lon": 32.33
+    },
+    "onItinerary": false,
+    "status": "ready",
+    "shortName": "蘇伊士運河",
+    "major": false,
+    "question": "一條運河，怎麼改變了全世界的航線？",
+    "era": "1859 年開挖，1869 年通航",
+    "intro": "連接地中海和紅海的人工運河，從塞得港到蘇伊士長約 193 公里，船不必再繞過非洲南端。",
+    "heroAssetId": "suez-hero",
+    "facts": [
+      "1869 年通航後，歐洲到亞洲的船不必再繞過非洲南端的好望角。",
+      "1956 年納瑟宣布把運河收歸國有，引發了蘇伊士危機。",
+      "地中海和紅海水位差很小，所以運河不像[埃斯納](place:esna-lock)需要船閘。"
+    ],
+    "aspects": [
+      {
+        "kind": "geo",
+        "text": "運河穿過蘇伊士地峽，把非洲本土和亞洲的西奈半島分開。"
+      },
+      {
+        "kind": "today",
+        "text": "運河是埃及重要的外匯來源，2015 年完成一段新的平行航道。"
+      }
+    ],
+    "findItems": [],
+    "noteIds": [
+      "more-suez"
+    ],
+    "readIds": [
+      "hist-1952"
+    ],
+    "builtYear": 1859,
+    "activityIds": [],
+    "sourceIds": [
+      "wiki-suez-canal"
+    ]
+  },
+  {
+    "id": "mount-sinai",
+    "nameZh": "西奈山與聖凱瑟琳修道院",
+    "nameEn": "Mount Sinai & St Catherine's",
+    "aliases": [
+      "西奈山",
+      "聖凱瑟琳修道院",
+      "Saint Catherine's Monastery",
+      "Jebel Musa"
+    ],
+    "regionId": "more",
+    "kind": "temple",
+    "coordinates": {
+      "lat": 28.5559,
+      "lon": 33.9758
+    },
+    "onItinerary": false,
+    "status": "ready",
+    "shortName": "西奈山",
+    "major": false,
+    "question": "沙漠深處的修道院，怎麼守住一千五百年？",
+    "era": "6 世紀拜占庭皇帝查士丁尼下令興建修道院",
+    "intro": "西奈半島南部的山區，傳說摩西在這裡領受十誡；山腳的聖凱瑟琳修道院，是世界上最古老、至今仍有修士居住的修道院之一。",
+    "heroAssetId": "sinai-hero",
+    "facts": [
+      "西奈山高約 2,285 公尺，傳統上被認為是摩西領受十誡的地方。",
+      "修道院有厚重的石牆，圖書館收藏的古代手抄本數量在世界上數一數二。",
+      "院內有一座法蒂瑪時期的清真寺，歷代穆斯林統治者也保護這裡。"
+    ],
+    "aspects": [
+      {
+        "kind": "geo",
+        "text": "旁邊的凱瑟琳山約 2,629 公尺，是埃及最高峰。"
+      },
+      {
+        "kind": "nature",
+        "text": "高山冬夜常低於 0°C，山頂偶爾還會下雪。"
+      }
+    ],
+    "findItems": [],
+    "noteIds": [
+      "more-sinai"
+    ],
+    "readIds": [
+      "hist-rome"
+    ],
+    "builtYear": 548,
+    "activityIds": [],
+    "sourceIds": [
+      "unesco-saint-catherine"
+    ]
+  },
+  {
+    "id": "siwa",
+    "nameZh": "錫瓦綠洲",
+    "nameEn": "Siwa Oasis",
+    "aliases": [
+      "Siwa",
+      "錫瓦",
+      "阿蒙綠洲"
+    ],
+    "regionId": "more",
+    "kind": "water",
+    "coordinates": {
+      "lat": 29.2032,
+      "lon": 25.5195
+    },
+    "onItinerary": false,
+    "status": "ready",
+    "shortName": "錫瓦",
+    "major": false,
+    "question": "亞歷山大大帝為什麼要穿越沙漠來這裡？",
+    "era": "古稱阿蒙綠洲；西元前 331 年亞歷山大大帝來此求神諭",
+    "intro": "靠近利比亞邊境的偏遠綠洲，有泉水、鹽湖和椰棗林，居民多是說錫瓦語的柏柏爾人。",
+    "heroAssetId": "siwa-hero",
+    "facts": [
+      "亞歷山大大帝曾來這裡的阿蒙神諭神殿，據說被稱為神的兒子。",
+      "舊城沙利用鹽和泥混合的磚蓋成，1926 年連下大雨後大多崩塌。",
+      "居民說錫瓦語，是一種柏柏爾語，和開羅的阿拉伯語很不一樣。"
+    ],
+    "aspects": [
+      {
+        "kind": "geo",
+        "text": "綠洲位在低於海平面的窪地裡，地下水湧出形成泉水和鹽湖。"
+      },
+      {
+        "kind": "nature",
+        "text": "鹽湖的鹽分很高，人可以像在死海一樣浮起來。"
+      }
+    ],
+    "findItems": [],
+    "noteIds": [
+      "more-siwa"
+    ],
+    "readIds": [
+      "hist-ptolemy"
+    ],
+    "activityIds": [],
+    "sourceIds": [
+      "wiki-siwa"
+    ]
+  }
+]
