@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import type { Place } from '../data/schema';
-import { activityById, assetById, eras, noteById, sourceById } from '../data/content';
+import { activityById, artifacts, assetById, eras, noteById, sourceById } from '../data/content';
 import { eraForYear } from '../data/eras';
 import { foundCount, isLit, markOpened, toggleVisited, useProgress } from '../progress/store';
 import { Hero } from './Img';
@@ -118,8 +118,18 @@ export function PlacePanel({ place, wide, state, onExpand, onCollapse, onClose }
               )}
               <TabBtn active={tab === 'notes'} onClick={() => pick('notes')} icon="🧳" label="手記" />
               {place.kind === 'country' && (
-                <Link to="/timeline" className={styles.tab}>
-                  <span aria-hidden="true">📜</span> 時間線
+                <>
+                  <Link to="/timeline" className={styles.tab}>
+                    <span aria-hidden="true">📜</span> 時間線
+                  </Link>
+                  <Link to="/knowledge/customs" className={styles.tab}>
+                    <span aria-hidden="true">🫖</span> 風土人情
+                  </Link>
+                </>
+              )}
+              {artifacts.some((a) => a.placeId === place.id) && (
+                <Link to="/collection" className={styles.tab}>
+                  <span aria-hidden="true">🏛️</span> 館藏
                 </Link>
               )}
               {acts.map((a) => (

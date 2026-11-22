@@ -48,9 +48,16 @@
     ],
     "sourceIds": [
       "wiki-luxor",
-      "unesco-thebes"
+      "unesco-thebes",
+      "wiki-saidi",
+      "wiki-tahtib"
     ],
-    "heroAssetId": "luxor-hero"
+    "heroAssetId": "luxor-hero",
+    "readIds": [
+      "cu-saidi",
+      "cu-tahtib",
+      "cu-sugarcane"
+    ]
   },
   {
     "id": "valley-of-the-kings",

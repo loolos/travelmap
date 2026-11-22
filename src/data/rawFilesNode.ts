@@ -20,6 +20,7 @@ export function readRawContent(): RawContent {
     deities: read('deities.json'),
     glyphs: read('glyphs.json'),
     eras: read('eras.json'),
+    artifacts: read('artifacts.json'),
   };
 }
 

@@ -2,6 +2,11 @@
   margin: 22px 0 8px;
   font-size: 17px;
 }
+.h3 {
+  margin: 14px 0 6px;
+  font-size: 14px;
+  color: var(--muted);
+}
 .card {
   padding: 4px 12px;
   margin-bottom: 8px;

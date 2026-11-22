@@ -145,12 +145,14 @@
       "more-sinai"
     ],
     "readIds": [
+      "cu-sinai-bedouin",
       "hist-rome"
     ],
     "builtYear": 548,
     "activityIds": [],
     "sourceIds": [
-      "unesco-saint-catherine"
+      "unesco-saint-catherine",
+      "wiki-st-catherine"
     ]
   },
   {
@@ -196,6 +198,7 @@
       "more-siwa"
     ],
     "readIds": [
+      "cu-siwa",
       "hist-ptolemy"
     ],
     "activityIds": [],

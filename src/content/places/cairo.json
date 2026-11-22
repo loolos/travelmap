@@ -39,10 +39,14 @@
     "builtYear": 969,
     "sourceIds": [
       "wiki-cairo",
-      "unesco-historic-cairo"
+      "unesco-historic-cairo",
+      "wiki-city-of-dead"
     ],
     "heroAssetId": "cairo-hero",
     "readIds": [
+      "cu-cairo-night",
+      "cu-cairo-dead",
+      "cu-tannoura",
       "hist-ptolemy",
       "hist-rome",
       "hist-arab",

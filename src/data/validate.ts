@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { isKnowledge, noteCollections, Activity, Asset, Deity, Era, Glyph, Note, Place, Region, Source, type ContentBundle } from './schema';
+import { isKnowledge, noteCollections, Activity, Artifact, Asset, Deity, Era, Glyph, Note, Place, Region, Source, type ContentBundle } from './schema';
 import { eraForYear } from './eras';
 import { charCount, parseInline, plainText } from './inline';
 
@@ -13,6 +13,7 @@ export interface RawContent {
   deities: unknown;
   glyphs: unknown;
   eras: unknown;
+  artifacts: unknown;
 }
 
 export interface ValidationResult {
@@ -46,6 +47,7 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
   const deities = parse(z.array(Deity), raw.deities, 'deities') ?? [];
   const glyphs = parse(z.array(Glyph), raw.glyphs, 'glyphs') ?? [];
   const eras = parse(z.array(Era), raw.eras, 'eras') ?? [];
+  const artifacts = parse(z.array(Artifact), raw.artifacts, 'artifacts') ?? [];
 
   const ids = new Map<string, string>();
   const unique = (id: string, label: string) => {
@@ -61,6 +63,7 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
   deities.forEach((d) => unique(d.id, 'deity'));
   glyphs.forEach((g) => unique(`glyph:${g.id}`, 'glyph'));
   eras.forEach((e) => unique(`era:${e.id}`, 'era'));
+  artifacts.forEach((a) => unique(`artifact:${a.id}`, 'artifact'));
 
   const placeIds = new Set(places.map((p) => p.id));
   const regionIds = new Set(regions.map((r) => r.id));
@@ -182,6 +185,19 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
     if (!next && e.end !== undefined) errors.push(`era ${e.id}: the last era runs to the present (no end)`);
     if (e.end !== undefined && e.end <= e.start) errors.push(`era ${e.id}: end before start`);
   });
+  for (const a of artifacts) {
+    const L = `artifact ${a.id}`;
+    checkText(L, `${a.nameZh}${a.hall}${a.era}${a.look}${a.story}`);
+    if (!placeIds.has(a.placeId)) errors.push(`${L}: unknown place ${a.placeId}`);
+    if (a.assetId && !assetIds.has(a.assetId)) errors.push(`${L}: unknown asset ${a.assetId}`);
+    if (a.activityId && !activityIds.has(a.activityId)) errors.push(`${L}: unknown activity ${a.activityId}`);
+    a.sourceIds.forEach((s) => sourceIds.has(s) || errors.push(`${L}: unknown source ${s}`));
+    const n = charCount(a.nameZh);
+    if (n > 8) warnings.push(`${L}: name ${n} 字 (tile max ~8)`);
+    if (charCount(a.look) > 45) warnings.push(`${L}: look ${charCount(a.look)} 字 (max ~45)`);
+    if (charCount(a.story) > 100) warnings.push(`${L}: story ${charCount(a.story)} 字 (max ~100)`);
+    if (a.year !== undefined && eras.length && !eraForYear(eras, a.year)) errors.push(`${L}: year ${a.year} is outside the timeline`);
+  }
   for (const p of places) {
     if (p.builtYear !== undefined && eras.length && !eraForYear(eras, p.builtYear))
       errors.push(`place ${p.id}: builtYear ${p.builtYear} is outside the timeline`);
@@ -193,12 +209,13 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
     ...deities.map((d) => d.assetId),
     ...notes.map((n) => n.assetId),
     ...activities.flatMap((a) => a.photoIds),
+    ...artifacts.map((a) => a.assetId),
   ]);
   assets.forEach((a) => used.has(a.id) || warnings.push(`asset ${a.id} is not used`));
 
   return {
     errors,
     warnings,
-    bundle: errors.length ? undefined : { places, regions, notes, assets, sources, activities, deities, glyphs, eras },
+    bundle: errors.length ? undefined : { places, regions, notes, assets, sources, activities, deities, glyphs, eras, artifacts },
   };
 }

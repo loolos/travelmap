@@ -102,6 +102,7 @@ export const noteCollections = [
   { id: 'culture', title: '城市與文化', icon: '🏙️', kind: 'knowledge' },
   { id: 'country', title: '埃及現況', icon: '🇪🇬', kind: 'knowledge' },
   { id: 'nile', title: '尼羅河', icon: '🌊', kind: 'knowledge' },
+  { id: 'customs', title: '風土人情', icon: '🫖', kind: 'knowledge' },
 ] as const;
 
 export const isKnowledge = (regionId: string) =>
@@ -117,6 +118,32 @@ export const Note = z.object({
   price: Price.optional(),
   /** Optional photo (e.g. a dish in 美食圖鑑). */
   assetId: z.string().optional(),
+  /** Sub-heading inside a collection (e.g. 全國 / 努比亞 in 風土人情). */
+  area: z.string().optional(),
+});
+
+/** A museum object in the 館藏圖鑑 (tap a tile for the details). */
+export const Artifact = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  /** Museum (place) that shows it. */
+  placeId: z.string(),
+  /** Where in the museum, used as the section heading. */
+  hall: z.string(),
+  nameZh: z.string(),
+  nameEn: z.string(),
+  icon: z.string(),
+  /** Dynasty / date line. */
+  era: z.string(),
+  /** Year it was made (negative = BCE); links into the history timeline. */
+  year: z.number().int().optional(),
+  /** What to look at (one sentence). */
+  look: z.string(),
+  /** The story behind it (shown on tap). */
+  story: z.string(),
+  assetId: z.string().optional(),
+  /** Optional related interaction. */
+  activityId: z.string().optional(),
+  sourceIds: z.array(z.string()).min(1),
 });
 
 export const Asset = z.object({
@@ -213,6 +240,7 @@ export const Era = z.object({
 });
 
 export type Era = z.infer<typeof Era>;
+export type Artifact = z.infer<typeof Artifact>;
 export type Place = z.infer<typeof Place>;
 export type Region = z.infer<typeof Region>;
 export type Note = z.infer<typeof Note>;
@@ -234,4 +262,5 @@ export interface ContentBundle {
   deities: Deity[];
   glyphs: Glyph[];
   eras: Era[];
+  artifacts: Artifact[];
 }

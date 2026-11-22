@@ -49,10 +49,17 @@
     ],
     "sourceIds": [
       "wiki-aswan",
-      "wiki-eratosthenes"
+      "wiki-eratosthenes",
+      "wiki-nubians"
     ],
     "activityIds": [
       "nubia-flood"
+    ],
+    "readIds": [
+      "cu-nubian-house",
+      "cu-nubian-language",
+      "cu-nubian-home",
+      "cu-nubian-music"
     ]
   },
   {
