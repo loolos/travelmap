@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { glyphs } from '../data/content';
 import { toggleGlyph, useProgress } from '../progress/store';
 import pages from './Pages.module.css';
@@ -8,7 +8,8 @@ import styles from './GlyphsPage.module.css';
 /** 象形文字小字典: common signs to recognise on temple walls. */
 export function GlyphsPage() {
   const progress = useProgress();
-  const [open, setOpen] = useState<string | null>(null);
+  const [params] = useSearchParams();
+  const [open, setOpen] = useState<string | null>(params.get('id'));
   const sel = glyphs.find((g) => g.id === open);
   const seen = glyphs.filter((g) => progress.glyphs[g.id]).length;
   return (

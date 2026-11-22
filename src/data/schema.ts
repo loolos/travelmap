@@ -83,6 +83,11 @@ export const Place = z.object({
   /** Year construction began / it opened (negative = BCE). Links the place into the history timeline. */
   builtYear: z.number().int().optional(),
   activityIds: z.array(z.string()).default([]),
+  /** A few related knowledge pages (一天的身分, 神祇, 象形文字, 美食, 館藏…), shown as chips under 重點. */
+  links: z
+    .array(z.object({ kind: z.enum(['role', 'deity', 'glyph', 'food', 'artifact']), id: z.string() }))
+    .max(3)
+    .default([]),
   sourceIds: z.array(z.string()).default([]),
 });
 

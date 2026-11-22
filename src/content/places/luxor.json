@@ -46,6 +46,20 @@
       "lx-alabaster",
       "lx-balloon"
     ],
+    "links": [
+      {
+        "kind": "role",
+        "id": "housewife"
+      },
+      {
+        "kind": "food",
+        "id": "aish-shamsi"
+      },
+      {
+        "kind": "food",
+        "id": "asab"
+      }
+    ],
     "sourceIds": [
       "wiki-luxor",
       "unesco-thebes",
@@ -111,6 +125,20 @@
     "activityIds": [
       "mummy-order",
       "weighing-heart"
+    ],
+    "links": [
+      {
+        "kind": "role",
+        "id": "artisan"
+      },
+      {
+        "kind": "artifact",
+        "id": "ostraca"
+      },
+      {
+        "kind": "deity",
+        "id": "anubis"
+      }
     ],
     "sourceIds": [
       "wiki-vok",
@@ -206,6 +234,20 @@
     "activityIds": [
       "tut-dig"
     ],
+    "links": [
+      {
+        "kind": "artifact",
+        "id": "tut-mask"
+      },
+      {
+        "kind": "artifact",
+        "id": "tut-canopic"
+      },
+      {
+        "kind": "role",
+        "id": "artisan"
+      }
+    ],
     "sourceIds": [
       "wiki-kv62"
     ],
@@ -267,6 +309,12 @@
     "builtYear": -1350,
     "activityIds": [
       "memnon-song"
+    ],
+    "links": [
+      {
+        "kind": "role",
+        "id": "pharaoh"
+      }
     ],
     "sourceIds": [
       "wiki-memnon"
@@ -332,6 +380,16 @@
     "builtYear": -1400,
     "activityIds": [
       "opet-festival"
+    ],
+    "links": [
+      {
+        "kind": "role",
+        "id": "pharaoh"
+      },
+      {
+        "kind": "deity",
+        "id": "amun"
+      }
     ],
     "sourceIds": [
       "wiki-luxor-temple"
@@ -453,6 +511,20 @@
       "lx-heat"
     ],
     "builtYear": -1950,
+    "links": [
+      {
+        "kind": "role",
+        "id": "priest"
+      },
+      {
+        "kind": "role",
+        "id": "scribe"
+      },
+      {
+        "kind": "deity",
+        "id": "amun"
+      }
+    ],
     "sourceIds": [
       "wiki-karnak",
       "unesco-thebes"

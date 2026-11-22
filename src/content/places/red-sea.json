@@ -52,6 +52,12 @@
       "rs-snorkel",
       "rs-souvenir"
     ],
+    "links": [
+      {
+        "kind": "food",
+        "id": "samak-mashwi"
+      }
+    ],
     "sourceIds": [
       "wiki-red-sea",
       "wiki-hurghada",

@@ -47,6 +47,12 @@
       "an-nubian",
       "an-karkade"
     ],
+    "links": [
+      {
+        "kind": "food",
+        "id": "karkadeh"
+      }
+    ],
     "sourceIds": [
       "wiki-aswan",
       "wiki-eratosthenes",
@@ -105,6 +111,12 @@
       "an-dam-photo"
     ],
     "builtYear": 1960,
+    "links": [
+      {
+        "kind": "role",
+        "id": "farmer"
+      }
+    ],
     "sourceIds": [
       "wiki-aswan-dam",
       "wiki-lake-nasser"
@@ -219,6 +231,20 @@
     "activityIds": [
       "abu-simbel-move"
     ],
+    "links": [
+      {
+        "kind": "role",
+        "id": "pharaoh"
+      },
+      {
+        "kind": "glyph",
+        "id": "cartouche"
+      },
+      {
+        "kind": "deity",
+        "id": "ra"
+      }
+    ],
     "sourceIds": [
       "wiki-abu-simbel",
       "unesco-nubia"
@@ -317,6 +343,16 @@
       "an-temple-photo"
     ],
     "builtYear": -180,
+    "links": [
+      {
+        "kind": "deity",
+        "id": "sobek"
+      },
+      {
+        "kind": "deity",
+        "id": "horus"
+      }
+    ],
     "sourceIds": [
       "wiki-kom-ombo"
     ],
@@ -369,6 +405,12 @@
       "an-temple-photo"
     ],
     "builtYear": 2012,
+    "links": [
+      {
+        "kind": "deity",
+        "id": "sobek"
+      }
+    ],
     "sourceIds": [
       "wiki-kom-ombo",
       "wiki-sobek"
@@ -440,6 +482,20 @@
     "builtYear": -237,
     "activityIds": [
       "horus-set-comic"
+    ],
+    "links": [
+      {
+        "kind": "deity",
+        "id": "horus"
+      },
+      {
+        "kind": "glyph",
+        "id": "falcon"
+      },
+      {
+        "kind": "role",
+        "id": "priest"
+      }
     ],
     "sourceIds": [
       "wiki-edfu"
@@ -522,6 +578,12 @@
       "an-cruise"
     ],
     "builtYear": 1909,
+    "links": [
+      {
+        "kind": "deity",
+        "id": "khnum"
+      }
+    ],
     "sourceIds": [
       "wiki-esna"
     ],
