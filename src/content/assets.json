@@ -764,5 +764,15 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D9%8A%D9%88%D9%85_%D8%AC%D8%AF%D9%8A%D8%AF.jpg",
     "kind": "photo",
     "essential": true
+  },
+  {
+    "id": "alexandria-hero",
+    "path": "media/more/alexandria.webp",
+    "alt": "亞歷山大港邊的奎貝灣城堡",
+    "credit": "Hmkree",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D9%82%D9%84%D8%B9%D8%A9_%D9%82%D8%A7%D9%8A%D8%AA%D8%A8%D8%A7%D9%8A_%D9%85%D9%86_%D8%A7%D9%84%D8%AC%D9%88.jpg",
+    "kind": "photo",
+    "essential": true
   }
 ]
