@@ -111,7 +111,6 @@ export const noteCollections = [
   { id: 'phrases', title: '實用短語', icon: '💬', kind: 'tips' },
   { id: 'souvenirs', title: '紀念品圖鑑', icon: '🎁', kind: 'tips' },
   { id: 'history', title: '歷史小卡', icon: '📜', kind: 'knowledge' },
-  { id: 'food', title: '美食圖鑑', icon: '🍽️', kind: 'knowledge' },
   { id: 'culture', title: '城市與文化', icon: '🏙️', kind: 'knowledge' },
   { id: 'country', title: '埃及現況', icon: '🇪🇬', kind: 'knowledge' },
   { id: 'nile', title: '尼羅河', icon: '🌊', kind: 'knowledge' },
@@ -134,6 +133,41 @@ export const Note = z.object({
   assetId: z.string().optional(),
   /** Sub-heading inside a collection (e.g. 全國 / 努比亞 in 風土人情). */
   area: z.string().optional(),
+});
+
+/** 美食圖鑑 categories, in tab order. */
+export const foodCategories = [
+  { id: 'staple', title: '主食與麵包', icon: '🍞' },
+  { id: 'veg', title: '豆類與蔬菜', icon: '🫘' },
+  { id: 'meat', title: '肉類', icon: '🍖' },
+  { id: 'seafood', title: '海鮮', icon: '🐟' },
+  { id: 'sweet', title: '甜點', icon: '🍯' },
+  { id: 'drink', title: '飲料', icon: '🫖' },
+] as const;
+
+/** A dish or drink in the 美食圖鑑 (photo tile; details on tap). */
+export const Food = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  category: z.enum(foodCategories.map((c) => c.id) as [string, ...string[]]),
+  nameZh: z.string(),
+  nameEn: z.string(),
+  /** Arabic name, to show when ordering. */
+  nameAr: z.string(),
+  icon: z.string(),
+  /** What it is, in one line. */
+  look: z.string(),
+  /** The story behind it (shown on tap). */
+  story: z.string(),
+  /** How to eat or order it. */
+  tip: z.string().optional(),
+  /** Vegetarian (may contain egg or dairy). */
+  veg: z.boolean().default(false),
+  /** Rough price level: 1 street food, 2 restaurant dish, 3 pricier. */
+  budget: z.number().int().min(1).max(3),
+  /** Places on the map that are known for it (regional specialties). */
+  placeIds: z.array(z.string()).default([]),
+  assetId: z.string().optional(),
+  sourceIds: z.array(z.string()).min(1),
 });
 
 /** A museum object in the 館藏圖鑑 (tap a tile for the details). */
@@ -255,6 +289,7 @@ export const Era = z.object({
 
 export type Era = z.infer<typeof Era>;
 export type Artifact = z.infer<typeof Artifact>;
+export type Food = z.infer<typeof Food>;
 export type Place = z.infer<typeof Place>;
 export type Region = z.infer<typeof Region>;
 export type Note = z.infer<typeof Note>;
@@ -277,4 +312,5 @@ export interface ContentBundle {
   glyphs: Glyph[];
   eras: Era[];
   artifacts: Artifact[];
+  foods: Food[];
 }

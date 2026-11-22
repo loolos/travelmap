@@ -1254,5 +1254,225 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_whales_fossils_at_Wadi_El-Hitan,_Egypt_2017.jpg",
     "kind": "photo",
     "essential": true
+  },
+  {
+    "id": "food-aish-baladi-img",
+    "path": "media/food/aish-baladi.webp",
+    "alt": "埃及大餅",
+    "credit": "H. Hakan Atik",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Breakfast_in_Cairo.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "food-aish-shamsi-img",
+    "path": "media/food/aish-shamsi.webp",
+    "alt": "太陽麵包",
+    "credit": "مجهول لكن أسم قناته على اليوتيوب: (بنت الريف في البندر).",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D8%A7%D9%84%D8%B9%D9%8A%D8%B4_%D8%A7%D9%84%D8%B4%D9%85%D8%B3%D9%8A.png",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "food-feteer-img",
+    "path": "media/food/feteer.webp",
+    "alt": "千層派餅",
+    "credit": "Mohamed Ouda",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Egyptian-food-16.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "food-macarona-bechamel-img",
+    "path": "media/food/macarona-bechamel.webp",
+    "alt": "白醬焗麵",
+    "credit": "Zebi2424",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Macarona_bechamel.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "food-roz-shareya-img",
+    "path": "media/food/roz-shareya.webp",
+    "alt": "細麵米飯",
+    "credit": "El Mono Español",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arabic_rice.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "food-baba-ghanoug-img",
+    "path": "media/food/baba-ghanoug.webp",
+    "alt": "烤茄子泥",
+    "credit": "Breville USA",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Baba_Ganoush_05of05_(8735238183).jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "food-torshi-img",
+    "path": "media/food/torshi.webp",
+    "alt": "埃及醃菜",
+    "credit": "Losttraveller",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Torshi_Karoleen_Lindberg.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "food-hawawshi-img",
+    "path": "media/food/hawawshi.webp",
+    "alt": "埃及肉餅",
+    "credit": "Mkevy",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Egyptian_meatloaf.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "food-hamam-mahshi-img",
+    "path": "media/food/hamam-mahshi.webp",
+    "alt": "鑲鴿子",
+    "credit": "medea_material",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hamam_mahshi.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "food-kebda-img",
+    "path": "media/food/kebda.webp",
+    "alt": "亞歷山大炒肝",
+    "credit": "Dalia fathallah",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kebda_Iskandarani(_Alexandria_Liver)_sandowichs.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "food-sayadeya-img",
+    "path": "media/food/sayadeya.webp",
+    "alt": "漁夫飯",
+    "credit": "young shanahan",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fish_Sayadieh.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "food-feseekh-img",
+    "path": "media/food/feseekh.webp",
+    "alt": "發酵鹹魚",
+    "credit": "Faris knight",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fesikh_of_Desouk.JPG",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "food-konafa-img",
+    "path": "media/food/konafa.webp",
+    "alt": "庫納法",
+    "credit": "elif ayse",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:K%C3%BCnefe.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "food-basbousa-img",
+    "path": "media/food/basbousa.webp",
+    "alt": "粗麥蛋糕",
+    "credit": "stu_spivack",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Basboosa.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "food-karkadeh-img",
+    "path": "media/food/karkadeh.webp",
+    "alt": "洛神花茶",
+    "credit": "MRG90",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chai_torsh_-_Hibiscus_tea.png",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "food-asab-img",
+    "path": "media/food/asab.webp",
+    "alt": "甘蔗汁",
+    "credit": "https://arz.wikipedia.org/wiki/%D9%85%D8%B3%D8%AA%D8%AE%D8%AF%D9%85:Raafat",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sugar_cane_juice1.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "food-sahlab-img",
+    "path": "media/food/sahlab.webp",
+    "alt": "沙勒布熱奶",
+    "credit": "DesignbyNur",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salep_drink.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "food-kofta-img",
+    "path": "media/food/kofta.webp",
+    "alt": "烤肉串",
+    "credit": "Mona Abo-Abda",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grilled_Kofta.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "food-shawarma-img",
+    "path": "media/food/shawarma.webp",
+    "alt": "沙威瑪",
+    "credit": "Vis M",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shawarma_2.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "food-bolti-img",
+    "path": "media/food/bolti.webp",
+    "alt": "尼羅河吳郭魚",
+    "credit": "Ganesh Dhamodkar",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fried_Tilapia_Fish.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "food-zalabya-img",
+    "path": "media/food/zalabya.webp",
+    "alt": "炸蜜球",
+    "credit": "elif ayse",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sam%27dan_lokma_tatlisi.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "food-ahwa-img",
+    "path": "media/food/ahwa.webp",
+    "alt": "埃及咖啡",
+    "credit": "Eaeeae",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:T%C3%BCrk_Kahvesi_-_Bakir_Cezve.jpg",
+    "kind": "photo",
+    "essential": true
   }
 ]

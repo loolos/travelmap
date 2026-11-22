@@ -1,10 +1,10 @@
 export type InlineSegment =
   | { type: 'text'; text: string }
-  | { type: 'link'; text: string; kind: 'place' | 'activity' | 'note'; id: string };
+  | { type: 'link'; text: string; kind: 'place' | 'activity' | 'note' | 'food'; id: string };
 
-const LINK_RE = /\[([^\]]+)\]\((place|activity|note):([a-z0-9-]+)\)/g;
+const LINK_RE = /\[([^\]]+)\]\((place|activity|note|food):([a-z0-9-]+)\)/g;
 
-/** Parse "[文字](place:id)" style inline links. */
+/** Parse "[文字](place:id)" style inline links (kinds: place, activity, note, food). */
 export function parseInline(src: string): InlineSegment[] {
   const out: InlineSegment[] = [];
   let last = 0;
