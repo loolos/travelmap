@@ -93,7 +93,21 @@ export function PlacePanel({ place, wide, state, onExpand, onCollapse, onClose }
             {place.nameEn}
           </p>
         </div>
-        <p className={styles.question}>{place.question}</p>
+        {ready ? (
+          <button
+            type="button"
+            className={`${styles.question} ${styles.questionBtn}`}
+            aria-expanded={tab === 'facts'}
+            onClick={() => pick('facts')}
+          >
+            {place.question}
+            <span className={styles.qChev} aria-hidden="true">
+              {tab === 'facts' ? '▴' : '▾'}
+            </span>
+          </button>
+        ) : (
+          <p className={styles.question}>{place.question}</p>
+        )}
 
         {ready ? (
           <>

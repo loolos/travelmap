@@ -167,6 +167,22 @@
   font-weight: 600;
   color: var(--lapis);
 }
+.questionBtn {
+  display: block;
+  width: calc(100% - 32px);
+  padding: 0;
+  border: 0;
+  background: none;
+  font-family: inherit;
+  line-height: 1.4;
+  text-align: left;
+  cursor: pointer;
+}
+.qChev {
+  margin-left: 6px;
+  font-size: 13px;
+  opacity: 0.6;
+}
 .tabs {
   display: flex;
   flex-wrap: wrap;
