@@ -776,36 +776,6 @@
     "essential": true
   },
   {
-    "id": "hl-karnak-rams",
-    "path": "media/highlights/karnak-rams.webp",
-    "alt": "公羊頭獅身像大道",
-    "credit": "Alx R",
-    "license": "CC BY 3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Egypt,_Luxor,_Karnak_temple_complex_-_panoramio_-_Alx_R_(4)_(lintel).jpg",
-    "kind": "photo",
-    "essential": true
-  },
-  {
-    "id": "hl-karnak-pylon",
-    "path": "media/highlights/karnak-pylon.webp",
-    "alt": "卡納克第一塔門",
-    "credit": "Ad Meskens",
-    "license": "CC BY-SA 3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pylons_and_obelisk_Luxor_temple.JPG",
-    "kind": "photo",
-    "essential": true
-  },
-  {
-    "id": "hl-karnak-obelisk",
-    "path": "media/highlights/karnak-obelisk.webp",
-    "alt": "卡納克的方尖碑",
-    "credit": "Ad Meskens",
-    "license": "CC BY-SA 3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pylons_and_obelisk_Luxor_temple.JPG",
-    "kind": "photo",
-    "essential": true
-  },
-  {
     "id": "hl-red-chapel",
     "path": "media/highlights/red-chapel.webp",
     "alt": "哈特謝普蘇特的紅色小禮拜堂",
@@ -852,16 +822,6 @@
     "credit": "Marc Ryckaert",
     "license": "CC BY 3.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Abu_el-Haggag_R02.jpg",
-    "kind": "photo",
-    "essential": true
-  },
-  {
-    "id": "hl-as-nefertari",
-    "path": "media/highlights/as-nefertari.webp",
-    "alt": "阿布辛貝小神殿",
-    "credit": "John Beasly Greene (American, born France, 1832 - 1856) (1832 - 1856) – photographer (American) Details on Google Art Project",
-    "license": "Public domain",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:John_Beasly_Greene_(American,_born_France_-_(Ibsamboul,_St%C3%A8le_%C3%A0_Droite_du_Temple_d%27Hathor)_-_Google_Art_Project.jpg",
     "kind": "photo",
     "essential": true
   },

@@ -509,53 +509,6 @@
       "alt": "錫瓦綠洲"
     },
     {
-      "assetId": "hl-karnak-rams",
-      "article": "Karnak",
-      "match": "ram|criosphinx|sphinx",
-      "dest": "media/highlights/karnak-rams.webp",
-      "alt": "公羊頭獅身像大道",
-      "width": 720
-    },
-    {
-      "assetId": "hl-karnak-pylon",
-      "article": "Karnak",
-      "match": "pylon",
-      "dest": "media/highlights/karnak-pylon.webp",
-      "alt": "卡納克第一塔門",
-      "width": 720
-    },
-    {
-      "assetId": "hl-karnak-obelisk",
-      "article": "Karnak",
-      "match": "obelisk",
-      "dest": "media/highlights/karnak-obelisk.webp",
-      "alt": "卡納克的方尖碑",
-      "width": 720
-    },
-    {
-      "assetId": "hl-karnak-lake",
-      "article": "Karnak",
-      "match": "lake",
-      "dest": "media/highlights/karnak-lake.webp",
-      "alt": "卡納克聖湖",
-      "width": 720
-    },
-    {
-      "assetId": "hl-karnak-scarab",
-      "article": "Karnak",
-      "match": "scarab",
-      "dest": "media/highlights/karnak-scarab.webp",
-      "alt": "卡納克的聖甲蟲像",
-      "width": 720
-    },
-    {
-      "assetId": "hl-akh-menu",
-      "article": "Akh-menu",
-      "dest": "media/highlights/akh-menu.webp",
-      "alt": "圖特摩斯三世節慶殿",
-      "width": 720
-    },
-    {
       "assetId": "hl-red-chapel",
       "article": "Red Chapel of Hatshepsut",
       "dest": "media/highlights/red-chapel.webp",
@@ -591,54 +544,6 @@
       "width": 720
     },
     {
-      "assetId": "hl-lt-colossus",
-      "article": "Luxor Temple",
-      "match": "Ramesses|Ramses|Rameses|colossus|colossi",
-      "dest": "media/highlights/lt-colossus.webp",
-      "alt": "路克索神殿的拉美西斯二世巨像",
-      "width": 720
-    },
-    {
-      "assetId": "hl-lt-colonnade",
-      "article": "Luxor Temple",
-      "match": "colonnade",
-      "dest": "media/highlights/lt-colonnade.webp",
-      "alt": "路克索神殿柱廊",
-      "width": 720
-    },
-    {
-      "assetId": "hl-lt-roman",
-      "article": "Luxor Temple",
-      "match": "roman|fresco|tetrarch|imperial",
-      "dest": "media/highlights/lt-roman.webp",
-      "alt": "路克索神殿的羅馬壁畫",
-      "width": 720
-    },
-    {
-      "assetId": "hl-lt-alexander",
-      "article": "Luxor Temple",
-      "match": "alexander",
-      "dest": "media/highlights/lt-alexander.webp",
-      "alt": "亞歷山大大帝的聖船殿浮雕",
-      "width": 720
-    },
-    {
-      "assetId": "hl-as-nefertari",
-      "article": "Abu Simbel temples",
-      "match": "nefertari|small.?temple|hathor",
-      "dest": "media/highlights/as-nefertari.webp",
-      "alt": "阿布辛貝小神殿",
-      "width": 720
-    },
-    {
-      "assetId": "hl-as-kadesh",
-      "article": "Battle of Kadesh",
-      "match": "abu.?simbel",
-      "dest": "media/highlights/as-kadesh.webp",
-      "alt": "阿布辛貝的卡疊石戰役浮雕",
-      "width": 720
-    },
-    {
       "assetId": "hl-edfu-naos",
       "article": "Temple of Edfu",
       "match": "naos|sanctuary|barque|boat|shrine",
@@ -651,14 +556,6 @@
       "article": "Khufu ship",
       "dest": "media/highlights/khufu-ship.webp",
       "alt": "胡夫太陽船",
-      "width": 720
-    },
-    {
-      "assetId": "hl-khufu-gallery",
-      "article": "Great Pyramid of Giza",
-      "match": "grand.?gallery",
-      "dest": "media/highlights/khufu-gallery.webp",
-      "alt": "胡夫金字塔大走廊",
       "width": 720
     },
     {
@@ -680,6 +577,94 @@
       "article": "KV11",
       "dest": "media/highlights/kv11.webp",
       "alt": "拉美西斯三世墓",
+      "width": 720
+    },
+    {
+      "assetId": "hl-karnak-pylon",
+      "article": "(file)",
+      "file": "Karnak first pylon.jpg",
+      "dest": "media/highlights/karnak-pylon.webp",
+      "alt": "卡納克第一塔門",
+      "width": 720
+    },
+    {
+      "assetId": "hl-karnak-obelisk",
+      "article": "(file)",
+      "file": "Obeslisk karnak.jpg",
+      "dest": "media/highlights/karnak-obelisk.webp",
+      "alt": "卡納克的方尖碑",
+      "width": 720
+    },
+    {
+      "assetId": "hl-karnak-lake",
+      "article": "(file)",
+      "file": "Lago sagrado de Karnak, Egipto. Marzo de 2008.jpg",
+      "dest": "media/highlights/karnak-lake.webp",
+      "alt": "卡納克聖湖",
+      "width": 720
+    },
+    {
+      "assetId": "hl-karnak-rams",
+      "article": "(file)",
+      "file": "Parvis Karnak.jpg",
+      "dest": "media/highlights/karnak-rams.webp",
+      "alt": "卡納克入口前的公羊頭獅身像",
+      "width": 720
+    },
+    {
+      "assetId": "hl-lt-pylon",
+      "article": "(file)",
+      "file": "Pylons and obelisk Luxor temple.JPG",
+      "dest": "media/highlights/lt-pylon.webp",
+      "alt": "路克索神殿塔門、方尖碑與拉美西斯二世巨像",
+      "width": 720
+    },
+    {
+      "assetId": "hl-lt-colossus",
+      "article": "(file)",
+      "file": "تمثال رمسيس الثانى - معبد الاقصر.jpg",
+      "dest": "media/highlights/lt-colossus.webp",
+      "alt": "路克索神殿的拉美西斯二世像",
+      "width": 720
+    },
+    {
+      "assetId": "hl-as-nefertari",
+      "article": "(file)",
+      "file": "Nefertari Temple Abu Simbel May 30 2007.jpg",
+      "dest": "media/highlights/as-nefertari.webp",
+      "alt": "阿布辛貝小神殿正面",
+      "width": 720
+    },
+    {
+      "assetId": "hl-as-head",
+      "article": "(file)",
+      "file": "Collapsed Colossus.jpg",
+      "dest": "media/highlights/as-head.webp",
+      "alt": "阿布辛貝大神殿崩落的巨像頭部",
+      "width": 720
+    },
+    {
+      "assetId": "hl-as-sanctuary",
+      "article": "(file)",
+      "file": "Abu Simbel temple, four statues of divinities in sanctuary.jpg",
+      "dest": "media/highlights/as-sanctuary.webp",
+      "alt": "阿布辛貝聖殿裡的四尊神像",
+      "width": 720
+    },
+    {
+      "assetId": "hl-khufu-chamber",
+      "article": "(file)",
+      "file": "Chambre-roi-grande-pyramide.jpg",
+      "dest": "media/highlights/khufu-chamber.webp",
+      "alt": "胡夫金字塔國王墓室",
+      "width": 720
+    },
+    {
+      "assetId": "hl-khufu-entrance",
+      "article": "(file)",
+      "file": "Cheops-Pyramid@Eingaenge.JPG",
+      "dest": "media/highlights/khufu-entrance.webp",
+      "alt": "胡夫金字塔的原始入口與盜洞",
       "width": 720
     }
   ]
