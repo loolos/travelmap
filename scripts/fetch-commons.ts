@@ -7,7 +7,7 @@ import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import sharp from 'sharp';
 
-interface Entry { assetId: string; article: string; match?: string; dest: string; alt: string; width?: number }
+interface Entry { assetId: string; article: string; match?: string; file?: string; dest: string; alt: string; width?: number }
 const UA = 'travelmap-build/1.0 (https://github.com/loolos/travelmap)';
 const cfg = JSON.parse(readFileSync('scripts/commons-images.json', 'utf8')) as { images: Entry[] };
 const assetsPath = 'src/content/assets.json';
@@ -26,7 +26,9 @@ let failures = 0;
 for (const e of cfg.images) {
   try {
     let file: string | undefined;
-    if (e.match) {
+    if (e.file) {
+      file = e.file.replace(/^File:/, '');
+    } else if (e.match) {
       const re = new RegExp(e.match, 'i');
       const imgs = await api('en.wikipedia.org', { action: 'query', prop: 'images', imlimit: '100', titles: e.article, redirects: '1' });
       const hit = ((imgs.query.pages[0]?.images ?? []) as { title: string }[]).find((r) => re.test(r.title));
