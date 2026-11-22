@@ -51,6 +51,10 @@
       {
         "kind": "food",
         "id": "karkadeh"
+      },
+      {
+        "kind": "arabic",
+        "id": "shop"
       }
     ],
     "sourceIds": [

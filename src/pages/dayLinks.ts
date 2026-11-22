@@ -1,8 +1,9 @@
 import { activities, artifacts, deities, foods, glyphs, placeById } from '../data/content';
 import { dayRoleById, type DayLink } from './dayData';
+import { phraseGroups } from './arabicData';
 
 /** Where a link inside a moment goes, and what it is called. Undefined = broken (caught by the test). */
-export function resolveDayLink(l: DayLink): { to: string; label: string } | undefined {
+export function resolveDayLink(l: DayLink | { kind: 'arabic'; id: string }): { to: string; label: string } | undefined {
   switch (l.kind) {
     case 'place': {
       const p = placeById.get(l.id);
@@ -27,6 +28,10 @@ export function resolveDayLink(l: DayLink): { to: string; label: string } | unde
     case 'glyph': {
       const g = glyphs.find((x) => x.id === l.id);
       return g && { to: `/glyphs?id=${g.id}`, label: `☥ ${g.nameZh}` };
+    }
+    case 'arabic': {
+      const g = phraseGroups.find((x) => x.id === l.id);
+      return g && { to: `/arabic?c=${g.id}`, label: `💬 阿拉伯語：${g.title}` };
     }
     case 'role': {
       const r = dayRoleById.get(l.id);

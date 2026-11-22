@@ -45,6 +45,10 @@
       {
         "kind": "food",
         "id": "hawawshi"
+      },
+      {
+        "kind": "arabic",
+        "id": "shop"
       }
     ],
     "sourceIds": [
