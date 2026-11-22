@@ -1,0 +1,154 @@
+.lead {
+  margin: 0 0 10px;
+  color: var(--muted);
+}
+.roleTile {
+  text-decoration: none;
+  color: var(--ink);
+}
+.tag {
+  font-size: 12px;
+  color: var(--muted);
+}
+.head {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 8px;
+}
+.back {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: #fff;
+  color: var(--ink);
+  font-size: 22px;
+  line-height: 1;
+}
+.role {
+  margin: 0;
+  font-size: 18px;
+}
+.scene {
+  display: block;
+  width: 100%;
+  border-radius: 14px;
+  background: var(--panel-2);
+}
+.sun {
+  transition: transform 0.6s ease;
+}
+.steps {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  margin: 10px 0;
+  padding: 0;
+}
+.step {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: #fff;
+  font-size: 20px;
+  opacity: 0.55;
+}
+.stepDone {
+  opacity: 0.85;
+}
+.stepOn {
+  opacity: 1;
+  border-color: var(--lapis);
+  box-shadow: 0 0 0 2px var(--lapis) inset;
+}
+.card {
+  border-radius: 14px;
+  background: var(--panel-2);
+}
+.cardHead {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  min-height: 56px;
+  padding: 10px 14px;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  text-align: left;
+}
+.time {
+  flex: none;
+  font-size: 13px;
+  color: var(--gold);
+  font-weight: 700;
+}
+.title {
+  flex: 1;
+  font-size: 18px;
+  font-weight: 700;
+}
+.more {
+  color: var(--muted);
+}
+.body {
+  padding: 0 14px 10px;
+}
+.body p {
+  margin: 0 0 8px;
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 10px;
+  border-radius: 18px;
+  background: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 10px 0 14px;
+}
+.nav button {
+  flex: 1;
+}
+.nav button:disabled {
+  opacity: 0.4;
+}
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.fact {
+  min-height: 40px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: #fff;
+  color: var(--ink);
+  font-size: 14px;
+}
+.factOn {
+  background: var(--lapis);
+  border-color: var(--lapis);
+  color: #fff;
+}
+.factText {
+  margin: 8px 0 0;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: #fff;
+}

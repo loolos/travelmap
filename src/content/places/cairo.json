@@ -37,6 +37,16 @@
       "sv-papyrus"
     ],
     "builtYear": 969,
+    "links": [
+      {
+        "kind": "food",
+        "id": "koshari"
+      },
+      {
+        "kind": "food",
+        "id": "hawawshi"
+      }
+    ],
     "sourceIds": [
       "wiki-cairo",
       "unesco-historic-cairo",
@@ -179,6 +189,10 @@
     "heroAssetId": "mosque-hero",
     "activityIds": [
       "mosque-dome-lab"
+    ],
+    "readIds": [
+      "cu-prayer",
+      "cu-ramadan"
     ]
   }
 ]

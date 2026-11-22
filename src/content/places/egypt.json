@@ -52,6 +52,12 @@
       "hist-muhammad-ali",
       "hist-1952"
     ],
+    "links": [
+      {
+        "kind": "food",
+        "id": "aish-baladi"
+      }
+    ],
     "sourceIds": [
       "wiki-egypt",
       "worldbank-egypt",
@@ -132,6 +138,16 @@
     "activityIds": [
       "nile-year",
       "nile-floodplain"
+    ],
+    "links": [
+      {
+        "kind": "role",
+        "id": "farmer"
+      },
+      {
+        "kind": "deity",
+        "id": "sobek"
+      }
     ],
     "sourceIds": [
       "wiki-nile",

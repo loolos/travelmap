@@ -50,6 +50,20 @@
       "gem-security"
     ],
     "builtYear": 2025,
+    "links": [
+      {
+        "kind": "role",
+        "id": "artisan"
+      },
+      {
+        "kind": "artifact",
+        "id": "tut-mask"
+      },
+      {
+        "kind": "artifact",
+        "id": "khufu-boat"
+      }
+    ],
     "sourceIds": [
       "wiki-gem"
     ],
@@ -120,6 +134,16 @@
     "activityIds": [
       "pyramid-build",
       "khufu-interior"
+    ],
+    "links": [
+      {
+        "kind": "artifact",
+        "id": "khufu-boat"
+      },
+      {
+        "kind": "role",
+        "id": "farmer"
+      }
     ],
     "sourceIds": [
       "wiki-khufu",
@@ -342,6 +366,16 @@
       "giza-camel"
     ],
     "builtYear": -2550,
+    "links": [
+      {
+        "kind": "deity",
+        "id": "horus"
+      },
+      {
+        "kind": "deity",
+        "id": "ra"
+      }
+    ],
     "sourceIds": [
       "wiki-sphinx",
       "unesco-memphis"

@@ -43,6 +43,12 @@
       "wd-dates",
       "wd-temperature"
     ],
+    "links": [
+      {
+        "kind": "food",
+        "id": "dates"
+      }
+    ],
     "sourceIds": [
       "wiki-bahariya"
     ],
@@ -258,6 +264,12 @@
       "wd-night",
       "wd-temperature"
     ],
+    "links": [
+      {
+        "kind": "food",
+        "id": "shai"
+      }
+    ],
     "sourceIds": [
       "wiki-sirius",
       "wiki-khufu"
@@ -267,7 +279,8 @@
     ],
     "readIds": [
       "sahara-dry",
-      "cu-bedouin"
+      "cu-bedouin",
+      "cu-tea"
     ]
   }
 ]
