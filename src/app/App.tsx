@@ -11,6 +11,7 @@ import { PrepPage } from '../pages/PrepPage';
 import { DeitiesPage } from '../pages/DeitiesPage';
 import { GlyphsPage } from '../pages/GlyphsPage';
 import { CollectionPage } from '../pages/CollectionPage';
+import { FoodPage } from '../pages/FoodPage';
 import { TimelinePage } from '../pages/TimelinePage';
 import { OfflinePage } from '../offline/OfflinePage';
 import { Sheet } from './Sheet';
@@ -125,6 +126,18 @@ export function App() {
                 <CollectionPage />
               </Sheet>
             }
+          />
+          <Route
+            path="/food/:foodId?"
+            element={
+              <Sheet title="美食圖鑑">
+                <FoodPage />
+              </Sheet>
+            }
+          />
+          <Route
+            path="/knowledge/food"
+            element={<Navigate to="/food" replace />}
           />
           <Route
             path="/timeline/:eraId?"

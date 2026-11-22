@@ -13,7 +13,9 @@ export function InlineText({ text }: { text: string }) {
             ? `/place/${s.id}`
             : s.kind === 'activity'
               ? `/place/${activityById.get(s.id)?.placeId}/${s.id}`
-              : noteLink(s.id);
+              : s.kind === 'food'
+                ? `/food/${s.id}`
+                : noteLink(s.id);
         return (
           <Link key={i} to={to}>
             {s.text}

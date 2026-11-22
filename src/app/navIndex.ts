@@ -1,5 +1,5 @@
-import { activities, artifacts, deities, eras, glyphs, notes, placesByRegion, regions } from '../data/content';
-import { noteCollections } from '../data/schema';
+import { activities, artifacts, deities, eras, foods, glyphs, notes, placesByRegion, regions } from '../data/content';
+import { foodCategories, noteCollections } from '../data/schema';
 
 export interface NavItem {
   id: string;
@@ -111,6 +111,14 @@ export function buildNavIndex(): NavGroup[] {
             sub: 'Museum highlights',
             terms: ['museum', 'collection', '博物館', '藏品', '文物', ...artifacts.flatMap((a) => [a.nameZh, a.nameEn])],
             icon: '🏛️',
+          },
+          {
+            id: 'food',
+            to: '/food',
+            label: '美食圖鑑',
+            sub: 'Egyptian food',
+            terms: ['food', 'dish', '吃', '小吃', '甜點', '飲料', ...foodCategories.map((c) => c.title), ...foods.flatMap((f) => [f.nameZh, f.nameEn])],
+            icon: '🍽️',
           },
           { ...timelineItem, id: 'timeline-knowledge' },
           {

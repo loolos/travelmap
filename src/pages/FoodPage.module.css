@@ -1,0 +1,52 @@
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 12px;
+}
+.tab {
+  flex: none;
+  min-height: 40px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: #fff;
+  color: var(--ink);
+  font-size: 14px;
+  white-space: nowrap;
+}
+.tabOn {
+  background: var(--lapis);
+  border-color: var(--lapis);
+  color: #fff;
+  font-weight: 600;
+}
+.pin {
+  font-size: 11px;
+}
+.ar {
+  margin: 4px 0 0;
+  font-size: 22px;
+  text-align: left;
+}
+.look {
+  margin: 4px 0 0;
+  color: var(--muted);
+}
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 8px 0 0;
+  font-size: 13px;
+}
+.badges span {
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: #fff;
+}
+.tip {
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: #fff;
+}
