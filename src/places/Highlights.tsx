@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import type { Place } from '../data/schema';
 import { assetById, assetUrl } from '../data/content';
 import styles from './PlacePanel.module.css';
@@ -6,6 +6,10 @@ import styles from './PlacePanel.module.css';
 /** 看點: tiles for notable objects inside a site (icon + short name); detail and photo show on tap. */
 export function Highlights({ items }: { items: Place['highlights'] }) {
   const [open, setOpen] = useState<string | null>(null);
+  const card = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (open) card.current?.scrollIntoView?.({ block: 'nearest', behavior: 'smooth' });
+  }, [open]);
   if (!items.length) return null;
   const cur = items.find((h) => h.id === open);
   const asset = cur?.assetId ? assetById.get(cur.assetId) : undefined;
@@ -27,7 +31,7 @@ export function Highlights({ items }: { items: Place['highlights'] }) {
         ))}
       </div>
       {cur && (
-        <div className={styles.hlCard} aria-live="polite">
+        <div ref={card} className={styles.hlCard} aria-live="polite">
           {asset && src && (
             <figure>
               <img src={src} alt={asset.alt} loading="lazy" />
