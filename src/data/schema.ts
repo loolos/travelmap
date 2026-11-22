@@ -38,6 +38,17 @@ export const FindItem = z.object({
   deityId: z.string().optional(),
 });
 
+/** A notable object or spot inside a site (obelisk, hall, statue…): tile label on 重點, detail on tap. */
+export const Highlight = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  /** Tile label, 2–8 字. */
+  name: z.string(),
+  icon: z.string(),
+  /** Detail shown on tap. */
+  text: z.string(),
+  assetId: z.string().optional(),
+});
+
 export const Place = z.object({
   id: z.string().regex(/^[a-z0-9-]+$/),
   nameZh: z.string(),
@@ -63,6 +74,8 @@ export const Place = z.object({
   /** Non-history facts (geography, nature, today), shown as icon chips and revealed on tap. */
   aspects: z.array(z.object({ kind: z.enum(['geo', 'nature', 'today']), text: z.string() })).default([]),
   findItems: z.array(FindItem).default([]),
+  /** Notable objects / spots inside the site (看點), revealed on tap. */
+  highlights: z.array(Highlight).default([]),
   /** Practical traveler tips (旅人手記 tab). */
   noteIds: z.array(z.string()).default([]),
   /** Background knowledge cards, listed under 重點 as 延伸知識. */

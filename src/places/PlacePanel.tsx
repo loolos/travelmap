@@ -9,6 +9,7 @@ import { InlineText } from './InlineText';
 import { PriceLine } from './Price';
 import { FindList } from './FindList';
 import { Aspects } from './Aspects';
+import { Highlights } from './Highlights';
 import styles from './PlacePanel.module.css';
 
 type Tab = 'facts' | 'find' | 'notes';
@@ -146,6 +147,7 @@ export function PlacePanel({ place, wide, state, onExpand, onCollapse, onClose }
                     </li>
                   ))}
                 </ol>
+                <Highlights key={`hl-${place.id}`} items={place.highlights} />
                 <Aspects key={place.id} items={place.aspects} />
                 {place.readIds.length > 0 && (
                   <div className={styles.reads}>

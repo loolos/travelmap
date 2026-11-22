@@ -774,5 +774,175 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D9%82%D9%84%D8%B9%D8%A9_%D9%82%D8%A7%D9%8A%D8%AA%D8%A8%D8%A7%D9%8A_%D9%85%D9%86_%D8%A7%D9%84%D8%AC%D9%88.jpg",
     "kind": "photo",
     "essential": true
+  },
+  {
+    "id": "hl-red-chapel",
+    "path": "media/highlights/red-chapel.webp",
+    "alt": "哈特謝普蘇特的紅色小禮拜堂",
+    "credit": "Jon Bodsworth, edited by 83d40m",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Red_chapel_of_Hatshepsut_at_karnak_83d40m_egyptarchiveUKkarnak62.JPG",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "hl-avenue",
+    "path": "media/highlights/avenue.webp",
+    "alt": "人面獅身像大道",
+    "credit": "Holger Uwe Schmitt",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1300_Sphinxen_s%C3%A4umten_urspr%C3%BCnglich_die_Allee._07.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "hl-paris-obelisk",
+    "path": "media/highlights/paris-obelisk.webp",
+    "alt": "巴黎協和廣場上的路克索方尖碑",
+    "credit": "Craig Booth from Leiden, Netherlands",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paris,_Obelisk_in_the_Place_de_la_Concorde,_July_22,_2008.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "hl-abu-haggag",
+    "path": "media/highlights/abu-haggag.webp",
+    "alt": "阿布·哈加格清真寺",
+    "credit": "Marc Ryckaert",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Abu_el-Haggag_R02.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "hl-edfu-naos",
+    "path": "media/highlights/edfu-naos.webp",
+    "alt": "艾德夫神殿聖殿神龕",
+    "credit": "timsdad",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Temple_of_Edfu_sanctuary.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "hl-khufu-ship",
+    "path": "media/highlights/khufu-ship.webp",
+    "alt": "胡夫太陽船",
+    "credit": "Matthäus Wander",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:GEM_Khufus_Boat_front_2025.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "hl-kv17",
+    "path": "media/highlights/kv17.webp",
+    "alt": "塞提一世墓",
+    "credit": "Carole Raddato from Frankfurt, Germany",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:KV17,_the_tomb_of_Pharaoh_Seti_I_of_the_Nineteenth_Dynasty,_Valley_of_the_Kings,_Egypt_(49846343021).jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "hl-kv9",
+    "path": "media/highlights/kv9.webp",
+    "alt": "拉美西斯六世墓的天花板",
+    "credit": "Diego Delso",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tumba_de_Rams%C3%A9s_V_y_de_Rams%C3%A9s_VI,_Valle_de_las_Reyes,_Luxor,_Egipto,_2022-04-03,_DD_54.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "hl-kv11",
+    "path": "media/highlights/kv11.webp",
+    "alt": "拉美西斯三世墓",
+    "credit": "R Prazeres",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:KV11_Tomb_of_Ramses_III_DSCF2941.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "hl-karnak-obelisk",
+    "path": "media/highlights/karnak-obelisk.webp",
+    "alt": "卡納克的方尖碑",
+    "credit": "Guillaume Lelarge",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Obeslisk_karnak.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "hl-karnak-lake",
+    "path": "media/highlights/karnak-lake.webp",
+    "alt": "卡納克聖湖",
+    "credit": "Alonso de Mendoza",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lago_sagrado_de_Karnak,_Egipto._Marzo_de_2008.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "hl-karnak-pylon",
+    "path": "media/highlights/karnak-pylon.webp",
+    "alt": "卡納克神殿第一塔門",
+    "credit": "No machine-readable author provided. Neithsabes assumed (based on copyright claims).",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parvis_Karnak.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "hl-lt-pylon",
+    "path": "media/highlights/lt-pylon.webp",
+    "alt": "路克索神殿塔門、方尖碑與拉美西斯二世巨像",
+    "credit": "Ad Meskens",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pylons_and_obelisk_Luxor_temple.JPG",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "hl-lt-colossus",
+    "path": "media/highlights/lt-colossus.webp",
+    "alt": "路克索神殿的拉美西斯二世像",
+    "credit": "Mohamed kamal 1984",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D8%AA%D9%85%D8%AB%D8%A7%D9%84_%D8%B1%D9%85%D8%B3%D9%8A%D8%B3_%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%89_-_%D9%85%D8%B9%D8%A8%D8%AF_%D8%A7%D9%84%D8%A7%D9%82%D8%B5%D8%B1.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "hl-as-nefertari",
+    "path": "media/highlights/as-nefertari.webp",
+    "alt": "阿布辛貝小神殿正面",
+    "credit": "Than217 at English Wikipedia",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nefertari_Temple_Abu_Simbel_May_30_2007.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "hl-as-sanctuary",
+    "path": "media/highlights/as-sanctuary.webp",
+    "alt": "阿布辛貝聖殿裡的四尊神像",
+    "credit": "UNESCO",
+    "license": "CC BY-SA 3.0 igo",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Abu_Simbel_temple,_four_statues_of_divinities_in_sanctuary.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "hl-khufu-entrance",
+    "path": "media/highlights/khufu-entrance.webp",
+    "alt": "胡夫金字塔的原始入口與盜洞",
+    "credit": "Hajotthu",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cheops-Pyramid@Eingaenge.JPG",
+    "kind": "photo",
+    "essential": true
   }
 ]
