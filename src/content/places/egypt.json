@@ -125,7 +125,9 @@
       "nile-seasons",
       "nile-nilometer",
       "nile-hapi-god",
-      "nile-dam-change"
+      "nile-dam-change",
+      "sahara-kemet",
+      "sahara-green"
     ],
     "activityIds": [
       "nile-year"
@@ -137,5 +139,94 @@
       "wiki-flooding-nile"
     ],
     "heroAssetId": "nile-hero"
+  },
+  {
+    "id": "sahara",
+    "nameZh": "撒哈拉沙漠",
+    "nameEn": "Sahara",
+    "shortName": "撒哈拉",
+    "aliases": [
+      "Sahara Desert",
+      "Western Desert",
+      "Libyan Desert",
+      "撒哈拉",
+      "西部沙漠",
+      "沙漠"
+    ],
+    "major": true,
+    "regionId": "egypt",
+    "kind": "geology",
+    "coordinates": {
+      "lat": 25.5,
+      "lon": 26.3
+    },
+    "onItinerary": false,
+    "status": "ready",
+    "question": "撒哈拉以前竟然是一片綠色草原？",
+    "era": "約 1.1 萬～5 千年前是「綠色撒哈拉」",
+    "intro": "橫跨北非十多個國家的大沙漠。埃及尼羅河以西的西部沙漠是它的最東端，也是地球上最乾的地方之一。",
+    "facts": [
+      "世界最大的熱沙漠，約 900 萬平方公里；沙丘只占約四分之一，大多是岩石和礫石。",
+      "埃及九成以上是沙漠：尼羅河以西的西部沙漠屬於撒哈拉，以東還有東部沙漠和西奈。",
+      "約一萬年前這裡有草原和湖泊，變乾後人們遷到[尼羅河](place:nile)邊，見[時光機](activity:sahara-time)。"
+    ],
+    "aspects": [
+      {
+        "kind": "geo",
+        "text": "西部沙漠有一串比四周低的窪地，錫瓦、巴哈利亞、達赫拉、哈里加等綠洲都在裡面。"
+      },
+      {
+        "kind": "nature",
+        "text": "白天地表可超過 50°C、夜裡接近冰點；沙漠狐靠大耳朵散熱，入夜才出來覓食。"
+      },
+      {
+        "kind": "today",
+        "text": "埃及抽深層地下水在沙漠開墾農田，但那是幾萬年前留下的「化石水」，用掉很難補回。"
+      }
+    ],
+    "findItems": [
+      {
+        "id": "sahara-ripples",
+        "text": "沙丘上被風吹出的一道道細沙紋",
+        "hint": "沙紋和風向垂直；沙丘迎風面緩、背風面陡，看得出風從哪來。"
+      },
+      {
+        "id": "sahara-tracks",
+        "text": "清晨沙地上小動物留下的腳印",
+        "hint": "夜裡出來的沙漠狐、甲蟲和跳鼠，腳印在清晨最清楚。"
+      },
+      {
+        "id": "sahara-inselberg",
+        "text": "平地上孤零零立著的岩丘或蘑菇石",
+        "hint": "較硬的岩石沒被風磨掉，在[白沙漠](place:white-desert)最多。"
+      }
+    ],
+    "noteIds": [
+      "sahara-sand",
+      "wd-temperature"
+    ],
+    "readIds": [
+      "sahara-swing",
+      "sahara-green",
+      "sahara-dry",
+      "sahara-wind",
+      "sahara-dunes",
+      "sahara-oasis",
+      "sahara-glass",
+      "sahara-whales",
+      "sahara-kemet",
+      "cu-bedouin",
+      "cu-ababda"
+    ],
+    "activityIds": [
+      "sahara-time"
+    ],
+    "sourceIds": [
+      "wiki-sahara",
+      "wiki-african-humid-period",
+      "wiki-western-desert-egypt",
+      "wiki-great-sand-sea"
+    ],
+    "heroAssetId": "sahara-hero"
   }
 ]

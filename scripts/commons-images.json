@@ -975,6 +975,40 @@
       "dest": "media/customs/evil-eye.webp",
       "alt": "藍眼睛護符",
       "width": 900
+    },
+    {
+      "assetId": "sahara-hero",
+      "article": "Great Sand Sea",
+      "dest": "media/egypt/sahara.webp",
+      "alt": "錫瓦附近，大沙海北緣的沙丘"
+    },
+    {
+      "assetId": "swimmers-photo",
+      "article": "Cave of Swimmers",
+      "dest": "media/photos/cave-of-swimmers.webp",
+      "alt": "吉勒夫高原泳者洞穴的岩畫",
+      "width": 900
+    },
+    {
+      "assetId": "yardang-photo",
+      "article": "Yardang",
+      "dest": "media/photos/yardang.webp",
+      "alt": "風蝕出的雅丹地形",
+      "width": 900
+    },
+    {
+      "assetId": "desert-glass-photo",
+      "article": "Libyan desert glass",
+      "dest": "media/photos/desert-glass.webp",
+      "alt": "利比亞沙漠玻璃",
+      "width": 900
+    },
+    {
+      "assetId": "whales-photo",
+      "article": "Wadi Al-Hitan",
+      "dest": "media/photos/wadi-al-hitan.webp",
+      "alt": "鯨魚谷的古鯨化石",
+      "width": 900
     }
   ]
 }

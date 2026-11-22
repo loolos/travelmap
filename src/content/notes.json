@@ -889,5 +889,80 @@
     "title": "西奈的貝都因人",
     "body": "聖凱瑟琳修道院周圍的 Jebeliya 部落，據說是六世紀派來守護修道院的人的後代。今天帶旅人摸黑登西奈山看日出的嚮導，多半就是他們。",
     "area": "西奈"
+  },
+  {
+    "id": "sahara-sand",
+    "regionId": "egypt",
+    "icon": "💨",
+    "title": "防風沙",
+    "body": "沙子很細，風一吹就鑽進相機和手機。換鏡頭要背對著風，手機裝進夾鏈袋，穿包覆的鞋；墨鏡和圍巾可以擋風沙。"
+  },
+  {
+    "id": "sahara-swing",
+    "regionId": "sahara",
+    "icon": "🔄",
+    "title": "乾濕輪流",
+    "body": "地球自轉軸像陀螺一樣慢慢晃，約兩萬多年一輪，改變北非夏天的日照。日照強時季風雨帶北上，沙漠變綠；轉弱就又乾回去，幾百萬年來反覆了上百次。"
+  },
+  {
+    "id": "sahara-green",
+    "regionId": "sahara",
+    "icon": "🦒",
+    "title": "綠色撒哈拉",
+    "body": "約 1.1 萬到 5 千年前，撒哈拉有湖泊、草原、長頸鹿和河馬。埃及西南角吉勒夫高原的「泳者洞穴」岩畫，就畫著人在水裡游泳。",
+    "assetId": "swimmers-photo"
+  },
+  {
+    "id": "sahara-dry",
+    "regionId": "sahara",
+    "icon": "☀️",
+    "title": "為什麼這麼乾",
+    "body": "撒哈拉位在副熱帶高壓帶，高空空氣往下沉、變暖變乾，很難成雲下雨。埃及西部沙漠有些地方好幾年不下雨，夜空也因此特別清澈。"
+  },
+  {
+    "id": "sahara-wind",
+    "regionId": "sahara",
+    "icon": "🌬️",
+    "title": "風雕出的地形",
+    "body": "風夾著沙貼地吹，磨掉軟岩、留下硬岩：一列列像倒扣船身的「雅丹」、平地上孤立的岩丘，還有白沙漠的蘑菇石。有學者推測人面獅身像最早就是一座雅丹。",
+    "assetId": "yardang-photo"
+  },
+  {
+    "id": "sahara-dunes",
+    "regionId": "sahara",
+    "icon": "🏜️",
+    "title": "大沙海",
+    "body": "埃及和利比亞交界的大沙海約 7 萬平方公里，長條沙丘可綿延上百公里、高達百公尺。新月形沙丘被風推著走，一年可前進十幾公尺。",
+    "assetId": "sahara-hero"
+  },
+  {
+    "id": "sahara-oasis",
+    "regionId": "sahara",
+    "icon": "🌴",
+    "title": "綠洲從哪來",
+    "body": "地底的努比亞砂岩含水層，蓄著幾千到幾十萬年前滲下的雨水。風把地面挖成窪地，離水層夠近，泉水就湧出來，成了巴哈利亞、錫瓦這些綠洲。"
+  },
+  {
+    "id": "sahara-glass",
+    "regionId": "sahara",
+    "icon": "💎",
+    "title": "沙漠玻璃",
+    "body": "大沙海裡散落著淡黃綠色的天然玻璃，約 2,900 萬年前由隕石撞擊或空中爆炸把沙熔化而成。圖坦卡門一件胸飾中央的聖甲蟲，就是用它雕的。",
+    "assetId": "desert-glass-photo"
+  },
+  {
+    "id": "sahara-whales",
+    "regionId": "sahara",
+    "icon": "🐋",
+    "title": "沙漠裡的鯨魚",
+    "body": "開羅西南的鯨魚谷（Wadi al-Hitan）四千萬年前是海，留下數百具古鯨化石，有的還長著小小的後腿，記錄鯨魚從陸地回到海裡。2005 年列入世界遺產。",
+    "assetId": "whales-photo"
+  },
+  {
+    "id": "sahara-kemet",
+    "regionId": "sahara",
+    "icon": "🟫",
+    "title": "黑土與紅土",
+    "body": "古埃及人叫河邊沃土「凱密特」（Kemet，黑土地），叫沙漠「德什雷特」（Deshret，紅土地）。沙漠歸賽特管，也是亡者的世界，所以金字塔和大墓地多蓋在河谷西邊的沙漠邊緣。"
   }
 ]
