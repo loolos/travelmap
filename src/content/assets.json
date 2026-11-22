@@ -792,7 +792,7 @@
     "credit": "Hotepibre at Italian Wikipedia",
     "license": "CC BY-SA 2.5",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shrinesandsarcophagos.png",
-    "kind": "illustration",
+    "kind": "photo",
     "essential": true
   },
   {
@@ -922,6 +922,126 @@
     "credit": "Robert Prazeres",
     "license": "CC BY-SA 4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wiki_city_of_the_dead_DSCF0114_Edit.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "art-obelisk",
+    "path": "media/gem/hanging-obelisk.webp",
+    "alt": "大埃及博物館前的懸空方尖碑",
+    "credit": "Slyronit",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hanging_Obelisk_outside_the_Grand_Egyptian_Museum.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "art-hatshepsut",
+    "path": "media/gem/hatshepsut.webp",
+    "alt": "哈特謝普蘇特雕像",
+    "credit": "Holger Uwe Schmitt",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:50_000_ca._Objekte_zeigt_das_Gro%C3%9Fe_%C3%84gyptische_Museum._11_(Hatshepsut).jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "art-gold-coffin",
+    "path": "media/gem/gold-coffin.webp",
+    "alt": "圖坦卡門的純金內棺",
+    "credit": "Leo Wehrli",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ETH-BIB-Tut-Ank-Amon%27s_Treasures,_Innermost_coffin_of_thick_gold-Dia_247-11135.tif",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "art-canopic",
+    "path": "media/gem/canopic.webp",
+    "alt": "圖坦卡門的內臟神龕",
+    "credit": "Richard Mortel",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Canopic_shrine_of_Tutankhamun,_1333-1323_BCE;_Egyptian_Museum,_Cairo_(2).jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "art-dagger",
+    "path": "media/gem/dagger.webp",
+    "alt": "圖坦卡門的隕鐵匕首",
+    "credit": "Olaf Tausch",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kairo_Museum_Eisendolch_Tutanchamun_01.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "art-chariot",
+    "path": "media/gem/chariot.webp",
+    "alt": "圖坦卡門的戰車",
+    "credit": "Heidi Kontkanen",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chariot_of_Tutankhamun.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "art-senet",
+    "path": "media/gem/senet.webp",
+    "alt": "圖坦卡門的塞尼特棋盤",
+    "credit": "ddenisen (D. Denisenkov)",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Senet_game_pieces_(Tutankhamun).jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "art-ostraca",
+    "path": "media/gem/ostraca.webp",
+    "alt": "寫字的陶片",
+    "credit": "Hanay",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Drawing_on_ostracon_fragment_-_Deir_el-Medina_04.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "cu-umm-kulthum-img",
+    "path": "media/customs/umm-kulthum.webp",
+    "alt": "烏姆·庫勒蘇姆",
+    "credit": "Not credited",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Umm_Kulthum_in_1950.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "cu-bread-img",
+    "path": "media/customs/aish-baladi.webp",
+    "alt": "埃及圓形大餅",
+    "credit": "dustinpsmith",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eish_baladi.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "cu-tannoura-img",
+    "path": "media/customs/tannoura.webp",
+    "alt": "旋轉舞 Tannoura",
+    "credit": "Mohamed Khalil90",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Folkloric_Tanoura_dance_performed_by_man.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "cu-evil-eye-img",
+    "path": "media/customs/evil-eye.webp",
+    "alt": "藍眼睛護符",
+    "credit": "Alev Akın",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kapadokya%27dan_Nazar_Boncu%C4%9Fu.jpg",
     "kind": "photo",
     "essential": true
   }
