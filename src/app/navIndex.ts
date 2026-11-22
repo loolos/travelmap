@@ -1,4 +1,5 @@
 import { activities, artifacts, deities, eras, foods, glyphs, notes, placesByRegion, regions } from '../data/content';
+import { dayRoles } from '../pages/dayData';
 import { foodCategories, noteCollections } from '../data/schema';
 
 export interface NavItem {
@@ -121,6 +122,14 @@ export function buildNavIndex(): NavGroup[] {
             icon: '🍽️',
           },
           { ...timelineItem, id: 'timeline-knowledge' },
+          {
+            id: 'day',
+            to: '/day',
+            label: '古埃及人的一天',
+            sub: 'A day in ancient Egypt',
+            terms: ['daily life', '日常', '生活', '身分', ...dayRoles.map((r) => r.name)],
+            icon: '🌅',
+          },
           {
             id: 'glyphs',
             to: '/glyphs',
