@@ -1,15 +1,13 @@
 .tabs {
   display: flex;
+  flex-wrap: wrap;
   gap: 6px;
-  overflow-x: auto;
-  margin: 0 -4px 12px;
-  padding: 2px 4px 6px;
-  scrollbar-width: none;
+  margin: 0 0 12px;
 }
 .tab {
   flex: none;
   min-height: 40px;
-  padding: 0 12px;
+  padding: 0 10px;
   border: 1px solid var(--line);
   border-radius: 20px;
   background: #fff;

@@ -335,13 +335,6 @@
       "width": 800
     },
     {
-      "assetId": "food-samak-mashwi-img",
-      "search": "grilled fish Egypt",
-      "dest": "media/food/samak-mashwi.webp",
-      "alt": "紅海烤魚",
-      "width": 800
-    },
-    {
       "assetId": "food-sayadeya-img",
       "article": "Sayadieh",
       "dest": "media/food/sayadeya.webp",

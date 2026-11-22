@@ -1446,16 +1446,6 @@
     "essential": true
   },
   {
-    "id": "food-samak-mashwi-img",
-    "path": "media/food/samak-mashwi.webp",
-    "alt": "紅海烤魚",
-    "credit": "Mohamed kamal 1984",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grilled_Fish_2.jpg",
-    "kind": "photo",
-    "essential": true
-  },
-  {
     "id": "food-bolti-img",
     "path": "media/food/bolti.webp",
     "alt": "尼羅河吳郭魚",
