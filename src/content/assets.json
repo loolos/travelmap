@@ -774,5 +774,165 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D9%82%D9%84%D8%B9%D8%A9_%D9%82%D8%A7%D9%8A%D8%AA%D8%A8%D8%A7%D9%8A_%D9%85%D9%86_%D8%A7%D9%84%D8%AC%D9%88.jpg",
     "kind": "photo",
     "essential": true
+  },
+  {
+    "id": "art-ramesses",
+    "path": "media/gem/ramesses-colossus.webp",
+    "alt": "大廳裡的拉美西斯二世巨像",
+    "credit": "Mohamed abdelzaher",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Statue_of_King_Ramses_II.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "art-shrines",
+    "path": "media/gem/shrines.webp",
+    "alt": "圖坦卡門的鍍金神龕",
+    "credit": "Hotepibre at Italian Wikipedia",
+    "license": "CC BY-SA 2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shrinesandsarcophagos.png",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "art-throne",
+    "path": "media/gem/throne.webp",
+    "alt": "圖坦卡門的黃金寶座",
+    "credit": "Yveke",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tutankhamun_throne.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "art-trumpets",
+    "path": "media/gem/trumpets.webp",
+    "alt": "圖坦卡門的號角",
+    "credit": "Harry Burton",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tutankhamun%27s_bronze_trumpet.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "art-lotus-head",
+    "path": "media/gem/lotus-head.webp",
+    "alt": "從蓮花冒出的圖坦卡門頭像",
+    "credit": "Chatsam",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tutankhamun_Treasure_in_Paris_coupe_au_lotus-cropped.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "art-khufu-boat",
+    "path": "media/gem/khufu-ship.webp",
+    "alt": "胡夫太陽船",
+    "credit": "Matthäus Wander",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:GEM_Khufus_Boat_front_2025.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "cu-fanous-img",
+    "path": "media/customs/fanous.webp",
+    "alt": "齋月燈籠 fanous",
+    "credit": "B. Simpson Cairocamels",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lanterns_from_below.JPG",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "cu-umm-kulthum-img",
+    "path": "media/customs/umm-kulthum.webp",
+    "alt": "烏姆·庫勒蘇姆",
+    "credit": "Production company",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Umm_Kulthum_as_Fatimah.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "cu-tahtib-img",
+    "path": "media/customs/tahtib.webp",
+    "alt": "棍術舞 Tahtib",
+    "credit": "Yasser Elrasoul",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D8%B1%D8%AC%D8%A7%D9%84_%D9%85%D8%B5%D8%B1%D9%8A%D9%88%D9%86_%D9%85%D9%86_%D8%B5%D8%B9%D9%8A%D8%AF_%D9%85%D8%B5%D8%B1_%D9%8A%D9%85%D8%A7%D8%B1%D8%B3%D9%88%D9%86_%D9%84%D8%B9%D8%A8%D8%A9_%D8%A7%D9%84%D8%AA%D8%AD%D8%B7%D9%8A%D8%A8.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "cu-coffee-img",
+    "path": "media/customs/coffee.webp",
+    "alt": "土耳其咖啡",
+    "credit": "Eaeeae",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:T%C3%BCrk_Kahvesi_-_Bakir_Cezve.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "cu-ahwa-img",
+    "path": "media/customs/shisha.webp",
+    "alt": "水煙",
+    "credit": "Pratihas Sharma",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Traditional_Brass_Hookah.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "cu-sham-img",
+    "path": "media/customs/sham-el-nessim.webp",
+    "alt": "聞風節",
+    "credit": "Ikonact",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bg-easter-eggs.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "cu-nubian-img",
+    "path": "media/customs/nubian-village.webp",
+    "alt": "努比亞村落",
+    "credit": "Jocelyn Erskine-Kellie from London, UK",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crocodile,_Nubian_House_(4380386520).jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "cu-coptic-img",
+    "path": "media/customs/coptic-cross.webp",
+    "alt": "科普特十字架",
+    "credit": "Sagredo",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coptic_cross.svg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "cu-ababda-img",
+    "path": "media/customs/ababda.webp",
+    "alt": "阿巴布達人",
+    "credit": "Nikswieweg at German Wikipedia (Original text: Klaus Polak, Pseudonym Nikswieweg)",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bedscha.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "cu-cairo-dead-img",
+    "path": "media/customs/city-of-the-dead.webp",
+    "alt": "開羅的死人城",
+    "credit": "Robert Prazeres",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wiki_city_of_the_dead_DSCF0114_Edit.jpg",
+    "kind": "photo",
+    "essential": true
   }
 ]
