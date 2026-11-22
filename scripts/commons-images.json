@@ -251,6 +251,160 @@
       "alt": "烏姆阿里"
     },
     {
+      "assetId": "food-aish-baladi-img",
+      "search": "Aish baladi bread Egypt",
+      "dest": "media/food/aish-baladi.webp",
+      "alt": "埃及大餅",
+      "width": 800
+    },
+    {
+      "assetId": "food-aish-shamsi-img",
+      "search": "Eish shamsi bread",
+      "dest": "media/food/aish-shamsi.webp",
+      "alt": "太陽麵包",
+      "width": 800
+    },
+    {
+      "assetId": "food-feteer-img",
+      "article": "Feteer meshaltet",
+      "dest": "media/food/feteer.webp",
+      "alt": "千層派餅",
+      "width": 800
+    },
+    {
+      "assetId": "food-macarona-bechamel-img",
+      "search": "Macarona bechamel",
+      "dest": "media/food/macarona-bechamel.webp",
+      "alt": "白醬焗麵",
+      "width": 800
+    },
+    {
+      "assetId": "food-roz-shareya-img",
+      "search": "Egyptian rice vermicelli",
+      "dest": "media/food/roz-shareya.webp",
+      "alt": "細麵米飯",
+      "width": 800
+    },
+    {
+      "assetId": "food-baba-ghanoug-img",
+      "article": "Baba ghanoush",
+      "dest": "media/food/baba-ghanoug.webp",
+      "alt": "烤茄子泥",
+      "width": 800
+    },
+    {
+      "assetId": "food-torshi-img",
+      "search": "Egyptian torshi pickles",
+      "dest": "media/food/torshi.webp",
+      "alt": "埃及醃菜",
+      "width": 800
+    },
+    {
+      "assetId": "food-kofta-img",
+      "search": "Egyptian kofta grilled",
+      "dest": "media/food/kofta.webp",
+      "alt": "烤肉串",
+      "width": 800
+    },
+    {
+      "assetId": "food-hawawshi-img",
+      "article": "Hawawshi",
+      "dest": "media/food/hawawshi.webp",
+      "alt": "埃及肉餅",
+      "width": 800
+    },
+    {
+      "assetId": "food-hamam-mahshi-img",
+      "search": "Hamam mahshi stuffed pigeon",
+      "dest": "media/food/hamam-mahshi.webp",
+      "alt": "鑲鴿子",
+      "width": 800
+    },
+    {
+      "assetId": "food-shawarma-img",
+      "article": "Shawarma",
+      "dest": "media/food/shawarma.webp",
+      "alt": "沙威瑪",
+      "width": 800
+    },
+    {
+      "assetId": "food-kebda-img",
+      "search": "Kebda Alexandria liver sandwich",
+      "dest": "media/food/kebda.webp",
+      "alt": "亞歷山大炒肝",
+      "width": 800
+    },
+    {
+      "assetId": "food-sayadeya-img",
+      "article": "Sayadieh",
+      "dest": "media/food/sayadeya.webp",
+      "alt": "漁夫飯",
+      "width": 800
+    },
+    {
+      "assetId": "food-bolti-img",
+      "search": "fried tilapia",
+      "dest": "media/food/bolti.webp",
+      "alt": "尼羅河吳郭魚",
+      "width": 800
+    },
+    {
+      "assetId": "food-feseekh-img",
+      "article": "Fesikh",
+      "dest": "media/food/feseekh.webp",
+      "alt": "發酵鹹魚",
+      "width": 800
+    },
+    {
+      "assetId": "food-konafa-img",
+      "article": "Kanafeh",
+      "dest": "media/food/konafa.webp",
+      "alt": "庫納法",
+      "width": 800
+    },
+    {
+      "assetId": "food-basbousa-img",
+      "article": "Basbousa",
+      "dest": "media/food/basbousa.webp",
+      "alt": "粗麥蛋糕",
+      "width": 800
+    },
+    {
+      "assetId": "food-zalabya-img",
+      "article": "Luqaimat",
+      "dest": "media/food/zalabya.webp",
+      "alt": "炸蜜球",
+      "width": 800
+    },
+    {
+      "assetId": "food-karkadeh-img",
+      "search": "karkadeh hibiscus drink",
+      "dest": "media/food/karkadeh.webp",
+      "alt": "洛神花茶",
+      "width": 800
+    },
+    {
+      "assetId": "food-asab-img",
+      "search": "sugarcane juice Egypt",
+      "dest": "media/food/asab.webp",
+      "alt": "甘蔗汁",
+      "width": 800
+    },
+    {
+      "assetId": "food-sahlab-img",
+      "article": "Salep",
+      "dest": "media/food/sahlab.webp",
+      "alt": "沙勒布熱奶",
+      "width": 800
+    },
+    {
+      "assetId": "food-ahwa-img",
+      "article": "Turkish coffee",
+      "dest": "media/food/ahwa.webp",
+      "alt": "埃及咖啡",
+      "width": 800
+    },
+    {
       "assetId": "egypt-hero",
       "article": "Geography of Egypt",
       "dest": "media/egypt/egypt.webp",
@@ -820,6 +974,40 @@
       "article": "Nazar (amulet)",
       "dest": "media/customs/evil-eye.webp",
       "alt": "藍眼睛護符",
+      "width": 900
+    },
+    {
+      "assetId": "sahara-hero",
+      "article": "Great Sand Sea",
+      "dest": "media/egypt/sahara.webp",
+      "alt": "錫瓦附近，大沙海北緣的沙丘"
+    },
+    {
+      "assetId": "swimmers-photo",
+      "article": "Cave of Swimmers",
+      "dest": "media/photos/cave-of-swimmers.webp",
+      "alt": "吉勒夫高原泳者洞穴的岩畫",
+      "width": 900
+    },
+    {
+      "assetId": "yardang-photo",
+      "article": "Yardang",
+      "dest": "media/photos/yardang.webp",
+      "alt": "風蝕出的雅丹地形",
+      "width": 900
+    },
+    {
+      "assetId": "desert-glass-photo",
+      "article": "Libyan desert glass",
+      "dest": "media/photos/desert-glass.webp",
+      "alt": "利比亞沙漠玻璃",
+      "width": 900
+    },
+    {
+      "assetId": "whales-photo",
+      "article": "Wadi Al-Hitan",
+      "dest": "media/photos/wadi-al-hitan.webp",
+      "alt": "鯨魚谷的古鯨化石",
       "width": 900
     }
   ]

@@ -21,6 +21,7 @@ export function readRawContent(): RawContent {
     glyphs: read('glyphs.json'),
     eras: read('eras.json'),
     artifacts: read('artifacts.json'),
+    foods: read('foods.json'),
   };
 }
 

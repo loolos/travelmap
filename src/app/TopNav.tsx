@@ -41,6 +41,7 @@ function useBreadcrumb(): Crumb[] {
   if (loc.pathname.startsWith('/knowledge')) return [{ label: '知識卡' }];
   if (loc.pathname.startsWith('/timeline')) return [{ label: '埃及歷史時間線' }];
   if (loc.pathname.startsWith('/collection')) return [{ label: '館藏圖鑑' }];
+  if (loc.pathname.startsWith('/food')) return [{ label: '美食圖鑑' }];
   return [{ label: pageTitles[loc.pathname] ?? '埃及探索' }];
 }
 

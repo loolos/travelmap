@@ -198,7 +198,7 @@ test('knowledge cards live apart from travel tips', async ({ page }) => {
   await expect(page.getByRole('link', { name: /美食圖鑑/ })).toHaveCount(0); // folded
   await page.getByRole('button', { name: /^知識/ }).click();
   await page.getByRole('link', { name: /美食圖鑑/ }).click();
-  await expect(page.getByText(/柯夏莉/)).toBeVisible();
+  await expect(page.getByRole('button', { name: /柯夏莉/ })).toBeVisible();
   await page.goto('./#/notes');
   await expect(page.getByText('實用短語')).toBeVisible();
   await expect(page.getByText('歷史小卡')).toHaveCount(0); // knowledge is kept out of 旅人手記
@@ -208,6 +208,19 @@ test('knowledge cards live apart from travel tips', async ({ page }) => {
   await expect(page.getByText('1952 年革命與高壩')).toBeVisible();
   await page.getByRole('tab', { name: /手記/ }).click();
   await expect(page.getByText('1952 年革命與高壩')).toHaveCount(0);
+});
+
+test('food guide groups dishes by category and opens details on tap', async ({ page }) => {
+  await page.goto('./#/food');
+  await page.getByRole('tab', { name: /海鮮/ }).click();
+  await expect(page.getByRole('button', { name: /柯夏莉/ })).toHaveCount(0);
+  await page.getByRole('button', { name: /紅海烤魚/ }).click();
+  await expect(page.getByText('سمك مشوي')).toBeVisible();
+  await expect(page.getByRole('link', { name: /虎加達/ })).toBeVisible();
+  await page.goto('./#/place/cairo');
+  await page.getByRole('tab', { name: /重點/ }).click();
+  await page.getByRole('link', { name: '美食圖鑑' }).click();
+  await expect(page.getByText(/拌勻再吃/)).toBeVisible();
 });
 
 test('menu folds by region and the glyph dictionary records sightings', async ({ page }) => {

@@ -12,6 +12,7 @@ import { SphinxEvidence } from './SphinxEvidence';
 import { FeluccaLab } from './FeluccaLab';
 import { NileYearLab } from './NileYearLab';
 import { FloodplainLab } from './FloodplainLab';
+import { SaharaTimeLab } from './SaharaTimeLab';
 import { NubiaLab } from './NubiaLab';
 import { BargainLab } from './BargainLab';
 import { AbuSimbelMove } from './AbuSimbelMove';
@@ -40,6 +41,7 @@ export const activityComponents: Record<string, ComponentType<{ activityId: stri
   'felucca-wind': FeluccaLab,
   'nile-year': NileYearLab,
   'nile-floodplain': FloodplainLab,
+  'sahara-time': SaharaTimeLab,
   'croc-museum-case': HotspotDiagram,
   'bahariya-water': HotspotDiagram,
   'nubia-flood': NubiaLab,
