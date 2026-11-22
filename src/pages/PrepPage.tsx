@@ -29,7 +29,7 @@ export function PrepPage() {
       }
       return next;
     });
-  const todo = prepGroups.flatMap((g) => g.items).filter((i) => !i.note);
+  const todo = prepGroups.flatMap((g) => g.items).filter((i) => i.kind !== 'info');
   const total = todo.length;
   const count = todo.filter((i) => done[i.id]).length;
   return (
@@ -38,7 +38,7 @@ export function PrepPage() {
         已完成 <b>{count}</b>／{total}
       </p>
       <p style={{ margin: 0, fontSize: 13, color: "var(--muted)" }}>
-        打勾會存在這支手機上。點項目看說明。
+        打勾會存在這支手機上。💡 是建議，其他是必備。點項目看說明。
       </p>
       <section>
         <h2 className={styles.h2}>
@@ -62,7 +62,7 @@ export function PrepPage() {
           {g.items.map((it) => (
             <details key={it.id} className={styles.card}>
               <summary>
-                {it.note ? (
+                {it.kind === 'info' ? (
                   <span
                     aria-hidden="true"
                     style={{
@@ -72,7 +72,7 @@ export function PrepPage() {
                       color: "var(--muted)",
                     }}
                   >
-                    💡
+                    ℹ️
                   </span>
                 ) : (
                   <input
@@ -91,7 +91,7 @@ export function PrepPage() {
                 )}
                 <span
                   style={
-                    !it.note && done[it.id]
+                    it.kind !== 'info' && done[it.id]
                       ? {
                           textDecoration: "line-through",
                           color: "var(--muted)",
@@ -101,6 +101,11 @@ export function PrepPage() {
                 >
                   {it.title}
                 </span>
+                {it.kind === 'suggest' && (
+                  <span title="建議帶" aria-label="建議" style={{ marginLeft: 'auto', flex: 'none' }}>
+                    💡
+                  </span>
+                )}
               </summary>
               <p>{it.detail}</p>
             </details>
