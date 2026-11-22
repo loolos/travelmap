@@ -874,5 +874,95 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:KV11_Tomb_of_Ramses_III_DSCF2941.jpg",
     "kind": "photo",
     "essential": true
+  },
+  {
+    "id": "hl-karnak-obelisk",
+    "path": "media/highlights/karnak-obelisk.webp",
+    "alt": "卡納克的方尖碑",
+    "credit": "Guillaume Lelarge",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Obeslisk_karnak.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "hl-karnak-lake",
+    "path": "media/highlights/karnak-lake.webp",
+    "alt": "卡納克聖湖",
+    "credit": "Alonso de Mendoza",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lago_sagrado_de_Karnak,_Egipto._Marzo_de_2008.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "hl-karnak-rams",
+    "path": "media/highlights/karnak-rams.webp",
+    "alt": "卡納克入口前的公羊頭獅身像",
+    "credit": "No machine-readable author provided. Neithsabes assumed (based on copyright claims).",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parvis_Karnak.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "hl-lt-pylon",
+    "path": "media/highlights/lt-pylon.webp",
+    "alt": "路克索神殿塔門、方尖碑與拉美西斯二世巨像",
+    "credit": "Ad Meskens",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pylons_and_obelisk_Luxor_temple.JPG",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "hl-lt-colossus",
+    "path": "media/highlights/lt-colossus.webp",
+    "alt": "路克索神殿的拉美西斯二世像",
+    "credit": "Mohamed kamal 1984",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D8%AA%D9%85%D8%AB%D8%A7%D9%84_%D8%B1%D9%85%D8%B3%D9%8A%D8%B3_%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%89_-_%D9%85%D8%B9%D8%A8%D8%AF_%D8%A7%D9%84%D8%A7%D9%82%D8%B5%D8%B1.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "hl-as-nefertari",
+    "path": "media/highlights/as-nefertari.webp",
+    "alt": "阿布辛貝小神殿正面",
+    "credit": "Than217 at English Wikipedia",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nefertari_Temple_Abu_Simbel_May_30_2007.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "hl-as-head",
+    "path": "media/highlights/as-head.webp",
+    "alt": "阿布辛貝大神殿崩落的巨像頭部",
+    "credit": "User:Than217",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Collapsed_Colossus.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "hl-as-sanctuary",
+    "path": "media/highlights/as-sanctuary.webp",
+    "alt": "阿布辛貝聖殿裡的四尊神像",
+    "credit": "UNESCO",
+    "license": "CC BY-SA 3.0 igo",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Abu_Simbel_temple,_four_statues_of_divinities_in_sanctuary.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "hl-khufu-entrance",
+    "path": "media/highlights/khufu-entrance.webp",
+    "alt": "胡夫金字塔的原始入口與盜洞",
+    "credit": "Hajotthu",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cheops-Pyramid@Eingaenge.JPG",
+    "kind": "photo",
+    "essential": true
   }
 ]
