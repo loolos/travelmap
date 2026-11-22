@@ -661,5 +661,281 @@
     "icon": "🚌",
     "title": "路途遙遠",
     "body": "走公路離開羅約 750 公里，車程 8–10 小時，多半經過地中海岸的馬特魯港。"
+  },
+  {
+    "id": "cu-prayer",
+    "regionId": "customs",
+    "icon": "🕌",
+    "title": "一天五次的喚拜",
+    "body": "清真寺每天五次用擴音器傳出喚拜聲（adhan），第一次在天亮前。週五中午是聚禮，清真寺擠不下時，人們會在門外街上鋪墊子一起禮拜。",
+    "area": "全國"
+  },
+  {
+    "id": "cu-ramadan",
+    "regionId": "customs",
+    "icon": "🏮",
+    "title": "齋月",
+    "body": "伊斯蘭曆第九個月，穆斯林白天不吃不喝，日落時全家一起開齋（iftar）。街上掛滿彩色燈籠 fanous，夜裡比白天還熱鬧。日期每年約提前 11 天。",
+    "area": "全國",
+    "assetId": "cu-fanous-img"
+  },
+  {
+    "id": "cu-copts",
+    "regionId": "customs",
+    "icon": "✝️",
+    "title": "科普特基督徒",
+    "body": "埃及本土的古老教會，信徒約占一成。很多人在右手腕內側刺一個小十字架。他們在 1 月 7 日過聖誕節，開羅老城裡教堂和清真寺常就在同一條街上。",
+    "area": "全國",
+    "assetId": "cu-coptic-img"
+  },
+  {
+    "id": "cu-greeting",
+    "regionId": "customs",
+    "icon": "🤝",
+    "title": "寒暄",
+    "body": "見面先說 As-salāmu ʿalaykum，接著會一連串問候家人和健康，不急著談正事。同性朋友握手、貼臉頰都常見；和異性握手，先看對方有沒有伸手。",
+    "area": "全國"
+  },
+  {
+    "id": "cu-hospitality",
+    "regionId": "customs",
+    "icon": "🍽️",
+    "title": "好客",
+    "body": "「Itfaddal」（請、歡迎）是最常聽到的一句話。被請到家裡吃飯，主人會一直往你盤裡添菜，吃不下要多推辭幾次。吃飯和遞東西習慣用右手。",
+    "area": "全國"
+  },
+  {
+    "id": "cu-bread",
+    "regionId": "customs",
+    "icon": "🫓",
+    "title": "大餅就是「生命」",
+    "body": "埃及方言把麵包叫 ʿeish，字面意思就是「生命」。政府補貼的圓形大餅 ʿeish baladi 非常便宜，撕開能塞豆泥、炸豆餅，是許多家庭每天的主食。",
+    "area": "全國",
+    "assetId": "cu-bread-img"
+  },
+  {
+    "id": "cu-tea",
+    "regionId": "customs",
+    "icon": "🫖",
+    "title": "甜甜的紅茶",
+    "body": "茶（shai）是一天到晚的飲料：濃紅茶加很多糖，常放新鮮薄荷葉（shai bi-naʿnaʿ）。到店裡殺價、在辦公室談事情，對方都可能先請你喝一杯。",
+    "area": "全國"
+  },
+  {
+    "id": "cu-coffee",
+    "regionId": "customs",
+    "icon": "☕",
+    "title": "土耳其咖啡",
+    "body": "咖啡粉和水放進小長柄壺一起煮，連渣倒進小杯，喝到底要留一點渣。點的時候要說甜度：sada 無糖、mazbut 適中、ziyada 很甜。",
+    "area": "全國",
+    "assetId": "cu-coffee-img"
+  },
+  {
+    "id": "cu-ahwa",
+    "regionId": "customs",
+    "icon": "🎲",
+    "title": "街角咖啡館 ahwa",
+    "body": "傳統咖啡館像男人的客廳：塑膠椅擺上人行道，喝茶、抽水煙（shisha）、玩雙陸棋（tawla），有球賽時整條街一起看。",
+    "area": "全國",
+    "assetId": "cu-ahwa-img"
+  },
+  {
+    "id": "cu-family",
+    "regionId": "customs",
+    "icon": "👨‍👩‍👧",
+    "title": "家族與婚禮",
+    "body": "家族關係很緊密，年輕人多半婚前都和父母同住，週五常是家族聚餐日。婚禮有 zaffa 遊行，鼓手和樂隊敲敲打打帶新人進場。",
+    "area": "全國"
+  },
+  {
+    "id": "cu-music",
+    "regionId": "customs",
+    "icon": "🎵",
+    "title": "烏姆·庫勒蘇姆",
+    "body": "20 世紀阿拉伯世界最受愛戴的歌手，一首歌能唱上一個小時。她 1975 年過世時，數百萬人湧上開羅街頭送葬。今天的計程車和咖啡館裡仍常放她的歌。",
+    "area": "全國"
+  },
+  {
+    "id": "cu-football",
+    "regionId": "customs",
+    "icon": "⚽",
+    "title": "足球",
+    "body": "開羅兩大球隊阿赫利（Al Ahly）和扎馬雷克（Zamalek）的德比是全國大事。效力利物浦的穆罕默德·薩拉赫（Mohamed Salah）是人人都認識的國民英雄。",
+    "area": "全國"
+  },
+  {
+    "id": "cu-clothing",
+    "regionId": "customs",
+    "icon": "👘",
+    "title": "長袍與頭巾",
+    "body": "寬鬆的連身長袍 galabeya 透氣耐熱，在鄉間和上埃及最常見。多數女性戴頭巾，城市年輕人也常穿牛仔褲、球鞋，新舊打扮並存。",
+    "area": "全國"
+  },
+  {
+    "id": "cu-inshallah",
+    "regionId": "customs",
+    "icon": "🙏",
+    "title": "Inshallah",
+    "body": "意思是「如果真主願意」。說到任何未來的事都會加上一句，從「明天見」到「三點到」都是。有時也是委婉的「不一定喔」。",
+    "area": "全國"
+  },
+  {
+    "id": "cu-sham-el-nessim",
+    "regionId": "customs",
+    "icon": "🌼",
+    "title": "聞風節",
+    "body": "Sham el-Nessim 是春天的全民節日，源自古埃及的春季慶典，基督徒和穆斯林一起過。全家出門野餐，傳統吃鹹魚 fesikh、洋蔥和彩繪雞蛋。",
+    "area": "全國",
+    "assetId": "cu-sham-img"
+  },
+  {
+    "id": "cu-evil-eye",
+    "regionId": "customs",
+    "icon": "🧿",
+    "title": "防邪眼",
+    "body": "很多人相信羨慕的目光會帶來厄運，車上、店門口常掛藍眼睛或手掌形的 khamsa 護符。稱讚別人的小孩或新東西時，會先說一句 Mashallah。",
+    "area": "全國",
+    "assetId": "cu-evil-eye-img"
+  },
+  {
+    "id": "cu-cats",
+    "regionId": "customs",
+    "icon": "🐈",
+    "title": "街貓",
+    "body": "街頭巷尾到處是貓，常有人餵牠們。古埃及人就把貓視為神聖，貓頭女神巴斯特（Bastet）是家庭的守護者，貓死了甚至會做成木乃伊。",
+    "area": "全國"
+  },
+  {
+    "id": "cu-cairo-night",
+    "regionId": "customs",
+    "icon": "🌃",
+    "title": "不睡的城市",
+    "body": "開羅人作息很晚，晚餐常在九、十點以後，商店和咖啡館開到半夜。兩千多萬人的大都會，塞車和此起彼落的喇叭聲也是城市的背景音。",
+    "area": "開羅"
+  },
+  {
+    "id": "cu-cairo-dead",
+    "regionId": "customs",
+    "icon": "🪦",
+    "title": "死人城",
+    "body": "開羅東邊綿延數公里的大墓園「死人城」，有馬木路克時代的華麗陵墓，也有許多家庭住在墓室旁，在墓地間開店、上學，是活人和亡者共用的城區。",
+    "area": "開羅",
+    "assetId": "cu-cairo-dead-img"
+  },
+  {
+    "id": "cu-tannoura",
+    "regionId": "customs",
+    "icon": "💫",
+    "title": "旋轉舞 Tannoura",
+    "body": "舞者穿著好幾層彩色大裙，一轉就是十幾分鐘，裙子在空中展開成圓盤。源自蘇菲派的冥想儀式，舊城區有固定演出。",
+    "area": "開羅",
+    "assetId": "cu-tannoura-img"
+  },
+  {
+    "id": "cu-saidi",
+    "regionId": "customs",
+    "icon": "🧔",
+    "title": "薩伊德人",
+    "body": "路克索一帶屬於上埃及（Saʿid），當地人叫 Saʿidi。口音和開羅不同，例如把 q 唸成 g。他們非常重視家族與榮譽，男人常穿長袍、頭上纏白巾。",
+    "area": "上埃及（路克索）"
+  },
+  {
+    "id": "cu-tahtib",
+    "regionId": "customs",
+    "icon": "🥢",
+    "title": "棍術舞 Tahtib",
+    "body": "兩名男子拿著長棍，隨著鼓聲和嗩吶一攻一守、繞圈比劃。這源自古代的棍術，古墓壁畫上就有，2016 年列入聯合國非物質文化遺產。",
+    "area": "上埃及（路克索）",
+    "assetId": "cu-tahtib-img"
+  },
+  {
+    "id": "cu-sugarcane",
+    "regionId": "customs",
+    "icon": "🎋",
+    "title": "甘蔗之鄉",
+    "body": "上埃及是埃及的甘蔗產區，田間常見載滿甘蔗的小火車和驢車。街邊果汁攤現榨的甘蔗汁 ʿasab 清甜便宜，是當地人的消暑飲料。",
+    "area": "上埃及（路克索）"
+  },
+  {
+    "id": "cu-nubian-house",
+    "regionId": "customs",
+    "icon": "🏠",
+    "title": "彩繪圓頂屋",
+    "body": "亞斯文一帶的努比亞村落，房子漆成藍、黃、粉紅，牆上畫著花紋、動物和幾何圖案，屋頂常是泥磚圓頂，院子寬敞涼爽。",
+    "area": "努比亞（亞斯文）",
+    "assetId": "cu-nubian-img"
+  },
+  {
+    "id": "cu-nubian-language",
+    "regionId": "customs",
+    "icon": "🗣️",
+    "title": "努比亞語",
+    "body": "努比亞人在家說自己的語言，例如 Nobiin 和 Kenzi，和阿拉伯語完全不同。這些語言很少書寫，主要靠歌謠和口耳相傳保存下來。",
+    "area": "努比亞（亞斯文）"
+  },
+  {
+    "id": "cu-nubian-home",
+    "regionId": "customs",
+    "icon": "🌊",
+    "title": "被淹沒的故鄉",
+    "body": "1960 年代興建亞斯文大水壩，納瑟湖淹沒了努比亞人世代居住的河谷，數萬人被遷到新村落。思念故鄉，是努比亞歌曲最常見的主題。",
+    "area": "努比亞（亞斯文）"
+  },
+  {
+    "id": "cu-nubian-music",
+    "regionId": "customs",
+    "icon": "🥁",
+    "title": "努比亞音樂",
+    "body": "以手鼓和拍手打出輕快節奏，旋律常用五聲音階，聽起來和阿拉伯音樂很不一樣。亞斯文出身的歌手穆罕默德·穆尼爾，把這種曲風唱紅全國。",
+    "area": "努比亞（亞斯文）"
+  },
+  {
+    "id": "cu-oasis-life",
+    "regionId": "customs",
+    "icon": "🌴",
+    "title": "綠洲人家",
+    "body": "巴哈利亞的居民世代在綠洲種椰棗和橄欖，靠溫泉和地下水灌溉。老村落是泥磚房，生活節奏比尼羅河谷慢得多。",
+    "area": "西部沙漠綠洲"
+  },
+  {
+    "id": "cu-bedouin",
+    "regionId": "customs",
+    "icon": "🏕️",
+    "title": "貝都因待客之道",
+    "body": "沙漠嚮導多有貝都因背景，熟悉路線和星空。到了營地，先在火邊煮一壺甜茶招待客人，再把麵團埋進炭火和熱沙裡烤成大餅。",
+    "area": "西部沙漠綠洲"
+  },
+  {
+    "id": "cu-siwa",
+    "regionId": "customs",
+    "icon": "🌙",
+    "title": "錫瓦的阿馬齊格人",
+    "body": "錫瓦人是北非的阿馬齊格人（柏柏人），說 Siwi 語，是埃及文化最與眾不同的地方。傳統銀飾、刺繡婚服和泥磚古城都很有特色。",
+    "area": "錫瓦綠洲"
+  },
+  {
+    "id": "cu-redsea-resort",
+    "regionId": "customs",
+    "icon": "🏖️",
+    "title": "新興度假城",
+    "body": "虎加達原本是小漁村，1980 年代起蓋滿度假村。許多員工從尼羅河谷各地來打工，招牌上常同時寫著阿拉伯文、英文、俄文和德文。",
+    "area": "紅海與東部沙漠"
+  },
+  {
+    "id": "cu-ababda",
+    "regionId": "customs",
+    "icon": "🫗",
+    "title": "阿巴布達人的薑咖啡",
+    "body": "東部沙漠的游牧民族阿巴布達人（Ababda），用陶壺 jabana 在炭火上煮加了薑的咖啡，倒進小杯招待客人，通常要喝上好幾輪。",
+    "area": "紅海與東部沙漠",
+    "assetId": "cu-ababda-img"
+  },
+  {
+    "id": "cu-sinai-bedouin",
+    "regionId": "customs",
+    "icon": "⛰️",
+    "title": "西奈的貝都因人",
+    "body": "聖凱瑟琳修道院周圍的 Jebeliya 部落，據說是六世紀派來守護修道院的人的後代。今天帶旅人摸黑登西奈山看日出的嚮導，多半就是他們。",
+    "area": "西奈"
   }
 ]

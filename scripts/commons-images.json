@@ -1,5 +1,5 @@
 {
-  "_doc": "assetId -> lead image of an English Wikipedia article, or (with `match`) the first .jpg used in that article whose file name matches the regex. Or pin an exact Commons file with `file`. Run by .github/workflows/fetch-images.yml. gem-hero stays a hand-made illustration until a good exterior photo is picked by file name.",
+  "_doc": "assetId -> lead image of an English Wikipedia article, or (with `match`) the first .jpg used in that article whose file name matches the regex. Or pin an exact Commons file with `file`, or take the first bitmap hit of a Commons full-text `search`. Run by .github/workflows/fetch-images.yml. gem-hero stays a hand-made illustration until a good exterior photo is picked by file name.",
   "images": [
     {
       "assetId": "khufu-hero",
@@ -627,6 +627,193 @@
       "dest": "media/highlights/khufu-entrance.webp",
       "alt": "胡夫金字塔的原始入口與盜洞",
       "width": 720
+    },
+    {
+      "assetId": "art-obelisk",
+      "search": "Hanging obelisk Grand Egyptian Museum",
+      "dest": "media/gem/hanging-obelisk.webp",
+      "alt": "大埃及博物館前的懸空方尖碑",
+      "width": 900
+    },
+    {
+      "assetId": "art-ramesses",
+      "article": "Grand Egyptian Museum",
+      "dest": "media/gem/ramesses-colossus.webp",
+      "alt": "大廳裡的拉美西斯二世巨像",
+      "width": 900,
+      "match": "rams|ramesses|ramses"
+    },
+    {
+      "assetId": "art-hatshepsut",
+      "search": "Hatshepsut statue Grand Egyptian Museum",
+      "dest": "media/gem/hatshepsut.webp",
+      "alt": "哈特謝普蘇特雕像",
+      "width": 900
+    },
+    {
+      "assetId": "art-gold-coffin",
+      "search": "Tutankhamun innermost gold coffin",
+      "dest": "media/gem/gold-coffin.webp",
+      "alt": "圖坦卡門的純金內棺",
+      "width": 900
+    },
+    {
+      "assetId": "art-shrines",
+      "article": "KV62",
+      "dest": "media/gem/shrines.webp",
+      "alt": "四層神龕與石棺套疊示意圖",
+      "width": 900,
+      "match": "^File:(?!.*(canopic|anubis)).*shrine"
+    },
+    {
+      "assetId": "art-canopic",
+      "search": "Tutankhamun canopic shrine",
+      "dest": "media/gem/canopic.webp",
+      "alt": "圖坦卡門的內臟神龕",
+      "width": 900
+    },
+    {
+      "assetId": "art-throne",
+      "article": "KV62",
+      "dest": "media/gem/throne.webp",
+      "alt": "圖坦卡門的黃金寶座",
+      "width": 900,
+      "match": "throne"
+    },
+    {
+      "assetId": "art-dagger",
+      "search": "Tutankhamun iron dagger",
+      "dest": "media/gem/dagger.webp",
+      "alt": "圖坦卡門的隕鐵匕首",
+      "width": 900
+    },
+    {
+      "assetId": "art-chariot",
+      "search": "Tutankhamun chariot",
+      "dest": "media/gem/chariot.webp",
+      "alt": "圖坦卡門的戰車",
+      "width": 900
+    },
+    {
+      "assetId": "art-trumpets",
+      "article": "Tutankhamun's trumpets",
+      "dest": "media/gem/trumpets.webp",
+      "alt": "圖坦卡門的號角",
+      "width": 900
+    },
+    {
+      "assetId": "art-lotus-cup",
+      "article": "KV62",
+      "dest": "media/gem/lotus-chalice.webp",
+      "alt": "蓮花形的方解石許願杯",
+      "width": 900,
+      "match": "lotus|nefertem"
+    },
+    {
+      "assetId": "art-senet",
+      "search": "Tutankhamun senet",
+      "dest": "media/gem/senet.webp",
+      "alt": "圖坦卡門的塞尼特棋盤",
+      "width": 900
+    },
+    {
+      "assetId": "art-khufu-boat",
+      "article": "Khufu ship",
+      "dest": "media/gem/khufu-ship.webp",
+      "alt": "胡夫太陽船",
+      "width": 900
+    },
+    {
+      "assetId": "art-ostraca",
+      "search": "ostracon Deir el-Medina",
+      "dest": "media/gem/ostraca.webp",
+      "alt": "寫字的陶片",
+      "width": 900
+    },
+    {
+      "assetId": "cu-fanous-img",
+      "article": "Fanous",
+      "dest": "media/customs/fanous.webp",
+      "alt": "齋月燈籠 fanous",
+      "width": 900
+    },
+    {
+      "assetId": "cu-tahtib-img",
+      "article": "Tahtib",
+      "dest": "media/customs/tahtib.webp",
+      "alt": "棍術舞 Tahtib",
+      "width": 900
+    },
+    {
+      "assetId": "cu-coffee-img",
+      "article": "Turkish coffee",
+      "dest": "media/customs/coffee.webp",
+      "alt": "土耳其咖啡",
+      "width": 900
+    },
+    {
+      "assetId": "cu-ahwa-img",
+      "article": "Hookah",
+      "dest": "media/customs/shisha.webp",
+      "alt": "水煙",
+      "width": 900
+    },
+    {
+      "assetId": "cu-bread-img",
+      "search": "Eish baladi bread Egypt",
+      "dest": "media/customs/aish-baladi.webp",
+      "alt": "埃及圓形大餅",
+      "width": 900
+    },
+    {
+      "assetId": "cu-sham-img",
+      "article": "Sham el-Nessim",
+      "dest": "media/customs/sham-el-nessim.webp",
+      "alt": "彩繪雞蛋",
+      "width": 900
+    },
+    {
+      "assetId": "cu-nubian-img",
+      "article": "Nubians",
+      "dest": "media/customs/nubian-village.webp",
+      "alt": "努比亞村落",
+      "width": 900,
+      "match": "village|house|aswan|gharb"
+    },
+    {
+      "assetId": "cu-coptic-img",
+      "article": "Coptic cross",
+      "dest": "media/customs/coptic-cross.webp",
+      "alt": "科普特十字架",
+      "width": 900
+    },
+    {
+      "assetId": "cu-ababda-img",
+      "article": "Ababda people",
+      "dest": "media/customs/ababda.webp",
+      "alt": "東部沙漠的游牧民族與駱駝",
+      "width": 900
+    },
+    {
+      "assetId": "cu-cairo-dead-img",
+      "article": "City of the Dead (Cairo)",
+      "dest": "media/customs/city-of-the-dead.webp",
+      "alt": "開羅的死人城",
+      "width": 900
+    },
+    {
+      "assetId": "cu-tannoura-img",
+      "search": "Tanoura dance Egypt",
+      "dest": "media/customs/tannoura.webp",
+      "alt": "旋轉舞 Tannoura",
+      "width": 900
+    },
+    {
+      "assetId": "cu-evil-eye-img",
+      "article": "Nazar (amulet)",
+      "dest": "media/customs/evil-eye.webp",
+      "alt": "藍眼睛護符",
+      "width": 900
     }
   ]
 }

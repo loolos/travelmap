@@ -1,4 +1,4 @@
-import { activities, deities, eras, glyphs, notes, placesByRegion, regions } from '../data/content';
+import { activities, artifacts, deities, eras, glyphs, notes, placesByRegion, regions } from '../data/content';
 import { noteCollections } from '../data/schema';
 
 export interface NavItem {
@@ -103,6 +103,14 @@ export function buildNavIndex(): NavGroup[] {
             label: '神祇圖鑑',
             terms: ['gods', 'deity', '神', ...deities.flatMap((d) => [d.nameZh, d.nameEn])],
             icon: '🏺',
+          },
+          {
+            id: 'collection',
+            to: '/collection',
+            label: '館藏圖鑑',
+            sub: 'Museum highlights',
+            terms: ['museum', 'collection', '博物館', '藏品', '文物', ...artifacts.flatMap((a) => [a.nameZh, a.nameEn])],
+            icon: '🏛️',
           },
           { ...timelineItem, id: 'timeline-knowledge' },
           {

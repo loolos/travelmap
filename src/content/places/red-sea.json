@@ -55,11 +55,16 @@
     ],
     "sourceIds": [
       "wiki-red-sea",
-      "wiki-hurghada"
+      "wiki-hurghada",
+      "wiki-ababda"
     ],
     "heroAssetId": "hurghada-hero",
     "activityIds": [
       "red-sea-lab"
+    ],
+    "readIds": [
+      "cu-redsea-resort",
+      "cu-ababda"
     ]
   }
 ]

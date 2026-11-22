@@ -944,5 +944,265 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cheops-Pyramid@Eingaenge.JPG",
     "kind": "photo",
     "essential": true
+  },
+  {
+    "id": "art-ramesses",
+    "path": "media/gem/ramesses-colossus.webp",
+    "alt": "大廳裡的拉美西斯二世巨像",
+    "credit": "Mohamed abdelzaher",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Statue_of_King_Ramses_II.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "art-shrines",
+    "path": "media/gem/shrines.webp",
+    "alt": "四層神龕與石棺套疊示意圖",
+    "credit": "Hotepibre at Italian Wikipedia",
+    "license": "CC BY-SA 2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shrinesandsarcophagos.png",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "art-throne",
+    "path": "media/gem/throne.webp",
+    "alt": "圖坦卡門的黃金寶座",
+    "credit": "Yveke",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tutankhamun_throne.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "art-trumpets",
+    "path": "media/gem/trumpets.webp",
+    "alt": "圖坦卡門的號角",
+    "credit": "Harry Burton",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tutankhamun%27s_bronze_trumpet.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "art-lotus-cup",
+    "path": "media/gem/lotus-chalice.webp",
+    "alt": "蓮花形的方解石許願杯",
+    "credit": "Chatsam",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tutankhamun_Treasure_in_Paris_coupe_au_lotus-cropped.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "art-khufu-boat",
+    "path": "media/gem/khufu-ship.webp",
+    "alt": "胡夫太陽船",
+    "credit": "Matthäus Wander",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:GEM_Khufus_Boat_front_2025.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "cu-fanous-img",
+    "path": "media/customs/fanous.webp",
+    "alt": "齋月燈籠 fanous",
+    "credit": "B. Simpson Cairocamels",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lanterns_from_below.JPG",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "cu-tahtib-img",
+    "path": "media/customs/tahtib.webp",
+    "alt": "棍術舞 Tahtib",
+    "credit": "Yasser Elrasoul",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D8%B1%D8%AC%D8%A7%D9%84_%D9%85%D8%B5%D8%B1%D9%8A%D9%88%D9%86_%D9%85%D9%86_%D8%B5%D8%B9%D9%8A%D8%AF_%D9%85%D8%B5%D8%B1_%D9%8A%D9%85%D8%A7%D8%B1%D8%B3%D9%88%D9%86_%D9%84%D8%B9%D8%A8%D8%A9_%D8%A7%D9%84%D8%AA%D8%AD%D8%B7%D9%8A%D8%A8.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "cu-coffee-img",
+    "path": "media/customs/coffee.webp",
+    "alt": "土耳其咖啡",
+    "credit": "Eaeeae",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:T%C3%BCrk_Kahvesi_-_Bakir_Cezve.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "cu-ahwa-img",
+    "path": "media/customs/shisha.webp",
+    "alt": "水煙",
+    "credit": "Pratihas Sharma",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Traditional_Brass_Hookah.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "cu-sham-img",
+    "path": "media/customs/sham-el-nessim.webp",
+    "alt": "彩繪雞蛋",
+    "credit": "Ikonact",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bg-easter-eggs.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "cu-nubian-img",
+    "path": "media/customs/nubian-village.webp",
+    "alt": "努比亞村落",
+    "credit": "Jocelyn Erskine-Kellie from London, UK",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crocodile,_Nubian_House_(4380386520).jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "cu-coptic-img",
+    "path": "media/customs/coptic-cross.webp",
+    "alt": "科普特十字架",
+    "credit": "Sagredo",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coptic_cross.svg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "cu-ababda-img",
+    "path": "media/customs/ababda.webp",
+    "alt": "東部沙漠的游牧民族與駱駝",
+    "credit": "Nikswieweg at German Wikipedia (Original text: Klaus Polak, Pseudonym Nikswieweg)",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bedscha.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "cu-cairo-dead-img",
+    "path": "media/customs/city-of-the-dead.webp",
+    "alt": "開羅的死人城",
+    "credit": "Robert Prazeres",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wiki_city_of_the_dead_DSCF0114_Edit.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "art-obelisk",
+    "path": "media/gem/hanging-obelisk.webp",
+    "alt": "大埃及博物館前的懸空方尖碑",
+    "credit": "Slyronit",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hanging_Obelisk_outside_the_Grand_Egyptian_Museum.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "art-hatshepsut",
+    "path": "media/gem/hatshepsut.webp",
+    "alt": "哈特謝普蘇特雕像",
+    "credit": "Holger Uwe Schmitt",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:50_000_ca._Objekte_zeigt_das_Gro%C3%9Fe_%C3%84gyptische_Museum._11_(Hatshepsut).jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "art-gold-coffin",
+    "path": "media/gem/gold-coffin.webp",
+    "alt": "圖坦卡門的純金內棺",
+    "credit": "Leo Wehrli",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ETH-BIB-Tut-Ank-Amon%27s_Treasures,_Innermost_coffin_of_thick_gold-Dia_247-11135.tif",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "art-canopic",
+    "path": "media/gem/canopic.webp",
+    "alt": "圖坦卡門的內臟神龕",
+    "credit": "Richard Mortel",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Canopic_shrine_of_Tutankhamun,_1333-1323_BCE;_Egyptian_Museum,_Cairo_(2).jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "art-dagger",
+    "path": "media/gem/dagger.webp",
+    "alt": "圖坦卡門的隕鐵匕首",
+    "credit": "Olaf Tausch",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kairo_Museum_Eisendolch_Tutanchamun_01.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "art-chariot",
+    "path": "media/gem/chariot.webp",
+    "alt": "圖坦卡門的戰車",
+    "credit": "Heidi Kontkanen",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chariot_of_Tutankhamun.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "art-senet",
+    "path": "media/gem/senet.webp",
+    "alt": "圖坦卡門的塞尼特棋盤",
+    "credit": "ddenisen (D. Denisenkov)",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Senet_game_pieces_(Tutankhamun).jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "art-ostraca",
+    "path": "media/gem/ostraca.webp",
+    "alt": "寫字的陶片",
+    "credit": "Hanay",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Drawing_on_ostracon_fragment_-_Deir_el-Medina_04.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "cu-bread-img",
+    "path": "media/customs/aish-baladi.webp",
+    "alt": "埃及圓形大餅",
+    "credit": "dustinpsmith",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eish_baladi.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "cu-tannoura-img",
+    "path": "media/customs/tannoura.webp",
+    "alt": "旋轉舞 Tannoura",
+    "credit": "Mohamed Khalil90",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Folkloric_Tanoura_dance_performed_by_man.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "cu-evil-eye-img",
+    "path": "media/customs/evil-eye.webp",
+    "alt": "藍眼睛護符",
+    "credit": "Alev Akın",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kapadokya%27dan_Nazar_Boncu%C4%9Fu.jpg",
+    "kind": "photo",
+    "essential": true
   }
 ]

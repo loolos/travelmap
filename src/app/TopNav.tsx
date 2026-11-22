@@ -40,6 +40,7 @@ function useBreadcrumb(): Crumb[] {
   if (loc.pathname.startsWith('/notes')) return [{ label: '旅人手記' }];
   if (loc.pathname.startsWith('/knowledge')) return [{ label: '知識卡' }];
   if (loc.pathname.startsWith('/timeline')) return [{ label: '埃及歷史時間線' }];
+  if (loc.pathname.startsWith('/collection')) return [{ label: '館藏圖鑑' }];
   return [{ label: pageTitles[loc.pathname] ?? '埃及探索' }];
 }
 

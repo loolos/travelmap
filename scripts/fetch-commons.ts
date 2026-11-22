@@ -7,7 +7,7 @@ import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import sharp from 'sharp';
 
-interface Entry { assetId: string; article?: string; match?: string; file?: string; dest: string; alt: string; width?: number }
+interface Entry { assetId: string; article?: string; match?: string; search?: string; file?: string; dest: string; alt: string; width?: number }
 const UA = 'travelmap-build/1.0 (https://github.com/loolos/travelmap)';
 const cfg = JSON.parse(readFileSync('scripts/commons-images.json', 'utf8')) as { images: Entry[] };
 const assetsPath = 'src/content/assets.json';
@@ -19,15 +19,23 @@ const api = async (host: string, params: Record<string, string>) => {
   if (!res.ok) throw new Error(`${res.status} ${url}`);
   return res.json();
 };
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 const strip = (html = '') => html.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
 const FREE = /^(cc0|cc[ -]by|public domain|pd|cc-by-sa|attribution)/i;
 
 let failures = 0;
 for (const e of cfg.images) {
   try {
-    let file: string | undefined;
-    if (e.file) {
-      file = e.file.replace(/^File:/, '');
+    await sleep(250); // stay under the Wikimedia API rate limit
+    let file: string | undefined = e.file?.replace(/^File:/, '');
+    if (file) {
+      // exact Commons file name given
+    } else if (e.search) {
+      // full-text search on Commons (bitmap files only); first hit wins
+      const res = await api('commons.wikimedia.org', {
+        action: 'query', list: 'search', srsearch: `filetype:bitmap ${e.search}`, srnamespace: '6', srlimit: '5',
+      });
+      file = (res.query.search as { title: string }[])[0]?.title.replace(/^File:/, '');
     } else if (e.match) {
       const re = new RegExp(e.match, 'i');
       const imgs = await api('en.wikipedia.org', { action: 'query', prop: 'images', imlimit: '100', titles: e.article ?? '', redirects: '1' });
@@ -70,7 +78,7 @@ for (const e of cfg.images) {
     console.log(`✓ ${e.assetId} ← ${file} (${license})`);
   } catch (err) {
     failures++;
-    console.error(`✗ ${e.assetId} (${e.article ?? e.file}): ${(err as Error).message}`);
+    console.error(`✗ ${e.assetId} (${e.article ?? e.search ?? e.file}): ${(err as Error).message}`);
   }
 }
 writeFileSync(assetsPath, JSON.stringify(assets, null, 2) + '\n');

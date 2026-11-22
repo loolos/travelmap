@@ -1,8 +1,15 @@
 import { Link, useParams } from 'react-router-dom';
 import { assetUrl, notes, regions } from '../data/content';
-import { noteCollections } from '../data/schema';
+import { noteCollections, type Note } from '../data/schema';
 import { PriceLine } from '../places/Price';
 import styles from './Pages.module.css';
+
+/** Splits a collection by its optional `area` sub-heading, keeping first-seen order. */
+function byArea(list: Note[]): [string, Note[]][] {
+  const m = new Map<string, Note[]>();
+  for (const n of list) m.set(n.area ?? '', [...(m.get(n.area ?? '') ?? []), n]);
+  return [...m];
+}
 
 /** kind 'tips' = 旅人手記 (regions + practical collections); 'knowledge' = 知識 cards. */
 export function NotesPage({ kind = 'tips' }: { kind?: 'tips' | 'knowledge' }) {
@@ -24,15 +31,20 @@ export function NotesPage({ kind = 'tips' }: { kind?: 'tips' | 'knowledge' }) {
       {groups.map((g) => (
         <section key={g.id}>
           <h2 className={styles.h2}>{g.title}</h2>
-          {g.notes.map((n) => (
-            <details key={n.id} className={styles.card}>
-              <summary>
-                <span aria-hidden="true">{n.icon}</span> {n.title}
-              </summary>
-              {n.assetId && <img className={styles.notePic} src={assetUrl(n.assetId)} alt={n.title} loading="lazy" />}
-              <p>{n.body}</p>
-              {n.price && <PriceLine price={n.price} />}
-            </details>
+          {byArea(g.notes).map(([area, list]) => (
+            <div key={area || '-'}>
+              {area && <h3 className={styles.h3}>{area}</h3>}
+              {list.map((n) => (
+                <details key={n.id} className={styles.card}>
+                  <summary>
+                    <span aria-hidden="true">{n.icon}</span> {n.title}
+                  </summary>
+                  {n.assetId && <img className={styles.notePic} src={assetUrl(n.assetId)} alt={n.title} loading="lazy" />}
+                  <p>{n.body}</p>
+                  {n.price && <PriceLine price={n.price} />}
+                </details>
+              ))}
+            </div>
           ))}
         </section>
       ))}

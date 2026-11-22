@@ -10,6 +10,7 @@ import { JournalPage } from '../pages/JournalPage';
 import { PrepPage } from '../pages/PrepPage';
 import { DeitiesPage } from '../pages/DeitiesPage';
 import { GlyphsPage } from '../pages/GlyphsPage';
+import { CollectionPage } from '../pages/CollectionPage';
 import { TimelinePage } from '../pages/TimelinePage';
 import { OfflinePage } from '../offline/OfflinePage';
 import { Sheet } from './Sheet';
@@ -114,6 +115,14 @@ export function App() {
             element={
               <Sheet title="神祇圖鑑">
                 <DeitiesPage />
+              </Sheet>
+            }
+          />
+          <Route
+            path="/collection/:artifactId?"
+            element={
+              <Sheet title="館藏圖鑑">
+                <CollectionPage />
               </Sheet>
             }
           />
