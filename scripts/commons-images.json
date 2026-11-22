@@ -853,14 +853,16 @@
       "assetId": "redsea-hero",
       "article": "Red Sea",
       "dest": "media/egypt/red-sea.webp",
-      "alt": "從太空看紅海與西奈半島"
+      "alt": "從太空看紅海與西奈半島",
+      "match": "^File:(?!.*\\.svg).*(space|ISS|STS|satellite|MODIS|NASA|orbit|Sinai)"
     },
     {
       "assetId": "punt-photo",
       "article": "Land of Punt",
       "dest": "media/photos/punt.webp",
       "alt": "哈特謝普蘇特神殿的蓬特遠航浮雕",
-      "width": 900
+      "width": 900,
+      "match": "^File:(?!.*\\.svg).*(Punt|Hatshepsut|Deir)"
     }
   ]
 }
