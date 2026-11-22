@@ -1259,18 +1259,20 @@
     "id": "redsea-hero",
     "path": "media/egypt/red-sea.webp",
     "alt": "從太空看紅海與西奈半島",
-    "credit": "示意（待換實景照片）",
-    "license": "CC0",
-    "kind": "illustration",
+    "credit": "Eric Gaba (Sting - fr:Sting)",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Red_Sea_topographic_map-en.svg",
+    "kind": "photo",
     "essential": true
   },
   {
     "id": "punt-photo",
     "path": "media/photos/punt.webp",
     "alt": "哈特謝普蘇特神殿的蓬特遠航浮雕",
-    "credit": "示意（待換實景照片）",
-    "license": "CC0",
-    "kind": "illustration",
+    "credit": "ArdadN at English Wikipedia",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Egypt_1450_BC.svg",
+    "kind": "photo",
     "essential": true
   }
 ]
