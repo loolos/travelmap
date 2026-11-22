@@ -51,7 +51,8 @@
     ],
     "readIds": [
       "cu-oasis-life",
-      "cu-bedouin"
+      "cu-bedouin",
+      "sahara-oasis"
     ]
   },
   {
@@ -101,6 +102,9 @@
     ],
     "activityIds": [
       "black-desert-rocks"
+    ],
+    "readIds": [
+      "sahara-wind"
     ]
   },
   {
@@ -211,6 +215,9 @@
     ],
     "activityIds": [
       "white-desert-story"
+    ],
+    "readIds": [
+      "sahara-wind"
     ]
   },
   {
@@ -257,6 +264,10 @@
     ],
     "activityIds": [
       "desert-night-sky"
+    ],
+    "readIds": [
+      "sahara-dry",
+      "cu-bedouin"
     ]
   }
 ]

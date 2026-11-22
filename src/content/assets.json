@@ -1204,5 +1204,55 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kapadokya%27dan_Nazar_Boncu%C4%9Fu.jpg",
     "kind": "photo",
     "essential": true
+  },
+  {
+    "id": "sahara-hero",
+    "path": "media/egypt/sahara.webp",
+    "alt": "錫瓦附近，大沙海北緣的沙丘",
+    "credit": "Roland Unger",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:SiwaSandDunes.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "swimmers-photo",
+    "path": "media/photos/cave-of-swimmers.webp",
+    "alt": "吉勒夫高原泳者洞穴的岩畫",
+    "credit": "Roland Unger",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:WadiSuraSwimmers.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "yardang-photo",
+    "path": "media/photos/yardang.webp",
+    "alt": "風蝕出的雅丹地形",
+    "credit": "Leaflet",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yardang_Lea-Yoakum_Dunes.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "desert-glass-photo",
+    "path": "media/photos/desert-glass.webp",
+    "alt": "利比亞沙漠玻璃",
+    "credit": "H. Raab (User:Vesta)",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Libyan_Desert_Glass.jpg",
+    "kind": "photo",
+    "essential": true
+  },
+  {
+    "id": "whales-photo",
+    "path": "media/photos/wadi-al-hitan.webp",
+    "alt": "鯨魚谷的古鯨化石",
+    "credit": "AhmedMosaad",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_whales_fossils_at_Wadi_El-Hitan,_Egypt_2017.jpg",
+    "kind": "photo",
+    "essential": true
   }
 ]
