@@ -323,6 +323,174 @@
       "article": "Avenue of Sphinxes",
       "dest": "media/photos/sphinx-avenue.webp",
       "alt": "路克索的人面獅身像大道"
+    },
+    {
+      "assetId": "sv-alabaster-photo",
+      "article": "Egyptian alabaster",
+      "dest": "media/photos/sv-alabaster.webp",
+      "alt": "雪花石膏器皿",
+      "width": 720
+    },
+    {
+      "assetId": "sv-scarab-photo",
+      "article": "Scarab (artifact)",
+      "dest": "media/photos/sv-scarab.webp",
+      "alt": "古埃及聖甲蟲護身符",
+      "width": 720
+    },
+    {
+      "assetId": "sv-karkade-photo",
+      "article": "Hibiscus tea",
+      "dest": "media/photos/sv-karkade.webp",
+      "alt": "洛神花茶",
+      "width": 720
+    },
+    {
+      "assetId": "sv-cotton-photo",
+      "article": "Egyptian cotton",
+      "dest": "media/photos/sv-cotton.webp",
+      "alt": "埃及棉",
+      "width": 720
+    },
+    {
+      "assetId": "dates-photo",
+      "article": "Date palm",
+      "dest": "media/photos/dates.webp",
+      "alt": "椰棗樹與果實",
+      "width": 720
+    },
+    {
+      "assetId": "narmer-photo",
+      "article": "Narmer Palette",
+      "dest": "media/photos/narmer.webp",
+      "alt": "納爾邁調色板",
+      "width": 720
+    },
+    {
+      "assetId": "ptolemy-photo",
+      "article": "Ptolemy I Soter",
+      "dest": "media/photos/ptolemy.webp",
+      "alt": "托勒密一世頭像",
+      "width": 720
+    },
+    {
+      "assetId": "fayum-photo",
+      "article": "Fayum mummy portraits",
+      "dest": "media/photos/fayum.webp",
+      "alt": "羅馬時期的法尤姆木乃伊肖像",
+      "width": 720
+    },
+    {
+      "assetId": "amr-mosque-photo",
+      "article": "Mosque of Amr ibn al-As",
+      "dest": "media/photos/amr-mosque.webp",
+      "alt": "開羅的阿慕爾清真寺",
+      "width": 720
+    },
+    {
+      "assetId": "azhar-photo",
+      "article": "Al-Azhar Mosque",
+      "dest": "media/photos/azhar.webp",
+      "alt": "愛資哈爾清真寺",
+      "width": 720
+    },
+    {
+      "assetId": "pyramids-battle-photo",
+      "article": "Battle of the Pyramids",
+      "dest": "media/photos/pyramids-battle.webp",
+      "alt": "金字塔之戰（畫作）",
+      "width": 720
+    },
+    {
+      "assetId": "muhammad-ali-photo",
+      "article": "Muhammad Ali of Egypt",
+      "dest": "media/photos/muhammad-ali.webp",
+      "alt": "穆罕默德‧阿里畫像",
+      "width": 720
+    },
+    {
+      "assetId": "hapi-photo",
+      "article": "Hapi (Nile god)",
+      "dest": "media/photos/hapi.webp",
+      "alt": "尼羅河氾濫之神哈皮",
+      "width": 720
+    },
+    {
+      "assetId": "blue-nile-falls-photo",
+      "article": "Blue Nile Falls",
+      "dest": "media/photos/blue-nile-falls.webp",
+      "alt": "衣索比亞的青尼羅河瀑布",
+      "width": 720
+    },
+    {
+      "assetId": "dream-stele-photo",
+      "article": "Dream Stele",
+      "dest": "media/photos/dream-stele.webp",
+      "alt": "獅身人面像前的夢境石碑",
+      "width": 720
+    },
+    {
+      "assetId": "clownfish-photo",
+      "article": "Red Sea clownfish",
+      "dest": "media/photos/clownfish.webp",
+      "alt": "紅海小丑魚",
+      "width": 720
+    },
+    {
+      "assetId": "kom-tools-photo",
+      "article": "Kom Ombo Temple",
+      "match": "instrument|surg|medic",
+      "dest": "media/photos/kom-tools.webp",
+      "alt": "孔翁波神殿的醫療器具浮雕",
+      "width": 720
+    },
+    {
+      "assetId": "karnak-columns-photo",
+      "article": "Karnak",
+      "match": "hypostyle|column|pillar",
+      "dest": "media/photos/karnak-columns.webp",
+      "alt": "卡納克神殿多柱廳的柱子",
+      "width": 720
+    },
+    {
+      "assetId": "lotus-monument-photo",
+      "article": "Aswan High Dam",
+      "match": "monument|lotus|friendship|memorial",
+      "dest": "media/photos/lotus-monument.webp",
+      "alt": "高壩旁的蓮花紀念碑",
+      "width": 720
+    },
+    {
+      "assetId": "lt-obelisk-photo",
+      "article": "Luxor Temple",
+      "match": "obelisk",
+      "dest": "media/photos/lt-obelisk.webp",
+      "alt": "路克索神殿塔門前的方尖碑",
+      "width": 720
+    },
+    {
+      "assetId": "mushroom-rock-photo",
+      "article": "White Desert",
+      "match": "mushroom|chicken",
+      "dest": "media/photos/mushroom-rock.webp",
+      "alt": "白沙漠的蘑菇石",
+      "width": 720
+    },
+    {
+      "assetId": "edfu-falcon-photo",
+      "article": "Temple of Edfu",
+      "match": "falcon|horus",
+      "dest": "media/photos/edfu-falcon.webp",
+      "alt": "艾德夫神殿的荷魯斯鷹像",
+      "width": 720
+    },
+    {
+      "assetId": "mosque-clock-photo",
+      "article": "Muhammad Ali Mosque",
+      "match": "clock",
+      "dest": "media/photos/mosque-clock.webp",
+      "alt": "穆罕默德‧阿里清真寺的鐘樓",
+      "width": 720
     }
   ]
 }
