@@ -1,5 +1,5 @@
 {
-  "_doc": "assetId -> lead image of an English Wikipedia article, or (with `match`) the first .jpg used in that article whose file name matches the regex. Run by .github/workflows/fetch-images.yml. gem-hero stays a hand-made illustration until a good exterior photo is picked by file name. Instead of `article`, an entry may give `search` (Commons full-text search, first bitmap hit) or `file` (exact Commons file name).",
+  "_doc": "assetId -> lead image of an English Wikipedia article, or (with `match`) the first .jpg used in that article whose file name matches the regex. Or pin an exact Commons file with `file`, or take the first bitmap hit of a Commons full-text `search`. Run by .github/workflows/fetch-images.yml. gem-hero stays a hand-made illustration until a good exterior photo is picked by file name.",
   "images": [
     {
       "assetId": "khufu-hero",
@@ -507,6 +507,126 @@
       "article": "Siwa Oasis",
       "dest": "media/more/siwa.webp",
       "alt": "錫瓦綠洲"
+    },
+    {
+      "assetId": "hl-red-chapel",
+      "article": "Red Chapel of Hatshepsut",
+      "dest": "media/highlights/red-chapel.webp",
+      "alt": "哈特謝普蘇特的紅色小禮拜堂",
+      "width": 720
+    },
+    {
+      "assetId": "hl-avenue",
+      "article": "Avenue of Sphinxes",
+      "dest": "media/highlights/avenue.webp",
+      "alt": "人面獅身像大道",
+      "width": 720
+    },
+    {
+      "assetId": "hl-paris-obelisk",
+      "article": "Luxor Obelisk",
+      "dest": "media/highlights/paris-obelisk.webp",
+      "alt": "巴黎協和廣場上的路克索方尖碑",
+      "width": 720
+    },
+    {
+      "assetId": "hl-abu-haggag",
+      "article": "Abu Haggag Mosque",
+      "dest": "media/highlights/abu-haggag.webp",
+      "alt": "阿布·哈加格清真寺",
+      "width": 720
+    },
+    {
+      "assetId": "hl-edfu-naos",
+      "article": "Temple of Edfu",
+      "match": "naos|sanctuary|barque|boat|shrine",
+      "dest": "media/highlights/edfu-naos.webp",
+      "alt": "艾德夫神殿聖殿神龕",
+      "width": 720
+    },
+    {
+      "assetId": "hl-khufu-ship",
+      "article": "Khufu ship",
+      "dest": "media/highlights/khufu-ship.webp",
+      "alt": "胡夫太陽船",
+      "width": 720
+    },
+    {
+      "assetId": "hl-kv17",
+      "article": "KV17",
+      "dest": "media/highlights/kv17.webp",
+      "alt": "塞提一世墓",
+      "width": 720
+    },
+    {
+      "assetId": "hl-kv9",
+      "article": "KV9",
+      "dest": "media/highlights/kv9.webp",
+      "alt": "拉美西斯六世墓的天花板",
+      "width": 720
+    },
+    {
+      "assetId": "hl-kv11",
+      "article": "KV11",
+      "dest": "media/highlights/kv11.webp",
+      "alt": "拉美西斯三世墓",
+      "width": 720
+    },
+    {
+      "assetId": "hl-karnak-obelisk",
+      "file": "Obeslisk karnak.jpg",
+      "dest": "media/highlights/karnak-obelisk.webp",
+      "alt": "卡納克的方尖碑",
+      "width": 720
+    },
+    {
+      "assetId": "hl-karnak-lake",
+      "file": "Lago sagrado de Karnak, Egipto. Marzo de 2008.jpg",
+      "dest": "media/highlights/karnak-lake.webp",
+      "alt": "卡納克聖湖",
+      "width": 720
+    },
+    {
+      "assetId": "hl-karnak-pylon",
+      "file": "Parvis Karnak.jpg",
+      "dest": "media/highlights/karnak-pylon.webp",
+      "alt": "卡納克神殿第一塔門",
+      "width": 720
+    },
+    {
+      "assetId": "hl-lt-pylon",
+      "file": "Pylons and obelisk Luxor temple.JPG",
+      "dest": "media/highlights/lt-pylon.webp",
+      "alt": "路克索神殿塔門、方尖碑與拉美西斯二世巨像",
+      "width": 720
+    },
+    {
+      "assetId": "hl-lt-colossus",
+      "file": "تمثال رمسيس الثانى - معبد الاقصر.jpg",
+      "dest": "media/highlights/lt-colossus.webp",
+      "alt": "路克索神殿的拉美西斯二世像",
+      "width": 720
+    },
+    {
+      "assetId": "hl-as-nefertari",
+      "file": "Nefertari Temple Abu Simbel May 30 2007.jpg",
+      "dest": "media/highlights/as-nefertari.webp",
+      "alt": "阿布辛貝小神殿正面",
+      "width": 720
+    },
+    {
+      "assetId": "hl-as-sanctuary",
+      "file": "Abu Simbel temple, four statues of divinities in sanctuary.jpg",
+      "dest": "media/highlights/as-sanctuary.webp",
+      "alt": "阿布辛貝聖殿裡的四尊神像",
+      "width": 720
+    },
+    {
+      "assetId": "hl-khufu-entrance",
+      "file": "Cheops-Pyramid@Eingaenge.JPG",
+      "dest": "media/highlights/khufu-entrance.webp",
+      "alt": "胡夫金字塔的原始入口與盜洞",
+      "width": 720
     },
     {
       "assetId": "art-obelisk",

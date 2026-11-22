@@ -43,7 +43,7 @@ export function buildNavIndex(): NavGroup[] {
             to: `/place/${p.id}`,
             label: p.nameZh,
             sub: p.nameEn,
-            terms: [p.nameEn, ...p.aliases, p.shortName ?? '', region.nameZh, region.nameEn],
+            terms: [p.nameEn, ...p.aliases, p.shortName ?? '', region.nameZh, region.nameEn, ...p.highlights.map((h) => h.name)],
             muted: p.status === 'draft',
           },
           ...(p.kind === 'country' ? [timelineItem] : []),

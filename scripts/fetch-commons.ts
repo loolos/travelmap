@@ -27,7 +27,7 @@ let failures = 0;
 for (const e of cfg.images) {
   try {
     await sleep(250); // stay under the Wikimedia API rate limit
-    let file: string | undefined = e.file;
+    let file: string | undefined = e.file?.replace(/^File:/, '');
     if (file) {
       // exact Commons file name given
     } else if (e.search) {
@@ -38,11 +38,11 @@ for (const e of cfg.images) {
       file = (res.query.search as { title: string }[])[0]?.title.replace(/^File:/, '');
     } else if (e.match) {
       const re = new RegExp(e.match, 'i');
-      const imgs = await api('en.wikipedia.org', { action: 'query', prop: 'images', imlimit: '100', titles: e.article!, redirects: '1' });
+      const imgs = await api('en.wikipedia.org', { action: 'query', prop: 'images', imlimit: '100', titles: e.article ?? '', redirects: '1' });
       const hit = ((imgs.query.pages[0]?.images ?? []) as { title: string }[]).find((r) => re.test(r.title));
       file = hit?.title.replace(/^File:/, '');
     } else {
-      const page = await api('en.wikipedia.org', { action: 'query', prop: 'pageimages', piprop: 'name', titles: e.article!, redirects: '1' });
+      const page = await api('en.wikipedia.org', { action: 'query', prop: 'pageimages', piprop: 'name', titles: e.article ?? '', redirects: '1' });
       file = page.query.pages[0]?.pageimage as string | undefined;
     }
     if (!file) throw new Error('no lead image');

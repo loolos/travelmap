@@ -56,6 +56,7 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
   };
   places.forEach((p) => unique(p.id, 'place'));
   places.forEach((p) => p.findItems.forEach((f) => unique(f.id, `find item of ${p.id}`)));
+  places.forEach((p) => p.highlights.forEach((h) => unique(`hl:${h.id}`, `highlight of ${p.id}`)));
   notes.forEach((n) => unique(n.id, 'note'));
   assets.forEach((a) => unique(a.id, 'asset'));
   sources.forEach((s) => unique(s.id, 'source'));
@@ -87,7 +88,7 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
     const defaultScreen = charCount(p.nameZh) + charCount(p.nameEn) + qLen;
     if (defaultScreen > DEFAULT_SCREEN_MAX)
       errors.push(`${L}: default screen has ~${defaultScreen} 字 (max ${DEFAULT_SCREEN_MAX})`);
-    for (const s of [p.nameZh, p.question, p.intro ?? '', p.era ?? '', ...p.facts, ...p.findItems.flatMap((f) => [f.text, f.hint ?? '']), ...p.aliases])
+    for (const s of [p.nameZh, p.question, p.intro ?? '', p.era ?? '', ...p.facts, ...p.findItems.flatMap((f) => [f.text, f.hint ?? '']), ...p.highlights.flatMap((h) => [h.name, h.text]), ...p.aliases])
       checkText(L, s);
 
     let links = 0;
@@ -110,6 +111,14 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
     p.activityIds.forEach((a) => activityIds.has(a) || errors.push(`${L}: unknown activity ${a}`));
     if (p.heroAssetId && !assetIds.has(p.heroAssetId)) errors.push(`${L}: unknown hero asset ${p.heroAssetId}`);
     p.findItems.forEach((f) => f.assetId && !assetIds.has(f.assetId) && errors.push(`${L}: unknown asset ${f.assetId}`));
+    p.highlights.forEach((h) => h.assetId && !assetIds.has(h.assetId) && errors.push(`${L}: unknown asset ${h.assetId}`));
+    if (p.highlights.length > 10) errors.push(`${L}: at most 10 highlights (has ${p.highlights.length})`);
+    p.highlights.forEach((h) => {
+      const n = charCount(h.name);
+      if (n < 2 || n > 8) errors.push(`${L}: highlight name "${h.name}" is ${n} 字 (2–8)`);
+      const t = charCount(h.text);
+      if (t < 20 || t > 110) warnings.push(`${L}: highlight ${h.id} text ${t} 字 (target 30–100)`);
+    });
     p.findItems.forEach((f) => f.deityId && !deityIds.has(f.deityId) && errors.push(`${L}: unknown deity ${f.deityId}`));
     // Card labels: 重點, (找找看), 手記 + activities  ≤ 5 (two short rows on a phone)
     if (2 + Number(p.findItems.length > 0) + p.activityIds.length > 5) errors.push(`${L}: too many card labels`);
@@ -206,6 +215,7 @@ export function validateContent(raw: RawContent, fileExists?: (publicPath: strin
   const used = new Set([
     ...places.map((p) => p.heroAssetId),
     ...places.flatMap((p) => p.findItems.map((f) => f.assetId)),
+    ...places.flatMap((p) => p.highlights.map((h) => h.assetId)),
     ...deities.map((d) => d.assetId),
     ...notes.map((n) => n.assetId),
     ...activities.flatMap((a) => a.photoIds),
