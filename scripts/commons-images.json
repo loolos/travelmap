@@ -286,13 +286,6 @@
       "width": 800
     },
     {
-      "assetId": "food-bessara-img",
-      "search": "Bessara Egyptian fava",
-      "dest": "media/food/bessara.webp",
-      "alt": "綠蠶豆泥",
-      "width": 800
-    },
-    {
       "assetId": "food-baba-ghanoug-img",
       "article": "Baba ghanoush",
       "dest": "media/food/baba-ghanoug.webp",
@@ -325,13 +318,6 @@
       "search": "Hamam mahshi stuffed pigeon",
       "dest": "media/food/hamam-mahshi.webp",
       "alt": "鑲鴿子",
-      "width": 800
-    },
-    {
-      "assetId": "food-fatta-img",
-      "search": "Egyptian fatta meat rice",
-      "dest": "media/food/fatta.webp",
-      "alt": "法塔",
       "width": 800
     },
     {
@@ -391,31 +377,10 @@
       "width": 800
     },
     {
-      "assetId": "food-roz-bel-laban-img",
-      "search": "Egyptian rice pudding",
-      "dest": "media/food/roz-bel-laban.webp",
-      "alt": "米布丁",
-      "width": 800
-    },
-    {
       "assetId": "food-zalabya-img",
       "article": "Luqaimat",
       "dest": "media/food/zalabya.webp",
       "alt": "炸蜜球",
-      "width": 800
-    },
-    {
-      "assetId": "food-dates-img",
-      "search": "dates fruit Siwa",
-      "dest": "media/food/dates.webp",
-      "alt": "椰棗",
-      "width": 800
-    },
-    {
-      "assetId": "food-shai-img",
-      "search": "Egyptian tea",
-      "dest": "media/food/shai.webp",
-      "alt": "埃及紅茶",
       "width": 800
     },
     {
@@ -444,13 +409,6 @@
       "article": "Turkish coffee",
       "dest": "media/food/ahwa.webp",
       "alt": "埃及咖啡",
-      "width": 800
-    },
-    {
-      "assetId": "food-tamr-hindi-img",
-      "search": "tamarind juice",
-      "dest": "media/food/tamr-hindi.webp",
-      "alt": "羅望子汁",
       "width": 800
     },
     {

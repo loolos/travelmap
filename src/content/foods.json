@@ -12,6 +12,7 @@
     "veg": true,
     "budget": 1,
     "placeIds": [],
+    "assetId": "food-aish-baladi-img",
     "sourceIds": [
       "wiki-egyptian-cuisine"
     ]
@@ -31,6 +32,7 @@
       "luxor",
       "aswan"
     ],
+    "assetId": "food-aish-shamsi-img",
     "sourceIds": [
       "wiki-egyptian-cuisine"
     ]
@@ -68,6 +70,7 @@
     "veg": true,
     "budget": 2,
     "placeIds": [],
+    "assetId": "food-feteer-img",
     "sourceIds": [
       "wiki-egyptian-cuisine"
     ]
@@ -84,6 +87,7 @@
     "veg": false,
     "budget": 2,
     "placeIds": [],
+    "assetId": "food-macarona-bechamel-img",
     "sourceIds": [
       "wiki-egyptian-cuisine"
     ]
@@ -100,6 +104,7 @@
     "veg": true,
     "budget": 1,
     "placeIds": [],
+    "assetId": "food-roz-shareya-img",
     "sourceIds": [
       "wiki-egyptian-cuisine"
     ]
@@ -204,6 +209,7 @@
     "veg": true,
     "budget": 1,
     "placeIds": [],
+    "assetId": "food-baba-ghanoug-img",
     "sourceIds": [
       "wiki-egyptian-cuisine"
     ]
@@ -220,6 +226,7 @@
     "veg": true,
     "budget": 1,
     "placeIds": [],
+    "assetId": "food-torshi-img",
     "sourceIds": [
       "wiki-egyptian-cuisine"
     ]
@@ -237,6 +244,7 @@
     "veg": false,
     "budget": 2,
     "placeIds": [],
+    "assetId": "food-kofta-img",
     "sourceIds": [
       "wiki-egyptian-cuisine"
     ]
@@ -255,6 +263,7 @@
     "placeIds": [
       "cairo"
     ],
+    "assetId": "food-hawawshi-img",
     "sourceIds": [
       "wiki-egyptian-cuisine"
     ]
@@ -272,6 +281,7 @@
     "veg": false,
     "budget": 3,
     "placeIds": [],
+    "assetId": "food-hamam-mahshi-img",
     "sourceIds": [
       "wiki-egyptian-cuisine"
     ]
@@ -304,6 +314,7 @@
     "veg": false,
     "budget": 1,
     "placeIds": [],
+    "assetId": "food-shawarma-img",
     "sourceIds": [
       "wiki-egyptian-cuisine"
     ]
@@ -322,6 +333,7 @@
     "placeIds": [
       "alexandria"
     ],
+    "assetId": "food-kebda-img",
     "sourceIds": [
       "wiki-egyptian-cuisine"
     ]
@@ -341,6 +353,7 @@
     "placeIds": [
       "hurghada"
     ],
+    "assetId": "food-samak-mashwi-img",
     "sourceIds": [
       "wiki-egyptian-cuisine"
     ]
@@ -360,6 +373,7 @@
       "alexandria",
       "hurghada"
     ],
+    "assetId": "food-sayadeya-img",
     "sourceIds": [
       "wiki-egyptian-cuisine"
     ]
@@ -378,6 +392,7 @@
     "placeIds": [
       "aswan"
     ],
+    "assetId": "food-bolti-img",
     "sourceIds": [
       "wiki-egyptian-cuisine"
     ]
@@ -395,6 +410,7 @@
     "veg": false,
     "budget": 2,
     "placeIds": [],
+    "assetId": "food-feseekh-img",
     "sourceIds": [
       "wiki-egyptian-cuisine"
     ]
@@ -428,6 +444,7 @@
     "veg": true,
     "budget": 2,
     "placeIds": [],
+    "assetId": "food-konafa-img",
     "sourceIds": [
       "wiki-egyptian-cuisine"
     ]
@@ -444,6 +461,7 @@
     "veg": true,
     "budget": 1,
     "placeIds": [],
+    "assetId": "food-basbousa-img",
     "sourceIds": [
       "wiki-egyptian-cuisine"
     ]
@@ -476,6 +494,7 @@
     "veg": true,
     "budget": 1,
     "placeIds": [],
+    "assetId": "food-zalabya-img",
     "sourceIds": [
       "wiki-egyptian-cuisine"
     ]
@@ -532,6 +551,7 @@
     "placeIds": [
       "aswan"
     ],
+    "assetId": "food-karkadeh-img",
     "sourceIds": [
       "wiki-egyptian-cuisine"
     ]
@@ -550,6 +570,7 @@
     "placeIds": [
       "luxor"
     ],
+    "assetId": "food-asab-img",
     "sourceIds": [
       "wiki-egyptian-cuisine"
     ]
@@ -566,6 +587,7 @@
     "veg": true,
     "budget": 1,
     "placeIds": [],
+    "assetId": "food-sahlab-img",
     "sourceIds": [
       "wiki-egyptian-cuisine"
     ]
@@ -583,6 +605,7 @@
     "veg": true,
     "budget": 1,
     "placeIds": [],
+    "assetId": "food-ahwa-img",
     "sourceIds": [
       "wiki-egyptian-cuisine"
     ]
