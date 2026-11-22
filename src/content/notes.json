@@ -710,7 +710,8 @@
     "icon": "🫓",
     "title": "大餅就是「生命」",
     "body": "埃及方言把麵包叫 ʿeish，字面意思就是「生命」。政府補貼的圓形大餅 ʿeish baladi 非常便宜，撕開能塞豆泥、炸豆餅，是許多家庭每天的主食。",
-    "area": "全國"
+    "area": "全國",
+    "assetId": "cu-bread-img"
   },
   {
     "id": "cu-tea",
@@ -793,7 +794,8 @@
     "icon": "🧿",
     "title": "防邪眼",
     "body": "很多人相信羨慕的目光會帶來厄運，車上、店門口常掛藍眼睛或手掌形的 khamsa 護符。稱讚別人的小孩或新東西時，會先說一句 Mashallah。",
-    "area": "全國"
+    "area": "全國",
+    "assetId": "cu-evil-eye-img"
   },
   {
     "id": "cu-cats",
@@ -826,7 +828,8 @@
     "icon": "💫",
     "title": "旋轉舞 Tannoura",
     "body": "舞者穿著好幾層彩色大裙，一轉就是十幾分鐘，裙子在空中展開成圓盤。源自蘇菲派的冥想儀式，舊城區有固定演出。",
-    "area": "開羅"
+    "area": "開羅",
+    "assetId": "cu-tannoura-img"
   },
   {
     "id": "cu-saidi",

@@ -553,13 +553,6 @@
       "width": 900
     },
     {
-      "assetId": "art-anubis",
-      "search": "Anubis shrine Tutankhamun",
-      "dest": "media/gem/anubis-shrine.webp",
-      "alt": "阿努比斯神龕",
-      "width": 900
-    },
-    {
       "assetId": "art-throne",
       "article": "KV62",
       "dest": "media/gem/throne.webp",
@@ -604,13 +597,6 @@
       "width": 900
     },
     {
-      "assetId": "art-beds",
-      "search": "Tutankhamun ritual couch cow",
-      "dest": "media/gem/beds.webp",
-      "alt": "圖坦卡門墓的動物儀式床",
-      "width": 900
-    },
-    {
       "assetId": "art-khufu-boat",
       "article": "Khufu ship",
       "dest": "media/gem/khufu-ship.webp",
@@ -629,13 +615,6 @@
       "article": "Fanous",
       "dest": "media/customs/fanous.webp",
       "alt": "齋月燈籠 fanous",
-      "width": 900
-    },
-    {
-      "assetId": "cu-umm-kulthum-img",
-      "search": "Umm Kulthum",
-      "dest": "media/customs/umm-kulthum.webp",
-      "alt": "烏姆·庫勒蘇姆",
       "width": 900
     },
     {

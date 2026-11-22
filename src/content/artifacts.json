@@ -13,7 +13,8 @@
     "sourceIds": [
       "wiki-gem",
       "dailyart-gem"
-    ]
+    ],
+    "assetId": "art-obelisk"
   },
   {
     "id": "ramesses-colossus",
@@ -31,22 +32,6 @@
       "natgeo-gem"
     ],
     "assetId": "art-ramesses"
-  },
-  {
-    "id": "hatshepsut-statue",
-    "placeId": "gem",
-    "hall": "大階梯",
-    "nameZh": "哈特謝普蘇特像",
-    "nameEn": "Statue of Hatshepsut",
-    "icon": "👑",
-    "era": "第 18 王朝・約前 1470 年",
-    "year": -1470,
-    "look": "戴著法老頭巾和假鬍子的花崗岩雕像，臉卻比男性法老柔和。",
-    "story": "哈特謝普蘇特是少數真正登基的女法老。她讓自己以男性法老的樣貌出現，連象徵王權的假鬍子都戴上。她死後，繼任者曾把她的名字和雕像從紀念物上抹去。大階梯兩側排著數十件巨像，爬到頂端的大窗能望見金字塔。",
-    "sourceIds": [
-      "natgeo-gem",
-      "dailyart-gem"
-    ]
   },
   {
     "id": "tut-mask",
@@ -79,7 +64,8 @@
     "sourceIds": [
       "wiki-kv62",
       "collector-tut"
-    ]
+    ],
+    "assetId": "art-gold-coffin"
   },
   {
     "id": "tut-shrines",
@@ -112,7 +98,8 @@
     "sourceIds": [
       "wiki-kv62",
       "collector-tut"
-    ]
+    ],
+    "assetId": "art-canopic"
   },
   {
     "id": "anubis-shrine",
@@ -160,7 +147,8 @@
     "sourceIds": [
       "wiki-tut-dagger",
       "collector-tut"
-    ]
+    ],
+    "assetId": "art-dagger"
   },
   {
     "id": "tut-chariots",
@@ -176,7 +164,8 @@
     "sourceIds": [
       "wiki-kv62",
       "collector-tut"
-    ]
+    ],
+    "assetId": "art-chariot"
   },
   {
     "id": "tut-trumpets",
@@ -224,7 +213,8 @@
     "sourceIds": [
       "wiki-kv62",
       "collector-tut"
-    ]
+    ],
+    "assetId": "art-senet"
   },
   {
     "id": "tut-beds",
@@ -260,6 +250,23 @@
     "assetId": "art-khufu-boat"
   },
   {
+    "id": "hatshepsut-statue",
+    "placeId": "gem",
+    "hall": "主展廳",
+    "nameZh": "哈特謝普蘇特像",
+    "nameEn": "Statue of Hatshepsut",
+    "icon": "👑",
+    "era": "第 18 王朝・約前 1470 年",
+    "year": -1470,
+    "look": "戴著法老頭巾和假鬍子、跪著捧供品的石像，臉卻比男性法老柔和。",
+    "story": "哈特謝普蘇特是少數真正登基的女法老。她讓自己以男性法老的樣貌出現，連象徵王權的假鬍子都戴上。她死後，繼任者曾把她的名字和雕像從紀念物上抹去。",
+    "sourceIds": [
+      "natgeo-gem",
+      "dailyart-gem"
+    ],
+    "assetId": "art-hatshepsut"
+  },
+  {
     "id": "ostraca",
     "placeId": "gem",
     "hall": "主展廳",
@@ -268,11 +275,12 @@
     "icon": "📝",
     "era": "新王國・約前 1200 年",
     "year": -1200,
-    "look": "寫滿黑色字跡的陶片和石灰岩片，是工人的出勤紀錄。",
+    "look": "寫著字或畫著草圖的陶片和石灰岩片，是工人的便條紙。",
     "story": "蓋帝王谷陵墓的工匠住在路克索西岸的工人村，紙莎草太貴，他們就把日常寫在碎陶片上。請假理由有生病、被蠍子螫、幫家人做木乃伊，甚至有人抱怨岳母。",
     "sourceIds": [
       "natgeo-gem",
       "wiki-deir-el-medina"
-    ]
+    ],
+    "assetId": "art-ostraca"
   }
 ]

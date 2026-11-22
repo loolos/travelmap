@@ -948,7 +948,7 @@
   {
     "id": "art-gold-coffin",
     "path": "media/gem/gold-coffin.webp",
-    "alt": "圖坦卡門的純金內棺",
+    "alt": "圖坦卡門的純金內棺（1930 年代上色明信片）",
     "credit": "Leo Wehrli",
     "license": "CC BY-SA 4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:ETH-BIB-Tut-Ank-Amon%27s_Treasures,_Innermost_coffin_of_thick_gold-Dia_247-11135.tif",
@@ -998,20 +998,10 @@
   {
     "id": "art-ostraca",
     "path": "media/gem/ostraca.webp",
-    "alt": "寫字的陶片",
+    "alt": "工人村出土、畫著草圖的陶片",
     "credit": "Hanay",
     "license": "CC BY-SA 3.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Drawing_on_ostracon_fragment_-_Deir_el-Medina_04.jpg",
-    "kind": "photo",
-    "essential": true
-  },
-  {
-    "id": "cu-umm-kulthum-img",
-    "path": "media/customs/umm-kulthum.webp",
-    "alt": "烏姆·庫勒蘇姆",
-    "credit": "Not credited",
-    "license": "Public domain",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Umm_Kulthum_in_1950.jpg",
     "kind": "photo",
     "essential": true
   },
